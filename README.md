@@ -40,6 +40,15 @@ preservation checks, and the reason each other candidate is still unmeasured.
 Earlier exploratory 82% and 3.9% figures are in the [results
 notes](docs/RESULTS.md) with their narrower scopes.[^1][^3]
 
+## Compared with RTK
+
+[RTK](https://github.com/rtk-ai/rtk) installs an agent hook that routes shell
+commands through RTK, which supports more than 100 commands and compresses their
+output automatically. Use it for broad, hands-off compression.
+`system-one-verify` wraps one check you already know is noisy, saves the
+complete log, and reports a timeout as a failure. Its 35.20% text-size
+reduction comes from replaying 563 real outputs. Checked September 2026.
+
 
 ## Install
 
