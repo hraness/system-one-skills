@@ -6,8 +6,9 @@ on:
 permissions:
   contents: read
 concurrency:
-  group: evidence-${{ github.workflow }}-${{ github.ref }}
-  cancel-in-progress: true
+  # Per-SHA on main so every merge gets its own run; only superseded PR pushes cancel.
+  group: evidence-${{ github.event_name == 'pull_request' && github.ref || github.sha }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 jobs:
   check:
     runs-on: ubuntu-latest
