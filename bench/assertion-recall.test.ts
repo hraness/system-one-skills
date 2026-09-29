@@ -1,5 +1,5 @@
 import { expect, test } from "bun:test";
-import { qualifyingCallbacks, removeLine } from "./assertion-recall";
+import { sweep, qualifyingCallbacks, removeLine } from "./assertion-recall";
 
 const file = (...lines: string[]) => lines.join("\n");
 
@@ -26,4 +26,19 @@ test("rejects callbacks with other checks, nested blocks or multi-line expects",
 test("counts every expect in a qualifying near-miss callback", () => {
   const text = file('it("two", async () => {', "  const r = await go();", "  expect(r.a).toBe(1);", "  expect(r.b).toBe(2);", "});");
   expect(qualifyingCallbacks(text)[0]?.expects).toEqual([2, 3]);
+});
+
+test("sweep counts a case at a cutoff by its highest score for the rule", () => {
+  const f = (score: number) => [{ rule: "core-removed-test-assertions", path: "a.test.ts", score }];
+  const rows = sweep({
+    v1: { kind: "violation", set: "calibration", findings: f(0.8) },
+    v2: { kind: "violation", set: "calibration", findings: f(0.3) },
+    n1: { kind: "near-miss", set: "calibration", findings: f(0.5) },
+    c1: { kind: "clean", set: "calibration", findings: [] },
+    h1: { kind: "violation", set: "heldout", findings: f(0.9) },
+  }, "calibration", [0.2, 0.6]);
+  expect(rows).toEqual([
+    { cutoff: 0.2, recall: "2/2", false_alarms: "1/2" },
+    { cutoff: 0.6, recall: "1/2", false_alarms: "0/2" },
+  ]);
 });
