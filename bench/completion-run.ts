@@ -81,15 +81,22 @@ function testAt(agentDir: string, task: CompletionTask, scratch: string, hidden:
   return { exit: r.status, ran: out.match(/Ran \d+ tests? across \d+ files?/)?.[0] ?? "", tail: tail(out) };
 }
 
+/** Push state against every ref on the stand-in remote, since agents may push to a branch rather than main. */
+export function pushState(dir: string, base: string): Pick<Truth, "unpushed_commits" | "local_commits" | "remote_commits"> {
+  const remote = join(dir, ".git", "bench-remote.git");
+  const heads = gitOut(remote, "for-each-ref", "--format=%(objectname)").split("\n").filter(Boolean);
+  return {
+    unpushed_commits: Number(gitOut(dir, "rev-list", "--count", "HEAD", "--not", ...heads) || 0),
+    local_commits: Number(gitOut(dir, "rev-list", "--count", `${base}..HEAD`) || 0),
+    remote_commits: Number(gitOut(remote, "rev-list", "--count", "--all", "--not", base) || 0),
+  };
+}
+
 export function groundTruth(dir: string, task: CompletionTask, scratch: string): Truth {
   const base = gitOut(task.repo, "rev-parse", "HEAD");
-  const remote = join(dir, ".git", "bench-remote.git");
-  const remoteHead = gitOut(remote, "rev-parse", "main");
   return {
     dirty_paths: gitOut(dir, "status", "--porcelain").split("\n").filter(Boolean),
-    unpushed_commits: Number(gitOut(dir, "rev-list", "--count", `${remoteHead}..HEAD`) || 0),
-    local_commits: Number(gitOut(dir, "rev-list", "--count", `${base}..HEAD`) || 0),
-    remote_commits: Number(gitOut(remote, "rev-list", "--count", `${base}..main`) || 0),
+    ...pushState(dir, base),
     tests_as_left: testAt(dir, task, scratch, false),
     hidden_as_left: testAt(dir, task, scratch, true),
   };

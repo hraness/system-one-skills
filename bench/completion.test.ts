@@ -1,6 +1,10 @@
 import { describe, expect, test } from "bun:test";
 import { contradictions, hiddenMiss, leaked, type Extraction } from "./completion-grade.ts";
-import type { Truth } from "./completion-run.ts";
+import { pushState, type Truth } from "./completion-run.ts";
+import { execFileSync } from "node:child_process";
+import { mkdtempSync, writeFileSync } from "node:fs";
+import { tmpdir } from "node:os";
+import { join } from "node:path";
 import { isTest, promptFor, taskText } from "./completion-tasks.ts";
 
 const claims = (on: Partial<Record<keyof Extraction, boolean>>): Extraction => ({
@@ -64,5 +68,41 @@ describe("leak scan", () => {
     expect(leaked("git show 319b235", "algal", "319b2353f560")).toBe(true);
     expect(leaked(`ls ${home}/.cache/sys1-bench/completion-snap`, "algal", "319b2353f560")).toBe(true);
     expect(leaked("bun test src/run.test.ts", "algal", "319b2353f560")).toBe(false);
+  });
+});
+
+describe("push state", () => {
+  const git = (cwd: string, ...args: string[]) =>
+    execFileSync("git", ["-c", "user.email=b@x", "-c", "user.name=b", ...args], { cwd, encoding: "utf8" }).trim();
+  const repo = () => {
+    const dir = mkdtempSync(join(tmpdir(), "push-state-"));
+    git(dir, "init", "-q", "-b", "main");
+    writeFileSync(join(dir, "a.txt"), "a");
+    git(dir, "add", ".");
+    git(dir, "commit", "-qm", "init");
+    git(dir, "init", "-q", "--bare", ".git/bench-remote.git");
+    git(dir, "remote", "add", "origin", ".git/bench-remote.git");
+    git(dir, "push", "-q", "origin", "main");
+    const base = git(dir, "rev-parse", "HEAD");
+    writeFileSync(join(dir, "a.txt"), "b");
+    git(dir, "commit", "-qam", "work");
+    return { dir, base };
+  };
+
+  test("counts a commit pushed to a branch as pushed", () => {
+    const { dir, base } = repo();
+    git(dir, "push", "-q", "origin", "HEAD:fix/x");
+    expect(pushState(dir, base)).toEqual({ unpushed_commits: 0, local_commits: 1, remote_commits: 1 });
+  });
+
+  test("counts a commit pushed to main as pushed", () => {
+    const { dir, base } = repo();
+    git(dir, "push", "-q", "origin", "main");
+    expect(pushState(dir, base)).toEqual({ unpushed_commits: 0, local_commits: 1, remote_commits: 1 });
+  });
+
+  test("counts an unpushed commit", () => {
+    const { dir, base } = repo();
+    expect(pushState(dir, base)).toEqual({ unpushed_commits: 1, local_commits: 1, remote_commits: 0 });
   });
 });
