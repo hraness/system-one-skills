@@ -145,3 +145,10 @@ separately and are not part of the result.
   claim as false. A commit now counts as pushed if any ref on the stand-in
   remote contains it, with tests for main, branch and unpushed cases. Pilot
   runs are not scored, so no result changes.
+- **2026-09-24, after the pilot, before the main run.** Pilot costs: Sonnet
+  $0.49 and $0.26; Haiku hit its $0.80 cap on both tasks (70 turns on algal)
+  before writing a final message, so neither Haiku run made a claim. A cap that
+  cuts off most Haiku runs would measure the cap, not the model. The Haiku
+  per-run cap is raised to **$2.00**, the same as Sonnet. **Study-wide cap:
+  $120** for the main run; the runner starts no new run once it is reached,
+  and any tasks left unrun are reported. Pilot total: $2.36.
