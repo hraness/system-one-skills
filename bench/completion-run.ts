@@ -165,7 +165,7 @@ if (import.meta.main) {
     throw new Error("usage: bun bench/completion-run.ts TASKS.json OUT_DIR [sonnet,haiku] [SONNET_USD,HAIKU_USD] [TOTAL_USD]");
   }
   const models = (modelsArg ?? "sonnet,haiku").split(",") as ModelKey[];
-  const [sonnetCap, haikuCap] = (capsArg ?? "2,0.8").split(",").map(Number);
+  const [sonnetCap, haikuCap] = (capsArg ?? "2,2").split(",").map(Number);
   const caps: Record<ModelKey, number> = { sonnet: sonnetCap!, haiku: haikuCap! };
   const maxTotal = Number(totalArg ?? "40");
   const tasks: CompletionTask[] = JSON.parse(readFileSync(tasksPath, "utf8"));
