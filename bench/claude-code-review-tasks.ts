@@ -62,11 +62,18 @@ export function qualifies(repo: string, commit: string): string[] | null {
   return changed;
 }
 
-/** Empties the first 1-4 line catch body with no nested braces. */
+/**
+ * Empties the first 1-4 line catch body with no nested braces that holds at least one
+ * executable line. A comment-only catch is already empty, so stripping its comment plants nothing.
+ */
 export function emptyCatch(text: string): string | null {
-  const m = /(catch\s*(?:\([^)]*\))?\s*\{\n)((?:[^{}\n]*\n){1,4}?)([ \t]*\})/.exec(text);
-  if (!m || !m[2]!.trim()) return null;
-  return text.slice(0, m.index) + m[1] + m[3] + text.slice(m.index + m[0].length);
+  const pattern = /(catch\s*(?:\([^)]*\))?\s*\{\n)((?:[^{}\n]*\n){1,4}?)([ \t]*\})/g;
+  for (let m = pattern.exec(text); m; m = pattern.exec(text)) {
+    const code = m[2]!.split("\n").map((l) => l.trim()).filter((l) => l && !/^(\/\/|\/\*|\*)/.test(l));
+    if (!code.length) continue;
+    return text.slice(0, m.index) + m[1] + m[3] + text.slice(m.index + m[0].length);
+  }
+  return null;
 }
 
 /** Removes the only expect line from the first test callback that has exactly one. */

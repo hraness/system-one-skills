@@ -7,6 +7,21 @@ Data: [`bench/report/review-recall-2026-09.json`](../bench/report/review-recall-
 Sys1 `main` at `b990d64`, route `typesafe/jev-1.13.0`. All 32 trial tasks were
 rebuilt from their recorded commits; none were excluded.
 
+## Correction (2026-09-30)
+
+Two of the 8 planted empty catches were invalid. In `wordcell-58bd07b6` and
+`ghostget-56c2d81b` the planter stripped the only line from a catch that held a
+comment and no code, so the catch was already empty and the plant added no
+violation under the rule or the task prompt. Both labels should have been
+`CLEAN`. The planter now skips comment-only catches
+(`bench/claude-code-review-tasks.ts`). The data files are left unchanged; the
+tables below keep the original 32-task counts.
+
+Against the 6 valid empty-catch plants, Jev recall is 1/6 under A and 0/6 under
+B and C, so the conclusion stands. The local empty-catch detector that replaced
+this Jev rule (sys1 PRs #82 and #83) catches 6/6 with no false positives on the
+16 clean tasks.
+
 ## Result
 
 | Condition | Empty catch | Removed assertion | False positives | Complete runs | Jev requests |

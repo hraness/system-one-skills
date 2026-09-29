@@ -8,6 +8,23 @@ any directed run. Data: [`bench/report/review-checkpoint-claude-code-2026-09.jso
 more tokens, took longer, and gave fewer correct answers.** Neither trial meets
 the plan's decision rule, so no whole-task saving claim may be made from it.
 
+## Correction (2026-09-30)
+
+Two of the 8 planted empty catches were invalid. In `wordcell-58bd07b6` and
+`ghostget-56c2d81b` the planter stripped the only line from a catch that held a
+comment and no code, so the catch was already empty and the plant added no
+violation under the rule or the task prompt. Both labels should have been
+`CLEAN`. The planter now skips comment-only catches
+(`bench/claude-code-review-tasks.ts`). The data files are left unchanged; the
+tables below keep the original 32-task counts.
+
+Excluding the two invalid tasks leaves the result unchanged:
+
+| Arm | Correct, without Sys1 | Correct, with Sys1 | Empty catch, without / with |
+|---|---:|---:|---:|
+| Adoption | 27/30 | 26/30 | 5/6 / 4/6 |
+| Directed | 28/30 | **22/30** | 5/6 / **2/6** |
+
 ## Setup
 
 - 32 tasks: real commits from 4 repositories (algal, wordcell, spongev2,
