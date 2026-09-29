@@ -17,6 +17,9 @@ matching rule.
 A larger [recall run on the removed-assertion rule](ASSERTION-RECALL-RESULT-2026-09.md)
 (153 cases from real tests) found Jev caught 5 of 21 held-out violations with
 no false alarms, well below the 80% bar for turning the rule on by default.
+[Tuning](ASSERTION-TUNING-RESULT-2026-09.md) found the 0.7 score cutoff was
+discarding most catches: at 0.2 the rule caught 20 of 21 held-out violations
+with 0 of 42 false alarms, passing the bar.
 
 The earlier development replay measured **82% fewer text tokens for noisy check
 results**, in three successful Devin logs, including counted skill overhead.
