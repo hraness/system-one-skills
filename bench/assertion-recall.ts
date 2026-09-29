@@ -3,7 +3,8 @@
  * Plan: docs/ASSERTION-RECALL-PLAN-2026-09.md.
  *
  *   bun bench/assertion-recall.ts generate REPOS_ROOT "SET=repo[,repo];..." OUT_DIR SEED [PER_KIND]
- *   bun bench/assertion-recall.ts run REPOS_ROOT CASES_JSON OUT_JSON SYS1_CLI KEY_FILE
+ *   bun bench/assertion-recall.ts run REPOS_ROOT CASES_JSON OUT_JSON SYS1_CLI KEY_FILE [SET]
+ *   bun bench/assertion-recall.ts sweep RESULTS_JSON [SET]
  *
  * Cases record only commit ids, paths and line numbers; code is rebuilt from the
  * local repos at run time.
@@ -172,8 +173,8 @@ export function materialize(clone: string, c: Pick<AssertionCase, "commit" | "pa
   }
 }
 
-function run(root: string, casesPath: string, outPath: string, cli: string, keyFile: string) {
-  const cases: AssertionCase[] = JSON.parse(readFileSync(casesPath, "utf8"));
+function run(root: string, casesPath: string, outPath: string, cli: string, keyFile: string, set?: string) {
+  const cases = (JSON.parse(readFileSync(casesPath, "utf8")) as AssertionCase[]).filter((c) => !set || c.set === set);
   const ledger: Record<string, unknown> = existsSync(outPath) ? JSON.parse(readFileSync(outPath, "utf8")).results ?? {} : {};
   const scratch = mkdtempSync(join(tmpdir(), "assertion-recall-"));
   const key = readFileSync(keyFile, "utf8").trim();
@@ -209,7 +210,7 @@ function run(root: string, casesPath: string, outPath: string, cli: string, keyF
         ledger[c.id] = { kind: c.kind, set: c.set, error: `${r.status}: ${(r.stderr || r.stdout).slice(0, 300)}`, elapsed_ms };
         continue;
       }
-      const findings = (out.findings ?? []).map((f: any) => ({ rule: f.rule_id ?? f.rule, path: f.path, line: f.line }));
+      const findings = (out.findings ?? []).map((f: any) => ({ rule: f.rule_id ?? f.rule, path: f.path, line: f.line, score: f.model_score }));
       ledger[c.id] = {
         kind: c.kind, set: c.set, status: out.status, requests: out.requests,
         units: out.audit?.units, evaluated_units: out.audit?.evaluated_units,
@@ -224,9 +225,30 @@ function run(root: string, casesPath: string, outPath: string, cli: string, keyF
   writeFileSync(outPath, JSON.stringify({ sys1: sys1Commit, route: "typesafe/jev-1.13.0", results: ledger }, null, 2) + "\n");
 }
 
+type Ledger = Record<string, { kind: string; set: string; findings?: { rule: string; path: string; score?: number }[] }>;
+
+/**
+ * Recall and false alarm rate at each cutoff, from a run whose `medium` tier
+ * was lowered so every score is recorded. A case counts as flagged at `t` when
+ * any finding for the rule scores at least `t`; for violations it must also be
+ * on the planted file, which is the only file the run reviews.
+ */
+export function sweep(results: Ledger, set?: string, cutoffs = [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9]) {
+  const entries = Object.values(results).filter((e) => !set || e.set === set);
+  const top = (e: Ledger[string]) => Math.max(0, ...(e.findings ?? []).filter((f) => f.rule === RULE).map((f) => f.score ?? 0));
+  const violations = entries.filter((e) => e.kind === "violation");
+  const others = entries.filter((e) => e.kind !== "violation");
+  return cutoffs.map((t) => ({
+    cutoff: t,
+    recall: `${violations.filter((e) => top(e) >= t).length}/${violations.length}`,
+    false_alarms: `${others.filter((e) => top(e) >= t).length}/${others.length}`,
+  }));
+}
+
 if (import.meta.main) {
   const [mode, ...rest] = process.argv.slice(2);
   if (mode === "generate") generate(rest[0]!, rest[1]!, rest[2]!, rest[3]!, Number(rest[4] ?? "30"));
-  else if (mode === "run") run(rest[0]!, rest[1]!, rest[2]!, rest[3]!, rest[4]!);
-  else throw new Error("usage: generate REPOS_ROOT SETS OUT_DIR SEED [PER_KIND] | run REPOS_ROOT CASES_JSON OUT_JSON SYS1_CLI KEY_FILE");
+  else if (mode === "run") run(rest[0]!, rest[1]!, rest[2]!, rest[3]!, rest[4]!, rest[5]);
+  else if (mode === "sweep") console.table(sweep(JSON.parse(readFileSync(rest[0]!, "utf8")).results, rest[1]));
+  else throw new Error("usage: generate REPOS_ROOT SETS OUT_DIR SEED [PER_KIND] | run REPOS_ROOT CASES_JSON OUT_JSON SYS1_CLI KEY_FILE [SET] | sweep RESULTS_JSON [SET]");
 }
