@@ -39,6 +39,7 @@ function runArm(task: ReviewTask, arm: ArmName, workRoot: string, evidenceDir: s
   rmSync(dir, { recursive: true, force: true });
   const cp = sh("cp", ["-c", "-R", task.repo, dir]);
   if (cp.status !== 0) throw new Error(`clone failed for ${task.id}: ${cp.stderr}`);
+  rmSync(join(dir, ".claude", "skills", "sys1-review"), { recursive: true, force: true });
   const env = armEnv(arm, workRoot, sys1Bin, homeTemplate);
   if (arm === "skill") {
     const r = sh("sys1", ["review", "setup", "claude-code"], { cwd: dir, env });
