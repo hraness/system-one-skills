@@ -8,6 +8,9 @@ text-size evidence at the tool-result boundary, not provider-token or
 whole-task savings. A [whole-task run in Claude Code](WHOLE-TASK-RESULT-2026-09.md)
 found no token or time saving: Sonnet never called the skill on noisy
 typechecks, because it already filtered the output with `grep`.
+A [second run on the Sys1 review checkpoint](REVIEW-TASK-RESULT-2026-09.md)
+also found no saving: when directed to use it, the agent spent 84% more tokens
+and 145% more time, and Jev flagged 3 of 16 planted problems.
 
 The earlier development replay measured **82% fewer text tokens for noisy check
 results**, in three successful Devin logs, including counted skill overhead.

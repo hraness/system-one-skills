@@ -7,6 +7,7 @@
  */
 import { readFileSync } from "node:fs";
 import type { Task } from "./claude-code-run.ts";
+import type { ReviewTask } from "./claude-code-review-tasks.ts";
 
 type Rec = { arm: "baseline" | "skill"; elapsed_ms: number; cost_usd: number; is_error: boolean; usage: Record<string, number>; used_skill: boolean; result: string };
 
@@ -15,13 +16,19 @@ export function totalTokens(r: Rec): number {
   return (u.input_tokens ?? 0) + (u.cache_creation_input_tokens ?? 0) + (u.cache_read_input_tokens ?? 0) + (u.output_tokens ?? 0);
 }
 
-export function grade(task: Task, r: Rec): boolean {
+export function grade(task: Task | ReviewTask, r: Rec): boolean {
   if (r.is_error) return false;
+  if ("answer" in task.expected) {
+    const m = [...r.result.matchAll(/ANSWER:\s*(CLEAN|VIOLATION)\b`?\s*`?([^\s`]*)/g)].pop();
+    if (!m || m[1] !== task.expected.answer) return false;
+    return m[1] === "CLEAN" || m[2]!.replace(/^\.\//, "") === task.expected.path;
+  }
+  const t = task as Task;
   const m = r.result.match(/ANSWER:\s*exit=(-?\d+)\s+errors=(\d+)\s+identifiers=`?([A-Za-z0-9_, ]+)`?/);
   if (!m) return false;
-  const [errors, ...names] = task.expected.must_mention;
+  const [errors, ...names] = t.expected.must_mention;
   const got = (m[3] ?? "").split(",").map((x) => x.trim()).filter(Boolean).sort();
-  return Number(m[1]) === task.expected.exit_code && m[2] === errors && JSON.stringify(got) === JSON.stringify([...names].sort());
+  return Number(m[1]) === t.expected.exit_code && m[2] === errors && JSON.stringify(got) === JSON.stringify([...names].sort());
 }
 
 function median(xs: number[]): number {
@@ -42,13 +49,14 @@ function bootstrap(xs: number[], seed = 1): [number, number] {
 if (import.meta.main) {
   const [tasksPath, runsPath] = process.argv.slice(2);
   if (!tasksPath || !runsPath) throw new Error("usage: bun bench/claude-code-summarize.ts TASKS.json RUNS.json");
-  const tasks: Task[] = JSON.parse(readFileSync(tasksPath, "utf8"));
+  const tasks: (Task | ReviewTask)[] = JSON.parse(readFileSync(tasksPath, "utf8"));
   const runs: Record<string, Rec[]> = JSON.parse(readFileSync(runsPath, "utf8"));
   const rows = tasks.filter((t) => runs[t.id]?.length === 2).map((t) => {
     const b = runs[t.id]!.find((r) => r.arm === "baseline")!;
     const s = runs[t.id]!.find((r) => r.arm === "skill")!;
     return {
       id: t.id,
+      kind: "kind" in t ? t.kind : undefined,
       repo: t.cluster.split(":")[0],
       used_skill: s.used_skill,
       correct: { baseline: grade(t, b), skill: grade(t, s) },
@@ -64,6 +72,10 @@ if (import.meta.main) {
     repos: new Set(rows.map((r) => r.repo)).size,
     skill_invoked: rows.filter((r) => r.used_skill).length,
     correct: { baseline: rows.filter((r) => r.correct.baseline).length, skill: rows.filter((r) => r.correct.skill).length },
+    correct_by_kind: Object.fromEntries([...new Set(rows.map((r) => r.kind).filter(Boolean))].map((k) => {
+      const of = rows.filter((r) => r.kind === k);
+      return [k, { pairs: of.length, baseline: of.filter((r) => r.correct.baseline).length, skill: of.filter((r) => r.correct.skill).length }];
+    })),
     tokens: { baseline_total: sum("tokens", "baseline"), skill_total: sum("tokens", "skill"), median_reduction: median(pct("tokens")), ci95: bootstrap(pct("tokens")) },
     seconds: { baseline_total: sum("seconds", "baseline"), skill_total: sum("seconds", "skill"), median_reduction: median(pct("seconds")), ci95: bootstrap(pct("seconds")) },
     cost_usd: { baseline: sum("cost", "baseline"), skill: sum("cost", "skill") },

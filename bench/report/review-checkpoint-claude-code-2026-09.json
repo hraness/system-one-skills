@@ -1,0 +1,1868 @@
+{
+ "plan": "docs/REVIEW-TASK-PLAN-2026-09.md",
+ "plan_commit": "95eea25",
+ "directed_addendum_commit": "fcba541",
+ "model": "claude-sonnet-5-5",
+ "jev_route": "typesafe/jev-1.13.0",
+ "tasks": [
+  {
+   "id": "algal-ab79dbf7-clean",
+   "cluster": "algal:ab79dbf7a15892c201982065a174cb3829d9ced2",
+   "repo": "/tmp/s1r/cohort/snapshots/algal-ab79dbf7-clean",
+   "kind": "clean",
+   "commit": "ab79dbf7a15892c201982065a174cb3829d9ced2",
+   "expected": {
+    "answer": "CLEAN"
+   }
+  },
+  {
+   "id": "algal-3fbf8ca6-empty-catch",
+   "cluster": "algal:3fbf8ca63af5215dc86eba0f7ad02d2e74453908",
+   "repo": "/tmp/s1r/cohort/snapshots/algal-3fbf8ca6-empty-catch",
+   "kind": "empty-catch",
+   "commit": "3fbf8ca63af5215dc86eba0f7ad02d2e74453908",
+   "expected": {
+    "answer": "VIOLATION",
+    "path": "scripts/native-parity.ts"
+   }
+  },
+  {
+   "id": "algal-f851e0f9-clean",
+   "cluster": "algal:f851e0f91504d2a815e6047a43ffc1b93004dc1c",
+   "repo": "/tmp/s1r/cohort/snapshots/algal-f851e0f9-clean",
+   "kind": "clean",
+   "commit": "f851e0f91504d2a815e6047a43ffc1b93004dc1c",
+   "expected": {
+    "answer": "CLEAN"
+   }
+  },
+  {
+   "id": "algal-ff3d6723-removed-assertion",
+   "cluster": "algal:ff3d6723b41f440f61c07aadd47f09c0b801f151",
+   "repo": "/tmp/s1r/cohort/snapshots/algal-ff3d6723-removed-assertion",
+   "kind": "removed-assertion",
+   "commit": "ff3d6723b41f440f61c07aadd47f09c0b801f151",
+   "expected": {
+    "answer": "VIOLATION",
+    "path": "src/contract.test.ts"
+   }
+  },
+  {
+   "id": "algal-1a5e0224-clean",
+   "cluster": "algal:1a5e0224ec9f01da346b43924f15742777a09778",
+   "repo": "/tmp/s1r/cohort/snapshots/algal-1a5e0224-clean",
+   "kind": "clean",
+   "commit": "1a5e0224ec9f01da346b43924f15742777a09778",
+   "expected": {
+    "answer": "CLEAN"
+   }
+  },
+  {
+   "id": "algal-1154cc4d-empty-catch",
+   "cluster": "algal:1154cc4dda9d9f6812c921e7ae55cb46bd924e6a",
+   "repo": "/tmp/s1r/cohort/snapshots/algal-1154cc4d-empty-catch",
+   "kind": "empty-catch",
+   "commit": "1154cc4dda9d9f6812c921e7ae55cb46bd924e6a",
+   "expected": {
+    "answer": "VIOLATION",
+    "path": "src/run.ts"
+   }
+  },
+  {
+   "id": "algal-8ae09445-clean",
+   "cluster": "algal:8ae09445df12fbfd23dda387b89d7bd09be6e6d2",
+   "repo": "/tmp/s1r/cohort/snapshots/algal-8ae09445-clean",
+   "kind": "clean",
+   "commit": "8ae09445df12fbfd23dda387b89d7bd09be6e6d2",
+   "expected": {
+    "answer": "CLEAN"
+   }
+  },
+  {
+   "id": "algal-abf5ef8a-removed-assertion",
+   "cluster": "algal:abf5ef8aaf5a77a4b808fa3dfb482e1f31f3f200",
+   "repo": "/tmp/s1r/cohort/snapshots/algal-abf5ef8a-removed-assertion",
+   "kind": "removed-assertion",
+   "commit": "abf5ef8aaf5a77a4b808fa3dfb482e1f31f3f200",
+   "expected": {
+    "answer": "VIOLATION",
+    "path": "src/contract.test.ts"
+   }
+  },
+  {
+   "id": "wordcell-1d77e7d2-clean",
+   "cluster": "wordcell:1d77e7d24aad4b2ce610101a5e2904a9f0c44d72",
+   "repo": "/tmp/s1r/cohort/snapshots/wordcell-1d77e7d2-clean",
+   "kind": "clean",
+   "commit": "1d77e7d24aad4b2ce610101a5e2904a9f0c44d72",
+   "expected": {
+    "answer": "CLEAN"
+   }
+  },
+  {
+   "id": "wordcell-58bd07b6-empty-catch",
+   "cluster": "wordcell:58bd07b69dd40ad83bb2e49b5368adac75fb12fc",
+   "repo": "/tmp/s1r/cohort/snapshots/wordcell-58bd07b6-empty-catch",
+   "kind": "empty-catch",
+   "commit": "58bd07b69dd40ad83bb2e49b5368adac75fb12fc",
+   "expected": {
+    "answer": "VIOLATION",
+    "path": "scripts/package-smoke.ts"
+   }
+  },
+  {
+   "id": "wordcell-e0a67b76-clean",
+   "cluster": "wordcell:e0a67b76211a00f8aa90e2f6058be400bcd80b79",
+   "repo": "/tmp/s1r/cohort/snapshots/wordcell-e0a67b76-clean",
+   "kind": "clean",
+   "commit": "e0a67b76211a00f8aa90e2f6058be400bcd80b79",
+   "expected": {
+    "answer": "CLEAN"
+   }
+  },
+  {
+   "id": "wordcell-97a7bc13-removed-assertion",
+   "cluster": "wordcell:97a7bc13ffec0c6437ddeb75d6af542ccf4ea962",
+   "repo": "/tmp/s1r/cohort/snapshots/wordcell-97a7bc13-removed-assertion",
+   "kind": "removed-assertion",
+   "commit": "97a7bc13ffec0c6437ddeb75d6af542ccf4ea962",
+   "expected": {
+    "answer": "VIOLATION",
+    "path": "src/authoring.test.ts"
+   }
+  },
+  {
+   "id": "wordcell-9fec758d-clean",
+   "cluster": "wordcell:9fec758d6581780ab27bff971deaa75c5536312c",
+   "repo": "/tmp/s1r/cohort/snapshots/wordcell-9fec758d-clean",
+   "kind": "clean",
+   "commit": "9fec758d6581780ab27bff971deaa75c5536312c",
+   "expected": {
+    "answer": "CLEAN"
+   }
+  },
+  {
+   "id": "wordcell-e04b2d60-empty-catch",
+   "cluster": "wordcell:e04b2d6090e24b26e30ecec2001cbeed6b4a09b0",
+   "repo": "/tmp/s1r/cohort/snapshots/wordcell-e04b2d60-empty-catch",
+   "kind": "empty-catch",
+   "commit": "e04b2d6090e24b26e30ecec2001cbeed6b4a09b0",
+   "expected": {
+    "answer": "VIOLATION",
+    "path": "src/clip/acquire.ts"
+   }
+  },
+  {
+   "id": "wordcell-89bdfe4f-clean",
+   "cluster": "wordcell:89bdfe4fd831a9055d13e54084f4f443ad878e6f",
+   "repo": "/tmp/s1r/cohort/snapshots/wordcell-89bdfe4f-clean",
+   "kind": "clean",
+   "commit": "89bdfe4fd831a9055d13e54084f4f443ad878e6f",
+   "expected": {
+    "answer": "CLEAN"
+   }
+  },
+  {
+   "id": "wordcell-e19a7dc2-removed-assertion",
+   "cluster": "wordcell:e19a7dc2549882a0f102ce6952641b631acf12df",
+   "repo": "/tmp/s1r/cohort/snapshots/wordcell-e19a7dc2-removed-assertion",
+   "kind": "removed-assertion",
+   "commit": "e19a7dc2549882a0f102ce6952641b631acf12df",
+   "expected": {
+    "answer": "VIOLATION",
+    "path": "src/authoring.test.ts"
+   }
+  },
+  {
+   "id": "spongev2-b7fdcb87-clean",
+   "cluster": "spongev2:b7fdcb87fb327276c37a44fe4a57cec0cc3cf18f",
+   "repo": "/tmp/s1r/cohort/snapshots/spongev2-b7fdcb87-clean",
+   "kind": "clean",
+   "commit": "b7fdcb87fb327276c37a44fe4a57cec0cc3cf18f",
+   "expected": {
+    "answer": "CLEAN"
+   }
+  },
+  {
+   "id": "spongev2-47e41875-empty-catch",
+   "cluster": "spongev2:47e418756322aca93ccc712d054917828e065095",
+   "repo": "/tmp/s1r/cohort/snapshots/spongev2-47e41875-empty-catch",
+   "kind": "empty-catch",
+   "commit": "47e418756322aca93ccc712d054917828e065095",
+   "expected": {
+    "answer": "VIOLATION",
+    "path": "src/research/experimental/assembly-route.ts"
+   }
+  },
+  {
+   "id": "spongev2-f9459cb0-clean",
+   "cluster": "spongev2:f9459cb0761b5c429c48af4972820f44342b07ae",
+   "repo": "/tmp/s1r/cohort/snapshots/spongev2-f9459cb0-clean",
+   "kind": "clean",
+   "commit": "f9459cb0761b5c429c48af4972820f44342b07ae",
+   "expected": {
+    "answer": "CLEAN"
+   }
+  },
+  {
+   "id": "spongev2-c6da716c-removed-assertion",
+   "cluster": "spongev2:c6da716c1abce12d7becadb7794da7ee26891438",
+   "repo": "/tmp/s1r/cohort/snapshots/spongev2-c6da716c-removed-assertion",
+   "kind": "removed-assertion",
+   "commit": "c6da716c1abce12d7becadb7794da7ee26891438",
+   "expected": {
+    "answer": "VIOLATION",
+    "path": "src/research/experimental/closed-score.test.ts"
+   }
+  },
+  {
+   "id": "spongev2-9835d521-clean",
+   "cluster": "spongev2:9835d521da52a532e00f2c886dfcd6b8521597df",
+   "repo": "/tmp/s1r/cohort/snapshots/spongev2-9835d521-clean",
+   "kind": "clean",
+   "commit": "9835d521da52a532e00f2c886dfcd6b8521597df",
+   "expected": {
+    "answer": "CLEAN"
+   }
+  },
+  {
+   "id": "spongev2-331c2900-empty-catch",
+   "cluster": "spongev2:331c2900cdb46e332e39e2a298532ffa6afe85b7",
+   "repo": "/tmp/s1r/cohort/snapshots/spongev2-331c2900-empty-catch",
+   "kind": "empty-catch",
+   "commit": "331c2900cdb46e332e39e2a298532ffa6afe85b7",
+   "expected": {
+    "answer": "VIOLATION",
+    "path": "scripts/release-notes.ts"
+   }
+  },
+  {
+   "id": "spongev2-9474b385-clean",
+   "cluster": "spongev2:9474b385a01ba126dc042567429ca48ecf59c1c3",
+   "repo": "/tmp/s1r/cohort/snapshots/spongev2-9474b385-clean",
+   "kind": "clean",
+   "commit": "9474b385a01ba126dc042567429ca48ecf59c1c3",
+   "expected": {
+    "answer": "CLEAN"
+   }
+  },
+  {
+   "id": "spongev2-04bf8201-removed-assertion",
+   "cluster": "spongev2:04bf820107f2ac4fd372da57c134935be6c9cfe1",
+   "repo": "/tmp/s1r/cohort/snapshots/spongev2-04bf8201-removed-assertion",
+   "kind": "removed-assertion",
+   "commit": "04bf820107f2ac4fd372da57c134935be6c9cfe1",
+   "expected": {
+    "answer": "VIOLATION",
+    "path": "src/research/experimental/evidence.test.ts"
+   }
+  },
+  {
+   "id": "ghostget-4e9e833a-clean",
+   "cluster": "ghostget:4e9e833a5adce718bd65c3fc33876879c0d6a225",
+   "repo": "/tmp/s1r/cohort/snapshots/ghostget-4e9e833a-clean",
+   "kind": "clean",
+   "commit": "4e9e833a5adce718bd65c3fc33876879c0d6a225",
+   "expected": {
+    "answer": "CLEAN"
+   }
+  },
+  {
+   "id": "ghostget-c9aea466-empty-catch",
+   "cluster": "ghostget:c9aea4665f80419e8b1083e352d64a127e522fea",
+   "repo": "/tmp/s1r/cohort/snapshots/ghostget-c9aea466-empty-catch",
+   "kind": "empty-catch",
+   "commit": "c9aea4665f80419e8b1083e352d64a127e522fea",
+   "expected": {
+    "answer": "VIOLATION",
+    "path": "src/derivation-network-boundary.ts"
+   }
+  },
+  {
+   "id": "ghostget-4fde85b3-clean",
+   "cluster": "ghostget:4fde85b3f9044733637ef7bf4f75c107786be678",
+   "repo": "/tmp/s1r/cohort/snapshots/ghostget-4fde85b3-clean",
+   "kind": "clean",
+   "commit": "4fde85b3f9044733637ef7bf4f75c107786be678",
+   "expected": {
+    "answer": "CLEAN"
+   }
+  },
+  {
+   "id": "ghostget-66ec15d0-removed-assertion",
+   "cluster": "ghostget:66ec15d03af97b6bec371994666e6b4c0cb332a9",
+   "repo": "/tmp/s1r/cohort/snapshots/ghostget-66ec15d0-removed-assertion",
+   "kind": "removed-assertion",
+   "commit": "66ec15d03af97b6bec371994666e6b4c0cb332a9",
+   "expected": {
+    "answer": "VIOLATION",
+    "path": "website/skill-install-command.test.ts"
+   }
+  },
+  {
+   "id": "ghostget-1018b0be-clean",
+   "cluster": "ghostget:1018b0bef9d244a149a5856cfd2a68a1396f2425",
+   "repo": "/tmp/s1r/cohort/snapshots/ghostget-1018b0be-clean",
+   "kind": "clean",
+   "commit": "1018b0bef9d244a149a5856cfd2a68a1396f2425",
+   "expected": {
+    "answer": "CLEAN"
+   }
+  },
+  {
+   "id": "ghostget-56c2d81b-empty-catch",
+   "cluster": "ghostget:56c2d81b62612e5295ad33b2b1f35431cc07df4a",
+   "repo": "/tmp/s1r/cohort/snapshots/ghostget-56c2d81b-empty-catch",
+   "kind": "empty-catch",
+   "commit": "56c2d81b62612e5295ad33b2b1f35431cc07df4a",
+   "expected": {
+    "answer": "VIOLATION",
+    "path": "src/providers/x-web-runtime.ts"
+   }
+  },
+  {
+   "id": "ghostget-4035bfdf-clean",
+   "cluster": "ghostget:4035bfdff55673e52de9c6a651e6cba28e09d929",
+   "repo": "/tmp/s1r/cohort/snapshots/ghostget-4035bfdf-clean",
+   "kind": "clean",
+   "commit": "4035bfdff55673e52de9c6a651e6cba28e09d929",
+   "expected": {
+    "answer": "CLEAN"
+   }
+  },
+  {
+   "id": "ghostget-bc326853-removed-assertion",
+   "cluster": "ghostget:bc3268533eeede7b14b72c93c983e340a1d83ecd",
+   "repo": "/tmp/s1r/cohort/snapshots/ghostget-bc326853-removed-assertion",
+   "kind": "removed-assertion",
+   "commit": "bc3268533eeede7b14b72c93c983e340a1d83ecd",
+   "expected": {
+    "answer": "VIOLATION",
+    "path": "src/har.test.ts"
+   }
+  }
+ ],
+ "adoption": {
+  "pairs": 32,
+  "repos": 4,
+  "skill_invoked": 0,
+  "correct": {
+   "baseline": 28,
+   "skill": 27
+  },
+  "correct_by_kind": {
+   "clean": {
+    "pairs": 16,
+    "baseline": 15,
+    "skill": 15
+   },
+   "empty-catch": {
+    "pairs": 8,
+    "baseline": 6,
+    "skill": 5
+   },
+   "removed-assertion": {
+    "pairs": 8,
+    "baseline": 7,
+    "skill": 7
+   }
+  },
+  "tokens": {
+   "baseline_total": 3345894,
+   "skill_total": 3476462,
+   "median_reduction": 0.015327774559494134,
+   "ci95": [
+    -0.07010318448674613,
+    0.07220734410575835
+   ]
+  },
+  "seconds": {
+   "baseline_total": 337.0570000000001,
+   "skill_total": 329.97600000000006,
+   "median_reduction": -0.04626601446112122,
+   "ci95": [
+    -0.13821019897256837,
+    0.1269190426242014
+   ]
+  },
+  "cost_usd": {
+   "baseline": 2.452489,
+   "skill": 2.453176
+  },
+  "rows": [
+   {
+    "id": "algal-ab79dbf7-clean",
+    "kind": "clean",
+    "repo": "algal",
+    "used_skill": false,
+    "correct": {
+     "baseline": true,
+     "skill": true
+    },
+    "tokens": {
+     "baseline": 94321,
+     "skill": 96375
+    },
+    "seconds": {
+     "baseline": 7.31,
+     "skill": 8.467
+    },
+    "cost": {
+     "baseline": 0.0565092,
+     "skill": 0.06483
+    }
+   },
+   {
+    "id": "algal-3fbf8ca6-empty-catch",
+    "kind": "empty-catch",
+    "repo": "algal",
+    "used_skill": false,
+    "correct": {
+     "baseline": false,
+     "skill": false
+    },
+    "tokens": {
+     "baseline": 121382,
+     "skill": 158523
+    },
+    "seconds": {
+     "baseline": 10.103,
+     "skill": 13.854
+    },
+    "cost": {
+     "baseline": 0.11017880000000001,
+     "skill": 0.1138372
+    }
+   },
+   {
+    "id": "algal-f851e0f9-clean",
+    "kind": "clean",
+    "repo": "algal",
+    "used_skill": false,
+    "correct": {
+     "baseline": true,
+     "skill": true
+    },
+    "tokens": {
+     "baseline": 98383,
+     "skill": 97067
+    },
+    "seconds": {
+     "baseline": 10.05,
+     "skill": 8.041
+    },
+    "cost": {
+     "baseline": 0.06588740000000001,
+     "skill": 0.0610266
+    }
+   },
+   {
+    "id": "algal-ff3d6723-removed-assertion",
+    "kind": "removed-assertion",
+    "repo": "algal",
+    "used_skill": false,
+    "correct": {
+     "baseline": true,
+     "skill": true
+    },
+    "tokens": {
+     "baseline": 93477,
+     "skill": 92771
+    },
+    "seconds": {
+     "baseline": 10.003,
+     "skill": 7.409
+    },
+    "cost": {
+     "baseline": 0.0546502,
+     "skill": 0.0542988
+    }
+   },
+   {
+    "id": "algal-1a5e0224-clean",
+    "kind": "clean",
+    "repo": "algal",
+    "used_skill": false,
+    "correct": {
+     "baseline": true,
+     "skill": true
+    },
+    "tokens": {
+     "baseline": 63909,
+     "skill": 133147
+    },
+    "seconds": {
+     "baseline": 6.505,
+     "skill": 13.364
+    },
+    "cost": {
+     "baseline": 0.0545052,
+     "skill": 0.0792952
+    }
+   },
+   {
+    "id": "algal-1154cc4d-empty-catch",
+    "kind": "empty-catch",
+    "repo": "algal",
+    "used_skill": false,
+    "correct": {
+     "baseline": true,
+     "skill": false
+    },
+    "tokens": {
+     "baseline": 135480,
+     "skill": 102353
+    },
+    "seconds": {
+     "baseline": 9.132,
+     "skill": 12.412
+    },
+    "cost": {
+     "baseline": 0.07575300000000001,
+     "skill": 0.0763818
+    }
+   },
+   {
+    "id": "algal-8ae09445-clean",
+    "kind": "clean",
+    "repo": "algal",
+    "used_skill": false,
+    "correct": {
+     "baseline": true,
+     "skill": true
+    },
+    "tokens": {
+     "baseline": 91811,
+     "skill": 92028
+    },
+    "seconds": {
+     "baseline": 6.983,
+     "skill": 7.808
+    },
+    "cost": {
+     "baseline": 0.0517106,
+     "skill": 0.052808600000000004
+    }
+   },
+   {
+    "id": "algal-abf5ef8a-removed-assertion",
+    "kind": "removed-assertion",
+    "repo": "algal",
+    "used_skill": false,
+    "correct": {
+     "baseline": true,
+     "skill": true
+    },
+    "tokens": {
+     "baseline": 96187,
+     "skill": 132148
+    },
+    "seconds": {
+     "baseline": 8.359,
+     "skill": 10.796
+    },
+    "cost": {
+     "baseline": 0.0610274,
+     "skill": 0.07954220000000001
+    }
+   },
+   {
+    "id": "wordcell-1d77e7d2-clean",
+    "kind": "clean",
+    "repo": "wordcell",
+    "used_skill": false,
+    "correct": {
+     "baseline": true,
+     "skill": true
+    },
+    "tokens": {
+     "baseline": 101586,
+     "skill": 129502
+    },
+    "seconds": {
+     "baseline": 8.89,
+     "skill": 14.997
+    },
+    "cost": {
+     "baseline": 0.0691888,
+     "skill": 0.1639602
+    }
+   },
+   {
+    "id": "wordcell-58bd07b6-empty-catch",
+    "kind": "empty-catch",
+    "repo": "wordcell",
+    "used_skill": false,
+    "correct": {
+     "baseline": true,
+     "skill": true
+    },
+    "tokens": {
+     "baseline": 101751,
+     "skill": 159064
+    },
+    "seconds": {
+     "baseline": 40.404,
+     "skill": 17.503
+    },
+    "cost": {
+     "baseline": 0.0683286,
+     "skill": 0.084379
+    }
+   },
+   {
+    "id": "wordcell-e0a67b76-clean",
+    "kind": "clean",
+    "repo": "wordcell",
+    "used_skill": false,
+    "correct": {
+     "baseline": true,
+     "skill": true
+    },
+    "tokens": {
+     "baseline": 112420,
+     "skill": 120301
+    },
+    "seconds": {
+     "baseline": 10.656,
+     "skill": 11.669
+    },
+    "cost": {
+     "baseline": 0.0815724,
+     "skill": 0.098395
+    }
+   },
+   {
+    "id": "wordcell-97a7bc13-removed-assertion",
+    "kind": "removed-assertion",
+    "repo": "wordcell",
+    "used_skill": false,
+    "correct": {
+     "baseline": true,
+     "skill": true
+    },
+    "tokens": {
+     "baseline": 156714,
+     "skill": 118087
+    },
+    "seconds": {
+     "baseline": 18.118,
+     "skill": 10.91
+    },
+    "cost": {
+     "baseline": 0.1005212,
+     "skill": 0.09617980000000001
+    }
+   },
+   {
+    "id": "wordcell-9fec758d-clean",
+    "kind": "clean",
+    "repo": "wordcell",
+    "used_skill": false,
+    "correct": {
+     "baseline": true,
+     "skill": true
+    },
+    "tokens": {
+     "baseline": 113924,
+     "skill": 115052
+    },
+    "seconds": {
+     "baseline": 13.901,
+     "skill": 9.698
+    },
+    "cost": {
+     "baseline": 0.0852608,
+     "skill": 0.088279
+    }
+   },
+   {
+    "id": "wordcell-e04b2d60-empty-catch",
+    "kind": "empty-catch",
+    "repo": "wordcell",
+    "used_skill": false,
+    "correct": {
+     "baseline": true,
+     "skill": true
+    },
+    "tokens": {
+     "baseline": 100235,
+     "skill": 94877
+    },
+    "seconds": {
+     "baseline": 7.291,
+     "skill": 8.706
+    },
+    "cost": {
+     "baseline": 0.0735992,
+     "skill": 0.06144960000000001
+    }
+   },
+   {
+    "id": "wordcell-89bdfe4f-clean",
+    "kind": "clean",
+    "repo": "wordcell",
+    "used_skill": false,
+    "correct": {
+     "baseline": true,
+     "skill": true
+    },
+    "tokens": {
+     "baseline": 97289,
+     "skill": 91491
+    },
+    "seconds": {
+     "baseline": 8.968,
+     "skill": 13.079
+    },
+    "cost": {
+     "baseline": 0.0664622,
+     "skill": 0.0547602
+    }
+   },
+   {
+    "id": "wordcell-e19a7dc2-removed-assertion",
+    "kind": "removed-assertion",
+    "repo": "wordcell",
+    "used_skill": false,
+    "correct": {
+     "baseline": true,
+     "skill": true
+    },
+    "tokens": {
+     "baseline": 107826,
+     "skill": 129850
+    },
+    "seconds": {
+     "baseline": 10.211,
+     "skill": 9.557
+    },
+    "cost": {
+     "baseline": 0.08020279999999999,
+     "skill": 0.0751658
+    }
+   },
+   {
+    "id": "spongev2-b7fdcb87-clean",
+    "kind": "clean",
+    "repo": "spongev2",
+    "used_skill": false,
+    "correct": {
+     "baseline": true,
+     "skill": true
+    },
+    "tokens": {
+     "baseline": 106111,
+     "skill": 101177
+    },
+    "seconds": {
+     "baseline": 10.487,
+     "skill": 9.156
+    },
+    "cost": {
+     "baseline": 0.08412440000000002,
+     "skill": 0.0760294
+    }
+   },
+   {
+    "id": "spongev2-47e41875-empty-catch",
+    "kind": "empty-catch",
+    "repo": "spongev2",
+    "used_skill": false,
+    "correct": {
+     "baseline": true,
+     "skill": true
+    },
+    "tokens": {
+     "baseline": 181394,
+     "skill": 106699
+    },
+    "seconds": {
+     "baseline": 13.182,
+     "skill": 11.365
+    },
+    "cost": {
+     "baseline": 0.0992308,
+     "skill": 0.08192239999999999
+    }
+   },
+   {
+    "id": "spongev2-f9459cb0-clean",
+    "kind": "clean",
+    "repo": "spongev2",
+    "used_skill": false,
+    "correct": {
+     "baseline": false,
+     "skill": false
+    },
+    "tokens": {
+     "baseline": 70098,
+     "skill": 155073
+    },
+    "seconds": {
+     "baseline": 8.847,
+     "skill": 11.234
+    },
+    "cost": {
+     "baseline": 0.07648859999999999,
+     "skill": 0.1127058
+    }
+   },
+   {
+    "id": "spongev2-c6da716c-removed-assertion",
+    "kind": "removed-assertion",
+    "repo": "spongev2",
+    "used_skill": false,
+    "correct": {
+     "baseline": true,
+     "skill": true
+    },
+    "tokens": {
+     "baseline": 102251,
+     "skill": 101219
+    },
+    "seconds": {
+     "baseline": 9.468,
+     "skill": 8.507
+    },
+    "cost": {
+     "baseline": 0.072051,
+     "skill": 0.06966040000000001
+    }
+   },
+   {
+    "id": "spongev2-9835d521-clean",
+    "kind": "clean",
+    "repo": "spongev2",
+    "used_skill": false,
+    "correct": {
+     "baseline": true,
+     "skill": true
+    },
+    "tokens": {
+     "baseline": 102190,
+     "skill": 75024
+    },
+    "seconds": {
+     "baseline": 9.602,
+     "skill": 8.062
+    },
+    "cost": {
+     "baseline": 0.079084,
+     "skill": 0.0952714
+    }
+   },
+   {
+    "id": "spongev2-331c2900-empty-catch",
+    "kind": "empty-catch",
+    "repo": "spongev2",
+    "used_skill": false,
+    "correct": {
+     "baseline": true,
+     "skill": true
+    },
+    "tokens": {
+     "baseline": 141980,
+     "skill": 139066
+    },
+    "seconds": {
+     "baseline": 14.532,
+     "skill": 11.733
+    },
+    "cost": {
+     "baseline": 0.0883222,
+     "skill": 0.0815096
+    }
+   },
+   {
+    "id": "spongev2-9474b385-clean",
+    "kind": "clean",
+    "repo": "spongev2",
+    "used_skill": false,
+    "correct": {
+     "baseline": true,
+     "skill": true
+    },
+    "tokens": {
+     "baseline": 98537,
+     "skill": 98593
+    },
+    "seconds": {
+     "baseline": 6.903,
+     "skill": 6.914
+    },
+    "cost": {
+     "baseline": 0.06384500000000001,
+     "skill": 0.0635264
+    }
+   },
+   {
+    "id": "spongev2-04bf8201-removed-assertion",
+    "kind": "removed-assertion",
+    "repo": "spongev2",
+    "used_skill": false,
+    "correct": {
+     "baseline": true,
+     "skill": true
+    },
+    "tokens": {
+     "baseline": 101570,
+     "skill": 138394
+    },
+    "seconds": {
+     "baseline": 6.964,
+     "skill": 12.879
+    },
+    "cost": {
+     "baseline": 0.0723058,
+     "skill": 0.08423
+    }
+   },
+   {
+    "id": "ghostget-4e9e833a-clean",
+    "kind": "clean",
+    "repo": "ghostget",
+    "used_skill": false,
+    "correct": {
+     "baseline": true,
+     "skill": true
+    },
+    "tokens": {
+     "baseline": 105155,
+     "skill": 103338
+    },
+    "seconds": {
+     "baseline": 8.315,
+     "skill": 8.991
+    },
+    "cost": {
+     "baseline": 0.0775084,
+     "skill": 0.0803152
+    }
+   },
+   {
+    "id": "ghostget-c9aea466-empty-catch",
+    "kind": "empty-catch",
+    "repo": "ghostget",
+    "used_skill": false,
+    "correct": {
+     "baseline": true,
+     "skill": true
+    },
+    "tokens": {
+     "baseline": 68696,
+     "skill": 63556
+    },
+    "seconds": {
+     "baseline": 7.122,
+     "skill": 6.374
+    },
+    "cost": {
+     "baseline": 0.156339,
+     "skill": 0.0560902
+    }
+   },
+   {
+    "id": "ghostget-4fde85b3-clean",
+    "kind": "clean",
+    "repo": "ghostget",
+    "used_skill": false,
+    "correct": {
+     "baseline": true,
+     "skill": true
+    },
+    "tokens": {
+     "baseline": 100656,
+     "skill": 91723
+    },
+    "seconds": {
+     "baseline": 12.412,
+     "skill": 10.41
+    },
+    "cost": {
+     "baseline": 0.0691076,
+     "skill": 0.0523984
+    }
+   },
+   {
+    "id": "ghostget-66ec15d0-removed-assertion",
+    "kind": "removed-assertion",
+    "repo": "ghostget",
+    "used_skill": false,
+    "correct": {
+     "baseline": false,
+     "skill": false
+    },
+    "tokens": {
+     "baseline": 99699,
+     "skill": 92500
+    },
+    "seconds": {
+     "baseline": 11.778,
+     "skill": 10.001
+    },
+    "cost": {
+     "baseline": 0.067346,
+     "skill": 0.0562916
+    }
+   },
+   {
+    "id": "ghostget-1018b0be-clean",
+    "kind": "clean",
+    "repo": "ghostget",
+    "used_skill": false,
+    "correct": {
+     "baseline": true,
+     "skill": true
+    },
+    "tokens": {
+     "baseline": 102497,
+     "skill": 95766
+    },
+    "seconds": {
+     "baseline": 7.809,
+     "skill": 12.14
+    },
+    "cost": {
+     "baseline": 0.07162460000000001,
+     "skill": 0.0639508
+    }
+   },
+   {
+    "id": "ghostget-56c2d81b-empty-catch",
+    "kind": "empty-catch",
+    "repo": "ghostget",
+    "used_skill": false,
+    "correct": {
+     "baseline": false,
+     "skill": false
+    },
+    "tokens": {
+     "baseline": 101728,
+     "skill": 93463
+    },
+    "seconds": {
+     "baseline": 7.907,
+     "skill": 8.438
+    },
+    "cost": {
+     "baseline": 0.0697274,
+     "skill": 0.0576322
+    }
+   },
+   {
+    "id": "ghostget-4035bfdf-clean",
+    "kind": "clean",
+    "repo": "ghostget",
+    "used_skill": false,
+    "correct": {
+     "baseline": true,
+     "skill": true
+    },
+    "tokens": {
+     "baseline": 76353,
+     "skill": 63928
+    },
+    "seconds": {
+     "baseline": 5.545,
+     "skill": 5.966
+    },
+    "cost": {
+     "baseline": 0.0837614,
+     "skill": 0.0581508
+    }
+   },
+   {
+    "id": "ghostget-bc326853-removed-assertion",
+    "kind": "removed-assertion",
+    "repo": "ghostget",
+    "used_skill": false,
+    "correct": {
+     "baseline": true,
+     "skill": true
+    },
+    "tokens": {
+     "baseline": 100284,
+     "skill": 94307
+    },
+    "seconds": {
+     "baseline": 9.3,
+     "skill": 9.536
+    },
+    "cost": {
+     "baseline": 0.06626499999999999,
+     "skill": 0.05890240000000001
+    }
+   }
+  ]
+ },
+ "directed": {
+  "pairs": 32,
+  "repos": 4,
+  "skill_invoked": 32,
+  "correct": {
+   "baseline": 29,
+   "skill": 22
+  },
+  "correct_by_kind": {
+   "clean": {
+    "pairs": 16,
+    "baseline": 16,
+    "skill": 15
+   },
+   "empty-catch": {
+    "pairs": 8,
+    "baseline": 6,
+    "skill": 2
+   },
+   "removed-assertion": {
+    "pairs": 8,
+    "baseline": 7,
+    "skill": 5
+   }
+  },
+  "tokens": {
+   "baseline_total": 3489803,
+   "skill_total": 6338511,
+   "median_reduction": -0.8406806890851886,
+   "ci95": [
+    -1.1343419533523285,
+    -0.6846665967261051
+   ]
+  },
+  "seconds": {
+   "baseline_total": 294.07700000000006,
+   "skill_total": 725.639,
+   "median_reduction": -1.4497548673664342,
+   "ci95": [
+    -1.6735524728588667,
+    -0.9618743853554921
+   ]
+  },
+  "cost_usd": {
+   "baseline": 2.461196199999999,
+   "skill": 3.3080042
+  },
+  "rows": [
+   {
+    "id": "algal-ab79dbf7-clean",
+    "kind": "clean",
+    "repo": "algal",
+    "used_skill": true,
+    "correct": {
+     "baseline": true,
+     "skill": true
+    },
+    "tokens": {
+     "baseline": 94459,
+     "skill": 129999
+    },
+    "seconds": {
+     "baseline": 7.313,
+     "skill": 15.091
+    },
+    "cost": {
+     "baseline": 0.0566684,
+     "skill": 0.07289680000000001
+    }
+   },
+   {
+    "id": "algal-3fbf8ca6-empty-catch",
+    "kind": "empty-catch",
+    "repo": "algal",
+    "used_skill": true,
+    "correct": {
+     "baseline": false,
+     "skill": false
+    },
+    "tokens": {
+     "baseline": 218133,
+     "skill": 321465
+    },
+    "seconds": {
+     "baseline": 16.202,
+     "skill": 31.087
+    },
+    "cost": {
+     "baseline": 0.1417266,
+     "skill": 0.15857380000000001
+    }
+   },
+   {
+    "id": "algal-f851e0f9-clean",
+    "kind": "clean",
+    "repo": "algal",
+    "used_skill": true,
+    "correct": {
+     "baseline": true,
+     "skill": true
+    },
+    "tokens": {
+     "baseline": 95812,
+     "skill": 212068
+    },
+    "seconds": {
+     "baseline": 7.346,
+     "skill": 23.897
+    },
+    "cost": {
+     "baseline": 0.057942,
+     "skill": 0.10610019999999999
+    }
+   },
+   {
+    "id": "algal-ff3d6723-removed-assertion",
+    "kind": "removed-assertion",
+    "repo": "algal",
+    "used_skill": true,
+    "correct": {
+     "baseline": true,
+     "skill": true
+    },
+    "tokens": {
+     "baseline": 92670,
+     "skill": 208134
+    },
+    "seconds": {
+     "baseline": 7.561,
+     "skill": 22.111
+    },
+    "cost": {
+     "baseline": 0.053466599999999996,
+     "skill": 0.10631700000000001
+    }
+   },
+   {
+    "id": "algal-1a5e0224-clean",
+    "kind": "clean",
+    "repo": "algal",
+    "used_skill": true,
+    "correct": {
+     "baseline": true,
+     "skill": true
+    },
+    "tokens": {
+     "baseline": 97433,
+     "skill": 168963
+    },
+    "seconds": {
+     "baseline": 9.7,
+     "skill": 16.919
+    },
+    "cost": {
+     "baseline": 0.0625332,
+     "skill": 0.089091
+    }
+   },
+   {
+    "id": "algal-1154cc4d-empty-catch",
+    "kind": "empty-catch",
+    "repo": "algal",
+    "used_skill": true,
+    "correct": {
+     "baseline": true,
+     "skill": false
+    },
+    "tokens": {
+     "baseline": 136029,
+     "skill": 172878
+    },
+    "seconds": {
+     "baseline": 9.395,
+     "skill": 25.382
+    },
+    "cost": {
+     "baseline": 0.0770046,
+     "skill": 0.0910034
+    }
+   },
+   {
+    "id": "algal-8ae09445-clean",
+    "kind": "clean",
+    "repo": "algal",
+    "used_skill": true,
+    "correct": {
+     "baseline": true,
+     "skill": true
+    },
+    "tokens": {
+     "baseline": 92554,
+     "skill": 166038
+    },
+    "seconds": {
+     "baseline": 8.958,
+     "skill": 15.761
+    },
+    "cost": {
+     "baseline": 0.0532676,
+     "skill": 0.0855436
+    }
+   },
+   {
+    "id": "algal-abf5ef8a-removed-assertion",
+    "kind": "removed-assertion",
+    "repo": "algal",
+    "used_skill": true,
+    "correct": {
+     "baseline": true,
+     "skill": true
+    },
+    "tokens": {
+     "baseline": 94408,
+     "skill": 244309
+    },
+    "seconds": {
+     "baseline": 8.718,
+     "skill": 22.892
+    },
+    "cost": {
+     "baseline": 0.058625000000000003,
+     "skill": 0.1153516
+    }
+   },
+   {
+    "id": "wordcell-1d77e7d2-clean",
+    "kind": "clean",
+    "repo": "wordcell",
+    "used_skill": true,
+    "correct": {
+     "baseline": true,
+     "skill": true
+    },
+    "tokens": {
+     "baseline": 101693,
+     "skill": 198217
+    },
+    "seconds": {
+     "baseline": 7.842,
+     "skill": 24.872
+    },
+    "cost": {
+     "baseline": 0.0693342,
+     "skill": 0.0954456
+    }
+   },
+   {
+    "id": "wordcell-58bd07b6-empty-catch",
+    "kind": "empty-catch",
+    "repo": "wordcell",
+    "used_skill": true,
+    "correct": {
+     "baseline": true,
+     "skill": false
+    },
+    "tokens": {
+     "baseline": 173393,
+     "skill": 161100
+    },
+    "seconds": {
+     "baseline": 14.288,
+     "skill": 14.69
+    },
+    "cost": {
+     "baseline": 0.0917888,
+     "skill": 0.07770300000000001
+    }
+   },
+   {
+    "id": "wordcell-e0a67b76-clean",
+    "kind": "clean",
+    "repo": "wordcell",
+    "used_skill": true,
+    "correct": {
+     "baseline": true,
+     "skill": true
+    },
+    "tokens": {
+     "baseline": 112644,
+     "skill": 157624
+    },
+    "seconds": {
+     "baseline": 8.208,
+     "skill": 12.151
+    },
+    "cost": {
+     "baseline": 0.08256740000000001,
+     "skill": 0.1046004
+    }
+   },
+   {
+    "id": "wordcell-97a7bc13-removed-assertion",
+    "kind": "removed-assertion",
+    "repo": "wordcell",
+    "used_skill": true,
+    "correct": {
+     "baseline": true,
+     "skill": false
+    },
+    "tokens": {
+     "baseline": 153918,
+     "skill": 248760
+    },
+    "seconds": {
+     "baseline": 10.435,
+     "skill": 25.831
+    },
+    "cost": {
+     "baseline": 0.0996254,
+     "skill": 0.139534
+    }
+   },
+   {
+    "id": "wordcell-9fec758d-clean",
+    "kind": "clean",
+    "repo": "wordcell",
+    "used_skill": true,
+    "correct": {
+     "baseline": true,
+     "skill": true
+    },
+    "tokens": {
+     "baseline": 114646,
+     "skill": 157719
+    },
+    "seconds": {
+     "baseline": 7.489,
+     "skill": 19.311
+    },
+    "cost": {
+     "baseline": 0.0867234,
+     "skill": 0.1041522
+    }
+   },
+   {
+    "id": "wordcell-e04b2d60-empty-catch",
+    "kind": "empty-catch",
+    "repo": "wordcell",
+    "used_skill": true,
+    "correct": {
+     "baseline": true,
+     "skill": false
+    },
+    "tokens": {
+     "baseline": 100096,
+     "skill": 163900
+    },
+    "seconds": {
+     "baseline": 10.634,
+     "skill": 19.033
+    },
+    "cost": {
+     "baseline": 0.0734306,
+     "skill": 0.08193360000000001
+    }
+   },
+   {
+    "id": "wordcell-89bdfe4f-clean",
+    "kind": "clean",
+    "repo": "wordcell",
+    "used_skill": true,
+    "correct": {
+     "baseline": true,
+     "skill": true
+    },
+    "tokens": {
+     "baseline": 95941,
+     "skill": 128207
+    },
+    "seconds": {
+     "baseline": 8.781,
+     "skill": 17.529
+    },
+    "cost": {
+     "baseline": 0.061117,
+     "skill": 0.07089780000000001
+    }
+   },
+   {
+    "id": "wordcell-e19a7dc2-removed-assertion",
+    "kind": "removed-assertion",
+    "repo": "wordcell",
+    "used_skill": true,
+    "correct": {
+     "baseline": true,
+     "skill": false
+    },
+    "tokens": {
+     "baseline": 132215,
+     "skill": 204171
+    },
+    "seconds": {
+     "baseline": 10.369,
+     "skill": 22.579
+    },
+    "cost": {
+     "baseline": 0.0695862,
+     "skill": 0.1124264
+    }
+   },
+   {
+    "id": "spongev2-b7fdcb87-clean",
+    "kind": "clean",
+    "repo": "spongev2",
+    "used_skill": true,
+    "correct": {
+     "baseline": true,
+     "skill": true
+    },
+    "tokens": {
+     "baseline": 107283,
+     "skill": 259523
+    },
+    "seconds": {
+     "baseline": 12.965,
+     "skill": 37.331
+    },
+    "cost": {
+     "baseline": 0.0859684,
+     "skill": 0.1369136
+    }
+   },
+   {
+    "id": "spongev2-47e41875-empty-catch",
+    "kind": "empty-catch",
+    "repo": "spongev2",
+    "used_skill": true,
+    "correct": {
+     "baseline": true,
+     "skill": true
+    },
+    "tokens": {
+     "baseline": 144734,
+     "skill": 244464
+    },
+    "seconds": {
+     "baseline": 9.736,
+     "skill": 17.115
+    },
+    "cost": {
+     "baseline": 0.0911286,
+     "skill": 0.1100942
+    }
+   },
+   {
+    "id": "spongev2-f9459cb0-clean",
+    "kind": "clean",
+    "repo": "spongev2",
+    "used_skill": true,
+    "correct": {
+     "baseline": true,
+     "skill": false
+    },
+    "tokens": {
+     "baseline": 110212,
+     "skill": 219711
+    },
+    "seconds": {
+     "baseline": 8.169,
+     "skill": 28.515
+    },
+    "cost": {
+     "baseline": 0.091524,
+     "skill": 0.1218182
+    }
+   },
+   {
+    "id": "spongev2-c6da716c-removed-assertion",
+    "kind": "removed-assertion",
+    "repo": "spongev2",
+    "used_skill": true,
+    "correct": {
+     "baseline": true,
+     "skill": true
+    },
+    "tokens": {
+     "baseline": 102548,
+     "skill": 248990
+    },
+    "seconds": {
+     "baseline": 6.757,
+     "skill": 27.725
+    },
+    "cost": {
+     "baseline": 0.0724998,
+     "skill": 0.12042180000000002
+    }
+   },
+   {
+    "id": "spongev2-9835d521-clean",
+    "kind": "clean",
+    "repo": "spongev2",
+    "used_skill": true,
+    "correct": {
+     "baseline": true,
+     "skill": true
+    },
+    "tokens": {
+     "baseline": 74634,
+     "skill": 170292
+    },
+    "seconds": {
+     "baseline": 8.643,
+     "skill": 14.407
+    },
+    "cost": {
+     "baseline": 0.0947752,
+     "skill": 0.088774
+    }
+   },
+   {
+    "id": "spongev2-331c2900-empty-catch",
+    "kind": "empty-catch",
+    "repo": "spongev2",
+    "used_skill": true,
+    "correct": {
+     "baseline": true,
+     "skill": false
+    },
+    "tokens": {
+     "baseline": 105940,
+     "skill": 175661
+    },
+    "seconds": {
+     "baseline": 9.913,
+     "skill": 17.719
+    },
+    "cost": {
+     "baseline": 0.0822348,
+     "skill": 0.09973380000000001
+    }
+   },
+   {
+    "id": "spongev2-9474b385-clean",
+    "kind": "clean",
+    "repo": "spongev2",
+    "used_skill": true,
+    "correct": {
+     "baseline": true,
+     "skill": true
+    },
+    "tokens": {
+     "baseline": 98281,
+     "skill": 170339
+    },
+    "seconds": {
+     "baseline": 9.532,
+     "skill": 12.845
+    },
+    "cost": {
+     "baseline": 0.0630438,
+     "skill": 0.0880678
+    }
+   },
+   {
+    "id": "spongev2-04bf8201-removed-assertion",
+    "kind": "removed-assertion",
+    "repo": "spongev2",
+    "used_skill": true,
+    "correct": {
+     "baseline": true,
+     "skill": true
+    },
+    "tokens": {
+     "baseline": 102955,
+     "skill": 212630
+    },
+    "seconds": {
+     "baseline": 9.373,
+     "skill": 22.721
+    },
+    "cost": {
+     "baseline": 0.0743876,
+     "skill": 0.120774
+    }
+   },
+   {
+    "id": "ghostget-4e9e833a-clean",
+    "kind": "clean",
+    "repo": "ghostget",
+    "used_skill": true,
+    "correct": {
+     "baseline": true,
+     "skill": true
+    },
+    "tokens": {
+     "baseline": 109568,
+     "skill": 206799
+    },
+    "seconds": {
+     "baseline": 8.969,
+     "skill": 25.807
+    },
+    "cost": {
+     "baseline": 0.090004,
+     "skill": 0.10593179999999999
+    }
+   },
+   {
+    "id": "ghostget-c9aea466-empty-catch",
+    "kind": "empty-catch",
+    "repo": "ghostget",
+    "used_skill": true,
+    "correct": {
+     "baseline": true,
+     "skill": true
+    },
+    "tokens": {
+     "baseline": 68720,
+     "skill": 136428
+    },
+    "seconds": {
+     "baseline": 6.456,
+     "skill": 14.833
+    },
+    "cost": {
+     "baseline": 0.06728,
+     "skill": 0.092279
+    }
+   },
+   {
+    "id": "ghostget-4fde85b3-clean",
+    "kind": "clean",
+    "repo": "ghostget",
+    "used_skill": true,
+    "correct": {
+     "baseline": true,
+     "skill": true
+    },
+    "tokens": {
+     "baseline": 69292,
+     "skill": 164164
+    },
+    "seconds": {
+     "baseline": 6.632,
+     "skill": 17.731
+    },
+    "cost": {
+     "baseline": 0.07227900000000001,
+     "skill": 0.0896046
+    }
+   },
+   {
+    "id": "ghostget-66ec15d0-removed-assertion",
+    "kind": "removed-assertion",
+    "repo": "ghostget",
+    "used_skill": true,
+    "correct": {
+     "baseline": false,
+     "skill": false
+    },
+    "tokens": {
+     "baseline": 98976,
+     "skill": 166307
+    },
+    "seconds": {
+     "baseline": 12.346,
+     "skill": 23.797
+    },
+    "cost": {
+     "baseline": 0.0655862,
+     "skill": 0.088894
+    }
+   },
+   {
+    "id": "ghostget-1018b0be-clean",
+    "kind": "clean",
+    "repo": "ghostget",
+    "used_skill": true,
+    "correct": {
+     "baseline": true,
+     "skill": true
+    },
+    "tokens": {
+     "baseline": 103722,
+     "skill": 244064
+    },
+    "seconds": {
+     "baseline": 8.537,
+     "skill": 45.557
+    },
+    "cost": {
+     "baseline": 0.07625760000000001,
+     "skill": 0.11716199999999999
+    }
+   },
+   {
+    "id": "ghostget-56c2d81b-empty-catch",
+    "kind": "empty-catch",
+    "repo": "ghostget",
+    "used_skill": true,
+    "correct": {
+     "baseline": false,
+     "skill": false
+    },
+    "tokens": {
+     "baseline": 100961,
+     "skill": 277628
+    },
+    "seconds": {
+     "baseline": 7.076,
+     "skill": 41.396
+    },
+    "cost": {
+     "baseline": 0.06711840000000001,
+     "skill": 0.127364
+    }
+   },
+   {
+    "id": "ghostget-4035bfdf-clean",
+    "kind": "clean",
+    "repo": "ghostget",
+    "used_skill": true,
+    "correct": {
+     "baseline": true,
+     "skill": true
+    },
+    "tokens": {
+     "baseline": 76456,
+     "skill": 160603
+    },
+    "seconds": {
+     "baseline": 6.355,
+     "skill": 16.352
+    },
+    "cost": {
+     "baseline": 0.08485680000000001,
+     "skill": 0.07707180000000001
+    }
+   },
+   {
+    "id": "ghostget-bc326853-removed-assertion",
+    "kind": "removed-assertion",
+    "repo": "ghostget",
+    "used_skill": true,
+    "correct": {
+     "baseline": true,
+     "skill": true
+    },
+    "tokens": {
+     "baseline": 109477,
+     "skill": 237356
+    },
+    "seconds": {
+     "baseline": 9.379,
+     "skill": 32.652
+    },
+    "cost": {
+     "baseline": 0.086845,
+     "skill": 0.11152920000000001
+    }
+   }
+  ]
+ },
+ "directed_jev_flagged": {
+  "clean": [
+   0,
+   16
+  ],
+  "empty-catch": [
+   1,
+   8
+  ],
+  "removed-assertion": [
+   2,
+   8
+  ]
+ },
+ "excluded": "24 adoption pairs first run after a Claude usage limit (429, ~2s, $0) were dropped before analysis and rerun; raw files not included"
+}
