@@ -47,7 +47,7 @@ Each task runs once with each main-agent model, Claude Code only, no Sys1:
 | `sonnet` | `claude-sonnet-5-5` |
 | `haiku` | `claude-haiku-4-5-20251001` |
 
-Headless `claude -p`, sandbox on (writes limited to the clone, no network except
+Headless `claude -p`, sandbox on with Bash allowed inside it (writes limited to the clone, no network except
 Claude Code's own), web tools denied, no MCP servers, no user settings or hooks,
 GitHub credentials removed, `--permission-mode acceptEdits`. Reads of `~/src` (which
 holds the original repositories and their later commits) and of the task
@@ -128,4 +128,13 @@ separately and are not part of the result.
 
 ## Amendments
 
-None yet.
+- **2026-09-24, before the main run (pilot only).** The first pilot run
+  (Sonnet, `algal-319b2353`) could not commit: Claude Code's sandbox auto-allow
+  held `git commit` for approval because the message contained `(#19)` and
+  `<=`, and a headless run has no one to approve. Reproduced with Haiku on a
+  one-line prompt. The settings now add `permissions.allow: ["Bash"]`. Commands
+  still run inside the sandbox; a probe confirmed that a write outside the clone
+  is still refused. The agent's final message correctly said it had not
+  committed, so this run had no false claim, but it does not reflect normal
+  conditions. The pilot is rerun from scratch; the first run is kept in the
+  pilot evidence and is not scored.

@@ -46,7 +46,7 @@ export type RunRecord = {
 
 export const SANDBOX_SETTINGS = {
   sandbox: { enabled: true, autoAllowBashIfSandboxed: true, allowUnsandboxedCommands: false },
-  permissions: { deny: ["WebFetch", "WebSearch", `Read(/${process.env.HOME}/src/**)`, `Read(/${process.env.HOME}/.cache/sys1-bench/**)`] },
+  permissions: { allow: ["Bash"], deny: ["WebFetch", "WebSearch", `Read(/${process.env.HOME}/src/**)`, `Read(/${process.env.HOME}/.cache/sys1-bench/**)`] },
 };
 
 function sh(cmd: string, args: string[], opts: { cwd?: string; env?: NodeJS.ProcessEnv; timeout?: number } = {}) {
