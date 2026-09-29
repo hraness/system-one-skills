@@ -10,7 +10,7 @@
  */
 import { spawnSync } from "node:child_process";
 import { createHash } from "node:crypto";
-import { existsSync, mkdirSync, mkdtempSync, readFileSync, rmSync, writeFileSync } from "node:fs";
+import { cpSync, existsSync, mkdirSync, mkdtempSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { basename, join } from "node:path";
 
@@ -179,6 +179,11 @@ function run(root: string, casesPath: string, outPath: string, cli: string, keyF
   const key = readFileSync(keyFile, "utf8").trim();
   const clones = new Map<string, string>();
   const sys1Commit = git(join(cli, "..", ".."), "rev-parse", "HEAD").trim();
+  const env = { ...process.env, TYPESAFE_API_KEY: key, HRANESS_AUDIENCE: "quiet" };
+  const template = join(scratch, "home-template");
+  mkdirSync(template);
+  const enabled = spawnSync("bun", [cli, "jev", "enable"], { encoding: "utf8", env: { ...env, SYS1_HOME: template } });
+  if (enabled.status !== 0) throw new Error(`sys1 jev enable failed: ${enabled.stderr || enabled.stdout}`);
   try {
     for (const c of cases) {
       if (ledger[c.id]) continue;
@@ -191,17 +196,16 @@ function run(root: string, casesPath: string, outPath: string, cli: string, keyF
       materialize(clone, c);
       const home = join(scratch, "home");
       rmSync(home, { recursive: true, force: true });
-      mkdirSync(home);
-      writeFileSync(join(home, "config.json"), JSON.stringify({ hosted: { enabled: true } }));
+      cpSync(template, home, { recursive: true });
       const started = Date.now();
       const r = spawnSync("bun", [cli, "review", "checkpoint", "--staged", "--json", "--model", "typesafe/jev-1.13.0",
         "--max-requests", "200", "--timeout-ms", "120000", "--rule", RULE, "--", c.path], {
         cwd: clone, encoding: "utf8", maxBuffer: 64 * 1024 * 1024,
-        env: { ...process.env, SYS1_HOME: home, TYPESAFE_API_KEY: key, HRANESS_AUDIENCE: "quiet" },
+        env: { ...env, SYS1_HOME: home },
       });
       const elapsed_ms = Date.now() - started;
       let out: any;
-      try { out = JSON.parse(r.stdout); } catch {
+      try { out = JSON.parse(r.stdout); if (out.ok === false) throw new Error(); } catch {
         ledger[c.id] = { kind: c.kind, set: c.set, error: `${r.status}: ${(r.stderr || r.stdout).slice(0, 300)}`, elapsed_ms };
         continue;
       }
