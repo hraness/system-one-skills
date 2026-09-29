@@ -152,3 +152,9 @@ separately and are not part of the result.
   per-run cap is raised to **$2.00**, the same as Sonnet. **Study-wide cap:
   $120** for the main run; the runner starts no new run once it is reached,
   and any tasks left unrun are reported. Pilot total: $2.36.
+- **2026-09-24, task set frozen, before the main run.** Generation kept exactly
+  30 tasks (algal 12, sys1 10, system-one-skills 4, wordcell 4), meeting the
+  30-task minimum with no margin. The two pilot tasks stay in the set and get
+  fresh main-run runs; only the pilot runs are excluded. A task excluded under
+  the leak or zero-turn rules drops that model below 30 and is reported as such,
+  with no substitution.
