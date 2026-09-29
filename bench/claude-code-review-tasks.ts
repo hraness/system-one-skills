@@ -92,14 +92,14 @@ export function removeOnlyAssertion(text: string): string | null {
   return null;
 }
 
-function snapshot(repo: string, commit: string, dir: string) {
+export function snapshot(repo: string, commit: string, dir: string) {
   rmSync(dir, { recursive: true, force: true });
   git(repo, "clone", "-q", "--shared", "--no-checkout", repo, dir);
   git(dir, "checkout", "-q", "--detach", `${commit}^`);
   git(dir, "read-tree", "-u", "-m", "HEAD", commit);
 }
 
-function plant(dir: string, kind: ReviewKind, staged: string[], seed: string): string | null {
+export function plant(dir: string, kind: ReviewKind, staged: string[], seed: string): string | null {
   const byRank = (xs: string[]) => [...xs].sort((a, b) => rank(seed, a).localeCompare(rank(seed, b)));
   if (kind === "empty-catch") {
     for (const p of byRank(staged.filter((x) => !isTest(x)))) {
