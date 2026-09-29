@@ -38,6 +38,19 @@ first, and in `algal` and `sys1` 15 of 16 produced 0.03-6.7 KiB, below the skill
 prevalence is part of the result: everyday single-symbol type errors are too small
 for `system-one-verify` to act on.
 
+Second design change, also before any cohort run: the two-rename pass yielded 17
+tasks from 10 repositories, short of 30. To add independent code rather than more
+tasks from the same code families, a three-rename pass (same rules, 4 tasks per
+repository at most) runs only in the independent repositories where the two-rename
+pass fell short: `wordcell`, `spongev2`, `peopleblade`,
+`slopcamera-patent-drawings` and `sys1`. The three-rename prompt names three
+identifiers and is graded the same way.
+
+Code families: `algal-sponge-enduring` is a fork of `algal`, and `wrench` is a
+fork of `ghostget`; they share files and export names. Results are reported by
+code family as well as per task, and the family count is stated next to any
+claim.
+
 ## Measures
 
 1. **Primary, tokens:** total processed tokens per arm =
