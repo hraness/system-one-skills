@@ -48,8 +48,11 @@ function runArm(task: ReviewTask, arm: ArmName, workRoot: string, evidenceDir: s
     // Setup files and CLAUDE.md are untracked or unstaged, so the staged diff is unchanged.
   }
   writeFileSync(join(workRoot, "empty-mcp.json"), '{"mcpServers":{}}');
+  const prompt = arm === "skill" && process.env.REVIEW_DIRECTED === "1"
+    ? `${task.prompt}\nUse this repository's Sys1 review checkpoint for this check.`
+    : task.prompt;
   const args = [
-    "-p", task.prompt,
+    "-p", prompt,
     "--model", MODEL,
     "--output-format", "stream-json", "--verbose",
     "--setting-sources", "project,local",

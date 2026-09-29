@@ -82,3 +82,17 @@ loses its last assertion), then end with `ANSWER: CLEAN` or
 
 $15 total Claude usage, $0.60 cap per arm. The run stops before a pair that could
 exceed the total. Jev usage is billed separately and is a few cents.
+
+## Addendum: directed arm (registered during the cohort, before any directed run)
+
+After 4 of 32 cohort pairs, the Sys1 arm had not run a checkpoint once. That
+answers adoption, not the saving when Sys1 is actually used. A second,
+separately reported trial asks: when the prompt tells the agent to use the
+repository's Sys1 review checkpoint, does it answer with fewer tokens or less
+time, without a worse answer, than the baseline?
+
+Same 32 tasks, same measures, same decision rule, fresh pairs for both arms (no
+reuse of cohort baselines), seed `directed:95eea25`. The only change is one
+sentence appended to the Sys1 arm's prompt: "Use this repository's Sys1 review
+checkpoint for this check." The baseline prompt is unchanged. Budget: whatever
+remains of the $15 after the adoption cohort.
