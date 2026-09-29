@@ -1,0 +1,8 @@
+Keep noisy test and build logs out of your agent's context.
+
+Start here
+  system-one-skills install-skills --target <dir>  Add the skill to an agent
+  system-one-skills check -- <command>             Run a noisy test or build
+
+All commands: system-one-skills --help
+system-one-skills {version}

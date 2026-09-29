@@ -1,0 +1,17 @@
+Usage: system-one-skills check [options] -- <command> [args...]
+
+Run a test or build once. Short output passes through unchanged. Long output
+is cut down to the exit code, the errors and the last lines, and the full
+output is kept in a private log file.
+
+Options
+  --log <path>       Save the full log here (the file must not exist yet)
+  --cwd <dir>        Run the command in this folder
+  --timeout-ms <n>   Stop the command after n milliseconds (default 300000,
+                     at most 900000)
+
+Exits with the command's own exit code. Errors from system-one-skills itself
+exit 2.
+
+Example
+  system-one-skills check -- npm test
