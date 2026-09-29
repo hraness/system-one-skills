@@ -1,0 +1,582 @@
+{
+ "pairs": 26,
+ "repos": 7,
+ "skill_invoked": 0,
+ "correct": {
+  "baseline": 24,
+  "skill": 24
+ },
+ "tokens": {
+  "baseline_total": 2762336,
+  "skill_total": 2694284,
+  "median_reduction": -0.0006930116922705398,
+  "ci95": [
+   -0.0067311206211045915,
+   0.0015774345803093448
+  ]
+ },
+ "seconds": {
+  "baseline_total": 557.1840000000001,
+  "skill_total": 582.5230000000003,
+  "median_reduction": -0.038238556363866194,
+  "ci95": [
+   -0.13972620990573903,
+   0.03829617282132253
+  ]
+ },
+ "cost_usd": {
+  "baseline": 2.017307,
+  "skill": 2.2938913999999997
+ },
+ "rows": [
+  {
+   "id": "algal-AlgalError-digestCanonical",
+   "repo": "algal",
+   "used_skill": false,
+   "correct": {
+    "baseline": true,
+    "skill": true
+   },
+   "tokens": {
+    "baseline": 100849,
+    "skill": 100908
+   },
+   "seconds": {
+    "baseline": 12.694,
+    "skill": 16.157
+   },
+   "cost": {
+    "baseline": 0.06597220000000001,
+    "skill": 0.1555848
+   }
+  },
+  {
+   "id": "algal-manifestToJson-canonicalize",
+   "repo": "algal",
+   "used_skill": false,
+   "correct": {
+    "baseline": true,
+    "skill": true
+   },
+   "tokens": {
+    "baseline": 100300,
+    "skill": 100153
+   },
+   "seconds": {
+    "baseline": 19.855,
+    "skill": 11.194
+   },
+   "cost": {
+    "baseline": 0.0633544,
+    "skill": 0.0638072
+   }
+  },
+  {
+   "id": "algal-MemoryStore-builtinRegistry",
+   "repo": "algal",
+   "used_skill": false,
+   "correct": {
+    "baseline": true,
+    "skill": true
+   },
+   "tokens": {
+    "baseline": 66707,
+    "skill": 100665
+   },
+   "seconds": {
+    "baseline": 11.608,
+    "skill": 15.11
+   },
+   "cost": {
+    "baseline": 0.0558272,
+    "skill": 0.06696139999999999
+   }
+  },
+  {
+   "id": "algal-runOrganism-verifyReceipt",
+   "repo": "algal",
+   "used_skill": false,
+   "correct": {
+    "baseline": true,
+    "skill": true
+   },
+   "tokens": {
+    "baseline": 134254,
+    "skill": 100648
+   },
+   "seconds": {
+    "baseline": 13.316,
+    "skill": 14.141
+   },
+   "cost": {
+    "baseline": 0.07370220000000001,
+    "skill": 0.064943
+   }
+  },
+  {
+   "id": "spongev2-fixture-parseDeepJsonValue",
+   "repo": "spongev2",
+   "used_skill": false,
+   "correct": {
+    "baseline": true,
+    "skill": true
+   },
+   "tokens": {
+    "baseline": 62532,
+    "skill": 130573
+   },
+   "seconds": {
+    "baseline": 14.818,
+    "skill": 21.178
+   },
+   "cost": {
+    "baseline": 0.0479894,
+    "skill": 0.07180360000000001
+   }
+  },
+  {
+   "id": "ghostget-string-sha256",
+   "repo": "ghostget",
+   "used_skill": false,
+   "correct": {
+    "baseline": true,
+    "skill": true
+   },
+   "tokens": {
+    "baseline": 121394,
+    "skill": 121243
+   },
+   "seconds": {
+    "baseline": 34.891,
+    "skill": 35.689
+   },
+   "cost": {
+    "baseline": 0.097424,
+    "skill": 0.1849492
+   }
+  },
+  {
+   "id": "ghostget-ghostgetStateHome-providerPluginRegistry",
+   "repo": "ghostget",
+   "used_skill": false,
+   "correct": {
+    "baseline": true,
+    "skill": true
+   },
+   "tokens": {
+    "baseline": 80925,
+    "skill": 121211
+   },
+   "seconds": {
+    "baseline": 35.579,
+    "skill": 56.306
+   },
+   "cost": {
+    "baseline": 0.0866076,
+    "skill": 0.09476499999999999
+   }
+  },
+  {
+   "id": "ghostget-assertProperty-OperationDeadline",
+   "repo": "ghostget",
+   "used_skill": false,
+   "correct": {
+    "baseline": true,
+    "skill": true
+   },
+   "tokens": {
+    "baseline": 121287,
+    "skill": 121693
+   },
+   "seconds": {
+    "baseline": 30.023,
+    "skill": 34.218
+   },
+   "cost": {
+    "baseline": 0.0969488,
+    "skill": 0.098924
+   }
+  },
+  {
+   "id": "ghostget-defineProviderPlugin-manifestHash",
+   "repo": "ghostget",
+   "used_skill": false,
+   "correct": {
+    "baseline": true,
+    "skill": true
+   },
+   "tokens": {
+    "baseline": 121071,
+    "skill": 121416
+   },
+   "seconds": {
+    "baseline": 28.103,
+    "skill": 26.752
+   },
+   "cost": {
+    "baseline": 0.0957286,
+    "skill": 0.09625620000000001
+   }
+  },
+  {
+   "id": "wrench-sha256-main",
+   "repo": "wrench",
+   "used_skill": false,
+   "correct": {
+    "baseline": true,
+    "skill": true
+   },
+   "tokens": {
+    "baseline": 117258,
+    "skill": 116916
+   },
+   "seconds": {
+    "baseline": 22.155,
+    "skill": 23.57
+   },
+   "cost": {
+    "baseline": 0.0896148,
+    "skill": 0.0886592
+   }
+  },
+  {
+   "id": "wrench-wrenchStateHome-assertProperty",
+   "repo": "wrench",
+   "used_skill": false,
+   "correct": {
+    "baseline": true,
+    "skill": true
+   },
+   "tokens": {
+    "baseline": 117217,
+    "skill": 116993
+   },
+   "seconds": {
+    "baseline": 30.403,
+    "skill": 27.107
+   },
+   "cost": {
+    "baseline": 0.089223,
+    "skill": 0.08833479999999999
+   }
+  },
+  {
+   "id": "wrench-OperationDeadline-defineProviderPlugin",
+   "repo": "wrench",
+   "used_skill": false,
+   "correct": {
+    "baseline": true,
+    "skill": true
+   },
+   "tokens": {
+    "baseline": 157283,
+    "skill": 157695
+   },
+   "seconds": {
+    "baseline": 33.168,
+    "skill": 34.946
+   },
+   "cost": {
+    "baseline": 0.1014976,
+    "skill": 0.102325
+   }
+  },
+  {
+   "id": "wrench-PreservedBrowserArtifactsError-processOwnerStatus",
+   "repo": "wrench",
+   "used_skill": false,
+   "correct": {
+    "baseline": true,
+    "skill": true
+   },
+   "tokens": {
+    "baseline": 117680,
+    "skill": 78380
+   },
+   "seconds": {
+    "baseline": 30.3,
+    "skill": 28.115
+   },
+   "cost": {
+    "baseline": 0.0918508,
+    "skill": 0.0813328
+   }
+  },
+  {
+   "id": "algal-sponge-enduring-json-digestCanonical",
+   "repo": "algal-sponge-enduring",
+   "used_skill": false,
+   "correct": {
+    "baseline": true,
+    "skill": true
+   },
+   "tokens": {
+    "baseline": 102260,
+    "skill": 68072
+   },
+   "seconds": {
+    "baseline": 13.694,
+    "skill": 12.4
+   },
+   "cost": {
+    "baseline": 0.0690272,
+    "skill": 0.059158
+   }
+  },
+  {
+   "id": "algal-sponge-enduring-parseOrganismManifest-canonicalize",
+   "repo": "algal-sponge-enduring",
+   "used_skill": false,
+   "correct": {
+    "baseline": true,
+    "skill": true
+   },
+   "tokens": {
+    "baseline": 68360,
+    "skill": 102393
+   },
+   "seconds": {
+    "baseline": 10.523,
+    "skill": 18.158
+   },
+   "cost": {
+    "baseline": 0.06022480000000001,
+    "skill": 0.0691596
+   }
+  },
+  {
+   "id": "algal-sponge-enduring-AlgalError-builtinRegistry",
+   "repo": "algal-sponge-enduring",
+   "used_skill": false,
+   "correct": {
+    "baseline": true,
+    "skill": true
+   },
+   "tokens": {
+    "baseline": 136377,
+    "skill": 68453
+   },
+   "seconds": {
+    "baseline": 16.828,
+    "skill": 10.974
+   },
+   "cost": {
+    "baseline": 0.0757328,
+    "skill": 0.061038
+   }
+  },
+  {
+   "id": "algal-sponge-enduring-MemoryStore-runOrganism",
+   "repo": "algal-sponge-enduring",
+   "used_skill": false,
+   "correct": {
+    "baseline": true,
+    "skill": true
+   },
+   "tokens": {
+    "baseline": 67719,
+    "skill": 68487
+   },
+   "seconds": {
+    "baseline": 11.163,
+    "skill": 10.706
+   },
+   "cost": {
+    "baseline": 0.0568964,
+    "skill": 0.0609072
+   }
+  },
+  {
+   "id": "slopcamera-patent-drawings-parseSpatialScene-sha256Hex",
+   "repo": "slopcamera-patent-drawings",
+   "used_skill": false,
+   "correct": {
+    "baseline": true,
+    "skill": true
+   },
+   "tokens": {
+    "baseline": 112694,
+    "skill": 110023
+   },
+   "seconds": {
+    "baseline": 26.462,
+    "skill": 22.47
+   },
+   "cost": {
+    "baseline": 0.0862356,
+    "skill": 0.0802938
+   }
+  },
+  {
+   "id": "slopcamera-patent-drawings-VideoProjectV1Schema-deepFreezeJson",
+   "repo": "slopcamera-patent-drawings",
+   "used_skill": false,
+   "correct": {
+    "baseline": true,
+    "skill": true
+   },
+   "tokens": {
+    "baseline": 112988,
+    "skill": 113032
+   },
+   "seconds": {
+    "baseline": 17.866,
+    "skill": 21.42
+   },
+   "cost": {
+    "baseline": 0.086077,
+    "skill": 0.0860606
+   }
+  },
+  {
+   "id": "wordcell-openKnowledgeBase-loadPortfolioRegistry-recommendedEmbeddingModel",
+   "repo": "wordcell",
+   "used_skill": false,
+   "correct": {
+    "baseline": true,
+    "skill": true
+   },
+   "tokens": {
+    "baseline": 111305,
+    "skill": 74135
+   },
+   "seconds": {
+    "baseline": 14.108,
+    "skill": 13.605
+   },
+   "cost": {
+    "baseline": 0.08257719999999999,
+    "skill": 0.16220340000000003
+   }
+  },
+  {
+   "id": "spongev2-fixtureMemoryEngine-createDeepSourcePack-deepNativeReceiptPolicy",
+   "repo": "spongev2",
+   "used_skill": false,
+   "correct": {
+    "baseline": true,
+    "skill": true
+   },
+   "tokens": {
+    "baseline": 93781,
+    "skill": 94011
+   },
+   "seconds": {
+    "baseline": 16.143,
+    "skill": 17.543
+   },
+   "cost": {
+    "baseline": 0.055313600000000004,
+    "skill": 0.057042999999999996
+   }
+  },
+  {
+   "id": "spongev2-listInbox-replayDeepProtocol-parseDeepSectionDraft",
+   "repo": "spongev2",
+   "used_skill": false,
+   "correct": {
+    "baseline": true,
+    "skill": true
+   },
+   "tokens": {
+    "baseline": 96131,
+    "skill": 96208
+   },
+   "seconds": {
+    "baseline": 15.466,
+    "skill": 15.321
+   },
+   "cost": {
+    "baseline": 0.0608906,
+    "skill": 0.0618592
+   }
+  },
+  {
+   "id": "slopcamera-patent-drawings-config-generate-parseSpatialScene",
+   "repo": "slopcamera-patent-drawings",
+   "used_skill": false,
+   "correct": {
+    "baseline": false,
+    "skill": false
+   },
+   "tokens": {
+    "baseline": 109757,
+    "skill": 111120
+   },
+   "seconds": {
+    "baseline": 19.636,
+    "skill": 25.223
+   },
+   "cost": {
+    "baseline": 0.07916400000000001,
+    "skill": 0.080132
+   }
+  },
+  {
+   "id": "slopcamera-patent-drawings-sha256Hex-VideoProjectV1Schema-deepFreezeJson",
+   "repo": "slopcamera-patent-drawings",
+   "used_skill": false,
+   "correct": {
+    "baseline": true,
+    "skill": true
+   },
+   "tokens": {
+    "baseline": 110721,
+    "skill": 74299
+   },
+   "seconds": {
+    "baseline": 31.74,
+    "skill": 18.878
+   },
+   "cost": {
+    "baseline": 0.0820206,
+    "skill": 0.0738646
+   }
+  },
+  {
+   "id": "slopcamera-patent-drawings-unit-Sha256Schema-settle",
+   "repo": "slopcamera-patent-drawings",
+   "used_skill": false,
+   "correct": {
+    "baseline": false,
+    "skill": false
+   },
+   "tokens": {
+    "baseline": 110434,
+    "skill": 111606
+   },
+   "seconds": {
+    "baseline": 23.052,
+    "skill": 28.07
+   },
+   "cost": {
+    "baseline": 0.08187,
+    "skill": 0.08721599999999999
+   }
+  },
+  {
+   "id": "slopcamera-patent-drawings-SpatialDigestSchema-OperationRegistry-align",
+   "repo": "slopcamera-patent-drawings",
+   "used_skill": false,
+   "correct": {
+    "baseline": true,
+    "skill": true
+   },
+   "tokens": {
+    "baseline": 111052,
+    "skill": 113951
+   },
+   "seconds": {
+    "baseline": 23.59,
+    "skill": 23.272
+   },
+   "cost": {
+    "baseline": 0.0855366,
+    "skill": 0.0963098
+   }
+  }
+ ],
+ "plan": "docs/WHOLE-TASK-PLAN-2026-09.md",
+ "seed": "03ebd82",
+ "model": "claude-sonnet-5-5"
+}
