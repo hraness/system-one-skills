@@ -117,6 +117,10 @@ if (import.meta.main) {
     const records = [];
     for (const arm of orderFor(seed, task.id)) {
       const rec = runArm(task, arm, workRoot, evidenceDir, perArm, sys1Bin, homeTemplate);
+      if (rec.is_error && /session limit|rate limit|429/i.test(rec.result)) {
+        console.log(`stop: usage limit at ${task.id}/${arm}: ${rec.result.slice(0, 120)}`);
+        process.exit(3);
+      }
       records.push(rec);
       spent += rec.cost_usd;
     }
