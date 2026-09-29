@@ -1,0 +1,839 @@
+{
+  "sys1": "a57372875e57246384e212369e145cdd5ea8b73d",
+  "route": "typesafe/jev-1.13.0",
+  "results": {
+    "sys1-c0ab9a0c-violation": {
+      "kind": "violation",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 3,
+      "units": 3,
+      "evaluated_units": 3,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "test/local-engine.test.ts",
+          "line": 105,
+          "score": 0.73
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 2682
+    },
+    "sys1-c512329c-near-miss": {
+      "kind": "near-miss",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 1,
+      "units": 1,
+      "evaluated_units": 1,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1034
+    },
+    "peopleblade-c44406b2-clean": {
+      "kind": "clean",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1770
+    },
+    "sys1-38defa67-violation": {
+      "kind": "violation",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 3,
+      "units": 3,
+      "evaluated_units": 3,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "test/gateway.test.ts",
+          "line": 106,
+          "score": 0.62
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 2217
+    },
+    "design-kit-d247e0e8-near-miss": {
+      "kind": "near-miss",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 2784
+    },
+    "wrench-e8f972ef-clean": {
+      "kind": "clean",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 1,
+      "units": 1,
+      "evaluated_units": 1,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1638
+    },
+    "peopleblade-d6b67124-violation": {
+      "kind": "violation",
+      "set": "heldout",
+      "status": "incomplete",
+      "requests": 1,
+      "units": 2,
+      "evaluated_units": 0,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 2056
+    },
+    "design-kit-4c2c84b3-near-miss": {
+      "kind": "near-miss",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 1,
+      "units": 1,
+      "evaluated_units": 1,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1216
+    },
+    "design-kit-7167cddd-clean": {
+      "kind": "clean",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 1,
+      "units": 1,
+      "evaluated_units": 1,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1468
+    },
+    "design-kit-a89034f4-violation": {
+      "kind": "violation",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/react/product-marketing.test.tsx",
+          "line": 481,
+          "score": 0.49
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 1511
+    },
+    "algal-lab-05729432-near-miss": {
+      "kind": "near-miss",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1531
+    },
+    "design-kit-655bdb6d-clean": {
+      "kind": "clean",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1537
+    },
+    "peopleblade-f010c502-violation": {
+      "kind": "violation",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 3,
+      "units": 3,
+      "evaluated_units": 3,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/lib/server/passwordless-readiness.test.ts",
+          "line": 119,
+          "score": 0.71
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 2236
+    },
+    "design-kit-c7d8300a-near-miss": {
+      "kind": "near-miss",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1512
+    },
+    "peopleblade-6e68ec68-clean": {
+      "kind": "clean",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1567
+    },
+    "sys1-09b3ad5c-violation": {
+      "kind": "violation",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 3,
+      "units": 3,
+      "evaluated_units": 3,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "test/gateway.test.ts",
+          "line": 113,
+          "score": 0.78
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 1982
+    },
+    "sys1-cd222957-near-miss": {
+      "kind": "near-miss",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1659
+    },
+    "peopleblade-13520e05-clean": {
+      "kind": "clean",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 1,
+      "units": 1,
+      "evaluated_units": 1,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1063
+    },
+    "design-kit-15d8b310-violation": {
+      "kind": "violation",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 3,
+      "units": 3,
+      "evaluated_units": 3,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/article.test.ts",
+          "line": 239,
+          "score": 0.63
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 2343
+    },
+    "design-kit-26258f1a-near-miss": {
+      "kind": "near-miss",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1742
+    },
+    "design-kit-999dfffd-clean": {
+      "kind": "clean",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 1,
+      "units": 1,
+      "evaluated_units": 1,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1042
+    },
+    "algal-lab-5d122c95-violation": {
+      "kind": "violation",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/study.test.ts",
+          "line": 82,
+          "score": 0.6599999999999999
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 1740
+    },
+    "peopleblade-7f0fce36-near-miss": {
+      "kind": "near-miss",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1619
+    },
+    "design-kit-15b07960-clean": {
+      "kind": "clean",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 1,
+      "units": 1,
+      "evaluated_units": 1,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1048
+    },
+    "sys1-b9e423db-violation": {
+      "kind": "violation",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 5,
+      "units": 5,
+      "evaluated_units": 5,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "test/gateway.test.ts",
+          "line": 99,
+          "score": 0.33999999999999997
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 2965
+    },
+    "peopleblade-26736619-near-miss": {
+      "kind": "near-miss",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1548
+    },
+    "peopleblade-631de298-clean": {
+      "kind": "clean",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 1,
+      "units": 1,
+      "evaluated_units": 1,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1328
+    },
+    "design-kit-eddbed1d-violation": {
+      "kind": "violation",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 1,
+      "units": 1,
+      "evaluated_units": 1,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/browser/foil.test.ts",
+          "line": 1,
+          "score": 0.21999999999999997
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 1019
+    },
+    "design-kit-a07fb139-near-miss": {
+      "kind": "near-miss",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 3,
+      "units": 3,
+      "evaluated_units": 3,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1913
+    },
+    "peopleblade-f4e3b42b-clean": {
+      "kind": "clean",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 5,
+      "units": 5,
+      "evaluated_units": 5,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 2932
+    },
+    "sys1-83475465-violation": {
+      "kind": "violation",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 3,
+      "units": 3,
+      "evaluated_units": 3,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "test/local-engine.test.ts",
+          "line": 111,
+          "score": 0.6699999999999999
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 2124
+    },
+    "peopleblade-9a940449-near-miss": {
+      "kind": "near-miss",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 3,
+      "units": 3,
+      "evaluated_units": 3,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 2299
+    },
+    "design-kit-4e2c6345-clean": {
+      "kind": "clean",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 1,
+      "units": 1,
+      "evaluated_units": 1,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1493
+    },
+    "sys1-e153df3a-violation": {
+      "kind": "violation",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "test/verify.test.ts",
+          "line": 45,
+          "score": 0.61
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 1727
+    },
+    "peopleblade-9ed4cbb7-near-miss": {
+      "kind": "near-miss",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 6,
+      "units": 6,
+      "evaluated_units": 6,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 8377
+    },
+    "peopleblade-4d5b2a88-clean": {
+      "kind": "clean",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 3,
+      "units": 3,
+      "evaluated_units": 3,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 2757
+    },
+    "algal-lab-9e94d41c-violation": {
+      "kind": "violation",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/heterogeneous.test.ts",
+          "line": 72,
+          "score": 0.81
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 1452
+    },
+    "peopleblade-9f6dfcb0-near-miss": {
+      "kind": "near-miss",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1604
+    },
+    "sys1-13e3328e-clean": {
+      "kind": "clean",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1460
+    },
+    "peopleblade-29d4d566-violation": {
+      "kind": "violation",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/local/migration-compatibility.test.ts",
+          "line": 342,
+          "score": 0.45999999999999996
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 1651
+    },
+    "peopleblade-cca51d44-near-miss": {
+      "kind": "near-miss",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1891
+    },
+    "design-kit-73972e33-clean": {
+      "kind": "clean",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1759
+    },
+    "sys1-67197a91-violation": {
+      "kind": "violation",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "test/config.test.ts",
+          "line": 44,
+          "score": 0.6799999999999999
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 1717
+    },
+    "peopleblade-07f6eeb3-near-miss": {
+      "kind": "near-miss",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 4,
+      "units": 4,
+      "evaluated_units": 4,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 2468
+    },
+    "peopleblade-0a11af31-clean": {
+      "kind": "clean",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 1,
+      "units": 1,
+      "evaluated_units": 1,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1067
+    },
+    "sys1-696a40c0-violation": {
+      "kind": "violation",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 1,
+      "units": 1,
+      "evaluated_units": 1,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "test/audit-detectors.test.ts",
+          "line": 1,
+          "score": 0.22999999999999998
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 1246
+    },
+    "peopleblade-d8dfd59f-near-miss": {
+      "kind": "near-miss",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 4,
+      "units": 4,
+      "evaluated_units": 4,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 2734
+    },
+    "peopleblade-5e9a338b-clean": {
+      "kind": "clean",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1579
+    },
+    "sys1-3960a9be-violation": {
+      "kind": "violation",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "test/gateway.test.ts",
+          "line": 1,
+          "score": 0.4
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 1539
+    },
+    "design-kit-76058d43-near-miss": {
+      "kind": "near-miss",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1859
+    },
+    "peopleblade-e8281dc5-clean": {
+      "kind": "clean",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 1,
+      "units": 1,
+      "evaluated_units": 1,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1133
+    },
+    "algal-lab-07423984-violation": {
+      "kind": "violation",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 3,
+      "units": 3,
+      "evaluated_units": 3,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/contracts.test.ts",
+          "line": 42,
+          "score": 0.5700000000000001
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 3246
+    },
+    "peopleblade-9a5d859e-near-miss": {
+      "kind": "near-miss",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 1,
+      "units": 1,
+      "evaluated_units": 1,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1195
+    },
+    "peopleblade-2a33cf9b-clean": {
+      "kind": "clean",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 1,
+      "units": 1,
+      "evaluated_units": 1,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1120
+    },
+    "sys1-3fa98af5-violation": {
+      "kind": "violation",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "test/protocol.test.ts",
+          "line": 1,
+          "score": 0.8
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 1572
+    },
+    "design-kit-6b640b4e-near-miss": {
+      "kind": "near-miss",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1785
+    },
+    "design-kit-b24c966f-clean": {
+      "kind": "clean",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 1,
+      "units": 1,
+      "evaluated_units": 1,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1097
+    },
+    "peopleblade-82fc7f84-violation": {
+      "kind": "violation",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 1,
+      "units": 1,
+      "evaluated_units": 1,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/local/exposure-adapters.test.ts",
+          "line": 359,
+          "score": 0.5900000000000001
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 1149
+    },
+    "peopleblade-e0281313-near-miss": {
+      "kind": "near-miss",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 3,
+      "units": 3,
+      "evaluated_units": 3,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 3707
+    },
+    "design-kit-322411bc-clean": {
+      "kind": "clean",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1649
+    },
+    "design-kit-230d3fbf-violation": {
+      "kind": "violation",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 1,
+      "units": 1,
+      "evaluated_units": 1,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/status-page.test.ts",
+          "line": 32,
+          "score": 0.47
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 1068
+    },
+    "design-kit-9d803f77-near-miss": {
+      "kind": "near-miss",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 1,
+      "units": 1,
+      "evaluated_units": 1,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1148
+    },
+    "peopleblade-22e2bb4c-clean": {
+      "kind": "clean",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 1,
+      "units": 1,
+      "evaluated_units": 1,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1150
+    }
+  }
+}
