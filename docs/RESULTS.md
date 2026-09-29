@@ -11,6 +11,9 @@ typechecks, because it already filtered the output with `grep`.
 A [second run on the Sys1 review checkpoint](REVIEW-TASK-RESULT-2026-09.md)
 also found no saving: when directed to use it, the agent spent 84% more tokens
 and 145% more time, and Jev flagged 3 of 16 planted problems.
+A follow-up [recall run](REVIEW-RECALL-RESULT-2026-09.md) found Jev
+caught 3 of 16 planted problems even when given only the planted file and
+matching rule.
 
 The earlier development replay measured **82% fewer text tokens for noisy check
 results**, in three successful Devin logs, including counted skill overhead.
