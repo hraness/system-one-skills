@@ -14,6 +14,9 @@ and 145% more time, and Jev flagged 3 of 16 planted problems.
 A follow-up [recall run](REVIEW-RECALL-RESULT-2026-09.md) found Jev
 caught 3 of 16 planted problems even when given only the planted file and
 matching rule.
+A larger [recall run on the removed-assertion rule](ASSERTION-RECALL-RESULT-2026-09.md)
+(153 cases from real tests) found Jev caught 5 of 21 held-out violations with
+no false alarms, well below the 80% bar for turning the rule on by default.
 
 The earlier development replay measured **82% fewer text tokens for noisy check
 results**, in three successful Devin logs, including counted skill overhead.

@@ -1,0 +1,1767 @@
+{
+  "sys1": "d36d8fba56e5f1c5e75c4f4fa4312a8ab4eb77e1",
+  "route": "typesafe/jev-1.13.0",
+  "results": {
+    "ghostget-6940c851-violation": {
+      "kind": "violation",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/media/manifest.test.ts",
+          "line": 1395
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 1548
+    },
+    "ghostget-a2b32108-near-miss": {
+      "kind": "near-miss",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1812
+    },
+    "wordcell-e76f807c-clean": {
+      "kind": "clean",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 1,
+      "units": 1,
+      "evaluated_units": 1,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1108
+    },
+    "spongev2-fd3fdfc9-violation": {
+      "kind": "violation",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/research/experimental/evidence.test.ts",
+          "line": 344
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 1761
+    },
+    "wordcell-6d5c578f-near-miss": {
+      "kind": "near-miss",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1631
+    },
+    "ghostget-e8f855c5-clean": {
+      "kind": "clean",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 3,
+      "units": 3,
+      "evaluated_units": 3,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 2287
+    },
+    "ghostget-d8b77d10-violation": {
+      "kind": "violation",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1493
+    },
+    "ghostget-a2e4972c-near-miss": {
+      "kind": "near-miss",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 3,
+      "units": 3,
+      "evaluated_units": 3,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1979
+    },
+    "ghostget-30e4c3d3-clean": {
+      "kind": "clean",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 1,
+      "units": 1,
+      "evaluated_units": 1,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1104
+    },
+    "ghostget-555a5e7c-violation": {
+      "kind": "violation",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 4,
+      "units": 4,
+      "evaluated_units": 4,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 2590
+    },
+    "ghostget-e8f972ef-near-miss": {
+      "kind": "near-miss",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1712
+    },
+    "algal-086013f5-clean": {
+      "kind": "clean",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1611
+    },
+    "wordcell-4fca7380-violation": {
+      "kind": "violation",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 1,
+      "units": 1,
+      "evaluated_units": 1,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1092
+    },
+    "ghostget-db5b2757-near-miss": {
+      "kind": "near-miss",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1503
+    },
+    "spongev2-c468ebc9-clean": {
+      "kind": "clean",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 1,
+      "units": 1,
+      "evaluated_units": 1,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1057
+    },
+    "ghostget-bc033494-violation": {
+      "kind": "violation",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/media/manifest.test.ts",
+          "line": 1395
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 1563
+    },
+    "ghostget-d54cf1fc-near-miss": {
+      "kind": "near-miss",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 5,
+      "units": 5,
+      "evaluated_units": 5,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 2985
+    },
+    "ghostget-a713215a-clean": {
+      "kind": "clean",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1667
+    },
+    "ghostget-423b5e41-violation": {
+      "kind": "violation",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1593
+    },
+    "ghostget-3d654af7-near-miss": {
+      "kind": "near-miss",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1822
+    },
+    "ghostget-af759ce2-clean": {
+      "kind": "clean",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1574
+    },
+    "algal-6e5864f7-violation": {
+      "kind": "violation",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/contract.test.ts",
+          "line": 20
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 1737
+    },
+    "ghostget-57e326be-near-miss": {
+      "kind": "near-miss",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 1,
+      "units": 1,
+      "evaluated_units": 1,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 989
+    },
+    "ghostget-bc326853-clean": {
+      "kind": "clean",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1478
+    },
+    "ghostget-06b90d4c-violation": {
+      "kind": "violation",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 3,
+      "units": 3,
+      "evaluated_units": 3,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 2184
+    },
+    "ghostget-b9105f88-near-miss": {
+      "kind": "near-miss",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1730
+    },
+    "ghostget-b160d6ef-clean": {
+      "kind": "clean",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 1,
+      "units": 1,
+      "evaluated_units": 1,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1133
+    },
+    "ghostget-42fbc4d0-violation": {
+      "kind": "violation",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 3,
+      "units": 3,
+      "evaluated_units": 3,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 2176
+    },
+    "ghostget-7aa6da5c-near-miss": {
+      "kind": "near-miss",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 4,
+      "units": 4,
+      "evaluated_units": 4,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 2568
+    },
+    "ghostget-651672fd-clean": {
+      "kind": "clean",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 1,
+      "units": 1,
+      "evaluated_units": 1,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1125
+    },
+    "spongev2-f07dee67-violation": {
+      "kind": "violation",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1549
+    },
+    "ghostget-7d23159c-near-miss": {
+      "kind": "near-miss",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1773
+    },
+    "algal-7ecf7a9b-clean": {
+      "kind": "clean",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 1,
+      "units": 1,
+      "evaluated_units": 1,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1154
+    },
+    "spongev2-57b73f14-violation": {
+      "kind": "violation",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 1,
+      "units": 1,
+      "evaluated_units": 1,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1153
+    },
+    "ghostget-21279a11-near-miss": {
+      "kind": "near-miss",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 3,
+      "units": 3,
+      "evaluated_units": 3,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 2146
+    },
+    "algal-cad8ebd7-clean": {
+      "kind": "clean",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1708
+    },
+    "ghostget-aa925b4d-violation": {
+      "kind": "violation",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/model.test.ts",
+          "line": 2236
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 1832
+    },
+    "spongev2-20517ca9-near-miss": {
+      "kind": "near-miss",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1546
+    },
+    "ghostget-8e28f2e4-clean": {
+      "kind": "clean",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1589
+    },
+    "ghostget-add454d7-violation": {
+      "kind": "violation",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1612
+    },
+    "spongev2-495f3e89-near-miss": {
+      "kind": "near-miss",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 1,
+      "units": 1,
+      "evaluated_units": 1,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1140
+    },
+    "ghostget-331ec8e2-clean": {
+      "kind": "clean",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1672
+    },
+    "algal-edb0809c-violation": {
+      "kind": "violation",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 1,
+      "units": 1,
+      "evaluated_units": 1,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1016
+    },
+    "ghostget-1ca41f4a-near-miss": {
+      "kind": "near-miss",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 4,
+      "units": 4,
+      "evaluated_units": 4,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 2615
+    },
+    "algal-41c304b3-clean": {
+      "kind": "clean",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1638
+    },
+    "ghostget-efe8cf62-violation": {
+      "kind": "violation",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1662
+    },
+    "ghostget-edbe5672-near-miss": {
+      "kind": "near-miss",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 4,
+      "units": 4,
+      "evaluated_units": 4,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 2514
+    },
+    "ghostget-307fec6f-clean": {
+      "kind": "clean",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1642
+    },
+    "wordcell-46c9cccf-violation": {
+      "kind": "violation",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 4,
+      "units": 4,
+      "evaluated_units": 4,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/clip/persist.test.ts",
+          "line": 403
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 2782
+    },
+    "wordcell-ffa22cc1-near-miss": {
+      "kind": "near-miss",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1619
+    },
+    "spongev2-45d1e3d9-clean": {
+      "kind": "clean",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1523
+    },
+    "wordcell-ff2ebf49-violation": {
+      "kind": "violation",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1716
+    },
+    "ghostget-1018b0be-near-miss": {
+      "kind": "near-miss",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 3,
+      "units": 3,
+      "evaluated_units": 3,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 2131
+    },
+    "ghostget-2eeb888f-clean": {
+      "kind": "clean",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1592
+    },
+    "ghostget-79672147-violation": {
+      "kind": "violation",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 1,
+      "units": 1,
+      "evaluated_units": 1,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1124
+    },
+    "ghostget-f8469d96-near-miss": {
+      "kind": "near-miss",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 5,
+      "units": 5,
+      "evaluated_units": 5,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 3480
+    },
+    "ghostget-28421daa-clean": {
+      "kind": "clean",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1591
+    },
+    "wordcell-410ed95b-violation": {
+      "kind": "violation",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/clip/persist.test.ts",
+          "line": 562
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 1559
+    },
+    "algal-97c989bb-near-miss": {
+      "kind": "near-miss",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1531
+    },
+    "wordcell-926e2b97-clean": {
+      "kind": "clean",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 1,
+      "units": 1,
+      "evaluated_units": 1,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1031
+    },
+    "wordcell-61c38212-violation": {
+      "kind": "violation",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 1,
+      "units": 1,
+      "evaluated_units": 1,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1064
+    },
+    "spongev2-cd8ff745-near-miss": {
+      "kind": "near-miss",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1526
+    },
+    "spongev2-e6f0dc89-clean": {
+      "kind": "clean",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 1,
+      "units": 1,
+      "evaluated_units": 1,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1045
+    },
+    "algal-9a968eda-violation": {
+      "kind": "violation",
+      "set": "calibration",
+      "status": "incomplete",
+      "requests": 0,
+      "units": 0,
+      "evaluated_units": 0,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 315
+    },
+    "wordcell-08269807-near-miss": {
+      "kind": "near-miss",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1667
+    },
+    "wordcell-3f251978-clean": {
+      "kind": "clean",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 1,
+      "units": 1,
+      "evaluated_units": 1,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1318
+    },
+    "wordcell-2d6a17b5-violation": {
+      "kind": "violation",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1686
+    },
+    "spongev2-04bf8201-near-miss": {
+      "kind": "near-miss",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 3,
+      "units": 3,
+      "evaluated_units": 3,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 2026
+    },
+    "wordcell-0165b421-clean": {
+      "kind": "clean",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 1,
+      "units": 1,
+      "evaluated_units": 1,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1025
+    },
+    "spongev2-c007130f-violation": {
+      "kind": "violation",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 3,
+      "units": 3,
+      "evaluated_units": 3,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 2085
+    },
+    "ghostget-85bc7955-near-miss": {
+      "kind": "near-miss",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 3,
+      "units": 3,
+      "evaluated_units": 3,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 2286
+    },
+    "ghostget-663b8cde-clean": {
+      "kind": "clean",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 1,
+      "units": 1,
+      "evaluated_units": 1,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1186
+    },
+    "spongev2-803d81d8-violation": {
+      "kind": "violation",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/research/experimental/closed-score.test.ts",
+          "line": 409
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 1573
+    },
+    "ghostget-0ab5942f-near-miss": {
+      "kind": "near-miss",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 1,
+      "units": 1,
+      "evaluated_units": 1,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1022
+    },
+    "ghostget-10069647-clean": {
+      "kind": "clean",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 1,
+      "units": 1,
+      "evaluated_units": 1,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1226
+    },
+    "spongev2-1cc47899-violation": {
+      "kind": "violation",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 1,
+      "units": 1,
+      "evaluated_units": 1,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1060
+    },
+    "spongev2-1be978a1-near-miss": {
+      "kind": "near-miss",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1541
+    },
+    "ghostget-5349022d-clean": {
+      "kind": "clean",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 1,
+      "units": 1,
+      "evaluated_units": 1,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1283
+    },
+    "spongev2-881a5f97-violation": {
+      "kind": "violation",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1766
+    },
+    "wordcell-c90798cc-near-miss": {
+      "kind": "near-miss",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1759
+    },
+    "wordcell-9fec758d-clean": {
+      "kind": "clean",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 2481
+    },
+    "wordcell-55b1830d-violation": {
+      "kind": "violation",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1797
+    },
+    "ghostget-a8975a4d-near-miss": {
+      "kind": "near-miss",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1526
+    },
+    "ghostget-4fde85b3-clean": {
+      "kind": "clean",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1579
+    },
+    "spongev2-63e40d83-violation": {
+      "kind": "violation",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 1,
+      "units": 1,
+      "evaluated_units": 1,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1307
+    },
+    "wordcell-66ee9192-near-miss": {
+      "kind": "near-miss",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 3,
+      "units": 3,
+      "evaluated_units": 3,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 2004
+    },
+    "ghostget-dafc8daf-clean": {
+      "kind": "clean",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1692
+    },
+    "spongev2-4824395a-violation": {
+      "kind": "violation",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 3,
+      "units": 3,
+      "evaluated_units": 3,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 2209
+    },
+    "ghostget-4e2a56ad-near-miss": {
+      "kind": "near-miss",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1787
+    },
+    "wordcell-3487dfcd-clean": {
+      "kind": "clean",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 3,
+      "units": 3,
+      "evaluated_units": 3,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 3011
+    },
+    "sys1-c0ab9a0c-violation": {
+      "kind": "violation",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 3,
+      "units": 3,
+      "evaluated_units": 3,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "test/local-engine.test.ts",
+          "line": 105
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 2043
+    },
+    "sys1-c512329c-near-miss": {
+      "kind": "near-miss",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 1,
+      "units": 1,
+      "evaluated_units": 1,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1045
+    },
+    "peopleblade-c44406b2-clean": {
+      "kind": "clean",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1597
+    },
+    "sys1-38defa67-violation": {
+      "kind": "violation",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 3,
+      "units": 3,
+      "evaluated_units": 3,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 2010
+    },
+    "design-kit-d247e0e8-near-miss": {
+      "kind": "near-miss",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1813
+    },
+    "wrench-e8f972ef-clean": {
+      "kind": "clean",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 1,
+      "units": 1,
+      "evaluated_units": 1,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 971
+    },
+    "peopleblade-d6b67124-violation": {
+      "kind": "violation",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1504
+    },
+    "design-kit-4c2c84b3-near-miss": {
+      "kind": "near-miss",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 1,
+      "units": 1,
+      "evaluated_units": 1,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1080
+    },
+    "design-kit-7167cddd-clean": {
+      "kind": "clean",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 1,
+      "units": 1,
+      "evaluated_units": 1,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 987
+    },
+    "design-kit-a89034f4-violation": {
+      "kind": "violation",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1563
+    },
+    "algal-lab-05729432-near-miss": {
+      "kind": "near-miss",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1501
+    },
+    "design-kit-655bdb6d-clean": {
+      "kind": "clean",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1592
+    },
+    "peopleblade-f010c502-violation": {
+      "kind": "violation",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 3,
+      "units": 3,
+      "evaluated_units": 3,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/lib/server/passwordless-readiness.test.ts",
+          "line": 119
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 1800
+    },
+    "design-kit-c7d8300a-near-miss": {
+      "kind": "near-miss",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1427
+    },
+    "peopleblade-6e68ec68-clean": {
+      "kind": "clean",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1461
+    },
+    "sys1-09b3ad5c-violation": {
+      "kind": "violation",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 3,
+      "units": 3,
+      "evaluated_units": 3,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "test/gateway.test.ts",
+          "line": 113
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 2040
+    },
+    "sys1-cd222957-near-miss": {
+      "kind": "near-miss",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1455
+    },
+    "peopleblade-13520e05-clean": {
+      "kind": "clean",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 1,
+      "units": 1,
+      "evaluated_units": 1,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 999
+    },
+    "design-kit-15d8b310-violation": {
+      "kind": "violation",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 3,
+      "units": 3,
+      "evaluated_units": 3,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 2025
+    },
+    "design-kit-26258f1a-near-miss": {
+      "kind": "near-miss",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1485
+    },
+    "design-kit-999dfffd-clean": {
+      "kind": "clean",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 1,
+      "units": 1,
+      "evaluated_units": 1,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1100
+    },
+    "algal-lab-5d122c95-violation": {
+      "kind": "violation",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1507
+    },
+    "peopleblade-7f0fce36-near-miss": {
+      "kind": "near-miss",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1630
+    },
+    "design-kit-15b07960-clean": {
+      "kind": "clean",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 1,
+      "units": 1,
+      "evaluated_units": 1,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1042
+    },
+    "sys1-b9e423db-violation": {
+      "kind": "violation",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 5,
+      "units": 5,
+      "evaluated_units": 5,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 2840
+    },
+    "peopleblade-26736619-near-miss": {
+      "kind": "near-miss",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1448
+    },
+    "peopleblade-631de298-clean": {
+      "kind": "clean",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 1,
+      "units": 1,
+      "evaluated_units": 1,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 932
+    },
+    "design-kit-eddbed1d-violation": {
+      "kind": "violation",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 1,
+      "units": 1,
+      "evaluated_units": 1,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1025
+    },
+    "design-kit-a07fb139-near-miss": {
+      "kind": "near-miss",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 3,
+      "units": 3,
+      "evaluated_units": 3,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1946
+    },
+    "peopleblade-f4e3b42b-clean": {
+      "kind": "clean",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 5,
+      "units": 5,
+      "evaluated_units": 5,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 3835
+    },
+    "sys1-83475465-violation": {
+      "kind": "violation",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 3,
+      "units": 3,
+      "evaluated_units": 3,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 2087
+    },
+    "peopleblade-9a940449-near-miss": {
+      "kind": "near-miss",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 3,
+      "units": 3,
+      "evaluated_units": 3,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1911
+    },
+    "design-kit-4e2c6345-clean": {
+      "kind": "clean",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 1,
+      "units": 1,
+      "evaluated_units": 1,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1002
+    },
+    "sys1-e153df3a-violation": {
+      "kind": "violation",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1463
+    },
+    "peopleblade-9ed4cbb7-near-miss": {
+      "kind": "near-miss",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 6,
+      "units": 6,
+      "evaluated_units": 6,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 3530
+    },
+    "peopleblade-4d5b2a88-clean": {
+      "kind": "clean",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 3,
+      "units": 3,
+      "evaluated_units": 3,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 2079
+    },
+    "algal-lab-9e94d41c-violation": {
+      "kind": "violation",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/heterogeneous.test.ts",
+          "line": 72
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 1433
+    },
+    "peopleblade-9f6dfcb0-near-miss": {
+      "kind": "near-miss",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1464
+    },
+    "sys1-13e3328e-clean": {
+      "kind": "clean",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1885
+    },
+    "peopleblade-29d4d566-violation": {
+      "kind": "violation",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1427
+    },
+    "peopleblade-cca51d44-near-miss": {
+      "kind": "near-miss",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1531
+    },
+    "design-kit-73972e33-clean": {
+      "kind": "clean",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1559
+    },
+    "sys1-67197a91-violation": {
+      "kind": "violation",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 2064
+    },
+    "peopleblade-07f6eeb3-near-miss": {
+      "kind": "near-miss",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 4,
+      "units": 4,
+      "evaluated_units": 4,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 2431
+    },
+    "peopleblade-0a11af31-clean": {
+      "kind": "clean",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 1,
+      "units": 1,
+      "evaluated_units": 1,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1033
+    },
+    "sys1-696a40c0-violation": {
+      "kind": "violation",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 1,
+      "units": 1,
+      "evaluated_units": 1,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1026
+    },
+    "peopleblade-d8dfd59f-near-miss": {
+      "kind": "near-miss",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 4,
+      "units": 4,
+      "evaluated_units": 4,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 2448
+    },
+    "peopleblade-5e9a338b-clean": {
+      "kind": "clean",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1532
+    },
+    "sys1-3960a9be-violation": {
+      "kind": "violation",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1583
+    },
+    "design-kit-76058d43-near-miss": {
+      "kind": "near-miss",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1675
+    },
+    "peopleblade-e8281dc5-clean": {
+      "kind": "clean",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 1,
+      "units": 1,
+      "evaluated_units": 1,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1035
+    },
+    "algal-lab-07423984-violation": {
+      "kind": "violation",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 3,
+      "units": 3,
+      "evaluated_units": 3,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 2150
+    },
+    "peopleblade-9a5d859e-near-miss": {
+      "kind": "near-miss",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 1,
+      "units": 1,
+      "evaluated_units": 1,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 972
+    },
+    "peopleblade-2a33cf9b-clean": {
+      "kind": "clean",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 1,
+      "units": 1,
+      "evaluated_units": 1,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1042
+    },
+    "sys1-3fa98af5-violation": {
+      "kind": "violation",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "test/protocol.test.ts",
+          "line": 1
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 1557
+    },
+    "design-kit-6b640b4e-near-miss": {
+      "kind": "near-miss",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1425
+    },
+    "design-kit-b24c966f-clean": {
+      "kind": "clean",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 1,
+      "units": 1,
+      "evaluated_units": 1,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1007
+    },
+    "peopleblade-82fc7f84-violation": {
+      "kind": "violation",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 1,
+      "units": 1,
+      "evaluated_units": 1,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1023
+    },
+    "peopleblade-e0281313-near-miss": {
+      "kind": "near-miss",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 3,
+      "units": 3,
+      "evaluated_units": 3,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1908
+    },
+    "design-kit-322411bc-clean": {
+      "kind": "clean",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1590
+    },
+    "design-kit-230d3fbf-violation": {
+      "kind": "violation",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 1,
+      "units": 1,
+      "evaluated_units": 1,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1076
+    },
+    "design-kit-9d803f77-near-miss": {
+      "kind": "near-miss",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 1,
+      "units": 1,
+      "evaluated_units": 1,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1141
+    },
+    "peopleblade-22e2bb4c-clean": {
+      "kind": "clean",
+      "set": "heldout",
+      "status": "complete",
+      "requests": 1,
+      "units": 1,
+      "evaluated_units": 1,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 1041
+    }
+  }
+}
