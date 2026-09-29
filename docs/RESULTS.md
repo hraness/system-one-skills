@@ -5,7 +5,9 @@ The current [numeric scorecard](SCORECARD.md) is the clearest headline: across
 text** (32.65% Codex, 38.90% Devin) with zero preservation failures. Among the
 28 outputs that crossed the compaction guard, the reduction was 90.61%. This is
 text-size evidence at the tool-result boundary, not provider-token or
-whole-task savings.
+whole-task savings. A [whole-task run in Claude Code](WHOLE-TASK-RESULT-2026-09.md)
+found no token or time saving: Sonnet never called the skill on noisy
+typechecks, because it already filtered the output with `grep`.
 
 The earlier development replay measured **82% fewer text tokens for noisy check
 results**, in three successful Devin logs, including counted skill overhead.
