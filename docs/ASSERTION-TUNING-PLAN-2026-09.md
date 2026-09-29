@@ -69,3 +69,11 @@ stays as it is; further gains would need a Jev model or prompt change.
 > throw-on-failure check in this diff, and after the change it only sets up,
 > calls code or cleans up, with no assertion and no assertion-named or newly
 > added helper call left.
+
+## Selection (recorded before the held-out run)
+
+Calibration, best cutoff per variant with false alarms at most 5%: V0 28/30
+at 0.2 (2/60 false alarms), V1 28/30 at 0.1 (1/60). Tie on recall, so the
+higher cutoff wins: **V0 wording, `medium` 0.2**. V1 met the bar, so V2 is not
+run. Held-out runs once on scratch Sys1 `tune/assertion-v0-t20` `a573728`
+(`main` `d36d8fb` with only this rule's `medium` changed to 0.2).
