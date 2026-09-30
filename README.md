@@ -98,12 +98,10 @@ Codex and Devin sessions, `system-one-verify` reduced the UTF-8 text presented t
 **35.20%**. It shortened 28 outputs and passed the other 535 through unchanged.
 Every replay preservation check passed.
 
-This is a text-size measurement. Whole-task token savings, faster completion,
-and improved task success have not been demonstrated. The
-[scorecard](https://github.com/hraness/system-one-skills/blob/main/docs/SCORECARD.md)
-reports the provider breakdown, denominators, and preservation checks; the
-[results notes](https://github.com/hraness/system-one-skills/blob/main/docs/RESULTS.md)
-explain the earlier experiments and their limits.
+The [study and scorecard](https://github.com/hraness/system-one-skills/blob/main/docs/SCORECARD.md)
+give the replay's provider breakdown, denominators, and preservation checks.
+To measure whole-task token use, task success, and completion time, follow the
+[benchmark protocol](https://github.com/hraness/system-one-skills/blob/main/docs/BENCHMARK-HARNESS.md).
 
 <a id="all-skills"></a>
 

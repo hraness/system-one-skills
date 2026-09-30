@@ -161,7 +161,10 @@ Readers trust a page that states its limits plainly. They skim a page that repea
 ## Write captions, alt text, and credits
 
 - Write alt text for what the image shows in its context. Do not repeat the headline or start with “Image of”.
-- Use a caption to connect the image to the text. Do not explain what the image is not, and do not end on an epigram.
+- Make visible captions optional. Add one only when it helps the reader understand a result, use a control, or make a decision. Remove generic “Illustration” labels, invented-fixture notices, and hints that repeat an obvious label.
+- Use shared foreground and surface pairs for interactive controls. Control text and glyphs must reach at least 4.5:1 contrast in both themes, including selected, hover, and focus states. Never assume white is readable on a brand accent.
+- Keep accessible descriptions accurate and specific to the rendered state. Use “example” when that distinction matters; it does not require a visible disclaimer.
+- Preserve meaningful evidence captions, legal notices, and actual feature limits. State each once beside the claim it qualifies.
 - Credit tools and models by their current names.
 
 ## Write focused documentation
