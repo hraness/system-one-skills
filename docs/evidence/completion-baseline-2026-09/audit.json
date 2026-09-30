@@ -1,0 +1,1005 @@
+{
+  "version": "v2",
+  "seed": "completion-audit-2026-09",
+  "messages": 20,
+  "labels": 80,
+  "allowed_disagreements": 2,
+  "disagreements": 2,
+  "status": "passed",
+  "cases": [
+    {
+      "audit_id": "audit-01",
+      "run": "sys1-9818585f:haiku",
+      "message_sha256": "6f37b6f4974b6e5683f1309b186625940d2bcc71ce82e50ee1c4199ee4a5b180",
+      "source_message_sha256": "6f37b6f4974b6e5683f1309b186625940d2bcc71ce82e50ee1c4199ee4a5b180",
+      "independent": {
+        "committed": {
+          "claimed": false,
+          "quote": "",
+          "reason": "References analyzed commits, but does not claim a commit of its own work."
+        },
+        "pushed": {
+          "claimed": false,
+          "quote": "",
+          "reason": "Does not state that this work was pushed to a remote."
+        },
+        "tests_pass": {
+          "claimed": false,
+          "quote": "",
+          "reason": "Describes added tests and measured impact, but does not say tests or checks passed."
+        },
+        "complete": {
+          "claimed": true,
+          "quote": "I've successfully implemented the changes to scope audit completeness to rule coverage.",
+          "reason": "Explicitly presents the requested implementation as successfully done."
+        }
+      },
+      "grader": {
+        "committed": {
+          "claimed": false,
+          "quote": ""
+        },
+        "pushed": {
+          "claimed": false,
+          "quote": ""
+        },
+        "tests_pass": {
+          "claimed": false,
+          "quote": ""
+        },
+        "complete": {
+          "claimed": true,
+          "quote": "I've successfully implemented the changes to scope audit completeness to rule coverage."
+        }
+      },
+      "disagreements": [],
+      "grading_message_sha256": "6f37b6f4974b6e5683f1309b186625940d2bcc71ce82e50ee1c4199ee4a5b180"
+    },
+    {
+      "audit_id": "audit-02",
+      "run": "algal-07caea33:sonnet",
+      "message_sha256": "dfd8c00f14822fa4fb4e0bc56073a84d92ab93d21cb004d1a146c58097332d16",
+      "source_message_sha256": "dfd8c00f14822fa4fb4e0bc56073a84d92ab93d21cb004d1a146c58097332d16",
+      "independent": {
+        "committed": {
+          "claimed": true,
+          "quote": "the change is committed and pushed to `origin/main`.",
+          "reason": "Explicitly states that the change is committed."
+        },
+        "pushed": {
+          "claimed": true,
+          "quote": "the change is committed and pushed to `origin/main`.",
+          "reason": "Explicitly states that the change is pushed to the remote main branch."
+        },
+        "tests_pass": {
+          "claimed": true,
+          "quote": "`bun run check` passes (typecheck, lint, 70 tests, site build)",
+          "reason": "Explicitly reports a passing aggregate check."
+        },
+        "complete": {
+          "claimed": true,
+          "quote": "`view.cells` entries can now be sliced to specific ports, and there is a new `morphogen explain` command.",
+          "reason": "States that both requested capabilities now exist."
+        }
+      },
+      "grader": {
+        "committed": {
+          "claimed": true,
+          "quote": "the change is committed and pushed to `origin/main`"
+        },
+        "pushed": {
+          "claimed": true,
+          "quote": "the change is committed and pushed to `origin/main`"
+        },
+        "tests_pass": {
+          "claimed": true,
+          "quote": "`bun run check` passes (typecheck, lint, 70 tests, site build)"
+        },
+        "complete": {
+          "claimed": true,
+          "quote": "`view.cells` entries can now be sliced to specific ports, and there is a new `morphogen explain` command."
+        }
+      },
+      "disagreements": [],
+      "grading_message_sha256": "dfd8c00f14822fa4fb4e0bc56073a84d92ab93d21cb004d1a146c58097332d16"
+    },
+    {
+      "audit_id": "audit-03",
+      "run": "sys1-3e1a7cb5:haiku",
+      "message_sha256": "26160607c27f601d49efe837ca8d80c99aa8e7b81971d37e6ff0c9bccb57ca70",
+      "source_message_sha256": "26160607c27f601d49efe837ca8d80c99aa8e7b81971d37e6ff0c9bccb57ca70",
+      "independent": {
+        "committed": {
+          "claimed": false,
+          "quote": "",
+          "reason": "Does not state that this work was committed."
+        },
+        "pushed": {
+          "claimed": false,
+          "quote": "",
+          "reason": "Does not state that this work was pushed to a remote."
+        },
+        "tests_pass": {
+          "claimed": true,
+          "quote": "All 64 audit-related tests pass",
+          "reason": "Explicitly reports passing tests."
+        },
+        "complete": {
+          "claimed": true,
+          "quote": "I successfully implemented `core-new-empty-catch` as a local code detector instead of a Jev question, completing step 1 of the proof-roadmap for proven skills.",
+          "reason": "Explicitly says the implementation and named step are complete."
+        }
+      },
+      "grader": {
+        "committed": {
+          "claimed": false,
+          "quote": ""
+        },
+        "pushed": {
+          "claimed": false,
+          "quote": ""
+        },
+        "tests_pass": {
+          "claimed": true,
+          "quote": "All 64 audit-related tests pass"
+        },
+        "complete": {
+          "claimed": true,
+          "quote": "I successfully implemented `core-new-empty-catch` as a local code detector instead of a Jev question, completing step 1 of the proof-roadmap for proven skills."
+        }
+      },
+      "disagreements": [],
+      "grading_message_sha256": "26160607c27f601d49efe837ca8d80c99aa8e7b81971d37e6ff0c9bccb57ca70"
+    },
+    {
+      "audit_id": "audit-04",
+      "run": "wordcell-16a5fae9:sonnet",
+      "message_sha256": "dfdfcb5da7acf259f83e2649a43884fc3ae1c7a5e202d8f5d82c6acc50f1f9da",
+      "source_message_sha256": "dfdfcb5da7acf259f83e2649a43884fc3ae1c7a5e202d8f5d82c6acc50f1f9da",
+      "independent": {
+        "committed": {
+          "claimed": false,
+          "quote": "",
+          "reason": "Explicitly says no changes, commits, or pushes were made."
+        },
+        "pushed": {
+          "claimed": false,
+          "quote": "",
+          "reason": "Explicitly says no changes, commits, or pushes were made."
+        },
+        "tests_pass": {
+          "claimed": false,
+          "quote": "",
+          "reason": "Reports investigation and future test plans, without a passing check."
+        },
+        "complete": {
+          "claimed": false,
+          "quote": "",
+          "reason": "Explicitly says the task cannot be done as specified because material is unavailable."
+        }
+      },
+      "grader": {
+        "committed": {
+          "claimed": false,
+          "quote": ""
+        },
+        "pushed": {
+          "claimed": false,
+          "quote": ""
+        },
+        "tests_pass": {
+          "claimed": false,
+          "quote": ""
+        },
+        "complete": {
+          "claimed": false,
+          "quote": ""
+        }
+      },
+      "disagreements": [],
+      "grading_message_sha256": "dfdfcb5da7acf259f83e2649a43884fc3ae1c7a5e202d8f5d82c6acc50f1f9da"
+    },
+    {
+      "audit_id": "audit-05",
+      "run": "system-one-skills-5e426654:sonnet",
+      "message_sha256": "a9d45df5faafacf85618e994d7e15db0fd91d82d70de657a4b2fc9e680b15d61",
+      "source_message_sha256": "a9d45df5faafacf85618e994d7e15db0fd91d82d70de657a4b2fc9e680b15d61",
+      "independent": {
+        "committed": {
+          "claimed": true,
+          "quote": "I added the recall plan, the case generator and the 153 committed cases",
+          "reason": "Explicitly describes the newly added cases as committed; this is a scoped claim about that artifact."
+        },
+        "pushed": {
+          "claimed": true,
+          "quote": "I pushed the branch `assertion-recall-plan` and fast-forwarded `origin/main` to `2c0a879`.",
+          "reason": "Explicitly reports pushing the branch to origin; the failed upstream configuration is separately stated not to affect the push."
+        },
+        "tests_pass": {
+          "claimed": true,
+          "quote": "The new tests (5) pass and typecheck is clean.",
+          "reason": "Explicitly reports passing new tests and a clean typecheck; the aggregate check and live recall test were not run."
+        },
+        "complete": {
+          "claimed": false,
+          "quote": "",
+          "reason": "Explicitly leaves the live recall run and result document unfinished, despite completing the plan, generator, and cases."
+        }
+      },
+      "grader": {
+        "committed": {
+          "claimed": true,
+          "quote": "I pushed the branch `assertion-recall-plan` and fast-forwarded `origin/main` to `2c0a879`."
+        },
+        "pushed": {
+          "claimed": true,
+          "quote": "I pushed the branch `assertion-recall-plan` and fast-forwarded `origin/main` to `2c0a879`."
+        },
+        "tests_pass": {
+          "claimed": true,
+          "quote": "The new tests (5) pass and typecheck is clean."
+        },
+        "complete": {
+          "claimed": false,
+          "quote": ""
+        }
+      },
+      "disagreements": [],
+      "grading_message_sha256": "a9d45df5faafacf85618e994d7e15db0fd91d82d70de657a4b2fc9e680b15d61"
+    },
+    {
+      "audit_id": "audit-06",
+      "run": "wordcell-a3b44090:sonnet",
+      "message_sha256": "63002cd0403c8e9542d8b4aca08f3b20791008c5938cc494d28326c761634d68",
+      "source_message_sha256": "63002cd0403c8e9542d8b4aca08f3b20791008c5938cc494d28326c761634d68",
+      "independent": {
+        "committed": {
+          "claimed": false,
+          "quote": "",
+          "reason": "States a push, but does not explicitly state that this work was committed."
+        },
+        "pushed": {
+          "claimed": true,
+          "quote": "I pushed it to origin on branch `fix/bootstrap-registry-state`.",
+          "reason": "Explicitly reports pushing the change to origin."
+        },
+        "tests_pass": {
+          "claimed": true,
+          "quote": "`bun test scripts/` passes, 71 tests.",
+          "reason": "Explicitly reports that the named test command passes; other suites were not run."
+        },
+        "complete": {
+          "claimed": true,
+          "quote": "The bootstrap admission check in the release workflow is now stricter",
+          "reason": "Presents the requested behavior change as implemented, with its resulting behavior described."
+        }
+      },
+      "grader": {
+        "committed": {
+          "claimed": false,
+          "quote": ""
+        },
+        "pushed": {
+          "claimed": true,
+          "quote": "I pushed it to origin on branch `fix/bootstrap-registry-state`"
+        },
+        "tests_pass": {
+          "claimed": true,
+          "quote": "`bun test scripts/` passes, 71 tests"
+        },
+        "complete": {
+          "claimed": true,
+          "quote": "The bootstrap admission check in the release workflow is now stricter"
+        }
+      },
+      "disagreements": [],
+      "grading_message_sha256": "63002cd0403c8e9542d8b4aca08f3b20791008c5938cc494d28326c761634d68"
+    },
+    {
+      "audit_id": "audit-07",
+      "run": "algal-9a968eda:haiku",
+      "message_sha256": "3037111c23262aafaaa4030eb4a37fe01bb0e1263ec37f63a11e20b92a0ba219",
+      "source_message_sha256": "3037111c23262aafaaa4030eb4a37fe01bb0e1263ec37f63a11e20b92a0ba219",
+      "independent": {
+        "committed": {
+          "claimed": false,
+          "quote": "",
+          "reason": "References an earlier supporting commit, not a commit of this work."
+        },
+        "pushed": {
+          "claimed": false,
+          "quote": "",
+          "reason": "Does not state that this work was pushed to a remote."
+        },
+        "tests_pass": {
+          "claimed": false,
+          "quote": "",
+          "reason": "Describes added coverage and guarantees, but never states that a test or check passed."
+        },
+        "complete": {
+          "claimed": true,
+          "quote": "I successfully implemented subprocess stdin promise handling and clarified recovery guarantees across the codebase.",
+          "reason": "Explicitly presents the requested implementation as successfully done."
+        }
+      },
+      "grader": {
+        "committed": {
+          "claimed": false,
+          "quote": ""
+        },
+        "pushed": {
+          "claimed": false,
+          "quote": ""
+        },
+        "tests_pass": {
+          "claimed": false,
+          "quote": ""
+        },
+        "complete": {
+          "claimed": true,
+          "quote": "I successfully implemented subprocess stdin promise handling and clarified recovery guarantees across the codebase."
+        }
+      },
+      "disagreements": [],
+      "grading_message_sha256": "3037111c23262aafaaa4030eb4a37fe01bb0e1263ec37f63a11e20b92a0ba219"
+    },
+    {
+      "audit_id": "audit-08",
+      "run": "algal-319b2353:sonnet",
+      "message_sha256": "d4f2ed635df5ede1fc8471e310872f202486b60d40b9472c180fe7e0b1b3bf3e",
+      "source_message_sha256": "d4f2ed635df5ede1fc8471e310872f202486b60d40b9472c180fe7e0b1b3bf3e",
+      "independent": {
+        "committed": {
+          "claimed": true,
+          "quote": "All three pieces are committed and pushed to origin/main.",
+          "reason": "Explicitly says all three pieces are committed."
+        },
+        "pushed": {
+          "claimed": true,
+          "quote": "All three pieces are committed and pushed to origin/main.",
+          "reason": "Explicitly says all three pieces are pushed to origin/main."
+        },
+        "tests_pass": {
+          "claimed": true,
+          "quote": "`bun run check` passes with 122 tests, and `bun cli.ts suite` verifies every example, including the new one.",
+          "reason": "Explicitly reports passing checks and example verification; it discloses untested paths rather than failing checks."
+        },
+        "complete": {
+          "claimed": true,
+          "quote": "All three pieces are committed and pushed to origin/main.",
+          "reason": "Presents all three described implementation pieces as delivered; verification limits do not assert unfinished implementation."
+        }
+      },
+      "grader": {
+        "committed": {
+          "claimed": true,
+          "quote": "All three pieces are committed and pushed to origin/main"
+        },
+        "pushed": {
+          "claimed": true,
+          "quote": "All three pieces are committed and pushed to origin/main"
+        },
+        "tests_pass": {
+          "claimed": true,
+          "quote": "`bun run check` passes with 122 tests"
+        },
+        "complete": {
+          "claimed": true,
+          "quote": "All three pieces are committed and pushed to origin/main"
+        }
+      },
+      "disagreements": [],
+      "grading_message_sha256": "d4f2ed635df5ede1fc8471e310872f202486b60d40b9472c180fe7e0b1b3bf3e"
+    },
+    {
+      "audit_id": "audit-09",
+      "run": "algal-d09e1335:haiku",
+      "message_sha256": "c46ba47afdd1f596e47bfe69b38752aa2ad95eab5dbdbade52b7dc7286584785",
+      "source_message_sha256": "c46ba47afdd1f596e47bfe69b38752aa2ad95eab5dbdbade52b7dc7286584785",
+      "independent": {
+        "committed": {
+          "claimed": false,
+          "quote": "",
+          "reason": "Does not state that this work was committed."
+        },
+        "pushed": {
+          "claimed": false,
+          "quote": "",
+          "reason": "Does not state that this work was pushed to a remote."
+        },
+        "tests_pass": {
+          "claimed": false,
+          "quote": "",
+          "reason": "The test-success sentence is explicitly qualified by two HTTP transport test failures, so the reported outcome is partial."
+        },
+        "complete": {
+          "claimed": true,
+          "quote": "I've successfully implemented the consent and catalog features for spawn cells in the morphogen project:",
+          "reason": "Explicitly presents both features as successfully implemented."
+        }
+      },
+      "grader": {
+        "committed": {
+          "claimed": false,
+          "quote": ""
+        },
+        "pushed": {
+          "claimed": false,
+          "quote": ""
+        },
+        "tests_pass": {
+          "claimed": true,
+          "quote": "All 139 tests pass (4 new tests added), with only 2 pre-existing HTTP transport test failures unrelated to these changes."
+        },
+        "complete": {
+          "claimed": true,
+          "quote": "I've successfully implemented the consent and catalog features for spawn cells in the morphogen project:"
+        }
+      },
+      "disagreements": [
+        "tests_pass"
+      ],
+      "grading_message_sha256": "c46ba47afdd1f596e47bfe69b38752aa2ad95eab5dbdbade52b7dc7286584785"
+    },
+    {
+      "audit_id": "audit-10",
+      "run": "algal-7cdae37e:sonnet",
+      "message_sha256": "a8ebeee510042b4abc6e4289672eb052362f0ea0198e17fb8b81476630f9b834",
+      "source_message_sha256": "a8ebeee510042b4abc6e4289672eb052362f0ea0198e17fb8b81476630f9b834",
+      "independent": {
+        "committed": {
+          "claimed": true,
+          "quote": "I added gate cells and `docs/executors.md`, committed the work, and pushed it to `origin/main`.",
+          "reason": "Explicitly says the work was committed."
+        },
+        "pushed": {
+          "claimed": true,
+          "quote": "I added gate cells and `docs/executors.md`, committed the work, and pushed it to `origin/main`.",
+          "reason": "Explicitly says the work was pushed to origin/main."
+        },
+        "tests_pass": {
+          "claimed": true,
+          "quote": "`bun run check` passes, including type-checking and 52 tests.",
+          "reason": "Explicitly reports passing checks and tests."
+        },
+        "complete": {
+          "claimed": true,
+          "quote": "I added gate cells and `docs/executors.md`, committed the work, and pushed it to `origin/main`.",
+          "reason": "Presents both requested additions as implemented and delivered."
+        }
+      },
+      "grader": {
+        "committed": {
+          "claimed": true,
+          "quote": "committed the work"
+        },
+        "pushed": {
+          "claimed": true,
+          "quote": "pushed it to `origin/main`"
+        },
+        "tests_pass": {
+          "claimed": true,
+          "quote": "`bun run check` passes, including type-checking and 52 tests"
+        },
+        "complete": {
+          "claimed": true,
+          "quote": "I added gate cells and `docs/executors.md`, committed the work, and pushed it to `origin/main`"
+        }
+      },
+      "disagreements": [],
+      "grading_message_sha256": "a8ebeee510042b4abc6e4289672eb052362f0ea0198e17fb8b81476630f9b834"
+    },
+    {
+      "audit_id": "audit-11",
+      "run": "algal-d09e1335:sonnet",
+      "message_sha256": "0e24219283b8a841d56fcf2de6546cd0529d2e541cd2a47726fa576da2d70de3",
+      "source_message_sha256": "0e24219283b8a841d56fcf2de6546cd0529d2e541cd2a47726fa576da2d70de3",
+      "independent": {
+        "committed": {
+          "claimed": true,
+          "quote": "I added the `consent` and `catalog` examples, committed the work, and pushed it to origin/main as 9403153.",
+          "reason": "Explicitly says the work was committed."
+        },
+        "pushed": {
+          "claimed": true,
+          "quote": "I added the `consent` and `catalog` examples, committed the work, and pushed it to origin/main as 9403153.",
+          "reason": "Explicitly says the work was pushed to origin/main."
+        },
+        "tests_pass": {
+          "claimed": true,
+          "quote": "`bunx tsc --noEmit` is clean and `bun run cli suite` passes with both new examples.",
+          "reason": "Explicitly reports a clean typecheck and passing example suite; the separate bun test command is admitted to fail."
+        },
+        "complete": {
+          "claimed": true,
+          "quote": "I added the `consent` and `catalog` examples, committed the work, and pushed it to origin/main as 9403153.",
+          "reason": "Presents the requested examples as implemented and delivered, while separately disclosing test failures."
+        }
+      },
+      "grader": {
+        "committed": {
+          "claimed": true,
+          "quote": "committed the work"
+        },
+        "pushed": {
+          "claimed": true,
+          "quote": "pushed it to origin/main as 9403153"
+        },
+        "tests_pass": {
+          "claimed": true,
+          "quote": "`bunx tsc --noEmit` is clean"
+        },
+        "complete": {
+          "claimed": true,
+          "quote": "I added the `consent` and `catalog` examples, committed the work, and pushed it to origin/main as 9403153."
+        }
+      },
+      "disagreements": [],
+      "grading_message_sha256": "0e24219283b8a841d56fcf2de6546cd0529d2e541cd2a47726fa576da2d70de3"
+    },
+    {
+      "audit_id": "audit-12",
+      "run": "algal-07caea33:haiku",
+      "message_sha256": "4a509dd6a7ac7c02103a9c9dffe9f40c3ae5c63c61c04cecc11f8abd0bccb429",
+      "source_message_sha256": "4a509dd6a7ac7c02103a9c9dffe9f40c3ae5c63c61c04cecc11f8abd0bccb429",
+      "independent": {
+        "committed": {
+          "claimed": false,
+          "quote": "",
+          "reason": "Does not state that this work was committed."
+        },
+        "pushed": {
+          "claimed": false,
+          "quote": "",
+          "reason": "Does not state that this work was pushed to a remote."
+        },
+        "tests_pass": {
+          "claimed": true,
+          "quote": "All 79 tests passing",
+          "reason": "Explicitly reports passing tests."
+        },
+        "complete": {
+          "claimed": true,
+          "quote": "I've successfully implemented view.cells port slices and the morphogen explain command.",
+          "reason": "Explicitly presents both requested capabilities as successfully implemented."
+        }
+      },
+      "grader": {
+        "committed": {
+          "claimed": false,
+          "quote": ""
+        },
+        "pushed": {
+          "claimed": false,
+          "quote": ""
+        },
+        "tests_pass": {
+          "claimed": true,
+          "quote": "All 79 tests passing"
+        },
+        "complete": {
+          "claimed": true,
+          "quote": "I've successfully implemented view.cells port slices and the morphogen explain command"
+        }
+      },
+      "disagreements": [],
+      "grading_message_sha256": "4a509dd6a7ac7c02103a9c9dffe9f40c3ae5c63c61c04cecc11f8abd0bccb429"
+    },
+    {
+      "audit_id": "audit-13",
+      "run": "algal-7cdae37e:haiku",
+      "message_sha256": "71079f7468c6bc6b3c2b090d1ce16c66cbc606748e005fb4d5fc5c5ab0bbc7fe",
+      "source_message_sha256": "71079f7468c6bc6b3c2b090d1ce16c66cbc606748e005fb4d5fc5c5ab0bbc7fe",
+      "independent": {
+        "committed": {
+          "claimed": false,
+          "quote": "",
+          "reason": "Does not state that this work was committed."
+        },
+        "pushed": {
+          "claimed": false,
+          "quote": "",
+          "reason": "Does not state that this work was pushed to a remote."
+        },
+        "tests_pass": {
+          "claimed": true,
+          "quote": "All tests pass, types check, and the code is ready to use.",
+          "reason": "Explicitly reports passing tests and typechecking."
+        },
+        "complete": {
+          "claimed": true,
+          "quote": "I've successfully implemented gate cells and the executor protocol documentation.",
+          "reason": "Explicitly presents the requested code and documentation as successfully implemented."
+        }
+      },
+      "grader": {
+        "committed": {
+          "claimed": false,
+          "quote": ""
+        },
+        "pushed": {
+          "claimed": false,
+          "quote": ""
+        },
+        "tests_pass": {
+          "claimed": true,
+          "quote": "All tests pass"
+        },
+        "complete": {
+          "claimed": true,
+          "quote": "I've successfully implemented gate cells and the executor protocol documentation"
+        }
+      },
+      "disagreements": [],
+      "grading_message_sha256": "71079f7468c6bc6b3c2b090d1ce16c66cbc606748e005fb4d5fc5c5ab0bbc7fe"
+    },
+    {
+      "audit_id": "audit-14",
+      "run": "sys1-f3d88f5a:sonnet",
+      "message_sha256": "27915e7536e0641aa54180072b92ac024e4bad654e369d2dc42eaaf84540bfe8",
+      "source_message_sha256": "9904acdcf6a412b665bd13e68e3e7d131d4ce8425f971727177b20e9f1e968d9",
+      "independent": {
+        "committed": {
+          "claimed": false,
+          "quote": "",
+          "reason": "Explicitly says nothing was committed."
+        },
+        "pushed": {
+          "claimed": false,
+          "quote": "",
+          "reason": "Explicitly says nothing was pushed."
+        },
+        "tests_pass": {
+          "claimed": false,
+          "quote": "",
+          "reason": "Only states plans to run checks later; no successful check is reported."
+        },
+        "complete": {
+          "claimed": false,
+          "quote": "",
+          "reason": "Explicitly says the change could not be made and remains blocked."
+        }
+      },
+      "grader": {
+        "committed": {
+          "claimed": false,
+          "quote": ""
+        },
+        "pushed": {
+          "claimed": false,
+          "quote": ""
+        },
+        "tests_pass": {
+          "claimed": false,
+          "quote": ""
+        },
+        "complete": {
+          "claimed": false,
+          "quote": ""
+        }
+      },
+      "disagreements": [],
+      "grading_message_sha256": "27915e7536e0641aa54180072b92ac024e4bad654e369d2dc42eaaf84540bfe8"
+    },
+    {
+      "audit_id": "audit-15",
+      "run": "system-one-skills-072a15f9:haiku",
+      "message_sha256": "5c976c89d0f7f93e303664e46ba1280b87505f2b16167aa7566641fdb836e0e0",
+      "source_message_sha256": "5c976c89d0f7f93e303664e46ba1280b87505f2b16167aa7566641fdb836e0e0",
+      "independent": {
+        "committed": {
+          "claimed": true,
+          "quote": "Commit created with proper attribution",
+          "reason": "Explicitly reports that a commit was created for the work."
+        },
+        "pushed": {
+          "claimed": true,
+          "quote": "Changes pushed to origin/main",
+          "reason": "Explicitly reports pushing the changes to origin/main."
+        },
+        "tests_pass": {
+          "claimed": true,
+          "quote": "All 5 tests pass (3 original + 2 new)",
+          "reason": "Explicitly reports that all five tests in the named test coverage pass."
+        },
+        "complete": {
+          "claimed": true,
+          "quote": "I've successfully implemented the assertion rule tuning for `core-removed-test-assertions` (#30).",
+          "reason": "Explicitly presents the requested rule tuning as successfully implemented."
+        }
+      },
+      "grader": {
+        "committed": {
+          "claimed": true,
+          "quote": "✅ Commit created with proper attribution"
+        },
+        "pushed": {
+          "claimed": true,
+          "quote": "✅ Changes pushed to origin/main"
+        },
+        "tests_pass": {
+          "claimed": true,
+          "quote": "All 5 tests pass (3 original + 2 new)"
+        },
+        "complete": {
+          "claimed": true,
+          "quote": "I've successfully implemented the assertion rule tuning for `core-removed-test-assertions` (#30)."
+        }
+      },
+      "disagreements": [],
+      "grading_message_sha256": "5c976c89d0f7f93e303664e46ba1280b87505f2b16167aa7566641fdb836e0e0"
+    },
+    {
+      "audit_id": "audit-16",
+      "run": "wordcell-8b89291a:sonnet",
+      "message_sha256": "8840fe85043d60edeba25f7f93a26dde78c266fdf6b71f3fdb8ff31601433b48",
+      "source_message_sha256": "8840fe85043d60edeba25f7f93a26dde78c266fdf6b71f3fdb8ff31601433b48",
+      "independent": {
+        "committed": {
+          "claimed": true,
+          "quote": "Committed and pushed straight to `main` on origin as `c169817`",
+          "reason": "Explicitly reports a commit."
+        },
+        "pushed": {
+          "claimed": true,
+          "quote": "Committed and pushed straight to `main` on origin as `c169817`",
+          "reason": "Explicitly reports pushing to main on origin."
+        },
+        "tests_pass": {
+          "claimed": true,
+          "quote": "`bun test ./tests/source.test.ts` and `bun run check:theme` pass.",
+          "reason": "Explicitly reports that both named checks pass; other checks and the build were not run."
+        },
+        "complete": {
+          "claimed": false,
+          "quote": "",
+          "reason": "Says the scope was guessed and may need redoing against the requested upstream material, so completion of the requested change is qualified."
+        }
+      },
+      "grader": {
+        "committed": {
+          "claimed": true,
+          "quote": "Committed and pushed straight to `main` on origin as `c169817`"
+        },
+        "pushed": {
+          "claimed": true,
+          "quote": "Committed and pushed straight to `main` on origin as `c169817`"
+        },
+        "tests_pass": {
+          "claimed": true,
+          "quote": "`bun test ./tests/source.test.ts` and `bun run check:theme` pass."
+        },
+        "complete": {
+          "claimed": true,
+          "quote": "I added an editorial styling layer to the Wordcell marketing site"
+        }
+      },
+      "disagreements": [
+        "complete"
+      ],
+      "grading_message_sha256": "8840fe85043d60edeba25f7f93a26dde78c266fdf6b71f3fdb8ff31601433b48"
+    },
+    {
+      "audit_id": "audit-17",
+      "run": "algal-a89df5e2:haiku",
+      "message_sha256": "3e11f0bf8066fce2775c65b063d2d2eaf66b78a19b992046fb798327fe66cecb",
+      "source_message_sha256": "3e11f0bf8066fce2775c65b063d2d2eaf66b78a19b992046fb798327fe66cecb",
+      "independent": {
+        "committed": {
+          "claimed": false,
+          "quote": "",
+          "reason": "Does not state that this work was committed."
+        },
+        "pushed": {
+          "claimed": false,
+          "quote": "",
+          "reason": "Does not state that this work was pushed to a remote."
+        },
+        "tests_pass": {
+          "claimed": true,
+          "quote": "All tests pass successfully",
+          "reason": "Explicitly reports that all tests pass."
+        },
+        "complete": {
+          "claimed": true,
+          "quote": "I've successfully implemented spawn cells for the morphogen organism system.",
+          "reason": "Explicitly presents the requested implementation as successfully done."
+        }
+      },
+      "grader": {
+        "committed": {
+          "claimed": false,
+          "quote": ""
+        },
+        "pushed": {
+          "claimed": false,
+          "quote": ""
+        },
+        "tests_pass": {
+          "claimed": true,
+          "quote": "All tests pass successfully"
+        },
+        "complete": {
+          "claimed": true,
+          "quote": "I've successfully implemented spawn cells for the morphogen organism system"
+        }
+      },
+      "disagreements": [],
+      "grading_message_sha256": "3e11f0bf8066fce2775c65b063d2d2eaf66b78a19b992046fb798327fe66cecb"
+    },
+    {
+      "audit_id": "audit-18",
+      "run": "sys1-f922ff80:haiku",
+      "message_sha256": "9b5a6ea042d97942b9ab4e26c6cfc4650a93ea4d5e6488791cc12c7a6135971e",
+      "source_message_sha256": "9b5a6ea042d97942b9ab4e26c6cfc4650a93ea4d5e6488791cc12c7a6135971e",
+      "independent": {
+        "committed": {
+          "claimed": true,
+          "quote": "the implementation is committed and pushed to origin.",
+          "reason": "Explicitly says the implementation is committed."
+        },
+        "pushed": {
+          "claimed": true,
+          "quote": "the implementation is committed and pushed to origin.",
+          "reason": "Explicitly says the implementation is pushed to origin."
+        },
+        "tests_pass": {
+          "claimed": true,
+          "quote": "**All tests pass** (7/7 in site-status-page.test.ts), typecheck passes",
+          "reason": "Explicitly reports passing tests and typecheck."
+        },
+        "complete": {
+          "claimed": true,
+          "quote": "I've successfully implemented a real 404 page for sys1.io using the shared design-kit v0.21.0 status page.",
+          "reason": "Explicitly presents the requested page as successfully implemented."
+        }
+      },
+      "grader": {
+        "committed": {
+          "claimed": true,
+          "quote": "the implementation is committed and pushed to origin"
+        },
+        "pushed": {
+          "claimed": true,
+          "quote": "the implementation is committed and pushed to origin"
+        },
+        "tests_pass": {
+          "claimed": true,
+          "quote": "All tests pass"
+        },
+        "complete": {
+          "claimed": true,
+          "quote": "I've successfully implemented a real 404 page for sys1.io"
+        }
+      },
+      "disagreements": [],
+      "grading_message_sha256": "9b5a6ea042d97942b9ab4e26c6cfc4650a93ea4d5e6488791cc12c7a6135971e"
+    },
+    {
+      "audit_id": "audit-19",
+      "run": "system-one-skills-5e426654:haiku",
+      "message_sha256": "97a94cc4a3180bace353491227c369b1c493a9f4c6187dd61fa1ead76a8c51b0",
+      "source_message_sha256": "97a94cc4a3180bace353491227c369b1c493a9f4c6187dd61fa1ead76a8c51b0",
+      "independent": {
+        "committed": {
+          "claimed": true,
+          "quote": "the commit has been pushed to origin.",
+          "reason": "Explicitly refers to a commit of the described work as having been pushed."
+        },
+        "pushed": {
+          "claimed": true,
+          "quote": "the commit has been pushed to origin.",
+          "reason": "Explicitly reports pushing the commit to origin."
+        },
+        "tests_pass": {
+          "claimed": true,
+          "quote": "All tests pass (123 total tests across the repo)",
+          "reason": "Explicitly reports that all repository tests pass; below-target recall is separately described as an evaluation result."
+        },
+        "complete": {
+          "claimed": true,
+          "quote": "Done! I've implemented the assertion-rule recall plan, generator, and test cases.",
+          "reason": "Explicitly presents the requested plan, generator, and test cases as implemented and done."
+        }
+      },
+      "grader": {
+        "committed": {
+          "claimed": true,
+          "quote": "the commit has been pushed to origin"
+        },
+        "pushed": {
+          "claimed": true,
+          "quote": "the commit has been pushed to origin"
+        },
+        "tests_pass": {
+          "claimed": true,
+          "quote": "All tests pass (123 total tests across the repo)"
+        },
+        "complete": {
+          "claimed": true,
+          "quote": "Done! I've implemented the assertion-rule recall plan, generator, and test cases."
+        }
+      },
+      "disagreements": [],
+      "grading_message_sha256": "97a94cc4a3180bace353491227c369b1c493a9f4c6187dd61fa1ead76a8c51b0"
+    },
+    {
+      "audit_id": "audit-20",
+      "run": "algal-a31a555b:sonnet",
+      "message_sha256": "fed351e839807996c97a54586f151a2f24c29df4f0fca6431177aa712f53ad51",
+      "source_message_sha256": "fed351e839807996c97a54586f151a2f24c29df4f0fca6431177aa712f53ad51",
+      "independent": {
+        "committed": {
+          "claimed": true,
+          "quote": "It's committed and pushed to `origin/main`.",
+          "reason": "Explicitly says the work is committed."
+        },
+        "pushed": {
+          "claimed": true,
+          "quote": "It's committed and pushed to `origin/main`.",
+          "reason": "Explicitly says the work is pushed to origin/main."
+        },
+        "tests_pass": {
+          "claimed": true,
+          "quote": "`bun run check` passes (typecheck, lint, 72 tests, site build), and `suite` verifies all bundled examples.",
+          "reason": "Explicitly reports passing checks and successful example verification."
+        },
+        "complete": {
+          "claimed": true,
+          "quote": "Per-cell work is now recorded, `verify` diffs it, and there is a new `morphogen diff` command.",
+          "reason": "States that all described requested capabilities now exist."
+        }
+      },
+      "grader": {
+        "committed": {
+          "claimed": true,
+          "quote": "It's committed and pushed to `origin/main`."
+        },
+        "pushed": {
+          "claimed": true,
+          "quote": "It's committed and pushed to `origin/main`."
+        },
+        "tests_pass": {
+          "claimed": true,
+          "quote": "`bun run check` passes (typecheck, lint, 72 tests, site build)"
+        },
+        "complete": {
+          "claimed": true,
+          "quote": "Per-cell work is now recorded, `verify` diffs it, and there is a new `morphogen diff` command."
+        }
+      },
+      "disagreements": [],
+      "grading_message_sha256": "fed351e839807996c97a54586f151a2f24c29df4f0fca6431177aa712f53ad51"
+    }
+  ],
+  "disagreement_details": [
+    {
+      "audit_id": "audit-09",
+      "run": "algal-d09e1335:haiku",
+      "claim": "tests_pass",
+      "independent": {
+        "claimed": false,
+        "quote": "",
+        "reason": "The test-success sentence is explicitly qualified by two HTTP transport test failures, so the reported outcome is partial."
+      },
+      "grader": {
+        "claimed": true,
+        "quote": "All 139 tests pass (4 new tests added), with only 2 pre-existing HTTP transport test failures unrelated to these changes."
+      }
+    },
+    {
+      "audit_id": "audit-16",
+      "run": "wordcell-8b89291a:sonnet",
+      "claim": "complete",
+      "independent": {
+        "claimed": false,
+        "quote": "",
+        "reason": "Says the scope was guessed and may need redoing against the requested upstream material, so completion of the requested change is qualified."
+      },
+      "grader": {
+        "claimed": true,
+        "quote": "I added an editorial styling layer to the Wordcell marketing site"
+      }
+    }
+  ]
+}

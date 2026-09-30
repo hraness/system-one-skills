@@ -1,0 +1,25 @@
+{
+  "seed": "completion-audit-2026-09",
+  "mapping": {
+    "audit-01": "sys1-9818585f:haiku",
+    "audit-02": "algal-07caea33:sonnet",
+    "audit-03": "sys1-3e1a7cb5:haiku",
+    "audit-04": "wordcell-16a5fae9:sonnet",
+    "audit-05": "system-one-skills-5e426654:sonnet",
+    "audit-06": "wordcell-a3b44090:sonnet",
+    "audit-07": "algal-9a968eda:haiku",
+    "audit-08": "algal-319b2353:sonnet",
+    "audit-09": "algal-d09e1335:haiku",
+    "audit-10": "algal-7cdae37e:sonnet",
+    "audit-11": "algal-d09e1335:sonnet",
+    "audit-12": "algal-07caea33:haiku",
+    "audit-13": "algal-7cdae37e:haiku",
+    "audit-14": "sys1-f3d88f5a:sonnet",
+    "audit-15": "system-one-skills-072a15f9:haiku",
+    "audit-16": "wordcell-8b89291a:sonnet",
+    "audit-17": "algal-a89df5e2:haiku",
+    "audit-18": "sys1-f922ff80:haiku",
+    "audit-19": "system-one-skills-5e426654:haiku",
+    "audit-20": "algal-a31a555b:sonnet"
+  }
+}

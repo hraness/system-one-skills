@@ -1,0 +1,74 @@
+{
+  "harness": {
+    "schema_version": 1,
+    "generated_at_utc": "2026-09-30T02:32:41.742085+00:00",
+    "scope": "Implementation and reproducibility limitations, kept separate from Git reconciliation and from claim labels/outcomes. Frozen tasks and runner are unchanged.",
+    "source_hashes": {
+      "completion-tasks.ts": "86fd19ae0ce4cefae34eae01c35d0b4b03cf5b09f1d70f930568cb822d08091f",
+      "completion-run.ts": "6d64e349871b3ff5ff6da9a5c27e2874485003c2ae51dcf879b30587dfa0c9b4"
+    },
+    "limitations": [
+      {
+        "id": "relative-history-selection",
+        "source": "bench/completion-tasks.ts:93-98",
+        "observation": "Task selection uses the live main branch and --since=180.days, then a seeded commit-hash order and a per-repository cap (CLI default 20).",
+        "implication": "The seed alone cannot reproduce selection at a later date or after main changes. This study must retain its exact frozen 30-task manifest and effective invocation; rerunning the selector is not an exact replay.",
+        "actual_study_action": "Retain the frozen manifest; no reselection or task substitution was performed."
+      },
+      {
+        "id": "broad-trailer-stripping",
+        "source": "bench/completion-tasks.ts:48-51 and 70",
+        "observation": "taskText strips any trailing line matching ^[A-Za-z-]+: .+, including an ordinary one-line conventional commit subject. A synthetic fix: preserve command result when the child exits unsuccessfully becomes an empty string. The qualification screen then rejects messages shorter than 40 characters.",
+        "implication": "Eligible-task selection and prompt text depend on this broader-than-trailers behavior. The effect on candidate inclusion has not been recomputed or quantified.",
+        "actual_study_action": "Preserve frozen selection and prompt text; document behavior. Restrict trailer stripping only in future, versioned selection code."
+      },
+      {
+        "id": "startup-retry-not-implemented",
+        "source": "bench/completion-run.ts:134 and 181-189",
+        "observation": "A missing terminal result throws before a run record is written. A recorded zero-turn error is skipped on resumption by task:model identity. The runner has no bounded one-time startup retry ledger.",
+        "implication": "The planned startup retry is not implemented. No claim is made that this caused an observed failure in the fixed dataset.",
+        "actual_study_observation": {
+          "recorded_runs": 60,
+          "recorded_zero_turn_errors": 0
+        },
+        "actual_study_action": "No runner alteration or benchmark rerun; future execution needs an explicit bounded attempt ledger."
+      }
+    ]
+  },
+  "git_reconciliation": {
+    "summary": {
+      "expected_runs": 60,
+      "records": 60,
+      "exact_task_model_coverage": true,
+      "frozen_snapshot_heads_available": 30,
+      "retained_main_worktrees": 0,
+      "missing_main_worktrees": 60,
+      "saved_nonempty_dirty_path_lists": 0,
+      "saved_collapsed_untracked_directories": 0,
+      "status_or_counter_discrepancies_demonstrated": 0,
+      "current_status_probes": 60,
+      "current_status_probes_failed_because_tree_missing": 60,
+      "original_probe_exit_statuses_available": false,
+      "original_probe_successes_independently_confirmed": null,
+      "original_probe_failures_demonstrated": 0,
+      "transcript_git_read_probe_candidates": 59,
+      "transcripts_with_git_read_probe_candidates": 44,
+      "reviewed_agent_tool_error_candidates": 5
+    },
+    "conclusion": "The saved truth is not contradicted by this bounded review, but its original Git command success cannot be independently confirmed. All final main-run worktrees and local bare remotes were deleted after measurement. All 60 saved dirty_paths arrays are empty, so no collapsed saved directory can be expanded or supplies a demonstrated omission. The runner did not preserve the individual Git probe exits. The reviewed transcript error candidates do not establish a failure of any original harness Git probe. Zero counter values are retained as recorded, with unresolved measurement-status ambiguity, not reclassified as failures.",
+    "source_files": {
+      "runs": {
+        "path": "$EVIDENCE_ROOT/main/runs.json",
+        "sha256": "cfcc9a0f3211167a7623f0bd1ea01b6699ebf9f739b00323cc4627454f258f96"
+      },
+      "frozen_tasks": {
+        "path": "$HOME/.cache/sys1-bench/completion-tasks.json",
+        "sha256": "4b38c95ff351f09a16f8cd120c246302e5e31695e04fa08acbcea7a87c739b13"
+      },
+      "runner": {
+        "path": "$HOME/src/system-one-skills/bench/completion-run.ts",
+        "sha256": "6d64e349871b3ff5ff6da9a5c27e2874485003c2ae51dcf879b30587dfa0c9b4"
+      }
+    }
+  }
+}

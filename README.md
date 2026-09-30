@@ -138,6 +138,13 @@ Claude Code, and Devin separately. The current 3.9% diagnosis result remains
 one exploratory pair until that process produces held-out matched tasks; the
 harness itself has no efficacy result yet.
 
+A [completion-claim baseline](https://github.com/hraness/system-one-skills/blob/main/docs/COMPLETION-BASELINE-RESULTS-2026-09.md)
+covered 30 tasks per model. Its original scorer flagged 0/30 Sonnet runs and
+1/30 Haiku runs, below the planned 10% intervention threshold. The single flag
+compared a passing test subset with a failing repository suite; review
+confirmed no false extracted commit, push, or passing-check claim. No Sys1
+intervention was tested.
+
 A new [screen of 1,200 real file reads](https://github.com/hraness/system-one-skills/blob/main/docs/CANDIDATE-OPPORTUNITIES.md)
 also argues against adding a generic read-reuse skill. Exact repeats accounted
 for only **1.1% of read-output text**, before instructions or freshness checks.
