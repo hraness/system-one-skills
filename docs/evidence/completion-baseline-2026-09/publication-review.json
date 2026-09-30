@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "drafted_by": {
+    "name": "Codex",
+    "type": "ai"
+  },
+  "reviews": [
+    {
+      "reviewer": {
+        "name": "Codex independent privacy review",
+        "type": "ai"
+      },
+      "independent_from_drafter": true,
+      "reviewed_at_utc": "2026-09-30T03:31:09.223406+00:00",
+      "status": "passed",
+      "private_record_sha256": "aeedd461db105d6d198c4824f85c1db2f19159ecaadae4b32e1bcd724b07dd55",
+      "scope": "Privacy and source bindings for all publication artifacts, including all 60 message chains, transcript hashes, 65 cited tool-call/result pairs, and preserved quote repairs.",
+      "outstanding_findings": 0
+    },
+    {
+      "reviewer": {
+        "name": "Codex independent results review",
+        "type": "ai"
+      },
+      "independent_from_drafter": true,
+      "reviewed_at_utc": "2026-09-30T03:34:00.271396+00:00",
+      "status": "passed",
+      "private_record_sha256": "843475b79c8ceaae0ba5812b6f9a657aaff1566b646e326dffe6766c8c0d3784",
+      "scope": "Report, README, plan, and roadmap consistency with the recorded rates, intervals, grading history, limitations, and 189 saved cost receipts.",
+      "outstanding_findings": 0,
+      "resolved_finding": "Changed unavailable-material cases to a non-exhaustive list of examples."
+    }
+  ],
+  "reviewed_documents": [
+    {
+      "repository": "hraness/system-one-skills",
+      "path": "docs/COMPLETION-BASELINE-RESULTS-2026-09.md",
+      "sha256": "5e492e1784127a875e64e78c92b10f375baea4ac638e9387080a6f958042d246"
+    },
+    {
+      "repository": "hraness/system-one-skills",
+      "path": "docs/COMPLETION-BASELINE-PLAN-2026-09.md",
+      "sha256": "23ca9343973d6fea8c9beefc925c0481ad91463f18eefeb9c07ab6c86dae8066"
+    },
+    {
+      "repository": "hraness/system-one-skills",
+      "path": "README.md",
+      "sha256": "14cdd042eabc1184ff7f07fecb0e9f1c69652baf7ba535a027fbef9dbe00bd41"
+    },
+    {
+      "repository": "hraness/sys1",
+      "path": "docs/proof-roadmap-2026-09.md",
+      "sha256": "f7edb631d633f4305cc7679c22fb20f8be51b84eb4d40730744bd398f4b59f63"
+    }
+  ],
+  "reviewed_artifacts_sha256": {
+    "audit-order.json": "5d28765141b54751b9fbb2752e8374f7f3bdbab9802f38f22bebbc2313d52acd",
+    "audit-v1.json": "f186f40f40249e4fcd2c8a755417e0d3cb389ada07e2e554fdae777ffceb030c",
+    "audit.json": "9ceca18e60c89f2368311b5c558fc9a179298c3aea1d76c5c64d8fab02d96ea8",
+    "exclusions.json": "9b8e912f85a0b661608526767ddbc7fef0ad3bca74cc65256a24da9dfdf31fbd",
+    "grades-v1.json": "9272a3e69d0dd26033706afa6a8704184b57001f7580adf62ee510a0d9f35122",
+    "grades.json": "533792ca6e29b2db5259d1510346f4c3d70c3829386bf114bfe825bb9253b656",
+    "grading-metadata.json": "278c40b1d93f380b25bd8ca58455df4eec6eb6ead7b6a95af52405f74db350bb",
+    "grading-order.json": "6e5378eabb13562cdb93ab6f4bdd9c9770379200775242811599fcce55b8ed3b",
+    "grading-prompts.json": "c7a5da1981e8e0c670d24279d94dbb3c0b5c1bc4c8fa86db497558666859eb6b",
+    "message-projections.json": "974ca21588dfaed2b9b14d67a3f0f0ed478a2d82da33f41309ef0ad27398f19a",
+    "method-limitations.json": "9051ab4da048f3dbc59e38adb158f3f06549e714287e95cb3a7ae3a0779a0393",
+    "quote-repairs-v1.json": "dd88bf5f477a0c1eaf95dcd3d419fa4f21958b42440b65e661e6d02f335ded93",
+    "quote-repairs-v2.json": "c7055fe02d9af1b47b07a53559f3b1ad983172ac6e6cd4903fba6e6230a01ff2",
+    "report.json": "6c8bf1a89f01a3f18ecce370f3843b5807210d56ef5da29d9b0188f95ce25c26",
+    "reviews.json": "75b03848b089ba1195d8fd397b93adeeeb0eae31a3d2f059955c27353f896a01",
+    "runs.json": "f6833cdfba960ff14eda81d1050855bec20f46ce0acd8638507e6b70e45787b3",
+    "tasks.json": "162caafd98b37f0514150f2e85abdd1f1e0fae51e840a81d5ff7c191ff744c89"
+  },
+  "provenance_metadata_sha256_before_review_record": "04132871704949e68cf6349ff9a6edf2946ad0a612b1d0317ed37f1ebd72d97b",
+  "limits": [
+    "These are independent AI reviews of the retained documents and evidence.",
+    "Full transcripts and detailed private review receipts remain private.",
+    "The separately recorded blind label audit and source-access review define their own scope and limitations."
+  ]
+}

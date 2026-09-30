@@ -1,0 +1,1676 @@
+{
+  "study": "completion-claim-baseline-2026-09",
+  "published_utc": "2026-09-30T03:23:17.964Z",
+  "frozen_task_commit": "dce78d8",
+  "analysis_amendment_commit": "9f90c33",
+  "original_source_sha256": {
+    "bench/completion-run.ts": "6d64e349871b3ff5ff6da9a5c27e2874485003c2ae51dcf879b30587dfa0c9b4",
+    "bench/completion-tasks.ts": "86fd19ae0ce4cefae34eae01c35d0b4b03cf5b09f1d70f930568cb822d08091f",
+    "bench/completion-grade.ts": "599106b2df38634bc89eb0e1e71c359c7fc3b80829b7ec4201ce21d5ce03fb86",
+    "docs/COMPLETION-BASELINE-PLAN-2026-09.md": "bb939e8d3aa0de15d653e81045a01209680468e97ce33f11de39ab0d675c51a7"
+  },
+  "models_and_cli": [
+    {
+      "key": "algal-319b2353:sonnet",
+      "requested_model": "claude-sonnet-5-5",
+      "claude_code_version": "2.1.285"
+    },
+    {
+      "key": "algal-319b2353:haiku",
+      "requested_model": "claude-haiku-4-5-20251001",
+      "claude_code_version": "2.1.285"
+    },
+    {
+      "key": "algal-a31a555b:sonnet",
+      "requested_model": "claude-sonnet-5-5",
+      "claude_code_version": "2.1.285"
+    },
+    {
+      "key": "algal-a31a555b:haiku",
+      "requested_model": "claude-haiku-4-5-20251001",
+      "claude_code_version": "2.1.285"
+    },
+    {
+      "key": "algal-8ae09445:sonnet",
+      "requested_model": "claude-sonnet-5-5",
+      "claude_code_version": "2.1.285"
+    },
+    {
+      "key": "algal-8ae09445:haiku",
+      "requested_model": "claude-haiku-4-5-20251001",
+      "claude_code_version": "2.1.285"
+    },
+    {
+      "key": "algal-1f946e7c:sonnet",
+      "requested_model": "claude-sonnet-5-5",
+      "claude_code_version": "2.1.285"
+    },
+    {
+      "key": "algal-1f946e7c:haiku",
+      "requested_model": "claude-haiku-4-5-20251001",
+      "claude_code_version": "2.1.285"
+    },
+    {
+      "key": "algal-086013f5:sonnet",
+      "requested_model": "claude-sonnet-5-5",
+      "claude_code_version": "2.1.285"
+    },
+    {
+      "key": "algal-086013f5:haiku",
+      "requested_model": "claude-haiku-4-5-20251001",
+      "claude_code_version": "2.1.285"
+    },
+    {
+      "key": "algal-07caea33:sonnet",
+      "requested_model": "claude-sonnet-5-5",
+      "claude_code_version": "2.1.285"
+    },
+    {
+      "key": "algal-07caea33:haiku",
+      "requested_model": "claude-haiku-4-5-20251001",
+      "claude_code_version": "2.1.285"
+    },
+    {
+      "key": "algal-a89df5e2:sonnet",
+      "requested_model": "claude-sonnet-5-5",
+      "claude_code_version": "2.1.285"
+    },
+    {
+      "key": "algal-a89df5e2:haiku",
+      "requested_model": "claude-haiku-4-5-20251001",
+      "claude_code_version": "2.1.285"
+    },
+    {
+      "key": "algal-b54b5129:sonnet",
+      "requested_model": "claude-sonnet-5-5",
+      "claude_code_version": "2.1.285"
+    },
+    {
+      "key": "algal-b54b5129:haiku",
+      "requested_model": "claude-haiku-4-5-20251001",
+      "claude_code_version": "2.1.285"
+    },
+    {
+      "key": "algal-43c9dcf9:sonnet",
+      "requested_model": "claude-sonnet-5-5",
+      "claude_code_version": "2.1.285"
+    },
+    {
+      "key": "algal-43c9dcf9:haiku",
+      "requested_model": "claude-haiku-4-5-20251001",
+      "claude_code_version": "2.1.285"
+    },
+    {
+      "key": "algal-7cdae37e:sonnet",
+      "requested_model": "claude-sonnet-5-5",
+      "claude_code_version": "2.1.285"
+    },
+    {
+      "key": "algal-7cdae37e:haiku",
+      "requested_model": "claude-haiku-4-5-20251001",
+      "claude_code_version": "2.1.285"
+    },
+    {
+      "key": "algal-d09e1335:sonnet",
+      "requested_model": "claude-sonnet-5-5",
+      "claude_code_version": "2.1.285"
+    },
+    {
+      "key": "algal-d09e1335:haiku",
+      "requested_model": "claude-haiku-4-5-20251001",
+      "claude_code_version": "2.1.285"
+    },
+    {
+      "key": "algal-9a968eda:sonnet",
+      "requested_model": "claude-sonnet-5-5",
+      "claude_code_version": "2.1.285"
+    },
+    {
+      "key": "algal-9a968eda:haiku",
+      "requested_model": "claude-haiku-4-5-20251001",
+      "claude_code_version": "2.1.285"
+    },
+    {
+      "key": "wordcell-a3b44090:sonnet",
+      "requested_model": "claude-sonnet-5-5",
+      "claude_code_version": "2.1.285"
+    },
+    {
+      "key": "wordcell-a3b44090:haiku",
+      "requested_model": "claude-haiku-4-5-20251001",
+      "claude_code_version": "2.1.285"
+    },
+    {
+      "key": "wordcell-926e2b97:sonnet",
+      "requested_model": "claude-sonnet-5-5",
+      "claude_code_version": "2.1.285"
+    },
+    {
+      "key": "wordcell-926e2b97:haiku",
+      "requested_model": "claude-haiku-4-5-20251001",
+      "claude_code_version": "2.1.285"
+    },
+    {
+      "key": "wordcell-8b89291a:sonnet",
+      "requested_model": "claude-sonnet-5-5",
+      "claude_code_version": "2.1.285"
+    },
+    {
+      "key": "wordcell-8b89291a:haiku",
+      "requested_model": "claude-haiku-4-5-20251001",
+      "claude_code_version": "2.1.285"
+    },
+    {
+      "key": "wordcell-16a5fae9:sonnet",
+      "requested_model": "claude-sonnet-5-5",
+      "claude_code_version": "2.1.285"
+    },
+    {
+      "key": "wordcell-16a5fae9:haiku",
+      "requested_model": "claude-haiku-4-5-20251001",
+      "claude_code_version": "2.1.285"
+    },
+    {
+      "key": "sys1-9acd4730:sonnet",
+      "requested_model": "claude-sonnet-5-5",
+      "claude_code_version": "2.1.285"
+    },
+    {
+      "key": "sys1-9acd4730:haiku",
+      "requested_model": "claude-haiku-4-5-20251001",
+      "claude_code_version": "2.1.285"
+    },
+    {
+      "key": "sys1-867ac370:sonnet",
+      "requested_model": "claude-sonnet-5-5",
+      "claude_code_version": "2.1.285"
+    },
+    {
+      "key": "sys1-867ac370:haiku",
+      "requested_model": "claude-haiku-4-5-20251001",
+      "claude_code_version": "2.1.285"
+    },
+    {
+      "key": "sys1-9818585f:sonnet",
+      "requested_model": "claude-sonnet-5-5",
+      "claude_code_version": "2.1.285"
+    },
+    {
+      "key": "sys1-9818585f:haiku",
+      "requested_model": "claude-haiku-4-5-20251001",
+      "claude_code_version": "2.1.285"
+    },
+    {
+      "key": "sys1-3e1a7cb5:sonnet",
+      "requested_model": "claude-sonnet-5-5",
+      "claude_code_version": "2.1.285"
+    },
+    {
+      "key": "sys1-3e1a7cb5:haiku",
+      "requested_model": "claude-haiku-4-5-20251001",
+      "claude_code_version": "2.1.285"
+    },
+    {
+      "key": "sys1-f3d88f5a:sonnet",
+      "requested_model": "claude-sonnet-5-5",
+      "claude_code_version": "2.1.285"
+    },
+    {
+      "key": "sys1-f3d88f5a:haiku",
+      "requested_model": "claude-haiku-4-5-20251001",
+      "claude_code_version": "2.1.285"
+    },
+    {
+      "key": "sys1-f922ff80:sonnet",
+      "requested_model": "claude-sonnet-5-5",
+      "claude_code_version": "2.1.285"
+    },
+    {
+      "key": "sys1-f922ff80:haiku",
+      "requested_model": "claude-haiku-4-5-20251001",
+      "claude_code_version": "2.1.285"
+    },
+    {
+      "key": "sys1-acdce8cf:sonnet",
+      "requested_model": "claude-sonnet-5-5",
+      "claude_code_version": "2.1.285"
+    },
+    {
+      "key": "sys1-acdce8cf:haiku",
+      "requested_model": "claude-haiku-4-5-20251001",
+      "claude_code_version": "2.1.285"
+    },
+    {
+      "key": "sys1-efd2af39:sonnet",
+      "requested_model": "claude-sonnet-5-5",
+      "claude_code_version": "2.1.285"
+    },
+    {
+      "key": "sys1-efd2af39:haiku",
+      "requested_model": "claude-haiku-4-5-20251001",
+      "claude_code_version": "2.1.285"
+    },
+    {
+      "key": "sys1-62f2a616:sonnet",
+      "requested_model": "claude-sonnet-5-5",
+      "claude_code_version": "2.1.285"
+    },
+    {
+      "key": "sys1-62f2a616:haiku",
+      "requested_model": "claude-haiku-4-5-20251001",
+      "claude_code_version": "2.1.285"
+    },
+    {
+      "key": "sys1-696a40c0:sonnet",
+      "requested_model": "claude-sonnet-5-5",
+      "claude_code_version": "2.1.285"
+    },
+    {
+      "key": "sys1-696a40c0:haiku",
+      "requested_model": "claude-haiku-4-5-20251001",
+      "claude_code_version": "2.1.285"
+    },
+    {
+      "key": "system-one-skills-072a15f9:sonnet",
+      "requested_model": "claude-sonnet-5-5",
+      "claude_code_version": "2.1.285"
+    },
+    {
+      "key": "system-one-skills-072a15f9:haiku",
+      "requested_model": "claude-haiku-4-5-20251001",
+      "claude_code_version": "2.1.285"
+    },
+    {
+      "key": "system-one-skills-d2514671:sonnet",
+      "requested_model": "claude-sonnet-5-5",
+      "claude_code_version": "2.1.285"
+    },
+    {
+      "key": "system-one-skills-d2514671:haiku",
+      "requested_model": "claude-haiku-4-5-20251001",
+      "claude_code_version": "2.1.285"
+    },
+    {
+      "key": "system-one-skills-5e426654:sonnet",
+      "requested_model": "claude-sonnet-5-5",
+      "claude_code_version": "2.1.285"
+    },
+    {
+      "key": "system-one-skills-5e426654:haiku",
+      "requested_model": "claude-haiku-4-5-20251001",
+      "claude_code_version": "2.1.285"
+    },
+    {
+      "key": "system-one-skills-f316c1cd:sonnet",
+      "requested_model": "claude-sonnet-5-5",
+      "claude_code_version": "2.1.285"
+    },
+    {
+      "key": "system-one-skills-f316c1cd:haiku",
+      "requested_model": "claude-haiku-4-5-20251001",
+      "claude_code_version": "2.1.285"
+    }
+  ],
+  "private_source_sha256": {
+    "runs": "cfcc9a0f3211167a7623f0bd1ea01b6699ebf9f739b00323cc4627454f258f96",
+    "exclusions": "7d43201cfdd701898855dba9ba5af410acaa5153e16e4fa50f3f11b1053a7ff4"
+  },
+  "disclosure": "Public messages use the independently reviewed minimized grading input. Two incidental inventory phrases are redacted and home/evidence directory paths use placeholders. Message hashes bind original, grading and public text. Session IDs are omitted. Full transcripts remain private. Public inputs reproduce calculations, not all private tool observations.",
+  "costs": {
+    "accounting": {
+      "arithmetic": "Exact decimal addition of numeric JSON cost tokens; USD number fields rounded to 10 decimal places. *_decimal strings preserve the exact addition.",
+      "component_assignment": "Matched run-record component first, then deterministic main/pilot/grader ordering when a copied receipt appears in multiple components.",
+      "cost_field_summed": "total_cost_usd",
+      "deduplication": "Result UUID first, session ID when UUID is absent. Without either, only identical source bytes with an identical saved attempt basename collapse. Identical bodies under distinct attempt filenames remain separate.",
+      "run_record_cost_usd": "Corroboration only; never summed, because the original runner defaults a missing total_cost_usd to zero.",
+      "unknowns": "A call with no valid consistent observed total is unknown, never zero. Missing, malformed, nonnumeric, negative, nonfinite, and conflicting evidence is retained. Costs are not inferred from tokens or error text."
+    },
+    "builder": {
+      "file": "build-cost-summary.py",
+      "sha256": "001ed7ebc7ba8050c6a98582709dd92ed8dbc64eee553e1cd85e9411813a1f37"
+    },
+    "calls": 189,
+    "calls_with_observed_cost": 189,
+    "category_totals": {
+      "grading": {
+        "calls": 124,
+        "calls_with_observed_cost": 124,
+        "deduplicated_receipt_observations": 0,
+        "reported_cost_usd": 1.438024,
+        "reported_cost_usd_decimal": "1.4380239999999999896",
+        "unreported_costs": 0
+      },
+      "main": {
+        "calls": 60,
+        "calls_with_observed_cost": 60,
+        "deduplicated_receipt_observations": 0,
+        "reported_cost_usd": 34.27231825,
+        "reported_cost_usd_decimal": "34.27231825000000009",
+        "unreported_costs": 0
+      },
+      "pilot": {
+        "calls": 5,
+        "calls_with_observed_cost": 5,
+        "deduplicated_receipt_observations": 0,
+        "reported_cost_usd": 3.4217776,
+        "reported_cost_usd_decimal": "3.42177759999999964",
+        "unreported_costs": 0
+      }
+    },
+    "components": [
+      {
+        "calls": 60,
+        "calls_with_observed_cost": 60,
+        "category": "main",
+        "deduplicated_receipt_observations": 0,
+        "name": "main",
+        "raw_result_records": 60,
+        "receipt_files": 60,
+        "reported_cost_usd": 34.27231825,
+        "reported_cost_usd_decimal": "34.27231825000000009",
+        "run_records": 60,
+        "unreported_costs": 0
+      },
+      {
+        "calls": 4,
+        "calls_with_observed_cost": 4,
+        "category": "pilot",
+        "deduplicated_receipt_observations": 0,
+        "name": "pilot",
+        "raw_result_records": 4,
+        "receipt_files": 4,
+        "reported_cost_usd": 2.355411,
+        "reported_cost_usd_decimal": "2.35541099999999964",
+        "run_records": 4,
+        "unreported_costs": 0
+      },
+      {
+        "calls": 1,
+        "calls_with_observed_cost": 1,
+        "category": "pilot",
+        "deduplicated_receipt_observations": 0,
+        "name": "pilot-invalid-1",
+        "raw_result_records": 1,
+        "receipt_files": 1,
+        "reported_cost_usd": 1.0663666,
+        "reported_cost_usd_decimal": "1.0663666",
+        "run_records": 1,
+        "unreported_costs": 0
+      },
+      {
+        "calls": 64,
+        "calls_with_observed_cost": 64,
+        "category": "grading",
+        "deduplicated_receipt_observations": 0,
+        "name": "grader-v1-receipts",
+        "raw_result_records": 64,
+        "receipt_files": 64,
+        "reported_cost_usd": 0.6880771,
+        "reported_cost_usd_decimal": "0.6880771000000000036",
+        "run_records": 0,
+        "unreported_costs": 0
+      },
+      {
+        "calls": 60,
+        "calls_with_observed_cost": 60,
+        "category": "grading",
+        "deduplicated_receipt_observations": 0,
+        "name": "grader-v2-receipts",
+        "raw_result_records": 60,
+        "receipt_files": 60,
+        "reported_cost_usd": 0.7499469,
+        "reported_cost_usd_decimal": "0.7499468999999999860",
+        "run_records": 0,
+        "unreported_costs": 0
+      }
+    ],
+    "deduplicated_receipt_observations": 0,
+    "evidence_sources": [
+      {
+        "bytes": 8073,
+        "file": "analysis-original/COMPLETION-BASELINE-PLAN-2026-09.md",
+        "role": "accounting_policy",
+        "sha256": "bb939e8d3aa0de15d653e81045a01209680468e97ce33f11de39ab0d675c51a7"
+      },
+      {
+        "bytes": 9742,
+        "file": "analysis-original/completion-run.ts",
+        "role": "accounting_policy",
+        "sha256": "6d64e349871b3ff5ff6da9a5c27e2874485003c2ae51dcf879b30587dfa0c9b4"
+      },
+      {
+        "bytes": 2810,
+        "file": "grader-v1-receipts/algal-07caea33-haiku-1790734078754.json",
+        "role": "grader_receipt",
+        "sha256": "816e6a9e32ad5ef11f73cd305e9763f88b8f10ae7d792ea126108d8c1ac3c60f"
+      },
+      {
+        "bytes": 3088,
+        "file": "grader-v1-receipts/algal-07caea33-sonnet-1790732970293.json",
+        "role": "grader_receipt",
+        "sha256": "cb858917940d39fb881027caf0c93f9b427de1fdb3c9a8704cae6023a612cb6b"
+      },
+      {
+        "bytes": 2734,
+        "file": "grader-v1-receipts/algal-086013f5-haiku-1790732916216.json",
+        "role": "grader_receipt",
+        "sha256": "e1537a276bba3ac8493d07d7be7ac5c2e215dc8b03ad7cb7cd68948561cad1ce"
+      },
+      {
+        "bytes": 3009,
+        "file": "grader-v1-receipts/algal-086013f5-sonnet-1790733992509.json",
+        "role": "grader_receipt",
+        "sha256": "4ab5150a07509b693eb97622cdbdd3ad039aa59d7e0e4df86f7cd58af57552dc"
+      },
+      {
+        "bytes": 2620,
+        "file": "grader-v1-receipts/algal-1f946e7c-haiku-1790734772734.json",
+        "role": "grader_receipt",
+        "sha256": "d4c4fbefb07d5ea0bcbbcc2bc819f3b458a7cc644f048d03649b16727b7ec7bf"
+      },
+      {
+        "bytes": 2878,
+        "file": "grader-v1-receipts/algal-1f946e7c-sonnet-1790729297693.json",
+        "role": "grader_receipt",
+        "sha256": "d50ba4190df105777ccdcefdfe7a18ab8388658fa8a48fae03921a8821fac4b0"
+      },
+      {
+        "bytes": 2897,
+        "file": "grader-v1-receipts/algal-319b2353-haiku-1790734635063.json",
+        "role": "grader_receipt",
+        "sha256": "2a440ea0d96aa68d2980ebe2e0c52e06107ac62141f2a631881481eb822c486f"
+      },
+      {
+        "bytes": 3027,
+        "file": "grader-v1-receipts/algal-319b2353-sonnet-1790732757953.json",
+        "role": "grader_receipt",
+        "sha256": "126a5a84b0da044811ee8478e2ca0ad49a7cc469c817d907495bda73c1668387"
+      },
+      {
+        "bytes": 2927,
+        "file": "grader-v1-receipts/algal-43c9dcf9-haiku-1790734814266.json",
+        "role": "grader_receipt",
+        "sha256": "cab787aba1569c6dfb0bb1577bd87d9b6cd03a7358b873592426ccabb49ba9c7"
+      },
+      {
+        "bytes": 2805,
+        "file": "grader-v1-receipts/algal-43c9dcf9-sonnet-1790734600037.json",
+        "role": "grader_receipt",
+        "sha256": "2071a608401aec5c6b6e9efc9ee21299c8750afbd058e7efd6debd9fa1942cb2"
+      },
+      {
+        "bytes": 2833,
+        "file": "grader-v1-receipts/algal-7cdae37e-haiku-1790732668941.json",
+        "role": "grader_receipt",
+        "sha256": "bde62f17db913c9e0980ccf44fbf787f99ecd6df0a753ae8d079cb24414ed1b7"
+      },
+      {
+        "bytes": 2791,
+        "file": "grader-v1-receipts/algal-7cdae37e-sonnet-1790734038349.json",
+        "role": "grader_receipt",
+        "sha256": "5d18badca7b5a163a0a8b18e85e51002fcc8a0358236c7c1baf321f1ae761562"
+      },
+      {
+        "bytes": 2835,
+        "file": "grader-v1-receipts/algal-8ae09445-haiku-1790732941178.json",
+        "role": "grader_receipt",
+        "sha256": "251edb00e1db6bc9f3f1c3652cdb4a043e6ec55d34f73f08639972c2d13c333c"
+      },
+      {
+        "bytes": 2905,
+        "file": "grader-v1-receipts/algal-8ae09445-sonnet-1790732961853.json",
+        "role": "grader_receipt",
+        "sha256": "10fb69fc42159df1b37d588ee3893b2886d8dc0e45b544e5db2e1e71d7f681be"
+      },
+      {
+        "bytes": 2787,
+        "file": "grader-v1-receipts/algal-9a968eda-haiku-1790729372804.json",
+        "role": "grader_receipt",
+        "sha256": "d652411c602403d22b1476933b6f3c4238e189e0afe6a05e49eaebc1cc683cb3"
+      },
+      {
+        "bytes": 3085,
+        "file": "grader-v1-receipts/algal-9a968eda-sonnet-1790733016728.json",
+        "role": "grader_receipt",
+        "sha256": "23b1fe94307ac8c4b45c19bf29873d39fbd332bfa6dc4649f58a5a7023388729"
+      },
+      {
+        "bytes": 2813,
+        "file": "grader-v1-receipts/algal-a31a555b-haiku-1790734786796.json",
+        "role": "grader_receipt",
+        "sha256": "c16d492631f08f6a166498c31f0f3a18172ec73f0a15f2bf0f06683da93ff88c"
+      },
+      {
+        "bytes": 3123,
+        "file": "grader-v1-receipts/algal-a31a555b-sonnet-1790734580355.json",
+        "role": "grader_receipt",
+        "sha256": "b6518f3ffcd2af23283fb08b5ad93d9f824d0f4aa402b472fb19f0267f729458"
+      },
+      {
+        "bytes": 2759,
+        "file": "grader-v1-receipts/algal-a89df5e2-haiku-1790733837953.json",
+        "role": "grader_receipt",
+        "sha256": "0fe285c237404bf451ae51d31844aa6854ccff018abb8d41b4a648bf975a42bf"
+      },
+      {
+        "bytes": 2964,
+        "file": "grader-v1-receipts/algal-a89df5e2-sonnet-1790729149173.json",
+        "role": "grader_receipt",
+        "sha256": "86504fd3ec80f6f6278e795d6a7503e8fbee9bc00230854137e301bcf751b5d3"
+      },
+      {
+        "bytes": 2781,
+        "file": "grader-v1-receipts/algal-b54b5129-haiku-1790734766227.json",
+        "role": "grader_receipt",
+        "sha256": "8a36031dd8c2d98b3b7870cd2d03e66bf23f027426498b8622197f8bc6af8625"
+      },
+      {
+        "bytes": 2693,
+        "file": "grader-v1-receipts/algal-b54b5129-sonnet-1790732680511.json",
+        "role": "grader_receipt",
+        "sha256": "9574e1d5bbea169d2a83cff2cbc5e088815eca575e24ad8060b6d458170cf348"
+      },
+      {
+        "bytes": 3003,
+        "file": "grader-v1-receipts/algal-d09e1335-haiku-1790732740609.json",
+        "role": "grader_receipt",
+        "sha256": "923d2e767d7031687f71c39ea3bf68a57fed5daf4c7a21023ad68809300d234e"
+      },
+      {
+        "bytes": 2811,
+        "file": "grader-v1-receipts/algal-d09e1335-sonnet-1790734341119.json",
+        "role": "grader_receipt",
+        "sha256": "693335beceddfca3f2f4710ab4fa381ae7d647504f0a15871e36706f20e3fe13"
+      },
+      {
+        "bytes": 2942,
+        "file": "grader-v1-receipts/sys1-3e1a7cb5-haiku-1790734754600.json",
+        "role": "grader_receipt",
+        "sha256": "9ca153d1e38dcd296fc76a2933717ff05f5bf0c10f08e1588c46eb0640a1412e"
+      },
+      {
+        "bytes": 2967,
+        "file": "grader-v1-receipts/sys1-3e1a7cb5-sonnet-1790734468694.json",
+        "role": "grader_receipt",
+        "sha256": "297393082d04bfc9b9052c266fec52a93c9e95d1c0bca552dbf78f640d1c6100"
+      },
+      {
+        "bytes": 2727,
+        "file": "grader-v1-receipts/sys1-62f2a616-haiku-1790734030586.json",
+        "role": "grader_receipt",
+        "sha256": "e0561de8b2a1506db931849a3e1f73f7838358f0c87f63949a5def725d0127df"
+      },
+      {
+        "bytes": 2922,
+        "file": "grader-v1-receipts/sys1-62f2a616-sonnet-1790734649643.json",
+        "role": "grader_receipt",
+        "sha256": "c0d1d17114b0d2dc733935e85c7752d6329cf987b34fc1877a2e4ff5b539a372"
+      },
+      {
+        "bytes": 3024,
+        "file": "grader-v1-receipts/sys1-696a40c0-haiku-1790733035227.json",
+        "role": "grader_receipt",
+        "sha256": "86e459a14b320dcd20b78dfa79ae6f80bf223ee18096c2efa067a522ddfbd9c5"
+      },
+      {
+        "bytes": 1418,
+        "file": "grader-v1-receipts/sys1-696a40c0-haiku-1790733383007.json",
+        "role": "grader_receipt",
+        "sha256": "50c84d1ccfea45ecb33db938a29f1065b07baf173e556656b9f76b5aa38c0fc4"
+      },
+      {
+        "bytes": 2792,
+        "file": "grader-v1-receipts/sys1-696a40c0-haiku-1790733428884.json",
+        "role": "grader_receipt",
+        "sha256": "a62209d4a3c590c83ce367ea9995523602fb7c5fb278d94b420349a4fcb8cd6b"
+      },
+      {
+        "bytes": 2900,
+        "file": "grader-v1-receipts/sys1-696a40c0-haiku-1790733558212.json",
+        "role": "grader_receipt",
+        "sha256": "3816d6319e798dbf56d1687a0d913d36901cbd6297c30983e2a758c28de9b666"
+      },
+      {
+        "bytes": 2980,
+        "file": "grader-v1-receipts/sys1-696a40c0-sonnet-1790734429928.json",
+        "role": "grader_receipt",
+        "sha256": "23f7e84a24dfe7af9f0b3f8c08cb261ff738f968cd6c163254404627113141a5"
+      },
+      {
+        "bytes": 3203,
+        "file": "grader-v1-receipts/sys1-867ac370-haiku-1790734333695.json",
+        "role": "grader_receipt",
+        "sha256": "970f92dda69d59f73d2aeb26f5ef7df926a0b6902d99f98b51ed77e945757a12"
+      },
+      {
+        "bytes": 2933,
+        "file": "grader-v1-receipts/sys1-867ac370-sonnet-1790734365331.json",
+        "role": "grader_receipt",
+        "sha256": "6029a15cf1c2e50fb5b5b765f29aba6574451ba855061a382e3eb46945050548"
+      },
+      {
+        "bytes": 2736,
+        "file": "grader-v1-receipts/sys1-9818585f-haiku-1790734587365.json",
+        "role": "grader_receipt",
+        "sha256": "236b7bea4221202f12b3f54b961e6fa17e3cadcf880ff752ddc85dfadd32dec2"
+      },
+      {
+        "bytes": 3037,
+        "file": "grader-v1-receipts/sys1-9818585f-sonnet-1790729259607.json",
+        "role": "grader_receipt",
+        "sha256": "48a0c56a7ac23c804c76b38f75ccd40385e0273a0dcd75bce689dc93f1893703"
+      },
+      {
+        "bytes": 2995,
+        "file": "grader-v1-receipts/sys1-9acd4730-haiku-1790734423884.json",
+        "role": "grader_receipt",
+        "sha256": "d8b07bbaa17f2c929aa7c14a42c8ec75bd581fe68dc3291413a85d1fa8821c2c"
+      },
+      {
+        "bytes": 2939,
+        "file": "grader-v1-receipts/sys1-9acd4730-sonnet-1790729286820.json",
+        "role": "grader_receipt",
+        "sha256": "9f8c77afcce99b556b56f2304dca5453d1ee9c46bfba10f6f31757c6ea8a24e5"
+      },
+      {
+        "bytes": 3083,
+        "file": "grader-v1-receipts/sys1-acdce8cf-haiku-1790734415923.json",
+        "role": "grader_receipt",
+        "sha256": "839e9a76968be699041405d4cc2bf4e5d3417b688c28824705242b9205799a58"
+      },
+      {
+        "bytes": 3095,
+        "file": "grader-v1-receipts/sys1-acdce8cf-sonnet-1790732719862.json",
+        "role": "grader_receipt",
+        "sha256": "7f7da7ef46e02fe9ad09adf26bb6a2d5f8f8a61ad8290f7fec0ba6ee2b54d573"
+      },
+      {
+        "bytes": 3062,
+        "file": "grader-v1-receipts/sys1-efd2af39-haiku-1790734462606.json",
+        "role": "grader_receipt",
+        "sha256": "f5785da4b57505d03340b08487e6ebbe67ff187c62e5c3204c545210d1ebadb6"
+      },
+      {
+        "bytes": 2864,
+        "file": "grader-v1-receipts/sys1-efd2af39-sonnet-1790732977175.json",
+        "role": "grader_receipt",
+        "sha256": "f50ec44462fe0ca41f53807236430c6d065ea683d7cda8c26a43f3fd8752205b"
+      },
+      {
+        "bytes": 2897,
+        "file": "grader-v1-receipts/sys1-f3d88f5a-haiku-1790734571619.json",
+        "role": "grader_receipt",
+        "sha256": "010d9a5a8f1ff8724506d9c001b498d582987e220f771abbfcaeed0bb7025250"
+      },
+      {
+        "bytes": 2745,
+        "file": "grader-v1-receipts/sys1-f3d88f5a-sonnet-1790734796474.json",
+        "role": "grader_receipt",
+        "sha256": "74a3f348d6440d67c6fa691165e19c31427729aa4315554318ad33e4b2071e73"
+      },
+      {
+        "bytes": 3005,
+        "file": "grader-v1-receipts/sys1-f922ff80-haiku-1790733845140.json",
+        "role": "grader_receipt",
+        "sha256": "51093e6f1f30ff2ac943cae546a2b157790dad004fe1ef1c720d91dca016275a"
+      },
+      {
+        "bytes": 3022,
+        "file": "grader-v1-receipts/sys1-f922ff80-haiku-1790733967489.json",
+        "role": "grader_receipt",
+        "sha256": "0df9e4bc4589aef2821f2d7dd7ad2efa9581186da1bafa76bd6c255aa138e863"
+      },
+      {
+        "bytes": 2581,
+        "file": "grader-v1-receipts/sys1-f922ff80-sonnet-1790734407603.json",
+        "role": "grader_receipt",
+        "sha256": "8b865da7900347d842e0999e382a6db69a8b34a34b2c55f987d59ae54b4f0f68"
+      },
+      {
+        "bytes": 2930,
+        "file": "grader-v1-receipts/system-one-skills-072a15f9-haiku-1790732659881.json",
+        "role": "grader_receipt",
+        "sha256": "c0b671836b92c5c567aba9f0517d4af2cc0fc8abb363957189e6692e2f2463ff"
+      },
+      {
+        "bytes": 2833,
+        "file": "grader-v1-receipts/system-one-skills-072a15f9-sonnet-1790734379746.json",
+        "role": "grader_receipt",
+        "sha256": "699d170352cc0b06d352f0fb17e6d3ed2ac9ea626fea2ef4552374161cdd5933"
+      },
+      {
+        "bytes": 2801,
+        "file": "grader-v1-receipts/system-one-skills-5e426654-haiku-1790734805681.json",
+        "role": "grader_receipt",
+        "sha256": "86a0ef604cd0e65052a47342bb514d348e164329b7bc1d95420aff4421c90c08"
+      },
+      {
+        "bytes": 3013,
+        "file": "grader-v1-receipts/system-one-skills-5e426654-sonnet-1790734442141.json",
+        "role": "grader_receipt",
+        "sha256": "eada3eb18ce6d624765299e3ca818baea0a916c5a33d7611c9555283ead3b7a1"
+      },
+      {
+        "bytes": 3002,
+        "file": "grader-v1-receipts/system-one-skills-d2514671-haiku-1790732904964.json",
+        "role": "grader_receipt",
+        "sha256": "3071cf3dee8dd972db04f7ff37c1ea8804cbd7f9b7466b23cbfd99d4e393afaa"
+      },
+      {
+        "bytes": 2941,
+        "file": "grader-v1-receipts/system-one-skills-d2514671-sonnet-1790734390196.json",
+        "role": "grader_receipt",
+        "sha256": "dd281427042f24e9430f0837aaa5f297482b4e035b973445a22a06052dbe2496"
+      },
+      {
+        "bytes": 3207,
+        "file": "grader-v1-receipts/system-one-skills-f316c1cd-haiku-1790734024094.json",
+        "role": "grader_receipt",
+        "sha256": "ea08db0e81f7c45a596d9d911c5955dff3fd7878b0e6d6cc54ffaa7cf963b8b9"
+      },
+      {
+        "bytes": 3047,
+        "file": "grader-v1-receipts/system-one-skills-f316c1cd-sonnet-1790734727611.json",
+        "role": "grader_receipt",
+        "sha256": "325cbeb2bce42c4c36dd0484c797b8d1dd884aba75f4b4e4f06855fa2127ea2c"
+      },
+      {
+        "bytes": 2844,
+        "file": "grader-v1-receipts/wordcell-16a5fae9-haiku-1790732928863.json",
+        "role": "grader_receipt",
+        "sha256": "c82952fad0213d05f397eb1df81e7d7936dbd623a83e0ee9a5cace6a18befc82"
+      },
+      {
+        "bytes": 2564,
+        "file": "grader-v1-receipts/wordcell-16a5fae9-sonnet-1790733004523.json",
+        "role": "grader_receipt",
+        "sha256": "3ae8a226acc4d474f6a4e8c1d99a5d1580ebf4dffee6602a5ba584632c31b514"
+      },
+      {
+        "bytes": 2909,
+        "file": "grader-v1-receipts/wordcell-8b89291a-haiku-1790734642555.json",
+        "role": "grader_receipt",
+        "sha256": "b5987c5195e8b94af5e5ffe9611d09f42558a0e497a65a9d0bacd881b9200d7c"
+      },
+      {
+        "bytes": 3172,
+        "file": "grader-v1-receipts/wordcell-8b89291a-sonnet-1790732746744.json",
+        "role": "grader_receipt",
+        "sha256": "03fb521a73511556afbab1f2cd418a7bda8ed635a29afd0338190251759c3a9e"
+      },
+      {
+        "bytes": 2985,
+        "file": "grader-v1-receipts/wordcell-926e2b97-haiku-1790732951548.json",
+        "role": "grader_receipt",
+        "sha256": "88f7f958b5b4231e9e3dc3d04231bf8c95db3d20d481453f5540359ccac84b53"
+      },
+      {
+        "bytes": 3037,
+        "file": "grader-v1-receipts/wordcell-926e2b97-sonnet-1790734053087.json",
+        "role": "grader_receipt",
+        "sha256": "5a64064256e97127a68cf713bee1ad5127958e34307e388000710bc39a338190"
+      },
+      {
+        "bytes": 2977,
+        "file": "grader-v1-receipts/wordcell-a3b44090-haiku-1790734356016.json",
+        "role": "grader_receipt",
+        "sha256": "51b8225d39b66aaa6ee90bf4a8a541b6c9d7203483aec1735199620d568f4528"
+      },
+      {
+        "bytes": 2760,
+        "file": "grader-v1-receipts/wordcell-a3b44090-sonnet-1790733974431.json",
+        "role": "grader_receipt",
+        "sha256": "b3bb94ff469a8b3de89c117d2e954c09e95f83e746db74e602b6241eb7225e8f"
+      },
+      {
+        "bytes": 2767,
+        "file": "grader-v2-receipts/algal-07caea33-haiku-1790737061164.json",
+        "role": "grader_receipt",
+        "sha256": "dd4fb688bdfd2b26720e5e267572c0da79d5adf083cee11e09067bf7c051f86d"
+      },
+      {
+        "bytes": 3116,
+        "file": "grader-v2-receipts/algal-07caea33-sonnet-1790736844917.json",
+        "role": "grader_receipt",
+        "sha256": "e6cd9e27f574909dfad8aa28f9c202c0336b01b7a69f9ee47471759b5f2c53b7"
+      },
+      {
+        "bytes": 2746,
+        "file": "grader-v2-receipts/algal-086013f5-haiku-1790736800513.json",
+        "role": "grader_receipt",
+        "sha256": "0d8e4f0a718d7b461b4b05d6bfbc9a42c51ccafac3af23ccaa441bd24db8b5cf"
+      },
+      {
+        "bytes": 2843,
+        "file": "grader-v2-receipts/algal-086013f5-sonnet-1790736956569.json",
+        "role": "grader_receipt",
+        "sha256": "9dcbc999ef9a297801d4651bbc7d758a279c146028b25781928b73954cf2893b"
+      },
+      {
+        "bytes": 2762,
+        "file": "grader-v2-receipts/algal-1f946e7c-haiku-1790737663269.json",
+        "role": "grader_receipt",
+        "sha256": "2183b9274539e0bebe77637d8181bc344a98c0f246a5642a1151f9747b5e4996"
+      },
+      {
+        "bytes": 2780,
+        "file": "grader-v2-receipts/algal-1f946e7c-sonnet-1790736634414.json",
+        "role": "grader_receipt",
+        "sha256": "1f796465a544cba439d1d50519efdae5aec3475fbe7ca50de22d668e0f6c2e21"
+      },
+      {
+        "bytes": 2899,
+        "file": "grader-v2-receipts/algal-319b2353-haiku-1790737595749.json",
+        "role": "grader_receipt",
+        "sha256": "b215291dbe98d266e0919d36df59cbbd0dce8bf8f91344591286bd2c994599c9"
+      },
+      {
+        "bytes": 2992,
+        "file": "grader-v2-receipts/algal-319b2353-sonnet-1790736770094.json",
+        "role": "grader_receipt",
+        "sha256": "a5eb5403a2f0063fdf1bf14af5a0dd99d226cda8bcfff29bd9af79710c920999"
+      },
+      {
+        "bytes": 2911,
+        "file": "grader-v2-receipts/algal-43c9dcf9-haiku-1790737699544.json",
+        "role": "grader_receipt",
+        "sha256": "b11b4eee602f15e709a0d66b6db673cf778c49c56dd034c04dbf9822e8690320"
+      },
+      {
+        "bytes": 3103,
+        "file": "grader-v2-receipts/algal-43c9dcf9-sonnet-1790737583307.json",
+        "role": "grader_receipt",
+        "sha256": "35ce49f4809a2eaecd40574da458fecf20f342c3fc859d78c6f88125623b71c5"
+      },
+      {
+        "bytes": 2743,
+        "file": "grader-v2-receipts/algal-7cdae37e-haiku-1790736687204.json",
+        "role": "grader_receipt",
+        "sha256": "16bdf09b29ff3d8e936cc6e072771ae5556ff4456cf06fa938b62fa10317c359"
+      },
+      {
+        "bytes": 2947,
+        "file": "grader-v2-receipts/algal-7cdae37e-sonnet-1790736996221.json",
+        "role": "grader_receipt",
+        "sha256": "25f517695eae2560f308ccc201bb00524887a82d0e97c91d73bd97268ca826e4"
+      },
+      {
+        "bytes": 2837,
+        "file": "grader-v2-receipts/algal-8ae09445-haiku-1790736819586.json",
+        "role": "grader_receipt",
+        "sha256": "75eb6513077dd27d8c6d202bac2e41909494d5cfaf46727460b5aacc196d7828"
+      },
+      {
+        "bytes": 2813,
+        "file": "grader-v2-receipts/algal-8ae09445-sonnet-1790736837238.json",
+        "role": "grader_receipt",
+        "sha256": "1765f01dd3b787c791c258c85d740bbad3402ef2fa69031fa2ed8edb7fc0eda6"
+      },
+      {
+        "bytes": 2795,
+        "file": "grader-v2-receipts/algal-9a968eda-haiku-1790736666615.json",
+        "role": "grader_receipt",
+        "sha256": "6d3c59e3597724149937d90a7da1cc6e0ab1b8bbd63d3735463b72866d392e00"
+      },
+      {
+        "bytes": 3091,
+        "file": "grader-v2-receipts/algal-9a968eda-sonnet-1790736879088.json",
+        "role": "grader_receipt",
+        "sha256": "b7fe6910ee83e79452cd2e1dd1db4b3b859c9072f45aadf2cd1b67154a5a8d3a"
+      },
+      {
+        "bytes": 2839,
+        "file": "grader-v2-receipts/algal-a31a555b-haiku-1790737674225.json",
+        "role": "grader_receipt",
+        "sha256": "636509f55903aee55c18fba7dc5f1093f62176a73a5a1829aece9d5960fd03e0"
+      },
+      {
+        "bytes": 3057,
+        "file": "grader-v2-receipts/algal-a31a555b-sonnet-1790737564535.json",
+        "role": "grader_receipt",
+        "sha256": "9ace21fdb8862eb76b8aab1c24d93435934f9eab02e635758498f250dac8b3d6"
+      },
+      {
+        "bytes": 2759,
+        "file": "grader-v2-receipts/algal-a89df5e2-haiku-1790736912721.json",
+        "role": "grader_receipt",
+        "sha256": "035910ab9e136b0585f32bd1e7180eebcfeb491fe82294b9416d24692fa5dfc6"
+      },
+      {
+        "bytes": 2821,
+        "file": "grader-v2-receipts/algal-a89df5e2-sonnet-1790736557951.json",
+        "role": "grader_receipt",
+        "sha256": "7e4e30e4223ae90492fd2c5ebac07df8fe8ce50a348860d003ac45b5d2358875"
+      },
+      {
+        "bytes": 2781,
+        "file": "grader-v2-receipts/algal-b54b5129-haiku-1790737655025.json",
+        "role": "grader_receipt",
+        "sha256": "b02a86821474382feccf4ba47e98f87d01af72d1de4516fee1ade75470f0e3fc"
+      },
+      {
+        "bytes": 3099,
+        "file": "grader-v2-receipts/algal-b54b5129-sonnet-1790736696635.json",
+        "role": "grader_receipt",
+        "sha256": "09561a0bdcf86481931acd114864474c877e0f1b684d121042e7ee79b48183ea"
+      },
+      {
+        "bytes": 3013,
+        "file": "grader-v2-receipts/algal-d09e1335-haiku-1790736736615.json",
+        "role": "grader_receipt",
+        "sha256": "519d870930575774d16f4ec0ce23a0b260a3a5601ef1debaee0122f6ad6fe4dc"
+      },
+      {
+        "bytes": 2955,
+        "file": "grader-v2-receipts/algal-d09e1335-sonnet-1790737092424.json",
+        "role": "grader_receipt",
+        "sha256": "952ad9fcc7e9fa13e824b078ffdd04294773d3c0a18abf0e6d113813afdcd26c"
+      },
+      {
+        "bytes": 2964,
+        "file": "grader-v2-receipts/sys1-3e1a7cb5-haiku-1790737642604.json",
+        "role": "grader_receipt",
+        "sha256": "62a083f14bc71b806436188de3763aed8d1c56feecf4a3c19f1f9ed56945b1fb"
+      },
+      {
+        "bytes": 3017,
+        "file": "grader-v2-receipts/sys1-3e1a7cb5-sonnet-1790737518131.json",
+        "role": "grader_receipt",
+        "sha256": "9d54d0eee5033af5ec9d7a6b5751bf50b1c91b666342932198d640df00950f98"
+      },
+      {
+        "bytes": 2659,
+        "file": "grader-v2-receipts/sys1-62f2a616-haiku-1790736989830.json",
+        "role": "grader_receipt",
+        "sha256": "6b8f5ff601d6304378b4cc2540a3a759e01182f492b65726527f663952b55621"
+      },
+      {
+        "bytes": 3181,
+        "file": "grader-v2-receipts/sys1-62f2a616-sonnet-1790737618668.json",
+        "role": "grader_receipt",
+        "sha256": "de4c90ee5bc57568e5a2bb9e97895c42e823c6877453bb64eec4a95c2dbbcc84"
+      },
+      {
+        "bytes": 2752,
+        "file": "grader-v2-receipts/sys1-696a40c0-haiku-1790736904260.json",
+        "role": "grader_receipt",
+        "sha256": "e9c1d12c9b50748244260763aa7672c2cfbb18d059d93fa63d5a4312f405251f"
+      },
+      {
+        "bytes": 3018,
+        "file": "grader-v2-receipts/sys1-696a40c0-sonnet-1790737227510.json",
+        "role": "grader_receipt",
+        "sha256": "c99c1a4b27909166c09c09d82687b674d2117ceede523678ff6936916e2caf99"
+      },
+      {
+        "bytes": 3033,
+        "file": "grader-v2-receipts/sys1-867ac370-haiku-1790737070327.json",
+        "role": "grader_receipt",
+        "sha256": "8ac65ae4e8f115c537c57208a0ea421f0cb2ff86a6ff59ecf0fa473c92b58761"
+      },
+      {
+        "bytes": 2879,
+        "file": "grader-v2-receipts/sys1-867ac370-sonnet-1790737125044.json",
+        "role": "grader_receipt",
+        "sha256": "1f40c12f8b0f8da89b4fa822870361dd087e51f89ed9bb7ef19c593f91c9990d"
+      },
+      {
+        "bytes": 2736,
+        "file": "grader-v2-receipts/sys1-9818585f-haiku-1790737572672.json",
+        "role": "grader_receipt",
+        "sha256": "b851d885b2683d7cc2c938a0bd8d30da2218e7b8c65d9fe06f743976e10f16dc"
+      },
+      {
+        "bytes": 2948,
+        "file": "grader-v2-receipts/sys1-9818585f-sonnet-1790736583060.json",
+        "role": "grader_receipt",
+        "sha256": "1075bbe217510728918c410e6f2ea60c90e73c27c9873ba00e69888b0792dcf3"
+      },
+      {
+        "bytes": 2911,
+        "file": "grader-v2-receipts/sys1-9acd4730-haiku-1790737201011.json",
+        "role": "grader_receipt",
+        "sha256": "d6b52d7597a1bda9614c8185e88deeada245338a37d9241fc38a0b8e7cbc3065"
+      },
+      {
+        "bytes": 2965,
+        "file": "grader-v2-receipts/sys1-9acd4730-sonnet-1790736607539.json",
+        "role": "grader_receipt",
+        "sha256": "38716109806836a2f95f6909e72c6741291d0ca84e0b08ae8cc151641be6be99"
+      },
+      {
+        "bytes": 3105,
+        "file": "grader-v2-receipts/sys1-acdce8cf-haiku-1790737192230.json",
+        "role": "grader_receipt",
+        "sha256": "400fda58ff2b5b43dd4381dc79c61daac8653d76e6a5797e7643bef4d82f3a79"
+      },
+      {
+        "bytes": 3001,
+        "file": "grader-v2-receipts/sys1-acdce8cf-sonnet-1790736711749.json",
+        "role": "grader_receipt",
+        "sha256": "a404a05dccbfe33f3d1f1729501d8ef440e7fcdc884ec61888bec5a46263250e"
+      },
+      {
+        "bytes": 2908,
+        "file": "grader-v2-receipts/sys1-efd2af39-haiku-1790737251787.json",
+        "role": "grader_receipt",
+        "sha256": "fccbc58e2b519ce5fb369ec002d424d5fa82b135be7c36cc34743ba667b6af89"
+      },
+      {
+        "bytes": 2908,
+        "file": "grader-v2-receipts/sys1-efd2af39-sonnet-1790736858137.json",
+        "role": "grader_receipt",
+        "sha256": "a16fc53d598d089ddc95827858f5ad0ea41820c5d1ff35e3e8750ef7a9ad387d"
+      },
+      {
+        "bytes": 2821,
+        "file": "grader-v2-receipts/sys1-f3d88f5a-haiku-1790737535441.json",
+        "role": "grader_receipt",
+        "sha256": "7c5f6568aab4fb487118b8cd01596236b208d0058256b6ebb3fde8dc28c52efc"
+      },
+      {
+        "bytes": 2559,
+        "file": "grader-v2-receipts/sys1-f3d88f5a-sonnet-1790737682883.json",
+        "role": "grader_receipt",
+        "sha256": "2ce8687ef2d3d7bd9fc05b1383dd21c71835df85f06ad0831140fb2cbdad9caf"
+      },
+      {
+        "bytes": 2925,
+        "file": "grader-v2-receipts/sys1-f922ff80-haiku-1790736921233.json",
+        "role": "grader_receipt",
+        "sha256": "c4f9f9a470eebafe216a14c56a0a48d5444c572ed3c73216cfc997aed2ff985f"
+      },
+      {
+        "bytes": 2562,
+        "file": "grader-v2-receipts/sys1-f922ff80-sonnet-1790737181363.json",
+        "role": "grader_receipt",
+        "sha256": "0d540b7193543822d79503de45f33e70fc7c827bd7b956f964dce27cae8d417e"
+      },
+      {
+        "bytes": 2969,
+        "file": "grader-v2-receipts/system-one-skills-072a15f9-haiku-1790736679959.json",
+        "role": "grader_receipt",
+        "sha256": "9f869655f81bf22123ed536afd2ea19cf2a1b79ed0e56abb67fc0a00cc09921a"
+      },
+      {
+        "bytes": 2559,
+        "file": "grader-v2-receipts/system-one-skills-072a15f9-sonnet-1790737154260.json",
+        "role": "grader_receipt",
+        "sha256": "9cd20d1e6a44c0030f5b1e3f5ebbcf7ebdbcfbe04cf9480bd761ec284b38cfe4"
+      },
+      {
+        "bytes": 2954,
+        "file": "grader-v2-receipts/system-one-skills-5e426654-haiku-1790737690667.json",
+        "role": "grader_receipt",
+        "sha256": "35af827d8ff2a6a23a44fa32452f5acfc25aabce9b5f14e1181784131097572c"
+      },
+      {
+        "bytes": 3010,
+        "file": "grader-v2-receipts/system-one-skills-5e426654-sonnet-1790737240467.json",
+        "role": "grader_receipt",
+        "sha256": "6af533dd4970592d7e0eb9972eddf6144211e01ac01c74ec5941563a751358c6"
+      },
+      {
+        "bytes": 2872,
+        "file": "grader-v2-receipts/system-one-skills-d2514671-haiku-1790736789665.json",
+        "role": "grader_receipt",
+        "sha256": "14b04349f6ebcf6728a3a5221cc2cfaffe71d8216c2b91f698a0e62ddac350e3"
+      },
+      {
+        "bytes": 2899,
+        "file": "grader-v2-receipts/system-one-skills-d2514671-sonnet-1790737161077.json",
+        "role": "grader_receipt",
+        "sha256": "060366b0b72a2a615964af4068b70745fab2451d0ded91f74098026bb756c39e"
+      },
+      {
+        "bytes": 3161,
+        "file": "grader-v2-receipts/system-one-skills-f316c1cd-haiku-1790736981972.json",
+        "role": "grader_receipt",
+        "sha256": "689544f6f4c6957f1b2f3e642f0e916a4d385356dbdcd05e6fcda1d9e38347df"
+      },
+      {
+        "bytes": 2991,
+        "file": "grader-v2-receipts/system-one-skills-f316c1cd-sonnet-1790737627824.json",
+        "role": "grader_receipt",
+        "sha256": "869a011f170a3a72d003450834da1bc82a6b6e88ac86312acfbfc2d4afe9bd8c"
+      },
+      {
+        "bytes": 3039,
+        "file": "grader-v2-receipts/wordcell-16a5fae9-haiku-1790736810005.json",
+        "role": "grader_receipt",
+        "sha256": "24ddc906149ca74ec10ca9621cf6c91e6be79e3d117a1e8ffc15f46ca0b716cb"
+      },
+      {
+        "bytes": 2559,
+        "file": "grader-v2-receipts/wordcell-16a5fae9-sonnet-1790736871673.json",
+        "role": "grader_receipt",
+        "sha256": "8849ff6c081b45b88d12ec469ae8c7aae17450923685c003f816c0b06c8c0007"
+      },
+      {
+        "bytes": 2945,
+        "file": "grader-v2-receipts/wordcell-8b89291a-haiku-1790737603704.json",
+        "role": "grader_receipt",
+        "sha256": "a14589ba6bffcd6e121bafef8294f5b151730788310dd1744f2cc4f0a33864bf"
+      },
+      {
+        "bytes": 3092,
+        "file": "grader-v2-receipts/wordcell-8b89291a-sonnet-1790736752662.json",
+        "role": "grader_receipt",
+        "sha256": "d80feaceb114a6436b2c7c9abc42b6917f6adb11448da32089f147aef2939d46"
+      },
+      {
+        "bytes": 2985,
+        "file": "grader-v2-receipts/wordcell-926e2b97-haiku-1790736827157.json",
+        "role": "grader_receipt",
+        "sha256": "793282e6fccdb180f70d512e6c78e426bc1dc8b819170661b5707a1b7d5b5ae4"
+      },
+      {
+        "bytes": 3356,
+        "file": "grader-v2-receipts/wordcell-926e2b97-sonnet-1790737005663.json",
+        "role": "grader_receipt",
+        "sha256": "66e7d954edd3201d4dc04f4fd0cfd60e12d2379e0fe7870b322a473a590207cc"
+      },
+      {
+        "bytes": 2977,
+        "file": "grader-v2-receipts/wordcell-a3b44090-haiku-1790737114247.json",
+        "role": "grader_receipt",
+        "sha256": "c6e356839c62a1d6f69efd90746e94af25ca7b6492a45a85ecf32564d6f14fe8"
+      },
+      {
+        "bytes": 2895,
+        "file": "grader-v2-receipts/wordcell-a3b44090-sonnet-1790736932525.json",
+        "role": "grader_receipt",
+        "sha256": "799746a4f9efa99e1f1a7c46332f2ca1bc8fb5b0c13a27196056d5b675b5f1b2"
+      },
+      {
+        "bytes": 1198751,
+        "file": "main/evidence/algal-07caea33-haiku.jsonl",
+        "role": "raw_run_transcript",
+        "sha256": "241a1ce8064cfec21c4a079b5d69b4dd7a435ef0e05f373516069e10c3d5ce0c"
+      },
+      {
+        "bytes": 177143,
+        "file": "main/evidence/algal-07caea33-sonnet.jsonl",
+        "role": "raw_run_transcript",
+        "sha256": "922b48323b071afb5fcbff2a625323491bc814e17fb9c8d61a65c73633c87554"
+      },
+      {
+        "bytes": 600679,
+        "file": "main/evidence/algal-086013f5-haiku.jsonl",
+        "role": "raw_run_transcript",
+        "sha256": "251c2571ba6c7120d8eed69f406324cc691c29d8284ae9e262cf80d290291241"
+      },
+      {
+        "bytes": 197633,
+        "file": "main/evidence/algal-086013f5-sonnet.jsonl",
+        "role": "raw_run_transcript",
+        "sha256": "d1f12b0007fd6b7c66b7de9e07d99fe94be74c38ceab820ee8ee20413c3ba004"
+      },
+      {
+        "bytes": 2971599,
+        "file": "main/evidence/algal-1f946e7c-haiku.jsonl",
+        "role": "raw_run_transcript",
+        "sha256": "cfe9aa97adca77081dabc9511466b52e1a51e9bfdc0b5750738159331f32cd88"
+      },
+      {
+        "bytes": 301940,
+        "file": "main/evidence/algal-1f946e7c-sonnet.jsonl",
+        "role": "raw_run_transcript",
+        "sha256": "37b71fe6f3b493309d0fc075922ba0af773604181dbf54a6d6a955f423379997"
+      },
+      {
+        "bytes": 1243268,
+        "file": "main/evidence/algal-319b2353-haiku.jsonl",
+        "role": "raw_run_transcript",
+        "sha256": "e9940cccf7af1c1441d014eeb533d72772341514bce8abcd7187db2ce52281b5"
+      },
+      {
+        "bytes": 213116,
+        "file": "main/evidence/algal-319b2353-sonnet.jsonl",
+        "role": "raw_run_transcript",
+        "sha256": "fa4a49534912b121ddc40fad66138e825b1b83c17ca5eb0ae38db39be14dfc5a"
+      },
+      {
+        "bytes": 395093,
+        "file": "main/evidence/algal-43c9dcf9-haiku.jsonl",
+        "role": "raw_run_transcript",
+        "sha256": "79dc44c20457298cb5ec363a2059f45bac29c470270bbc2f5711e77061a1cca0"
+      },
+      {
+        "bytes": 99396,
+        "file": "main/evidence/algal-43c9dcf9-sonnet.jsonl",
+        "role": "raw_run_transcript",
+        "sha256": "ce6c67d79313f7ac10a2f56bdae64f0650f1d39650668acd12b271fb3cca6917"
+      },
+      {
+        "bytes": 846710,
+        "file": "main/evidence/algal-7cdae37e-haiku.jsonl",
+        "role": "raw_run_transcript",
+        "sha256": "b636b4f663cc31675f65ec00587c0214c7d8573e7b04ceeeb479cd75cfe729e5"
+      },
+      {
+        "bytes": 149972,
+        "file": "main/evidence/algal-7cdae37e-sonnet.jsonl",
+        "role": "raw_run_transcript",
+        "sha256": "8813fd5c7117fc217527acf5d45189c7d3cb1cac11986a2e31a6925d8fe86483"
+      },
+      {
+        "bytes": 1513312,
+        "file": "main/evidence/algal-8ae09445-haiku.jsonl",
+        "role": "raw_run_transcript",
+        "sha256": "9b57b769a7ba2faeaa3da05755adca8c0063ecd9a3e163e3282893f9125e643a"
+      },
+      {
+        "bytes": 327568,
+        "file": "main/evidence/algal-8ae09445-sonnet.jsonl",
+        "role": "raw_run_transcript",
+        "sha256": "467922525254994005dc5c347fc121e300d7eaf1541da043e32b87b91040b286"
+      },
+      {
+        "bytes": 1053625,
+        "file": "main/evidence/algal-9a968eda-haiku.jsonl",
+        "role": "raw_run_transcript",
+        "sha256": "4235d7e388bc3710549162141d2f2cbee3efe51ec5f49cb4306ec7bcd286d1f8"
+      },
+      {
+        "bytes": 63155,
+        "file": "main/evidence/algal-9a968eda-sonnet.jsonl",
+        "role": "raw_run_transcript",
+        "sha256": "bc1c66f340ddc067fcd808a640fdd6dc4471f6a708b2017e3401bac35de7510c"
+      },
+      {
+        "bytes": 659738,
+        "file": "main/evidence/algal-a31a555b-haiku.jsonl",
+        "role": "raw_run_transcript",
+        "sha256": "1dadefce82af554a247d6bc54fd9dc4cfaab4be9227b6b1f15b3fbf11abfa22e"
+      },
+      {
+        "bytes": 204470,
+        "file": "main/evidence/algal-a31a555b-sonnet.jsonl",
+        "role": "raw_run_transcript",
+        "sha256": "29e2dba3a156784c33fc8d0f40734b3387c32ea350cc0655e22be1e636acc5e7"
+      },
+      {
+        "bytes": 1882853,
+        "file": "main/evidence/algal-a89df5e2-haiku.jsonl",
+        "role": "raw_run_transcript",
+        "sha256": "1f055a06d1ca40be1b9280630e390109f74f1e4d4c4f67c119d8a526bcb0e3cc"
+      },
+      {
+        "bytes": 312885,
+        "file": "main/evidence/algal-a89df5e2-sonnet.jsonl",
+        "role": "raw_run_transcript",
+        "sha256": "8379aecd3b16c5c28cd93fc7a0308781e3bbe883eec735c8880f8cf678d4235a"
+      },
+      {
+        "bytes": 2137833,
+        "file": "main/evidence/algal-b54b5129-haiku.jsonl",
+        "role": "raw_run_transcript",
+        "sha256": "eff7609d015d770466f01fadf1bf9632ad1b1787a45934751f01e2fd73ef7b20"
+      },
+      {
+        "bytes": 339322,
+        "file": "main/evidence/algal-b54b5129-sonnet.jsonl",
+        "role": "raw_run_transcript",
+        "sha256": "5410514b0185d92ebc0ac13542abb380289c699df8def120cbe29b6e2a26862d"
+      },
+      {
+        "bytes": 3322490,
+        "file": "main/evidence/algal-d09e1335-haiku.jsonl",
+        "role": "raw_run_transcript",
+        "sha256": "1821cf1647e0e8799f9d8b2d14c1ed18fd801b96e09066895bffb04b582bd76c"
+      },
+      {
+        "bytes": 224044,
+        "file": "main/evidence/algal-d09e1335-sonnet.jsonl",
+        "role": "raw_run_transcript",
+        "sha256": "ee1d7a90b57b6d46a5f3dd343dc3c77f79b472cabb0513dd93a00d8550bf3c34"
+      },
+      {
+        "bytes": 1446824,
+        "file": "main/evidence/sys1-3e1a7cb5-haiku.jsonl",
+        "role": "raw_run_transcript",
+        "sha256": "8c9d9d2253ed7c3c16da77473bd0f57a7d3a27e84541b4b3a2bd7e19fc4ad9b0"
+      },
+      {
+        "bytes": 361979,
+        "file": "main/evidence/sys1-3e1a7cb5-sonnet.jsonl",
+        "role": "raw_run_transcript",
+        "sha256": "e606562f25e277b55d8a3d1e86cef1e00323e08596a82d250fb1e59e723df4c8"
+      },
+      {
+        "bytes": 548462,
+        "file": "main/evidence/sys1-62f2a616-haiku.jsonl",
+        "role": "raw_run_transcript",
+        "sha256": "d7583f2bfcc1044b68b67a217d0acfca128e6c165b2579c8096bf7e1589257f9"
+      },
+      {
+        "bytes": 168691,
+        "file": "main/evidence/sys1-62f2a616-sonnet.jsonl",
+        "role": "raw_run_transcript",
+        "sha256": "5bd95b5bb42831128e045175502052b70aa070d333e29cfb241800f6376cba16"
+      },
+      {
+        "bytes": 1419188,
+        "file": "main/evidence/sys1-696a40c0-haiku.jsonl",
+        "role": "raw_run_transcript",
+        "sha256": "747d8d7a289719cb529855c4bae0837ed902873fe628c5fd97ea039b08737062"
+      },
+      {
+        "bytes": 165281,
+        "file": "main/evidence/sys1-696a40c0-sonnet.jsonl",
+        "role": "raw_run_transcript",
+        "sha256": "2a574e6ba3966a15c60d970c31496df3f71ee0df3ae8256d56c125236ed182bc"
+      },
+      {
+        "bytes": 1893332,
+        "file": "main/evidence/sys1-867ac370-haiku.jsonl",
+        "role": "raw_run_transcript",
+        "sha256": "5722196d4a05830fcfbc109f435516bb66272e9409ba2a577c61cfc47abbe3d9"
+      },
+      {
+        "bytes": 466819,
+        "file": "main/evidence/sys1-867ac370-sonnet.jsonl",
+        "role": "raw_run_transcript",
+        "sha256": "c089c8e1726c440b73ab5e40f1bd05bffd9a66b56d03f9b39d988905e038fc94"
+      },
+      {
+        "bytes": 1346706,
+        "file": "main/evidence/sys1-9818585f-haiku.jsonl",
+        "role": "raw_run_transcript",
+        "sha256": "d2496ada6eb718f256a1463aaf27a6a4e08dc8459d8df655ae899056ca69166a"
+      },
+      {
+        "bytes": 125937,
+        "file": "main/evidence/sys1-9818585f-sonnet.jsonl",
+        "role": "raw_run_transcript",
+        "sha256": "d3bb50bca4557375f5ff4a112b61b02a787b324128fa0887b849b0e0176e4c25"
+      },
+      {
+        "bytes": 617777,
+        "file": "main/evidence/sys1-9acd4730-haiku.jsonl",
+        "role": "raw_run_transcript",
+        "sha256": "6151c0a99e03c559b9206219316e0f9d0bd13bf56d94f84a48617c7d22ffbba5"
+      },
+      {
+        "bytes": 50299,
+        "file": "main/evidence/sys1-9acd4730-sonnet.jsonl",
+        "role": "raw_run_transcript",
+        "sha256": "56aa8055b5593e835fa903ad241b73ced0f14597f318963f319823f661edac98"
+      },
+      {
+        "bytes": 1192045,
+        "file": "main/evidence/sys1-acdce8cf-haiku.jsonl",
+        "role": "raw_run_transcript",
+        "sha256": "ab6a962c8f2f43c6ff01e1cacec5a749d2f60af3dea15c4c18e229c95fa0c1bd"
+      },
+      {
+        "bytes": 149231,
+        "file": "main/evidence/sys1-acdce8cf-sonnet.jsonl",
+        "role": "raw_run_transcript",
+        "sha256": "e1fc797539b3d93e6b108d486b5448abf8bcb052435cbcc6d1d3765d0ade0585"
+      },
+      {
+        "bytes": 2025052,
+        "file": "main/evidence/sys1-efd2af39-haiku.jsonl",
+        "role": "raw_run_transcript",
+        "sha256": "593406057b6e5605572f6a66af79105acfcf5719bbd252c108659825eb80684d"
+      },
+      {
+        "bytes": 290464,
+        "file": "main/evidence/sys1-efd2af39-sonnet.jsonl",
+        "role": "raw_run_transcript",
+        "sha256": "cff9a1e28180ebdf2982134bb900b72ce589a12b0a738c1fc1b300ecfa313d0b"
+      },
+      {
+        "bytes": 1058613,
+        "file": "main/evidence/sys1-f3d88f5a-haiku.jsonl",
+        "role": "raw_run_transcript",
+        "sha256": "254dc31839d6143ce6037c86cc55cf8c43d62dfcbfa091b163a39d0cf4a2ccf8"
+      },
+      {
+        "bytes": 52546,
+        "file": "main/evidence/sys1-f3d88f5a-sonnet.jsonl",
+        "role": "raw_run_transcript",
+        "sha256": "f2690727804945a3f7ab01196fc47b5223991ca71726456b9342fd20027c730d"
+      },
+      {
+        "bytes": 783885,
+        "file": "main/evidence/sys1-f922ff80-haiku.jsonl",
+        "role": "raw_run_transcript",
+        "sha256": "cffb8f849d404432886703a99abece4b27e5403d7f9bfaecbb1556316a5bec6b"
+      },
+      {
+        "bytes": 111901,
+        "file": "main/evidence/sys1-f922ff80-sonnet.jsonl",
+        "role": "raw_run_transcript",
+        "sha256": "f9b58e42f8ce7eeed5d4f93769b170768ab8484f15cbe57451f0da81bbf9a3ba"
+      },
+      {
+        "bytes": 790454,
+        "file": "main/evidence/system-one-skills-072a15f9-haiku.jsonl",
+        "role": "raw_run_transcript",
+        "sha256": "bc86e3b838d361af43f46d1d1cff9b9b1e829be6a015e9217f2720ecd58771da"
+      },
+      {
+        "bytes": 81639,
+        "file": "main/evidence/system-one-skills-072a15f9-sonnet.jsonl",
+        "role": "raw_run_transcript",
+        "sha256": "f583adc0d5197d0b61e24b2ef87521dc44e3ad8d39710a052f36d5d6b5344a6d"
+      },
+      {
+        "bytes": 500813,
+        "file": "main/evidence/system-one-skills-5e426654-haiku.jsonl",
+        "role": "raw_run_transcript",
+        "sha256": "007044096e7bd349ebb0794dfe7d4d69dfbfe3b0efb3e6055c321985a32d532a"
+      },
+      {
+        "bytes": 119408,
+        "file": "main/evidence/system-one-skills-5e426654-sonnet.jsonl",
+        "role": "raw_run_transcript",
+        "sha256": "d10aba8fc2caa45e46d4761513aa53634a43f57484be17a78116ce3a7e25ead1"
+      },
+      {
+        "bytes": 577889,
+        "file": "main/evidence/system-one-skills-d2514671-haiku.jsonl",
+        "role": "raw_run_transcript",
+        "sha256": "ed766ef6aa97f276177436fff74c69faf786c6083db7100b728b3d9be6bfa250"
+      },
+      {
+        "bytes": 108042,
+        "file": "main/evidence/system-one-skills-d2514671-sonnet.jsonl",
+        "role": "raw_run_transcript",
+        "sha256": "928b267bcbdf5f6848dfd4ce58e6ac613b3503cbdeba7082d38086f0be2e0d91"
+      },
+      {
+        "bytes": 488488,
+        "file": "main/evidence/system-one-skills-f316c1cd-haiku.jsonl",
+        "role": "raw_run_transcript",
+        "sha256": "b6f728753dc9ec116bddc3e06d1e9ccc2012686548a720feb19a3e031ac79c80"
+      },
+      {
+        "bytes": 194186,
+        "file": "main/evidence/system-one-skills-f316c1cd-sonnet.jsonl",
+        "role": "raw_run_transcript",
+        "sha256": "1368d4fdce4d589f45c032d6d933e22d7530787a08a91ff0e2c210dd9910d791"
+      },
+      {
+        "bytes": 1020026,
+        "file": "main/evidence/wordcell-16a5fae9-haiku.jsonl",
+        "role": "raw_run_transcript",
+        "sha256": "cdbf036e767e58bedb4921a9f0fe52014699605ce5fd94a9e1d8a1b3ff1eea60"
+      },
+      {
+        "bytes": 69500,
+        "file": "main/evidence/wordcell-16a5fae9-sonnet.jsonl",
+        "role": "raw_run_transcript",
+        "sha256": "2b927aef73118a36db28dd02c06f83dbb513360ffb8788b2c3a013a22c683ec3"
+      },
+      {
+        "bytes": 1013766,
+        "file": "main/evidence/wordcell-8b89291a-haiku.jsonl",
+        "role": "raw_run_transcript",
+        "sha256": "ff50aad6656fd5e748a457dfb82df3048cebf2e21a184541e2f90abe0a74f2b5"
+      },
+      {
+        "bytes": 103186,
+        "file": "main/evidence/wordcell-8b89291a-sonnet.jsonl",
+        "role": "raw_run_transcript",
+        "sha256": "33ad1380287f0c05681b68f9e8b92d1117949254c999eb520ba57e59f25b8580"
+      },
+      {
+        "bytes": 605118,
+        "file": "main/evidence/wordcell-926e2b97-haiku.jsonl",
+        "role": "raw_run_transcript",
+        "sha256": "9666d87c2feed08cb9c676f64b90b3725cb116450a7e7d2fb2ce1d43bd0a039d"
+      },
+      {
+        "bytes": 84768,
+        "file": "main/evidence/wordcell-926e2b97-sonnet.jsonl",
+        "role": "raw_run_transcript",
+        "sha256": "937efbe515ae4049b4f4952dd5efb488f03191a1c1020efe4896079be0655841"
+      },
+      {
+        "bytes": 2011763,
+        "file": "main/evidence/wordcell-a3b44090-haiku.jsonl",
+        "role": "raw_run_transcript",
+        "sha256": "485600708971ec9ec5216942a4ad6609c73aa341b8681942c49bde3cc2a4a7e7"
+      },
+      {
+        "bytes": 85881,
+        "file": "main/evidence/wordcell-a3b44090-sonnet.jsonl",
+        "role": "raw_run_transcript",
+        "sha256": "b223143e3b93b10a3ae6a847e9dd9c95360f10986abf9ea40140f61dcaa97cc3"
+      },
+      {
+        "bytes": 216109,
+        "file": "main/runs.json",
+        "role": "run_record_aliases",
+        "sha256": "cfcc9a0f3211167a7623f0bd1ea01b6699ebf9f739b00323cc4627454f258f96"
+      },
+      {
+        "bytes": 466514,
+        "file": "pilot-invalid-1/evidence/algal-319b2353-sonnet.jsonl",
+        "role": "raw_run_transcript",
+        "sha256": "8120ce698f5c447dc86f999e6650700260c0da110c755d0753b2dad9a0d77157"
+      },
+      {
+        "bytes": 3292,
+        "file": "pilot-invalid-1/runs.json",
+        "role": "run_record_aliases",
+        "sha256": "a24361e3b6119792c82b74c4ccada3365c823d491699348e5d96bf99978b7048"
+      },
+      {
+        "bytes": 1601427,
+        "file": "pilot/evidence/algal-319b2353-haiku.jsonl",
+        "role": "raw_run_transcript",
+        "sha256": "c0be460884e430663cb00d761adabb00560badb3f751286955b09075da07bfa5"
+      },
+      {
+        "bytes": 239479,
+        "file": "pilot/evidence/algal-319b2353-sonnet.jsonl",
+        "role": "raw_run_transcript",
+        "sha256": "a1934dc270a77ec3af26cf783f9f0228898d637d5b8ac67be59c3361c18490fd"
+      },
+      {
+        "bytes": 1639919,
+        "file": "pilot/evidence/wordcell-a3b44090-haiku.jsonl",
+        "role": "raw_run_transcript",
+        "sha256": "d023432eb3b8e0e9958a5b9cc0db8be8a362aa652030ad4761573c1e8427a7e2"
+      },
+      {
+        "bytes": 95557,
+        "file": "pilot/evidence/wordcell-a3b44090-sonnet.jsonl",
+        "role": "raw_run_transcript",
+        "sha256": "e7586205b2e77647d8a958bcc990658c968066cc2516f45fd9797f278dca9c5d"
+      },
+      {
+        "bytes": 12609,
+        "file": "pilot/runs.json",
+        "role": "run_record_aliases",
+        "sha256": "77ea8b892fd195e6d098492f5eb83b6b4cba6fa3ccca3a9557615e0d2307cae7"
+      }
+    ],
+    "main_run_budget_usd": 120,
+    "main_run_cap": {
+      "cap_usd": 120,
+      "main_cost_evidence_complete_for_inventoried_calls": true,
+      "observed_headroom_usd": 85.72768175,
+      "observed_main_cost_usd": 34.27231825,
+      "observed_total_within_cap": true,
+      "policy_references": [
+        {
+          "file": "analysis-original/COMPLETION-BASELINE-PLAN-2026-09.md",
+          "lines": [
+            148,
+            149,
+            150,
+            151,
+            152,
+            153,
+            154
+          ]
+        },
+        {
+          "file": "analysis-original/completion-run.ts",
+          "lines": [
+            146,
+            178,
+            182,
+            188
+          ]
+        }
+      ],
+      "runner_behavior": "The preregistered runner reserves the per-run cap before starting another run (spent + caps[model] > maxTotal stops new work). This builder does not authorize more calls.",
+      "scope": "Main-run trial calls only. Pilots, abandoned pilots, graders/regraders, setup probes, and orchestration do not consume this cap."
+    },
+    "pilot_preregistration_comparison": {
+      "all_saved_pilots_including_abandoned_usd": 3.4217776,
+      "comparison_scope": "The four retained pilot runs in pilot/runs.json; abandoned pilot attempts are separate additional costs.",
+      "matches_registered_rounded_total": true,
+      "registered_rounded_usd": 2.36,
+      "retained_pilot_observed_usd": 2.355411,
+      "retained_pilot_observed_usd_decimal": "2.35541099999999964",
+      "retained_pilot_rounded_cents_usd": 2.36,
+      "unreported_pilot_costs": 0
+    },
+    "private_ledger": {
+      "file": "cost-ledger.json",
+      "sha256": "d3142cd64e72fd90fe46515d12a8712b5916072bcce9722dccf8f86923492c84"
+    },
+    "refresh": "python3 build-cost-summary.py --root PRIVATE_RECEIPT_DIRECTORY; add --final only after receipt collection ends.",
+    "reported_total_usd": 39.13211985,
+    "reported_total_usd_decimal": "39.1321198499999997196",
+    "schema_version": 1,
+    "scope": "Observed total_cost_usd in saved main-run, all saved pilot (including failed/abandoned), and every saved grader receipt directory. Retry and discarded grader calls are included when receipted.",
+    "source_snapshot_sha256": "469ac7d7024860cd9a463b62ccf775634402ae896bf7decb93e8e1f56c0ef570",
+    "status": "final_inventory",
+    "unobserved_scope": [
+      "Setup/authentication/sandbox probes and orchestration without saved total_cost_usd receipts are not quantified; absence is not evidence of zero cost.",
+      "The preregistration describes a separate Haiku approval-reproduction probe without an inventoried cost receipt. It is outside the four retained pilot comparison.",
+      "Provider invoices, taxes, subscription accounting, and unsaved/in-flight calls are not available from this receipt inventory."
+    ],
+    "unreported_costs": 0,
+    "warnings": []
+  },
+  "artifacts_sha256": {
+    "audit-order.json": "5d28765141b54751b9fbb2752e8374f7f3bdbab9802f38f22bebbc2313d52acd",
+    "audit-v1.json": "f186f40f40249e4fcd2c8a755417e0d3cb389ada07e2e554fdae777ffceb030c",
+    "audit.json": "9ceca18e60c89f2368311b5c558fc9a179298c3aea1d76c5c64d8fab02d96ea8",
+    "exclusions.json": "9b8e912f85a0b661608526767ddbc7fef0ad3bca74cc65256a24da9dfdf31fbd",
+    "grades-v1.json": "9272a3e69d0dd26033706afa6a8704184b57001f7580adf62ee510a0d9f35122",
+    "grades.json": "533792ca6e29b2db5259d1510346f4c3d70c3829386bf114bfe825bb9253b656",
+    "grading-metadata.json": "278c40b1d93f380b25bd8ca58455df4eec6eb6ead7b6a95af52405f74db350bb",
+    "grading-order.json": "6e5378eabb13562cdb93ab6f4bdd9c9770379200775242811599fcce55b8ed3b",
+    "grading-prompts.json": "c7a5da1981e8e0c670d24279d94dbb3c0b5c1bc4c8fa86db497558666859eb6b",
+    "message-projections.json": "974ca21588dfaed2b9b14d67a3f0f0ed478a2d82da33f41309ef0ad27398f19a",
+    "method-limitations.json": "9051ab4da048f3dbc59e38adb158f3f06549e714287e95cb3a7ae3a0779a0393",
+    "quote-repairs-v1.json": "dd88bf5f477a0c1eaf95dcd3d419fa4f21958b42440b65e661e6d02f335ded93",
+    "quote-repairs-v2.json": "c7055fe02d9af1b47b07a53559f3b1ad983172ac6e6cd4903fba6e6230a01ff2",
+    "report.json": "6c8bf1a89f01a3f18ecce370f3843b5807210d56ef5da29d9b0188f95ce25c26",
+    "reviews.json": "75b03848b089ba1195d8fd397b93adeeeb0eae31a3d2f059955c27353f896a01",
+    "runs.json": "f6833cdfba960ff14eda81d1050855bec20f46ce0acd8638507e6b70e45787b3",
+    "tasks.json": "162caafd98b37f0514150f2e85abdd1f1e0fae51e840a81d5ff7c191ff744c89",
+    "publication-review.json": "a0fd92506a15821c6bb67881867984396c552b6111056e946f9b7359f9c991fc"
+  }
+}

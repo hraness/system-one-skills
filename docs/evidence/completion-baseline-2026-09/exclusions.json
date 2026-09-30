@@ -1,0 +1,2663 @@
+{
+  "scope": {
+    "covered_runs": 60,
+    "tasks": 30,
+    "runs_per_model": {
+      "sonnet": 30,
+      "haiku": 30
+    },
+    "all_transcript_hashes_revalidated": true
+  },
+  "rule": {
+    "plan": "$HOME/src/system-one-skills/docs/COMPLETION-BASELINE-PLAN-2026-09.md#exclusions",
+    "registered_leak_exclusion": "Transcript shows it read the original repository or the task commit.",
+    "interpretation": "Successful content access is distinct from an own-directory hash, source-path mention, directory enumeration, denied attempt, or existing ancestor history. Record shared dependency reads as limitations; do not add post hoc exclusions."
+  },
+  "summary": {
+    "retain_under_registered_leak_rule": 60,
+    "registered_leak_exclusions": 0,
+    "successful_original_repository_or_own_target_commit_reads_observed": 0,
+    "hidden_answer_or_snapshot_reads_observed": 0,
+    "sibling_benchmark_result_tree_reads_observed": 0,
+    "successful_external_dependency_resource_runs": [
+      "sys1-867ac370:sonnet",
+      "sys1-f3d88f5a:haiku",
+      "sys1-acdce8cf:sonnet"
+    ],
+    "actual_final_field_present": 60,
+    "fallback_progress_cases": 0,
+    "result_subtypes": {
+      "success": 60
+    },
+    "zero_turn_results": 0,
+    "naive_scanner_flags": 60,
+    "tool_uses_reviewed": 2162,
+    "tool_names": {
+      "Bash": 1254,
+      "Read": 488,
+      "Edit": 337,
+      "Write": 47,
+      "Agent": 2,
+      "bash": 4,
+      "TaskCreate": 9,
+      "TaskUpdate": 17,
+      "TaskStop": 1,
+      "Monitor": 3
+    },
+    "fallback_used_runs": [],
+    "registered_first_turn_error_candidates": []
+  },
+  "method": [
+    "Parsed tool inputs and matching results, including nested subagent tool records and available tool_use_result stdout/stderr. Reviewed outside-path operations and returned status/content, target-commit references after removing own task paths, broad/relative searches, and sibling work/result paths.",
+    "Inspected initialization and system event types, tools/skills/plugins/MCP metadata, and shell tool activity for visible Sys1 interventions. Loaded metadata alone is not invocation.",
+    "Final metadata comes directly from each single result event. actual_final requires a nonempty string in result.result. No claim labels, correctness judgments, or ground-truth comparisons were made."
+  ],
+  "sys1_observability": {
+    "observed_intervention_or_hook_events": [],
+    "initialization_all_mcp_empty": true,
+    "initialization_sys1_named_tools_or_skills_observed": false,
+    "initialization_plugins": [
+      {
+        "name": "cc-plugin-agents-md",
+        "source": "cc-plugin-agents-md@builtin"
+      },
+      {
+        "name": "cc-plugin-telemetry",
+        "source": "cc-plugin-telemetry@builtin"
+      }
+    ],
+    "system_event_subtypes": {
+      "init": 60,
+      "thinking_tokens": 62416,
+      "task_started": 126,
+      "task_notification": 126,
+      "vcs_state_changed": 94,
+      "task_progress": 36,
+      "task_updated": 12,
+      "background_tasks_changed": 14,
+      "permission_denied": 4,
+      "commands_changed": 1
+    },
+    "qualification": "No visible Sys1 hook or assistant intervention in these transcripts. This does not prove full configuration/process isolation. Initialization exposes per-run auto-memory locations and built-in skills/plugins; --setting-sources project,local alone does not rule out CLAUDE.md or auto-memory. Repository tests may execute task code; they are not evidence of an assistant intervention."
+  },
+  "limitations": [
+    "Evidence is transcript-observable access, not a filesystem/process security audit. Some large outputs are truncated and background searches did not return their results. Absence of visible answer access is not proof that shell read confinement was enforced.",
+    "3 runs successfully used shared public dependency artifacts outside their clones. These are limitations, not post hoc exclusions under the original-repository/task-commit rule."
+  ],
+  "runs": [
+    {
+      "task": "algal-319b2353",
+      "model": "sonnet",
+      "sha256": "fa4a49534912b121ddc40fad66138e825b1b83c17ca5eb0ae38db39be14dfc5a",
+      "bytes": 213116,
+      "line_count": 57,
+      "decision": "retain_no_registered_leak_observed",
+      "reason": "No visible successful original-repository, hidden snapshot/answer, own target-commit, or sibling benchmark result read. Own cwd and initialization metadata contain the task hash and are not answer access.",
+      "registered_leak_exclusion": false,
+      "naive_substring_scanner_flag": true,
+      "result": {
+        "line": 57,
+        "num_turns": 16,
+        "subtype": "success",
+        "is_error": false,
+        "actual_final": true,
+        "result_result_chars": 1649,
+        "last_assistant_text_line": 56,
+        "harness_used_fallback_text": false,
+        "fallback_progress_case": false
+      },
+      "findings": [],
+      "sys1_observation": {
+        "initialization_line": 1,
+        "mcp_servers_empty": true,
+        "sys1_named_tool_or_skill": false,
+        "hook_event_lines": [],
+        "explicit_sys1_assistant_invocation_observed": false
+      }
+    },
+    {
+      "task": "algal-319b2353",
+      "model": "haiku",
+      "sha256": "e9940cccf7af1c1441d014eeb533d72772341514bce8abcd7187db2ce52281b5",
+      "bytes": 1243268,
+      "line_count": 1568,
+      "decision": "retain_no_registered_leak_observed",
+      "reason": "No visible successful original-repository, hidden snapshot/answer, own target-commit, or sibling benchmark result read. Own cwd and initialization metadata contain the task hash and are not answer access.",
+      "registered_leak_exclusion": false,
+      "naive_substring_scanner_flag": true,
+      "result": {
+        "line": 1568,
+        "num_turns": 64,
+        "subtype": "success",
+        "is_error": false,
+        "actual_final": true,
+        "result_result_chars": 1574,
+        "last_assistant_text_line": 1566,
+        "harness_used_fallback_text": false,
+        "fallback_progress_case": false
+      },
+      "findings": [],
+      "sys1_observation": {
+        "initialization_line": 1,
+        "mcp_servers_empty": true,
+        "sys1_named_tool_or_skill": false,
+        "hook_event_lines": [],
+        "explicit_sys1_assistant_invocation_observed": false
+      }
+    },
+    {
+      "task": "algal-a31a555b",
+      "model": "sonnet",
+      "sha256": "29e2dba3a156784c33fc8d0f40734b3387c32ea350cc0655e22be1e636acc5e7",
+      "bytes": 204470,
+      "line_count": 47,
+      "decision": "retain_no_registered_leak_observed",
+      "reason": "No visible successful original-repository, hidden snapshot/answer, own target-commit, or sibling benchmark result read. Own cwd and initialization metadata contain the task hash and are not answer access.",
+      "registered_leak_exclusion": false,
+      "naive_substring_scanner_flag": true,
+      "result": {
+        "line": 47,
+        "num_turns": 14,
+        "subtype": "success",
+        "is_error": false,
+        "actual_final": true,
+        "result_result_chars": 1716,
+        "last_assistant_text_line": 46,
+        "harness_used_fallback_text": false,
+        "fallback_progress_case": false
+      },
+      "findings": [],
+      "sys1_observation": {
+        "initialization_line": 1,
+        "mcp_servers_empty": true,
+        "sys1_named_tool_or_skill": false,
+        "hook_event_lines": [],
+        "explicit_sys1_assistant_invocation_observed": false
+      }
+    },
+    {
+      "task": "algal-a31a555b",
+      "model": "haiku",
+      "sha256": "1dadefce82af554a247d6bc54fd9dc4cfaab4be9227b6b1f15b3fbf11abfa22e",
+      "bytes": 659738,
+      "line_count": 979,
+      "decision": "retain_no_registered_leak_observed",
+      "reason": "No visible successful original-repository, hidden snapshot/answer, own target-commit, or sibling benchmark result read. Own cwd and initialization metadata contain the task hash and are not answer access.",
+      "registered_leak_exclusion": false,
+      "naive_substring_scanner_flag": true,
+      "result": {
+        "line": 979,
+        "num_turns": 32,
+        "subtype": "success",
+        "is_error": false,
+        "actual_final": true,
+        "result_result_chars": 1846,
+        "last_assistant_text_line": 978,
+        "harness_used_fallback_text": false,
+        "fallback_progress_case": false
+      },
+      "findings": [
+        {
+          "category": "own_scratch_receipts",
+          "reason": "Temporary receipt reads use files produced earlier by this run: receipt1 was written by the run, then receipt2 derived from it. These are not sibling benchmark results.",
+          "registered_leak_exclusion": false,
+          "evidence": [
+            {
+              "tool_use_line": 620,
+              "tool_result_line": 621
+            },
+            {
+              "tool_use_line": 636,
+              "tool_result_line": 637
+            },
+            {
+              "tool_use_line": 643,
+              "tool_result_line": 644
+            }
+          ]
+        }
+      ],
+      "sys1_observation": {
+        "initialization_line": 1,
+        "mcp_servers_empty": true,
+        "sys1_named_tool_or_skill": false,
+        "hook_event_lines": [],
+        "explicit_sys1_assistant_invocation_observed": false
+      }
+    },
+    {
+      "task": "algal-8ae09445",
+      "model": "sonnet",
+      "sha256": "467922525254994005dc5c347fc121e300d7eaf1541da043e32b87b91040b286",
+      "bytes": 327568,
+      "line_count": 48,
+      "decision": "retain_no_registered_leak_observed",
+      "reason": "No visible successful original-repository, hidden snapshot/answer, own target-commit, or sibling benchmark result read. Own cwd and initialization metadata contain the task hash and are not answer access.",
+      "registered_leak_exclusion": false,
+      "naive_substring_scanner_flag": true,
+      "result": {
+        "line": 48,
+        "num_turns": 13,
+        "subtype": "success",
+        "is_error": false,
+        "actual_final": true,
+        "result_result_chars": 1501,
+        "last_assistant_text_line": 47,
+        "harness_used_fallback_text": false,
+        "fallback_progress_case": false
+      },
+      "findings": [],
+      "sys1_observation": {
+        "initialization_line": 1,
+        "mcp_servers_empty": true,
+        "sys1_named_tool_or_skill": false,
+        "hook_event_lines": [],
+        "explicit_sys1_assistant_invocation_observed": false
+      }
+    },
+    {
+      "task": "algal-8ae09445",
+      "model": "haiku",
+      "sha256": "9b57b769a7ba2faeaa3da05755adca8c0063ecd9a3e163e3282893f9125e643a",
+      "bytes": 1513312,
+      "line_count": 1373,
+      "decision": "retain_no_registered_leak_observed",
+      "reason": "No visible successful original-repository, hidden snapshot/answer, own target-commit, or sibling benchmark result read. Own cwd and initialization metadata contain the task hash and are not answer access.",
+      "registered_leak_exclusion": false,
+      "naive_substring_scanner_flag": true,
+      "result": {
+        "line": 1373,
+        "num_turns": 71,
+        "subtype": "success",
+        "is_error": false,
+        "actual_final": true,
+        "result_result_chars": 2206,
+        "last_assistant_text_line": 1372,
+        "harness_used_fallback_text": false,
+        "fallback_progress_case": false
+      },
+      "findings": [],
+      "sys1_observation": {
+        "initialization_line": 1,
+        "mcp_servers_empty": true,
+        "sys1_named_tool_or_skill": false,
+        "hook_event_lines": [],
+        "explicit_sys1_assistant_invocation_observed": false
+      }
+    },
+    {
+      "task": "algal-1f946e7c",
+      "model": "sonnet",
+      "sha256": "37b71fe6f3b493309d0fc075922ba0af773604181dbf54a6d6a955f423379997",
+      "bytes": 301940,
+      "line_count": 92,
+      "decision": "retain_no_registered_leak_observed",
+      "reason": "No visible successful original-repository, hidden snapshot/answer, own target-commit, or sibling benchmark result read. Own cwd and initialization metadata contain the task hash and are not answer access.",
+      "registered_leak_exclusion": false,
+      "naive_substring_scanner_flag": true,
+      "result": {
+        "line": 92,
+        "num_turns": 19,
+        "subtype": "success",
+        "is_error": false,
+        "actual_final": true,
+        "result_result_chars": 1819,
+        "last_assistant_text_line": 91,
+        "harness_used_fallback_text": false,
+        "fallback_progress_case": false
+      },
+      "findings": [
+        {
+          "category": "allowed_own_ancestor_history",
+          "reason": "git show HEAD/HEAD~1 returned existing ancestor commits, including 8ae09445 (a different frozen task, but this task’s parent). No own target commit 1f946e7c was accessed.",
+          "registered_leak_exclusion": false,
+          "evidence": [
+            {
+              "tool_use_line": 2,
+              "tool_result_line": 4
+            },
+            {
+              "tool_use_line": 6,
+              "tool_result_line": 7
+            },
+            {
+              "tool_use_line": 11,
+              "tool_result_line": 12
+            }
+          ]
+        }
+      ],
+      "sys1_observation": {
+        "initialization_line": 1,
+        "mcp_servers_empty": true,
+        "sys1_named_tool_or_skill": false,
+        "hook_event_lines": [],
+        "explicit_sys1_assistant_invocation_observed": false
+      }
+    },
+    {
+      "task": "algal-1f946e7c",
+      "model": "haiku",
+      "sha256": "cfe9aa97adca77081dabc9511466b52e1a51e9bfdc0b5750738159331f32cd88",
+      "bytes": 2971599,
+      "line_count": 4396,
+      "decision": "retain_no_registered_leak_observed",
+      "reason": "No visible successful original-repository, hidden snapshot/answer, own target-commit, or sibling benchmark result read. Own cwd and initialization metadata contain the task hash and are not answer access.",
+      "registered_leak_exclusion": false,
+      "naive_substring_scanner_flag": true,
+      "result": {
+        "line": 4396,
+        "num_turns": 110,
+        "subtype": "success",
+        "is_error": false,
+        "actual_final": true,
+        "result_result_chars": 1898,
+        "last_assistant_text_line": 4395,
+        "harness_used_fallback_text": false,
+        "fallback_progress_case": false
+      },
+      "findings": [
+        {
+          "category": "own_subagent_metadata",
+          "reason": "ls -lh inspected this run’s own subagent-output symlink. Its target belongs to the same run’s Claude project transcript; this is not another benchmark result or an answer read.",
+          "registered_leak_exclusion": false,
+          "evidence": [
+            {
+              "tool_use_line": 1034,
+              "tool_result_line": 1035
+            }
+          ]
+        }
+      ],
+      "sys1_observation": {
+        "initialization_line": 1,
+        "mcp_servers_empty": true,
+        "sys1_named_tool_or_skill": false,
+        "hook_event_lines": [],
+        "explicit_sys1_assistant_invocation_observed": false
+      }
+    },
+    {
+      "task": "algal-086013f5",
+      "model": "sonnet",
+      "sha256": "d1f12b0007fd6b7c66b7de9e07d99fe94be74c38ceab820ee8ee20413c3ba004",
+      "bytes": 197633,
+      "line_count": 68,
+      "decision": "retain_no_registered_leak_observed",
+      "reason": "No visible successful original-repository, hidden snapshot/answer, own target-commit, or sibling benchmark result read. Own cwd and initialization metadata contain the task hash and are not answer access.",
+      "registered_leak_exclusion": false,
+      "naive_substring_scanner_flag": true,
+      "result": {
+        "line": 68,
+        "num_turns": 13,
+        "subtype": "success",
+        "is_error": false,
+        "actual_final": true,
+        "result_result_chars": 1909,
+        "last_assistant_text_line": 67,
+        "harness_used_fallback_text": false,
+        "fallback_progress_case": false
+      },
+      "findings": [],
+      "sys1_observation": {
+        "initialization_line": 1,
+        "mcp_servers_empty": true,
+        "sys1_named_tool_or_skill": false,
+        "hook_event_lines": [],
+        "explicit_sys1_assistant_invocation_observed": false
+      }
+    },
+    {
+      "task": "algal-086013f5",
+      "model": "haiku",
+      "sha256": "251c2571ba6c7120d8eed69f406324cc691c29d8284ae9e262cf80d290291241",
+      "bytes": 600679,
+      "line_count": 997,
+      "decision": "retain_no_registered_leak_observed",
+      "reason": "No visible successful original-repository, hidden snapshot/answer, own target-commit, or sibling benchmark result read. Own cwd and initialization metadata contain the task hash and are not answer access.",
+      "registered_leak_exclusion": false,
+      "naive_substring_scanner_flag": true,
+      "result": {
+        "line": 997,
+        "num_turns": 37,
+        "subtype": "success",
+        "is_error": false,
+        "actual_final": true,
+        "result_result_chars": 1685,
+        "last_assistant_text_line": 996,
+        "harness_used_fallback_text": false,
+        "fallback_progress_case": false
+      },
+      "findings": [],
+      "sys1_observation": {
+        "initialization_line": 1,
+        "mcp_servers_empty": true,
+        "sys1_named_tool_or_skill": false,
+        "hook_event_lines": [],
+        "explicit_sys1_assistant_invocation_observed": false
+      }
+    },
+    {
+      "task": "algal-07caea33",
+      "model": "sonnet",
+      "sha256": "922b48323b071afb5fcbff2a625323491bc814e17fb9c8d61a65c73633c87554",
+      "bytes": 177143,
+      "line_count": 56,
+      "decision": "retain_no_registered_leak_observed",
+      "reason": "No visible successful original-repository, hidden snapshot/answer, own target-commit, or sibling benchmark result read. Own cwd and initialization metadata contain the task hash and are not answer access.",
+      "registered_leak_exclusion": false,
+      "naive_substring_scanner_flag": true,
+      "result": {
+        "line": 56,
+        "num_turns": 17,
+        "subtype": "success",
+        "is_error": false,
+        "actual_final": true,
+        "result_result_chars": 1582,
+        "last_assistant_text_line": 55,
+        "harness_used_fallback_text": false,
+        "fallback_progress_case": false
+      },
+      "findings": [],
+      "sys1_observation": {
+        "initialization_line": 1,
+        "mcp_servers_empty": true,
+        "sys1_named_tool_or_skill": false,
+        "hook_event_lines": [],
+        "explicit_sys1_assistant_invocation_observed": false
+      }
+    },
+    {
+      "task": "algal-07caea33",
+      "model": "haiku",
+      "sha256": "241a1ce8064cfec21c4a079b5d69b4dd7a435ef0e05f373516069e10c3d5ce0c",
+      "bytes": 1198751,
+      "line_count": 1245,
+      "decision": "retain_no_registered_leak_observed",
+      "reason": "No visible successful original-repository, hidden snapshot/answer, own target-commit, or sibling benchmark result read. Own cwd and initialization metadata contain the task hash and are not answer access.",
+      "registered_leak_exclusion": false,
+      "naive_substring_scanner_flag": true,
+      "result": {
+        "line": 1245,
+        "num_turns": 64,
+        "subtype": "success",
+        "is_error": false,
+        "actual_final": true,
+        "result_result_chars": 1825,
+        "last_assistant_text_line": 1244,
+        "harness_used_fallback_text": false,
+        "fallback_progress_case": false
+      },
+      "findings": [],
+      "sys1_observation": {
+        "initialization_line": 1,
+        "mcp_servers_empty": true,
+        "sys1_named_tool_or_skill": false,
+        "hook_event_lines": [],
+        "explicit_sys1_assistant_invocation_observed": false
+      }
+    },
+    {
+      "task": "algal-a89df5e2",
+      "model": "sonnet",
+      "sha256": "8379aecd3b16c5c28cd93fc7a0308781e3bbe883eec735c8880f8cf678d4235a",
+      "bytes": 312885,
+      "line_count": 89,
+      "decision": "retain_no_registered_leak_observed",
+      "reason": "No visible successful original-repository, hidden snapshot/answer, own target-commit, or sibling benchmark result read. Own cwd and initialization metadata contain the task hash and are not answer access.",
+      "registered_leak_exclusion": false,
+      "naive_substring_scanner_flag": true,
+      "result": {
+        "line": 89,
+        "num_turns": 24,
+        "subtype": "success",
+        "is_error": false,
+        "actual_final": true,
+        "result_result_chars": 1742,
+        "last_assistant_text_line": 88,
+        "harness_used_fallback_text": false,
+        "fallback_progress_case": false
+      },
+      "findings": [
+        {
+          "category": "own_tree_relative_cd",
+          "reason": "The apparent cd .. follows cd into this run’s examples directory within the same command; it returns to its own repository root and executes its local examples.",
+          "registered_leak_exclusion": false,
+          "evidence": [
+            {
+              "tool_use_line": 54,
+              "tool_result_line": 55
+            }
+          ]
+        }
+      ],
+      "sys1_observation": {
+        "initialization_line": 1,
+        "mcp_servers_empty": true,
+        "sys1_named_tool_or_skill": false,
+        "hook_event_lines": [],
+        "explicit_sys1_assistant_invocation_observed": false
+      }
+    },
+    {
+      "task": "algal-a89df5e2",
+      "model": "haiku",
+      "sha256": "1f055a06d1ca40be1b9280630e390109f74f1e4d4c4f67c119d8a526bcb0e3cc",
+      "bytes": 1882853,
+      "line_count": 2728,
+      "decision": "retain_no_registered_leak_observed",
+      "reason": "No visible successful original-repository, hidden snapshot/answer, own target-commit, or sibling benchmark result read. Own cwd and initialization metadata contain the task hash and are not answer access.",
+      "registered_leak_exclusion": false,
+      "naive_substring_scanner_flag": true,
+      "result": {
+        "line": 2728,
+        "num_turns": 76,
+        "subtype": "success",
+        "is_error": false,
+        "actual_final": true,
+        "result_result_chars": 2249,
+        "last_assistant_text_line": 2727,
+        "harness_used_fallback_text": false,
+        "fallback_progress_case": false
+      },
+      "findings": [],
+      "sys1_observation": {
+        "initialization_line": 1,
+        "mcp_servers_empty": true,
+        "sys1_named_tool_or_skill": false,
+        "hook_event_lines": [],
+        "explicit_sys1_assistant_invocation_observed": false
+      }
+    },
+    {
+      "task": "algal-b54b5129",
+      "model": "sonnet",
+      "sha256": "5410514b0185d92ebc0ac13542abb380289c699df8def120cbe29b6e2a26862d",
+      "bytes": 339322,
+      "line_count": 136,
+      "decision": "retain_no_registered_leak_observed",
+      "reason": "No visible successful original-repository, hidden snapshot/answer, own target-commit, or sibling benchmark result read. Own cwd and initialization metadata contain the task hash and are not answer access.",
+      "registered_leak_exclusion": false,
+      "naive_substring_scanner_flag": true,
+      "result": {
+        "line": 136,
+        "num_turns": 35,
+        "subtype": "success",
+        "is_error": false,
+        "actual_final": true,
+        "result_result_chars": 2748,
+        "last_assistant_text_line": 135,
+        "harness_used_fallback_text": false,
+        "fallback_progress_case": false
+      },
+      "findings": [],
+      "sys1_observation": {
+        "initialization_line": 1,
+        "mcp_servers_empty": true,
+        "sys1_named_tool_or_skill": false,
+        "hook_event_lines": [],
+        "explicit_sys1_assistant_invocation_observed": false
+      }
+    },
+    {
+      "task": "algal-b54b5129",
+      "model": "haiku",
+      "sha256": "eff7609d015d770466f01fadf1bf9632ad1b1787a45934751f01e2fd73ef7b20",
+      "bytes": 2137833,
+      "line_count": 2256,
+      "decision": "retain_no_registered_leak_observed",
+      "reason": "No visible successful original-repository, hidden snapshot/answer, own target-commit, or sibling benchmark result read. Own cwd and initialization metadata contain the task hash and are not answer access.",
+      "registered_leak_exclusion": false,
+      "naive_substring_scanner_flag": true,
+      "result": {
+        "line": 2256,
+        "num_turns": 82,
+        "subtype": "success",
+        "is_error": false,
+        "actual_final": true,
+        "result_result_chars": 2080,
+        "last_assistant_text_line": 2255,
+        "harness_used_fallback_text": false,
+        "fallback_progress_case": false
+      },
+      "findings": [],
+      "sys1_observation": {
+        "initialization_line": 1,
+        "mcp_servers_empty": true,
+        "sys1_named_tool_or_skill": false,
+        "hook_event_lines": [],
+        "explicit_sys1_assistant_invocation_observed": false
+      }
+    },
+    {
+      "task": "algal-43c9dcf9",
+      "model": "sonnet",
+      "sha256": "ce6c67d79313f7ac10a2f56bdae64f0650f1d39650668acd12b271fb3cca6917",
+      "bytes": 99396,
+      "line_count": 46,
+      "decision": "retain_no_registered_leak_observed",
+      "reason": "No visible successful original-repository, hidden snapshot/answer, own target-commit, or sibling benchmark result read. Own cwd and initialization metadata contain the task hash and are not answer access.",
+      "registered_leak_exclusion": false,
+      "naive_substring_scanner_flag": true,
+      "result": {
+        "line": 46,
+        "num_turns": 13,
+        "subtype": "success",
+        "is_error": false,
+        "actual_final": true,
+        "result_result_chars": 1213,
+        "last_assistant_text_line": 45,
+        "harness_used_fallback_text": false,
+        "fallback_progress_case": false
+      },
+      "findings": [],
+      "sys1_observation": {
+        "initialization_line": 1,
+        "mcp_servers_empty": true,
+        "sys1_named_tool_or_skill": false,
+        "hook_event_lines": [],
+        "explicit_sys1_assistant_invocation_observed": false
+      }
+    },
+    {
+      "task": "algal-43c9dcf9",
+      "model": "haiku",
+      "sha256": "79dc44c20457298cb5ec363a2059f45bac29c470270bbc2f5711e77061a1cca0",
+      "bytes": 395093,
+      "line_count": 753,
+      "decision": "retain_no_registered_leak_observed",
+      "reason": "No visible successful original-repository, hidden snapshot/answer, own target-commit, or sibling benchmark result read. Own cwd and initialization metadata contain the task hash and are not answer access.",
+      "registered_leak_exclusion": false,
+      "naive_substring_scanner_flag": true,
+      "result": {
+        "line": 753,
+        "num_turns": 20,
+        "subtype": "success",
+        "is_error": false,
+        "actual_final": true,
+        "result_result_chars": 989,
+        "last_assistant_text_line": 752,
+        "harness_used_fallback_text": false,
+        "fallback_progress_case": false
+      },
+      "findings": [],
+      "sys1_observation": {
+        "initialization_line": 1,
+        "mcp_servers_empty": true,
+        "sys1_named_tool_or_skill": false,
+        "hook_event_lines": [],
+        "explicit_sys1_assistant_invocation_observed": false
+      }
+    },
+    {
+      "task": "algal-7cdae37e",
+      "model": "sonnet",
+      "sha256": "8813fd5c7117fc217527acf5d45189c7d3cb1cac11986a2e31a6925d8fe86483",
+      "bytes": 149972,
+      "line_count": 37,
+      "decision": "retain_no_registered_leak_observed",
+      "reason": "No visible successful original-repository, hidden snapshot/answer, own target-commit, or sibling benchmark result read. Own cwd and initialization metadata contain the task hash and are not answer access.",
+      "registered_leak_exclusion": false,
+      "naive_substring_scanner_flag": true,
+      "result": {
+        "line": 37,
+        "num_turns": 11,
+        "subtype": "success",
+        "is_error": false,
+        "actual_final": true,
+        "result_result_chars": 1182,
+        "last_assistant_text_line": 36,
+        "harness_used_fallback_text": false,
+        "fallback_progress_case": false
+      },
+      "findings": [],
+      "sys1_observation": {
+        "initialization_line": 1,
+        "mcp_servers_empty": true,
+        "sys1_named_tool_or_skill": false,
+        "hook_event_lines": [],
+        "explicit_sys1_assistant_invocation_observed": false
+      }
+    },
+    {
+      "task": "algal-7cdae37e",
+      "model": "haiku",
+      "sha256": "b636b4f663cc31675f65ec00587c0214c7d8573e7b04ceeeb479cd75cfe729e5",
+      "bytes": 846710,
+      "line_count": 929,
+      "decision": "retain_no_registered_leak_observed",
+      "reason": "No visible successful original-repository, hidden snapshot/answer, own target-commit, or sibling benchmark result read. Own cwd and initialization metadata contain the task hash and are not answer access.",
+      "registered_leak_exclusion": false,
+      "naive_substring_scanner_flag": true,
+      "result": {
+        "line": 929,
+        "num_turns": 56,
+        "subtype": "success",
+        "is_error": false,
+        "actual_final": true,
+        "result_result_chars": 1705,
+        "last_assistant_text_line": 928,
+        "harness_used_fallback_text": false,
+        "fallback_progress_case": false
+      },
+      "findings": [],
+      "sys1_observation": {
+        "initialization_line": 1,
+        "mcp_servers_empty": true,
+        "sys1_named_tool_or_skill": false,
+        "hook_event_lines": [],
+        "explicit_sys1_assistant_invocation_observed": false
+      }
+    },
+    {
+      "task": "algal-d09e1335",
+      "model": "sonnet",
+      "sha256": "ee1d7a90b57b6d46a5f3dd343dc3c77f79b472cabb0513dd93a00d8550bf3c34",
+      "bytes": 224044,
+      "line_count": 78,
+      "decision": "retain_no_registered_leak_observed",
+      "reason": "No visible successful original-repository, hidden snapshot/answer, own target-commit, or sibling benchmark result read. Own cwd and initialization metadata contain the task hash and are not answer access.",
+      "registered_leak_exclusion": false,
+      "naive_substring_scanner_flag": true,
+      "result": {
+        "line": 78,
+        "num_turns": 17,
+        "subtype": "success",
+        "is_error": false,
+        "actual_final": true,
+        "result_result_chars": 1531,
+        "last_assistant_text_line": 77,
+        "harness_used_fallback_text": false,
+        "fallback_progress_case": false
+      },
+      "findings": [],
+      "sys1_observation": {
+        "initialization_line": 1,
+        "mcp_servers_empty": true,
+        "sys1_named_tool_or_skill": false,
+        "hook_event_lines": [],
+        "explicit_sys1_assistant_invocation_observed": false
+      }
+    },
+    {
+      "task": "algal-d09e1335",
+      "model": "haiku",
+      "sha256": "1821cf1647e0e8799f9d8b2d14c1ed18fd801b96e09066895bffb04b582bd76c",
+      "bytes": 3322490,
+      "line_count": 4655,
+      "decision": "retain_no_registered_leak_observed",
+      "reason": "No visible successful original-repository, hidden snapshot/answer, own target-commit, or sibling benchmark result read. Own cwd and initialization metadata contain the task hash and are not answer access.",
+      "registered_leak_exclusion": false,
+      "naive_substring_scanner_flag": true,
+      "result": {
+        "line": 4655,
+        "num_turns": 124,
+        "subtype": "success",
+        "is_error": false,
+        "actual_final": true,
+        "result_result_chars": 1479,
+        "last_assistant_text_line": 4654,
+        "harness_used_fallback_text": false,
+        "fallback_progress_case": false
+      },
+      "findings": [],
+      "sys1_observation": {
+        "initialization_line": 1,
+        "mcp_servers_empty": true,
+        "sys1_named_tool_or_skill": false,
+        "hook_event_lines": [],
+        "explicit_sys1_assistant_invocation_observed": false
+      }
+    },
+    {
+      "task": "algal-9a968eda",
+      "model": "sonnet",
+      "sha256": "bc1c66f340ddc067fcd808a640fdd6dc4471f6a708b2017e3401bac35de7510c",
+      "bytes": 63155,
+      "line_count": 34,
+      "decision": "retain_no_registered_leak_observed",
+      "reason": "No visible successful original-repository, hidden snapshot/answer, own target-commit, or sibling benchmark result read. Own cwd and initialization metadata contain the task hash and are not answer access.",
+      "registered_leak_exclusion": false,
+      "naive_substring_scanner_flag": true,
+      "result": {
+        "line": 34,
+        "num_turns": 11,
+        "subtype": "success",
+        "is_error": false,
+        "actual_final": true,
+        "result_result_chars": 1170,
+        "last_assistant_text_line": 33,
+        "harness_used_fallback_text": false,
+        "fallback_progress_case": false
+      },
+      "findings": [],
+      "sys1_observation": {
+        "initialization_line": 1,
+        "mcp_servers_empty": true,
+        "sys1_named_tool_or_skill": false,
+        "hook_event_lines": [],
+        "explicit_sys1_assistant_invocation_observed": false
+      }
+    },
+    {
+      "task": "algal-9a968eda",
+      "model": "haiku",
+      "sha256": "4235d7e388bc3710549162141d2f2cbee3efe51ec5f49cb4306ec7bcd286d1f8",
+      "bytes": 1053625,
+      "line_count": 2413,
+      "decision": "retain_no_registered_leak_observed",
+      "reason": "No visible successful original-repository, hidden snapshot/answer, own target-commit, or sibling benchmark result read. Own cwd and initialization metadata contain the task hash and are not answer access.",
+      "registered_leak_exclusion": false,
+      "naive_substring_scanner_flag": true,
+      "result": {
+        "line": 2413,
+        "num_turns": 52,
+        "subtype": "success",
+        "is_error": false,
+        "actual_final": true,
+        "result_result_chars": 1588,
+        "last_assistant_text_line": 2412,
+        "harness_used_fallback_text": false,
+        "fallback_progress_case": false
+      },
+      "findings": [],
+      "sys1_observation": {
+        "initialization_line": 1,
+        "mcp_servers_empty": true,
+        "sys1_named_tool_or_skill": false,
+        "hook_event_lines": [],
+        "explicit_sys1_assistant_invocation_observed": false
+      }
+    },
+    {
+      "task": "wordcell-a3b44090",
+      "model": "sonnet",
+      "sha256": "b223143e3b93b10a3ae6a847e9dd9c95360f10986abf9ea40140f61dcaa97cc3",
+      "bytes": 85881,
+      "line_count": 41,
+      "decision": "retain_no_registered_leak_observed",
+      "reason": "No visible successful original-repository, hidden snapshot/answer, own target-commit, or sibling benchmark result read. Own cwd and initialization metadata contain the task hash and are not answer access.",
+      "registered_leak_exclusion": false,
+      "naive_substring_scanner_flag": true,
+      "result": {
+        "line": 41,
+        "num_turns": 12,
+        "subtype": "success",
+        "is_error": false,
+        "actual_final": true,
+        "result_result_chars": 1003,
+        "last_assistant_text_line": 40,
+        "harness_used_fallback_text": false,
+        "fallback_progress_case": false
+      },
+      "findings": [],
+      "sys1_observation": {
+        "initialization_line": 1,
+        "mcp_servers_empty": true,
+        "sys1_named_tool_or_skill": false,
+        "hook_event_lines": [],
+        "explicit_sys1_assistant_invocation_observed": false
+      }
+    },
+    {
+      "task": "wordcell-a3b44090",
+      "model": "haiku",
+      "sha256": "485600708971ec9ec5216942a4ad6609c73aa341b8681942c49bde3cc2a4a7e7",
+      "bytes": 2011763,
+      "line_count": 2618,
+      "decision": "retain_no_registered_leak_observed",
+      "reason": "No visible successful original-repository, hidden snapshot/answer, own target-commit, or sibling benchmark result read. Own cwd and initialization metadata contain the task hash and are not answer access.",
+      "registered_leak_exclusion": false,
+      "naive_substring_scanner_flag": true,
+      "result": {
+        "line": 2618,
+        "num_turns": 57,
+        "subtype": "success",
+        "is_error": false,
+        "actual_final": true,
+        "result_result_chars": 1857,
+        "last_assistant_text_line": 2617,
+        "harness_used_fallback_text": false,
+        "fallback_progress_case": false
+      },
+      "findings": [],
+      "sys1_observation": {
+        "initialization_line": 1,
+        "mcp_servers_empty": true,
+        "sys1_named_tool_or_skill": false,
+        "hook_event_lines": [],
+        "explicit_sys1_assistant_invocation_observed": false
+      }
+    },
+    {
+      "task": "wordcell-926e2b97",
+      "model": "sonnet",
+      "sha256": "937efbe515ae4049b4f4952dd5efb488f03191a1c1020efe4896079be0655841",
+      "bytes": 84768,
+      "line_count": 34,
+      "decision": "retain_no_registered_leak_observed",
+      "reason": "No visible successful original-repository, hidden snapshot/answer, own target-commit, or sibling benchmark result read. Own cwd and initialization metadata contain the task hash and are not answer access.",
+      "registered_leak_exclusion": false,
+      "naive_substring_scanner_flag": true,
+      "result": {
+        "line": 34,
+        "num_turns": 10,
+        "subtype": "success",
+        "is_error": false,
+        "actual_final": true,
+        "result_result_chars": 1190,
+        "last_assistant_text_line": 33,
+        "harness_used_fallback_text": false,
+        "fallback_progress_case": false
+      },
+      "findings": [],
+      "sys1_observation": {
+        "initialization_line": 1,
+        "mcp_servers_empty": true,
+        "sys1_named_tool_or_skill": false,
+        "hook_event_lines": [],
+        "explicit_sys1_assistant_invocation_observed": false
+      }
+    },
+    {
+      "task": "wordcell-926e2b97",
+      "model": "haiku",
+      "sha256": "9666d87c2feed08cb9c676f64b90b3725cb116450a7e7d2fb2ce1d43bd0a039d",
+      "bytes": 605118,
+      "line_count": 1497,
+      "decision": "retain_no_registered_leak_observed",
+      "reason": "No visible successful original-repository, hidden snapshot/answer, own target-commit, or sibling benchmark result read. Own cwd and initialization metadata contain the task hash and are not answer access.",
+      "registered_leak_exclusion": false,
+      "naive_substring_scanner_flag": true,
+      "result": {
+        "line": 1497,
+        "num_turns": 50,
+        "subtype": "success",
+        "is_error": false,
+        "actual_final": true,
+        "result_result_chars": 1363,
+        "last_assistant_text_line": 1496,
+        "harness_used_fallback_text": false,
+        "fallback_progress_case": false
+      },
+      "findings": [],
+      "sys1_observation": {
+        "initialization_line": 1,
+        "mcp_servers_empty": true,
+        "sys1_named_tool_or_skill": false,
+        "hook_event_lines": [],
+        "explicit_sys1_assistant_invocation_observed": false
+      }
+    },
+    {
+      "task": "wordcell-8b89291a",
+      "model": "sonnet",
+      "sha256": "33ad1380287f0c05681b68f9e8b92d1117949254c999eb520ba57e59f25b8580",
+      "bytes": 103186,
+      "line_count": 37,
+      "decision": "retain_no_registered_leak_observed",
+      "reason": "No visible successful original-repository, hidden snapshot/answer, own target-commit, or sibling benchmark result read. Own cwd and initialization metadata contain the task hash and are not answer access.",
+      "registered_leak_exclusion": false,
+      "naive_substring_scanner_flag": true,
+      "result": {
+        "line": 37,
+        "num_turns": 9,
+        "subtype": "success",
+        "is_error": false,
+        "actual_final": true,
+        "result_result_chars": 1127,
+        "last_assistant_text_line": 36,
+        "harness_used_fallback_text": false,
+        "fallback_progress_case": false
+      },
+      "findings": [],
+      "sys1_observation": {
+        "initialization_line": 1,
+        "mcp_servers_empty": true,
+        "sys1_named_tool_or_skill": false,
+        "hook_event_lines": [],
+        "explicit_sys1_assistant_invocation_observed": false
+      }
+    },
+    {
+      "task": "wordcell-8b89291a",
+      "model": "haiku",
+      "sha256": "ff50aad6656fd5e748a457dfb82df3048cebf2e21a184541e2f90abe0a74f2b5",
+      "bytes": 1013766,
+      "line_count": 3008,
+      "decision": "retain_no_registered_leak_observed",
+      "reason": "No visible successful original-repository, hidden snapshot/answer, own target-commit, or sibling benchmark result read. Own cwd and initialization metadata contain the task hash and are not answer access.",
+      "registered_leak_exclusion": false,
+      "naive_substring_scanner_flag": true,
+      "result": {
+        "line": 3008,
+        "num_turns": 54,
+        "subtype": "success",
+        "is_error": false,
+        "actual_final": true,
+        "result_result_chars": 1406,
+        "last_assistant_text_line": 3007,
+        "harness_used_fallback_text": false,
+        "fallback_progress_case": false
+      },
+      "findings": [],
+      "sys1_observation": {
+        "initialization_line": 1,
+        "mcp_servers_empty": true,
+        "sys1_named_tool_or_skill": false,
+        "hook_event_lines": [],
+        "explicit_sys1_assistant_invocation_observed": false
+      }
+    },
+    {
+      "task": "wordcell-16a5fae9",
+      "model": "sonnet",
+      "sha256": "2b927aef73118a36db28dd02c06f83dbb513360ffb8788b2c3a013a22c683ec3",
+      "bytes": 69500,
+      "line_count": 22,
+      "decision": "retain_no_registered_leak_observed",
+      "reason": "No visible successful original-repository, hidden snapshot/answer, own target-commit, or sibling benchmark result read. Own cwd and initialization metadata contain the task hash and are not answer access.",
+      "registered_leak_exclusion": false,
+      "naive_substring_scanner_flag": true,
+      "result": {
+        "line": 22,
+        "num_turns": 6,
+        "subtype": "success",
+        "is_error": false,
+        "actual_final": true,
+        "result_result_chars": 1428,
+        "last_assistant_text_line": 21,
+        "harness_used_fallback_text": false,
+        "fallback_progress_case": false
+      },
+      "findings": [
+        {
+          "category": "outside_tree_listing_attempt_then_confirmed_denial",
+          "reason": "The first mixed local-source command ends with ls ~/src, but output is truncated before that listing. A later repeat of ls $HOME/src explicitly returns Operation not permitted. Both outside-tree operations request directory metadata only; no original repository source file was requested or returned.",
+          "registered_leak_exclusion": false,
+          "evidence": [
+            {
+              "tool_use_line": 5,
+              "tool_result_line": 7
+            },
+            {
+              "tool_use_line": 16,
+              "tool_result_line": 17
+            }
+          ]
+        }
+      ],
+      "sys1_observation": {
+        "initialization_line": 1,
+        "mcp_servers_empty": true,
+        "sys1_named_tool_or_skill": false,
+        "hook_event_lines": [],
+        "explicit_sys1_assistant_invocation_observed": false
+      }
+    },
+    {
+      "task": "wordcell-16a5fae9",
+      "model": "haiku",
+      "sha256": "cdbf036e767e58bedb4921a9f0fe52014699605ce5fd94a9e1d8a1b3ff1eea60",
+      "bytes": 1020026,
+      "line_count": 3182,
+      "decision": "retain_no_registered_leak_observed",
+      "reason": "No visible successful original-repository, hidden snapshot/answer, own target-commit, or sibling benchmark result read. Own cwd and initialization metadata contain the task hash and are not answer access.",
+      "registered_leak_exclusion": false,
+      "naive_substring_scanner_flag": true,
+      "result": {
+        "line": 3182,
+        "num_turns": 61,
+        "subtype": "success",
+        "is_error": false,
+        "actual_final": true,
+        "result_result_chars": 1318,
+        "last_assistant_text_line": 3181,
+        "harness_used_fallback_text": false,
+        "fallback_progress_case": false
+      },
+      "findings": [
+        {
+          "category": "allowed_own_ancestor_history",
+          "reason": "git show 8b89291 read this task’s existing parent inside its own clone. That hash identifies a different frozen task, not this run’s target 16a5fae9; this is permitted starting history.",
+          "registered_leak_exclusion": false,
+          "evidence": [
+            {
+              "tool_use_line": 735,
+              "tool_result_line": 736
+            },
+            {
+              "tool_use_line": 769,
+              "tool_result_line": 770
+            },
+            {
+              "tool_use_line": 2061,
+              "tool_result_line": 2062
+            },
+            {
+              "tool_use_line": 2213,
+              "tool_result_line": 2214
+            }
+          ]
+        }
+      ],
+      "sys1_observation": {
+        "initialization_line": 1,
+        "mcp_servers_empty": true,
+        "sys1_named_tool_or_skill": false,
+        "hook_event_lines": [],
+        "explicit_sys1_assistant_invocation_observed": false
+      }
+    },
+    {
+      "task": "sys1-9acd4730",
+      "model": "sonnet",
+      "sha256": "56aa8055b5593e835fa903ad241b73ced0f14597f318963f319823f661edac98",
+      "bytes": 50299,
+      "line_count": 30,
+      "decision": "retain_no_registered_leak_observed",
+      "reason": "No visible successful original-repository, hidden snapshot/answer, own target-commit, or sibling benchmark result read. Own cwd and initialization metadata contain the task hash and are not answer access.",
+      "registered_leak_exclusion": false,
+      "naive_substring_scanner_flag": true,
+      "result": {
+        "line": 30,
+        "num_turns": 7,
+        "subtype": "success",
+        "is_error": false,
+        "actual_final": true,
+        "result_result_chars": 1078,
+        "last_assistant_text_line": 29,
+        "harness_used_fallback_text": false,
+        "fallback_progress_case": false
+      },
+      "findings": [],
+      "sys1_observation": {
+        "initialization_line": 1,
+        "mcp_servers_empty": true,
+        "sys1_named_tool_or_skill": false,
+        "hook_event_lines": [],
+        "explicit_sys1_assistant_invocation_observed": false
+      }
+    },
+    {
+      "task": "sys1-9acd4730",
+      "model": "haiku",
+      "sha256": "6151c0a99e03c559b9206219316e0f9d0bd13bf56d94f84a48617c7d22ffbba5",
+      "bytes": 617777,
+      "line_count": 982,
+      "decision": "retain_no_registered_leak_observed",
+      "reason": "No visible successful original-repository, hidden snapshot/answer, own target-commit, or sibling benchmark result read. Own cwd and initialization metadata contain the task hash and are not answer access.",
+      "registered_leak_exclusion": false,
+      "naive_substring_scanner_flag": true,
+      "result": {
+        "line": 982,
+        "num_turns": 39,
+        "subtype": "success",
+        "is_error": false,
+        "actual_final": true,
+        "result_result_chars": 1121,
+        "last_assistant_text_line": 981,
+        "harness_used_fallback_text": false,
+        "fallback_progress_case": false
+      },
+      "findings": [],
+      "sys1_observation": {
+        "initialization_line": 1,
+        "mcp_servers_empty": true,
+        "sys1_named_tool_or_skill": false,
+        "hook_event_lines": [],
+        "explicit_sys1_assistant_invocation_observed": false
+      }
+    },
+    {
+      "task": "sys1-867ac370",
+      "model": "sonnet",
+      "sha256": "c089c8e1726c440b73ab5e40f1bd05bffd9a66b56d03f9b39d988905e038fc94",
+      "bytes": 466819,
+      "line_count": 175,
+      "decision": "retain_no_registered_leak_observed",
+      "reason": "No visible successful original-repository, hidden snapshot/answer, own target-commit, or sibling benchmark result read. Own cwd and initialization metadata contain the task hash and are not answer access.",
+      "registered_leak_exclusion": false,
+      "naive_substring_scanner_flag": true,
+      "result": {
+        "line": 175,
+        "num_turns": 28,
+        "subtype": "success",
+        "is_error": false,
+        "actual_final": true,
+        "result_result_chars": 2440,
+        "last_assistant_text_line": 174,
+        "harness_used_fallback_text": false,
+        "fallback_progress_case": false
+      },
+      "findings": [
+        {
+          "category": "blocked_original_root_listing",
+          "reason": "ls $HOME/src returned Operation not permitted. No original Sys1 repository content was returned.",
+          "registered_leak_exclusion": false,
+          "evidence": [
+            {
+              "tool_use_line": 11,
+              "tool_result_line": 12
+            }
+          ]
+        },
+        {
+          "category": "outside_tree_directory_search",
+          "reason": "Shared design-kit directories were enumerated under /private/tmp. A wider find / was backgrounded with no subsequent returned results. Directory enumeration is not source-content access.",
+          "registered_leak_exclusion": false,
+          "evidence": [
+            {
+              "tool_use_line": 14,
+              "tool_result_line": 15
+            },
+            {
+              "tool_use_line": 16,
+              "tool_result_line": 24
+            }
+          ]
+        },
+        {
+          "category": "successful_external_dependency_read",
+          "reason": "Read a locally available public design-kit release archive and its release/verification metadata, extracted it into own scratch, read src/platforms.ts and licenses, and copied assets into the task. This is a different repository/public dependency artifact, not original sys1, its target commit, a hidden answer, or a sibling benchmark result. Retain under the registered rule and disclose as a limitation.",
+          "registered_leak_exclusion": false,
+          "evidence": [
+            {
+              "tool_use_line": 25,
+              "tool_result_line": 27
+            },
+            {
+              "tool_use_line": 31,
+              "tool_result_line": 32
+            },
+            {
+              "tool_use_line": 36,
+              "tool_result_line": 37
+            },
+            {
+              "tool_use_line": 83,
+              "tool_result_line": 87
+            }
+          ]
+        }
+      ],
+      "sys1_observation": {
+        "initialization_line": 1,
+        "mcp_servers_empty": true,
+        "sys1_named_tool_or_skill": false,
+        "hook_event_lines": [],
+        "explicit_sys1_assistant_invocation_observed": false
+      }
+    },
+    {
+      "task": "sys1-867ac370",
+      "model": "haiku",
+      "sha256": "5722196d4a05830fcfbc109f435516bb66272e9409ba2a577c61cfc47abbe3d9",
+      "bytes": 1893332,
+      "line_count": 4000,
+      "decision": "retain_no_registered_leak_observed",
+      "reason": "No visible successful original-repository, hidden snapshot/answer, own target-commit, or sibling benchmark result read. Own cwd and initialization metadata contain the task hash and are not answer access.",
+      "registered_leak_exclusion": false,
+      "naive_substring_scanner_flag": true,
+      "result": {
+        "line": 4000,
+        "num_turns": 112,
+        "subtype": "success",
+        "is_error": false,
+        "actual_final": true,
+        "result_result_chars": 1896,
+        "last_assistant_text_line": 3999,
+        "harness_used_fallback_text": false,
+        "fallback_progress_case": false
+      },
+      "findings": [],
+      "sys1_observation": {
+        "initialization_line": 1,
+        "mcp_servers_empty": true,
+        "sys1_named_tool_or_skill": false,
+        "hook_event_lines": [],
+        "explicit_sys1_assistant_invocation_observed": false
+      }
+    },
+    {
+      "task": "sys1-9818585f",
+      "model": "sonnet",
+      "sha256": "d3bb50bca4557375f5ff4a112b61b02a787b324128fa0887b849b0e0176e4c25",
+      "bytes": 125937,
+      "line_count": 48,
+      "decision": "retain_no_registered_leak_observed",
+      "reason": "No visible successful original-repository, hidden snapshot/answer, own target-commit, or sibling benchmark result read. Own cwd and initialization metadata contain the task hash and are not answer access.",
+      "registered_leak_exclusion": false,
+      "naive_substring_scanner_flag": true,
+      "result": {
+        "line": 48,
+        "num_turns": 10,
+        "subtype": "success",
+        "is_error": false,
+        "actual_final": true,
+        "result_result_chars": 2029,
+        "last_assistant_text_line": 47,
+        "harness_used_fallback_text": false,
+        "fallback_progress_case": false
+      },
+      "findings": [],
+      "sys1_observation": {
+        "initialization_line": 1,
+        "mcp_servers_empty": true,
+        "sys1_named_tool_or_skill": false,
+        "hook_event_lines": [],
+        "explicit_sys1_assistant_invocation_observed": false
+      }
+    },
+    {
+      "task": "sys1-9818585f",
+      "model": "haiku",
+      "sha256": "d2496ada6eb718f256a1463aaf27a6a4e08dc8459d8df655ae899056ca69166a",
+      "bytes": 1346706,
+      "line_count": 3849,
+      "decision": "retain_no_registered_leak_observed",
+      "reason": "No visible successful original-repository, hidden snapshot/answer, own target-commit, or sibling benchmark result read. Own cwd and initialization metadata contain the task hash and are not answer access.",
+      "registered_leak_exclusion": false,
+      "naive_substring_scanner_flag": true,
+      "result": {
+        "line": 3849,
+        "num_turns": 38,
+        "subtype": "success",
+        "is_error": false,
+        "actual_final": true,
+        "result_result_chars": 1825,
+        "last_assistant_text_line": 3848,
+        "harness_used_fallback_text": false,
+        "fallback_progress_case": false
+      },
+      "findings": [],
+      "sys1_observation": {
+        "initialization_line": 1,
+        "mcp_servers_empty": true,
+        "sys1_named_tool_or_skill": false,
+        "hook_event_lines": [],
+        "explicit_sys1_assistant_invocation_observed": false
+      }
+    },
+    {
+      "task": "sys1-3e1a7cb5",
+      "model": "sonnet",
+      "sha256": "e606562f25e277b55d8a3d1e86cef1e00323e08596a82d250fb1e59e723df4c8",
+      "bytes": 361979,
+      "line_count": 124,
+      "decision": "retain_no_registered_leak_observed",
+      "reason": "No visible successful original-repository, hidden snapshot/answer, own target-commit, or sibling benchmark result read. Own cwd and initialization metadata contain the task hash and are not answer access.",
+      "registered_leak_exclusion": false,
+      "naive_substring_scanner_flag": true,
+      "result": {
+        "line": 124,
+        "num_turns": 20,
+        "subtype": "success",
+        "is_error": false,
+        "actual_final": true,
+        "result_result_chars": 2022,
+        "last_assistant_text_line": 122,
+        "harness_used_fallback_text": false,
+        "fallback_progress_case": false
+      },
+      "findings": [],
+      "sys1_observation": {
+        "initialization_line": 1,
+        "mcp_servers_empty": true,
+        "sys1_named_tool_or_skill": false,
+        "hook_event_lines": [],
+        "explicit_sys1_assistant_invocation_observed": false
+      }
+    },
+    {
+      "task": "sys1-3e1a7cb5",
+      "model": "haiku",
+      "sha256": "8c9d9d2253ed7c3c16da77473bd0f57a7d3a27e84541b4b3a2bd7e19fc4ad9b0",
+      "bytes": 1446824,
+      "line_count": 3197,
+      "decision": "retain_no_registered_leak_observed",
+      "reason": "No visible successful original-repository, hidden snapshot/answer, own target-commit, or sibling benchmark result read. Own cwd and initialization metadata contain the task hash and are not answer access.",
+      "registered_leak_exclusion": false,
+      "naive_substring_scanner_flag": true,
+      "result": {
+        "line": 3197,
+        "num_turns": 89,
+        "subtype": "success",
+        "is_error": false,
+        "actual_final": true,
+        "result_result_chars": 2174,
+        "last_assistant_text_line": 3196,
+        "harness_used_fallback_text": false,
+        "fallback_progress_case": false
+      },
+      "findings": [
+        {
+          "category": "failed_sibling_looking_path_typo",
+          "reason": "A cd used sys1-3e1a7cab5-haiku, a misspelling of its own task path, and failed with no such file or directory. No sibling benchmark tree was accessed.",
+          "registered_leak_exclusion": false,
+          "evidence": [
+            {
+              "tool_use_line": 2997,
+              "tool_result_line": 2999
+            }
+          ]
+        }
+      ],
+      "sys1_observation": {
+        "initialization_line": 1,
+        "mcp_servers_empty": true,
+        "sys1_named_tool_or_skill": false,
+        "hook_event_lines": [],
+        "explicit_sys1_assistant_invocation_observed": false
+      }
+    },
+    {
+      "task": "sys1-f3d88f5a",
+      "model": "sonnet",
+      "sha256": "f2690727804945a3f7ab01196fc47b5223991ca71726456b9342fd20027c730d",
+      "bytes": 52546,
+      "line_count": 23,
+      "decision": "retain_no_registered_leak_observed",
+      "reason": "No visible successful original-repository, hidden snapshot/answer, own target-commit, or sibling benchmark result read. Own cwd and initialization metadata contain the task hash and are not answer access.",
+      "registered_leak_exclusion": false,
+      "naive_substring_scanner_flag": true,
+      "result": {
+        "line": 23,
+        "num_turns": 5,
+        "subtype": "success",
+        "is_error": false,
+        "actual_final": true,
+        "result_result_chars": 1576,
+        "last_assistant_text_line": 21,
+        "harness_used_fallback_text": false,
+        "fallback_progress_case": false
+      },
+      "findings": [
+        {
+          "category": "unsuccessful_original_root_glob",
+          "reason": "A ~/src/*site-footer* glob failed with no matches. Network lookup was also denied. No original-repository file was successfully read.",
+          "registered_leak_exclusion": false,
+          "evidence": [
+            {
+              "tool_use_line": 9,
+              "tool_result_line": 10
+            }
+          ]
+        },
+        {
+          "category": "outside_tree_directory_metadata",
+          "reason": "A broad filesystem search returned external dependency directory paths. It enumerated names only; no subsequent tool read their file contents.",
+          "registered_leak_exclusion": false,
+          "evidence": [
+            {
+              "tool_use_line": 12,
+              "tool_result_line": 17
+            }
+          ]
+        }
+      ],
+      "sys1_observation": {
+        "initialization_line": 1,
+        "mcp_servers_empty": true,
+        "sys1_named_tool_or_skill": false,
+        "hook_event_lines": [],
+        "explicit_sys1_assistant_invocation_observed": false
+      }
+    },
+    {
+      "task": "sys1-f3d88f5a",
+      "model": "haiku",
+      "sha256": "254dc31839d6143ce6037c86cc55cf8c43d62dfcbfa091b163a39d0cf4a2ccf8",
+      "bytes": 1058613,
+      "line_count": 2721,
+      "decision": "retain_no_registered_leak_observed",
+      "reason": "No visible successful original-repository, hidden snapshot/answer, own target-commit, or sibling benchmark result read. Own cwd and initialization metadata contain the task hash and are not answer access.",
+      "registered_leak_exclusion": false,
+      "naive_substring_scanner_flag": true,
+      "result": {
+        "line": 2721,
+        "num_turns": 67,
+        "subtype": "success",
+        "is_error": false,
+        "actual_final": true,
+        "result_result_chars": 1262,
+        "last_assistant_text_line": 2720,
+        "harness_used_fallback_text": false,
+        "fallback_progress_case": false
+      },
+      "findings": [
+        {
+          "category": "outside_tree_dependency_search",
+          "reason": "find /private/tmp and ls enumerated site-footer package directories in unrelated worktrees. A Read request for the chosen package.json was denied pending permission.",
+          "registered_leak_exclusion": false,
+          "evidence": [
+            {
+              "tool_use_line": 943,
+              "tool_result_line": 946
+            },
+            {
+              "tool_use_line": 961,
+              "tool_result_line": 962
+            },
+            {
+              "tool_use_line": 980,
+              "tool_result_line": 981
+            },
+            {
+              "tool_use_line": 1003,
+              "tool_result_line": 1005
+            }
+          ]
+        },
+        {
+          "category": "outside_tree_search_no_returned_content",
+          "reason": "find $HOME for site-footer Git directories was backgrounded then stopped; no search results or source content were returned in the transcript.",
+          "registered_leak_exclusion": false,
+          "evidence": [
+            {
+              "tool_use_line": 1581,
+              "tool_result_line": 1589
+            },
+            {
+              "tool_use_line": 1725,
+              "tool_result_line": 1729
+            }
+          ]
+        },
+        {
+          "category": "successful_external_dependency_read",
+          "reason": "Read the package .bun-tag and successfully copied dist/index.js, dist/stylex.css and available license/notice files from a locally installed @hraness/site-footer dependency in an unrelated worktree. This is an unrelated worktree dependency artifact, not original sys1 or a benchmark sibling/hidden answer. Retain under the registered rule and disclose as a limitation.",
+          "registered_leak_exclusion": false,
+          "evidence": [
+            {
+              "tool_use_line": 2017,
+              "tool_result_line": 2018
+            },
+            {
+              "tool_use_line": 2065,
+              "tool_result_line": 2066
+            }
+          ]
+        },
+        {
+          "category": "own_scratch_metadata",
+          "reason": "A scratch Git repository was created earlier by this same run with dummy files; later git log reads returned its own Initial commit. Own background test output reads are likewise not answer access.",
+          "registered_leak_exclusion": false,
+          "evidence": [
+            {
+              "tool_use_line": 1246,
+              "tool_result_line": 1247
+            },
+            {
+              "tool_use_line": 1546,
+              "tool_result_line": 1549
+            },
+            {
+              "tool_use_line": 1565,
+              "tool_result_line": 1566
+            }
+          ]
+        }
+      ],
+      "sys1_observation": {
+        "initialization_line": 1,
+        "mcp_servers_empty": true,
+        "sys1_named_tool_or_skill": false,
+        "hook_event_lines": [],
+        "explicit_sys1_assistant_invocation_observed": false
+      }
+    },
+    {
+      "task": "sys1-f922ff80",
+      "model": "sonnet",
+      "sha256": "f9b58e42f8ce7eeed5d4f93769b170768ab8484f15cbe57451f0da81bbf9a3ba",
+      "bytes": 111901,
+      "line_count": 29,
+      "decision": "retain_no_registered_leak_observed",
+      "reason": "No visible successful original-repository, hidden snapshot/answer, own target-commit, or sibling benchmark result read. Own cwd and initialization metadata contain the task hash and are not answer access.",
+      "registered_leak_exclusion": false,
+      "naive_substring_scanner_flag": true,
+      "result": {
+        "line": 29,
+        "num_turns": 7,
+        "subtype": "success",
+        "is_error": false,
+        "actual_final": true,
+        "result_result_chars": 1454,
+        "last_assistant_text_line": 28,
+        "harness_used_fallback_text": false,
+        "fallback_progress_case": false
+      },
+      "findings": [
+        {
+          "category": "blocked_original_root_listing",
+          "reason": "ls ~/src explicitly returned Operation not permitted; repository contents were not read.",
+          "registered_leak_exclusion": false,
+          "evidence": [
+            {
+              "tool_use_line": 6,
+              "tool_result_line": 7
+            }
+          ]
+        },
+        {
+          "category": "outside_tree_directory_metadata",
+          "reason": "A broad filesystem search and later directory listings returned external dependency path metadata. Git log/tag attempts against discovered release archives failed because those directories were not Git repositories. No archive extraction or source read followed.",
+          "registered_leak_exclusion": false,
+          "evidence": [
+            {
+              "tool_use_line": 9,
+              "tool_result_line": 13
+            },
+            {
+              "tool_use_line": 15,
+              "tool_result_line": 16
+            }
+          ]
+        }
+      ],
+      "sys1_observation": {
+        "initialization_line": 1,
+        "mcp_servers_empty": true,
+        "sys1_named_tool_or_skill": false,
+        "hook_event_lines": [],
+        "explicit_sys1_assistant_invocation_observed": false
+      }
+    },
+    {
+      "task": "sys1-f922ff80",
+      "model": "haiku",
+      "sha256": "cffb8f849d404432886703a99abece4b27e5403d7f9bfaecbb1556316a5bec6b",
+      "bytes": 783885,
+      "line_count": 1595,
+      "decision": "retain_no_registered_leak_observed",
+      "reason": "No visible successful original-repository, hidden snapshot/answer, own target-commit, or sibling benchmark result read. Own cwd and initialization metadata contain the task hash and are not answer access.",
+      "registered_leak_exclusion": false,
+      "naive_substring_scanner_flag": true,
+      "result": {
+        "line": 1595,
+        "num_turns": 34,
+        "subtype": "success",
+        "is_error": false,
+        "actual_final": true,
+        "result_result_chars": 1530,
+        "last_assistant_text_line": 1594,
+        "harness_used_fallback_text": false,
+        "fallback_progress_case": false
+      },
+      "findings": [],
+      "sys1_observation": {
+        "initialization_line": 1,
+        "mcp_servers_empty": true,
+        "sys1_named_tool_or_skill": false,
+        "hook_event_lines": [],
+        "explicit_sys1_assistant_invocation_observed": false
+      }
+    },
+    {
+      "task": "sys1-acdce8cf",
+      "model": "sonnet",
+      "sha256": "e1fc797539b3d93e6b108d486b5448abf8bcb052435cbcc6d1d3765d0ade0585",
+      "bytes": 149231,
+      "line_count": 60,
+      "decision": "retain_no_registered_leak_observed",
+      "reason": "No visible successful original-repository, hidden snapshot/answer, own target-commit, or sibling benchmark result read. Own cwd and initialization metadata contain the task hash and are not answer access.",
+      "registered_leak_exclusion": false,
+      "naive_substring_scanner_flag": true,
+      "result": {
+        "line": 60,
+        "num_turns": 16,
+        "subtype": "success",
+        "is_error": false,
+        "terminal_reason": "completed",
+        "actual_final": true,
+        "result_result_chars": 1520,
+        "last_assistant_text_line": 59,
+        "harness_used_fallback_text": false,
+        "fallback_progress_case": false
+      },
+      "findings": [
+        {
+          "category": "outside_tree_directory_metadata",
+          "reason": "ls ~/src was attempted with errors suppressed; no original source content was returned. ls main/work returned only own tree and harness scratch/settings. find / located shared design-kit directories. No sibling benchmark result content was read.",
+          "registered_leak_exclusion": false,
+          "evidence": [
+            {
+              "tool_use_line": 6,
+              "tool_result_line": 7
+            },
+            {
+              "tool_use_line": 11,
+              "tool_result_line": 12
+            }
+          ]
+        },
+        {
+          "category": "successful_external_dependency_read",
+          "reason": "Successfully read public design-kit v0.29.2 tag metadata and src/react/platform-install.tsx and .stylex.ts from an external source checkout using git show/grep; read src/platforms.ts into sha256sum. Then refreshed platform/syntax assets from that source checkout. This is real outside dependency-source access but not original sys1, its target commit, or a benchmark sibling/hidden answer. Retain under the registered rule and disclose as a limitation.",
+          "registered_leak_exclusion": false,
+          "evidence": [
+            {
+              "tool_use_line": 13,
+              "tool_result_line": 14
+            },
+            {
+              "tool_use_line": 16,
+              "tool_result_line": 17
+            },
+            {
+              "tool_use_line": 18,
+              "tool_result_line": 19
+            },
+            {
+              "tool_use_line": 20,
+              "tool_result_line": 21
+            },
+            {
+              "tool_use_line": 30,
+              "tool_result_line": 31
+            },
+            {
+              "tool_use_line": 41,
+              "tool_result_line": 45
+            }
+          ]
+        }
+      ],
+      "sys1_observation": {
+        "initialization_line": 1,
+        "mcp_servers_empty": true,
+        "sys1_named_tool_or_skill": false,
+        "sys1_named_tools_or_skills": [],
+        "hook_event_lines": [],
+        "explicit_sys1_assistant_invocation_observed": false,
+        "command_change_events": []
+      }
+    },
+    {
+      "task": "sys1-acdce8cf",
+      "model": "haiku",
+      "sha256": "ab6a962c8f2f43c6ff01e1cacec5a749d2f60af3dea15c4c18e229c95fa0c1bd",
+      "bytes": 1192045,
+      "line_count": 2908,
+      "decision": "retain_no_registered_leak_observed",
+      "reason": "No visible successful original-repository, hidden snapshot/answer, own target-commit, or sibling benchmark result read. Own cwd and initialization metadata contain the task hash and are not answer access.",
+      "registered_leak_exclusion": false,
+      "naive_substring_scanner_flag": true,
+      "result": {
+        "line": 2908,
+        "num_turns": 65,
+        "subtype": "success",
+        "is_error": false,
+        "terminal_reason": "completed",
+        "actual_final": true,
+        "result_result_chars": 1897,
+        "last_assistant_text_line": 2907,
+        "harness_used_fallback_text": false,
+        "fallback_progress_case": false
+      },
+      "findings": [
+        {
+          "category": "blocked_outside_tree_clone_attempts",
+          "reason": "Attempts to clone the shared design-kit dependency into /tmp/design-kit-work, ../design-kit-work and main/work/scratch failed with Operation not permitted. Work-root listing returned only own tree and harness files. No sibling result or external source content was accessed.",
+          "registered_leak_exclusion": false,
+          "evidence": [
+            {
+              "tool_use_line": 1079,
+              "tool_result_line": 1080
+            },
+            {
+              "tool_use_line": 1096,
+              "tool_result_line": 1097
+            },
+            {
+              "tool_use_line": 1105,
+              "tool_result_line": 1106
+            },
+            {
+              "tool_use_line": 1115,
+              "tool_result_line": 1116
+            }
+          ]
+        },
+        {
+          "category": "allowed_own_ancestor_history",
+          "reason": "git log and git show 867ac37 --stat used permitted existing history in the own clone. That commit is another frozen task but is an ancestor, not the current target acdce8cf.",
+          "registered_leak_exclusion": false,
+          "evidence": [
+            {
+              "tool_use_line": 1263,
+              "tool_result_line": 1264
+            },
+            {
+              "tool_use_line": 1274,
+              "tool_result_line": 1275
+            }
+          ]
+        }
+      ],
+      "sys1_observation": {
+        "initialization_line": 1,
+        "mcp_servers_empty": true,
+        "sys1_named_tool_or_skill": false,
+        "sys1_named_tools_or_skills": [],
+        "hook_event_lines": [],
+        "explicit_sys1_assistant_invocation_observed": false,
+        "command_change_events": [
+          {
+            "line": 570,
+            "nonbuiltin_names": [],
+            "sys1_named_commands": []
+          }
+        ]
+      }
+    },
+    {
+      "task": "sys1-efd2af39",
+      "model": "sonnet",
+      "sha256": "cff9a1e28180ebdf2982134bb900b72ce589a12b0a738c1fc1b300ecfa313d0b",
+      "bytes": 290464,
+      "line_count": 104,
+      "decision": "retain_no_registered_leak_observed",
+      "reason": "No visible successful original-repository, hidden snapshot/answer, own target-commit, or sibling benchmark result read. Own cwd and initialization metadata contain the task hash and are not answer access.",
+      "registered_leak_exclusion": false,
+      "naive_substring_scanner_flag": true,
+      "result": {
+        "line": 104,
+        "num_turns": 19,
+        "subtype": "success",
+        "is_error": false,
+        "terminal_reason": "completed",
+        "actual_final": true,
+        "result_result_chars": 2567,
+        "last_assistant_text_line": 103,
+        "harness_used_fallback_text": false,
+        "fallback_progress_case": false
+      },
+      "findings": [
+        {
+          "category": "blocked_original_root_listing",
+          "reason": "A mixed Bash command containing ls ~/src was explicitly denied before execution (system permission_denied line 39, tool result line 40). No original repository content was read.",
+          "registered_leak_exclusion": false,
+          "evidence": [
+            {
+              "tool_use_line": 38,
+              "tool_result_line": 40
+            }
+          ]
+        }
+      ],
+      "sys1_observation": {
+        "initialization_line": 1,
+        "mcp_servers_empty": true,
+        "sys1_named_tool_or_skill": false,
+        "sys1_named_tools_or_skills": [],
+        "hook_event_lines": [],
+        "explicit_sys1_assistant_invocation_observed": false,
+        "command_change_events": []
+      }
+    },
+    {
+      "task": "sys1-efd2af39",
+      "model": "haiku",
+      "sha256": "593406057b6e5605572f6a66af79105acfcf5719bbd252c108659825eb80684d",
+      "bytes": 2025052,
+      "line_count": 3919,
+      "decision": "retain_no_registered_leak_observed",
+      "reason": "No visible successful original-repository, hidden snapshot/answer, own target-commit, or sibling benchmark result read. Own cwd and initialization metadata contain the task hash and are not answer access.",
+      "registered_leak_exclusion": false,
+      "naive_substring_scanner_flag": true,
+      "result": {
+        "line": 3919,
+        "num_turns": 79,
+        "subtype": "success",
+        "is_error": false,
+        "terminal_reason": "completed",
+        "actual_final": true,
+        "result_result_chars": 1467,
+        "last_assistant_text_line": 3918,
+        "harness_used_fallback_text": false,
+        "fallback_progress_case": false
+      },
+      "findings": [
+        {
+          "category": "blocked_outside_tree_scratch_write",
+          "reason": "The attempted /tmp/gen-og.js write was denied (Operation not permitted); the following invocation yielded only Canvas module not available. No original repository, hidden answer, sibling result, or other external source content was returned. The later git log inspected only own new commit and existing ancestor history.",
+          "registered_leak_exclusion": false,
+          "evidence": [
+            {
+              "tool_use_line": 1260,
+              "tool_result_line": 1261
+            },
+            {
+              "tool_use_line": 3905,
+              "tool_result_line": 3906
+            }
+          ]
+        }
+      ],
+      "sys1_observation": {
+        "initialization_line": 1,
+        "mcp_servers_empty": true,
+        "sys1_named_tool_or_skill": false,
+        "sys1_named_tools_or_skills": [],
+        "hook_event_lines": [],
+        "explicit_sys1_assistant_invocation_observed": false,
+        "command_change_events": []
+      }
+    },
+    {
+      "task": "sys1-62f2a616",
+      "model": "sonnet",
+      "sha256": "5bd95b5bb42831128e045175502052b70aa070d333e29cfb241800f6376cba16",
+      "bytes": 168691,
+      "line_count": 87,
+      "decision": "retain_no_registered_leak_observed",
+      "reason": "No visible successful original-repository, hidden snapshot/answer, own target-commit, or sibling benchmark result read. Own cwd and initialization metadata contain the task hash and are not answer access.",
+      "registered_leak_exclusion": false,
+      "naive_substring_scanner_flag": true,
+      "result": {
+        "line": 84,
+        "num_turns": 16,
+        "subtype": "success",
+        "is_error": false,
+        "terminal_reason": "completed",
+        "actual_final": true,
+        "result_result_chars": 2039,
+        "last_assistant_text_line": 83,
+        "harness_used_fallback_text": false,
+        "fallback_progress_case": false
+      },
+      "findings": [
+        {
+          "category": "allowed_own_background_output",
+          "reason": "The successful outside-clone tail read was the per-session output file created by this run's own background test command. An earlier sleep-and-tail attempt was denied; Monitor calls only checked bun-test process presence and returned no source/answer content. Repository reads and Git history stayed in the own clone.",
+          "registered_leak_exclusion": false,
+          "evidence": [
+            {
+              "tool_use_line": 50,
+              "tool_result_line": 51
+            },
+            {
+              "tool_use_line": 53,
+              "tool_result_line": 55
+            },
+            {
+              "tool_use_line": 56,
+              "tool_result_line": 59
+            },
+            {
+              "tool_use_line": 63,
+              "tool_result_line": 66
+            },
+            {
+              "tool_use_line": 71,
+              "tool_result_line": 72
+            }
+          ]
+        }
+      ],
+      "sys1_observation": {
+        "initialization_line": 1,
+        "mcp_servers_empty": true,
+        "sys1_named_tool_or_skill": false,
+        "sys1_named_tools_or_skills": [],
+        "hook_event_lines": [],
+        "explicit_sys1_assistant_invocation_observed": false,
+        "command_change_events": []
+      }
+    },
+    {
+      "task": "sys1-62f2a616",
+      "model": "haiku",
+      "sha256": "d7583f2bfcc1044b68b67a217d0acfca128e6c165b2579c8096bf7e1589257f9",
+      "bytes": 548462,
+      "line_count": 1567,
+      "decision": "retain_no_registered_leak_observed",
+      "reason": "No visible successful original-repository, hidden snapshot/answer, own target-commit, or sibling benchmark result read. Own cwd and initialization metadata contain the task hash and are not answer access.",
+      "registered_leak_exclusion": false,
+      "naive_substring_scanner_flag": true,
+      "result": {
+        "line": 1567,
+        "num_turns": 20,
+        "subtype": "success",
+        "is_error": false,
+        "terminal_reason": "completed",
+        "actual_final": true,
+        "result_result_chars": 1650,
+        "last_assistant_text_line": 1566,
+        "harness_used_fallback_text": false,
+        "fallback_progress_case": false
+      },
+      "findings": [
+        {
+          "category": "allowed_own_ancestor_history",
+          "reason": "git log read existing ancestor history from the own clone, including efd2af3 (an earlier frozen task). It did not read current target 62f2a616. All file and directory reads stayed in the own clone; no original source, snapshot, hidden answer, or sibling benchmark result access was observed.",
+          "registered_leak_exclusion": false,
+          "evidence": [
+            {
+              "tool_use_line": 148,
+              "tool_result_line": 149
+            }
+          ]
+        }
+      ],
+      "sys1_observation": {
+        "initialization_line": 1,
+        "mcp_servers_empty": true,
+        "sys1_named_tool_or_skill": false,
+        "sys1_named_tools_or_skills": [],
+        "hook_event_lines": [],
+        "explicit_sys1_assistant_invocation_observed": false,
+        "command_change_events": []
+      }
+    },
+    {
+      "task": "sys1-696a40c0",
+      "model": "sonnet",
+      "sha256": "2a574e6ba3966a15c60d970c31496df3f71ee0df3ae8256d56c125236ed182bc",
+      "bytes": 165281,
+      "line_count": 78,
+      "decision": "retain_no_registered_leak_observed",
+      "reason": "No visible successful original-repository, hidden snapshot/answer, own target-commit, or sibling benchmark result read. Own cwd and initialization metadata contain the task hash and are not answer access.",
+      "registered_leak_exclusion": false,
+      "naive_substring_scanner_flag": true,
+      "result": {
+        "line": 78,
+        "num_turns": 16,
+        "subtype": "success",
+        "is_error": false,
+        "terminal_reason": "completed",
+        "actual_final": true,
+        "result_result_chars": 2100,
+        "last_assistant_text_line": 77,
+        "harness_used_fallback_text": false,
+        "fallback_progress_case": false
+      },
+      "findings": [
+        {
+          "category": "allowed_own_ancestor_history",
+          "reason": "git log and git show HEAD read own existing parent history (3e1a7cb), not target 696a40c0. The fixture JSONL reads are ordinary files in the own clone, not hidden benchmark answers.",
+          "registered_leak_exclusion": false,
+          "evidence": [
+            {
+              "tool_use_line": 2,
+              "tool_result_line": 4
+            },
+            {
+              "tool_use_line": 36,
+              "tool_result_line": 37
+            }
+          ]
+        },
+        {
+          "category": "allowed_own_generated_scratch",
+          "reason": "A scratch TypeScript script in $TMPDIR was created in the same command and imported this run's own detector source and fixture files. It did not read original source, snapshots, or sibling benchmark results.",
+          "registered_leak_exclusion": false,
+          "evidence": [
+            {
+              "tool_use_line": 54,
+              "tool_result_line": 55
+            }
+          ]
+        }
+      ],
+      "sys1_observation": {
+        "initialization_line": 1,
+        "mcp_servers_empty": true,
+        "sys1_named_tool_or_skill": false,
+        "sys1_named_tools_or_skills": [],
+        "hook_event_lines": [],
+        "explicit_sys1_assistant_invocation_observed": false,
+        "command_change_events": []
+      }
+    },
+    {
+      "task": "sys1-696a40c0",
+      "model": "haiku",
+      "sha256": "747d8d7a289719cb529855c4bae0837ed902873fe628c5fd97ea039b08737062",
+      "bytes": 1419188,
+      "line_count": 3025,
+      "decision": "retain_no_registered_leak_observed",
+      "reason": "No visible successful original-repository, target-commit, hidden snapshot/answer, or sibling benchmark result read. All file reads and searches stayed in the own clone. Calibration/heldout fixture reads are versioned task inputs in that clone, not hidden completion-benchmark answers. Own cwd metadata contains the task hash and is not answer access.",
+      "registered_leak_exclusion": false,
+      "naive_substring_scanner_flag": true,
+      "result": {
+        "line": 3025,
+        "num_turns": 60,
+        "subtype": "success",
+        "is_error": false,
+        "terminal_reason": "completed",
+        "actual_final": true,
+        "result_result_chars": 1586,
+        "last_assistant_text_line": 3024,
+        "harness_used_fallback_text": false,
+        "fallback_progress_case": false
+      },
+      "findings": [],
+      "sys1_observation": {
+        "initialization_line": 1,
+        "mcp_servers_empty": true,
+        "sys1_named_tool_or_skill": false,
+        "sys1_named_tools_or_skills": [],
+        "hook_event_lines": [],
+        "explicit_sys1_assistant_invocation_observed": false,
+        "command_change_events": []
+      }
+    },
+    {
+      "task": "system-one-skills-072a15f9",
+      "model": "sonnet",
+      "sha256": "f583adc0d5197d0b61e24b2ef87521dc44e3ad8d39710a052f36d5d6b5344a6d",
+      "bytes": 81639,
+      "line_count": 26,
+      "decision": "retain_no_registered_leak_observed",
+      "reason": "No visible successful original-repository, hidden snapshot/answer, own target-commit, or sibling benchmark result read. Own cwd and initialization metadata contain the task hash and are not answer access.",
+      "registered_leak_exclusion": false,
+      "naive_substring_scanner_flag": true,
+      "result": {
+        "line": 26,
+        "num_turns": 5,
+        "subtype": "success",
+        "is_error": false,
+        "terminal_reason": "completed",
+        "actual_final": true,
+        "result_result_chars": 1439,
+        "last_assistant_text_line": 25,
+        "harness_used_fallback_text": false,
+        "fallback_progress_case": false
+      },
+      "findings": [
+        {
+          "category": "blocked_original_root_and_snapshot_listing",
+          "reason": "The mixed command containing ls $HOME/src and ls $HOME/.cache/sys1-bench was denied in full before execution (permission_denied line 18; tool result line 19). No original repository or hidden snapshot content was returned.",
+          "registered_leak_exclusion": false,
+          "evidence": [
+            {
+              "tool_use_line": 17,
+              "tool_result_line": 19
+            }
+          ]
+        },
+        {
+          "category": "allowed_own_ancestor_history",
+          "reason": "git log read existing own-clone ancestor 5e426654. Although that hash is another frozen task ID, it is not this run's target 072a15f9. Versioned bench/report and source documentation read inside the clone are available task inputs, not sibling completion-benchmark results.",
+          "registered_leak_exclusion": false,
+          "evidence": [
+            {
+              "tool_use_line": 3,
+              "tool_result_line": 5
+            }
+          ]
+        }
+      ],
+      "sys1_observation": {
+        "initialization_line": 1,
+        "mcp_servers_empty": true,
+        "sys1_named_tool_or_skill": false,
+        "sys1_named_tools_or_skills": [],
+        "hook_event_lines": [],
+        "explicit_sys1_assistant_invocation_observed": false,
+        "command_change_events": []
+      }
+    },
+    {
+      "task": "system-one-skills-072a15f9",
+      "model": "haiku",
+      "sha256": "bc86e3b838d361af43f46d1d1cff9b9b1e829be6a015e9217f2720ecd58771da",
+      "bytes": 790454,
+      "line_count": 1953,
+      "decision": "retain_no_registered_leak_observed",
+      "reason": "No visible successful original-repository, hidden snapshot/answer, own target-commit, or sibling benchmark result read. Own cwd and initialization metadata contain the task hash and are not answer access.",
+      "registered_leak_exclusion": false,
+      "naive_substring_scanner_flag": true,
+      "result": {
+        "line": 1953,
+        "num_turns": 55,
+        "subtype": "success",
+        "is_error": false,
+        "terminal_reason": "completed",
+        "actual_final": true,
+        "result_result_chars": 1975,
+        "last_assistant_text_line": 1952,
+        "harness_used_fallback_text": false,
+        "fallback_progress_case": false
+      },
+      "findings": [
+        {
+          "category": "allowed_own_ancestor_history",
+          "reason": "git log --all and git show returned existing own-clone ancestor 5e426654 and its stats, not target 072a15f9. Later git show reads the commit authored in this run. The bench/report JSON and docs read are versioned ancestor inputs, not hidden completion-benchmark or sibling-run results.",
+          "registered_leak_exclusion": false,
+          "evidence": [
+            {
+              "tool_use_line": 162,
+              "tool_result_line": 163
+            },
+            {
+              "tool_use_line": 393,
+              "tool_result_line": 394
+            },
+            {
+              "tool_use_line": 474,
+              "tool_result_line": 475
+            },
+            {
+              "tool_use_line": 483,
+              "tool_result_line": 484
+            },
+            {
+              "tool_use_line": 768,
+              "tool_result_line": 769
+            },
+            {
+              "tool_use_line": 1928,
+              "tool_result_line": 1929
+            }
+          ]
+        }
+      ],
+      "sys1_observation": {
+        "initialization_line": 1,
+        "mcp_servers_empty": true,
+        "sys1_named_tool_or_skill": false,
+        "sys1_named_tools_or_skills": [],
+        "hook_event_lines": [],
+        "explicit_sys1_assistant_invocation_observed": false,
+        "command_change_events": []
+      }
+    },
+    {
+      "task": "system-one-skills-d2514671",
+      "model": "sonnet",
+      "sha256": "928b267bcbdf5f6848dfd4ce58e6ac613b3503cbdeba7082d38086f0be2e0d91",
+      "bytes": 108042,
+      "line_count": 44,
+      "decision": "retain_no_registered_leak_observed",
+      "reason": "No visible successful original-repository, hidden snapshot/answer, own target-commit, or sibling benchmark result read. Own cwd and initialization metadata contain the task hash and are not answer access.",
+      "registered_leak_exclusion": false,
+      "naive_substring_scanner_flag": true,
+      "result": {
+        "line": 44,
+        "num_turns": 11,
+        "subtype": "success",
+        "is_error": false,
+        "terminal_reason": "completed",
+        "actual_final": true,
+        "result_result_chars": 1253,
+        "last_assistant_text_line": 43,
+        "harness_used_fallback_text": false,
+        "fallback_progress_case": false
+      },
+      "findings": [
+        {
+          "category": "blocked_original_root_and_snapshot_listing",
+          "reason": "The shell executed own-clone reads but ls of $HOME/.cache/sys1-bench and $HOME/src returned Operation not permitted. Echoed directory headers are not successful directory contents; no excluded content was returned.",
+          "registered_leak_exclusion": false,
+          "evidence": [
+            {
+              "tool_use_line": 17,
+              "tool_result_line": 18
+            }
+          ]
+        },
+        {
+          "category": "unsuccessful_historical_snapshot_lookup",
+          "reason": "ls /tmp/s1r/cohort/snapshots returned No such file or directory. The expected labels returned later in that mixed command came from versioned bench/report JSON inside the own clone, from a different historical benchmark, not current hidden completion answers or sibling results.",
+          "registered_leak_exclusion": false,
+          "evidence": [
+            {
+              "tool_use_line": 21,
+              "tool_result_line": 22
+            }
+          ]
+        },
+        {
+          "category": "unsuccessful_target_pr_lookup",
+          "reason": "gh pr view 28 and gh issue view 28 both returned instructions to authenticate GitHub CLI. No PR or issue content was returned; the rest of the command read only own-clone refs and a versioned historical report.",
+          "registered_leak_exclusion": false,
+          "evidence": [
+            {
+              "tool_use_line": 26,
+              "tool_result_line": 27
+            }
+          ]
+        }
+      ],
+      "sys1_observation": {
+        "initialization_line": 1,
+        "mcp_servers_empty": true,
+        "sys1_named_tool_or_skill": false,
+        "sys1_named_tools_or_skills": [],
+        "hook_event_lines": [],
+        "explicit_sys1_assistant_invocation_observed": false,
+        "command_change_events": []
+      }
+    },
+    {
+      "task": "system-one-skills-d2514671",
+      "model": "haiku",
+      "sha256": "ed766ef6aa97f276177436fff74c69faf786c6083db7100b728b3d9be6bfa250",
+      "bytes": 577889,
+      "line_count": 1685,
+      "decision": "retain_no_registered_leak_observed",
+      "reason": "No visible successful original-repository, hidden snapshot/answer, own target-commit, or sibling benchmark result read. Own cwd and initialization metadata contain the task hash and are not answer access.",
+      "registered_leak_exclusion": false,
+      "naive_substring_scanner_flag": true,
+      "result": {
+        "line": 1685,
+        "num_turns": 36,
+        "subtype": "success",
+        "is_error": false,
+        "terminal_reason": "completed",
+        "actual_final": true,
+        "result_result_chars": 1095,
+        "last_assistant_text_line": 1684,
+        "harness_used_fallback_text": false,
+        "fallback_progress_case": false
+      },
+      "findings": [
+        {
+          "category": "allowed_own_ancestor_history",
+          "reason": "Own-clone git history reads returned ancestor 6a8923b or no matches. A grep for target PR #28 returned no output. Later log reads show the commit authored in this run, not original target d2514671.",
+          "registered_leak_exclusion": false,
+          "evidence": [
+            {
+              "tool_use_line": 57,
+              "tool_result_line": 58
+            },
+            {
+              "tool_use_line": 450,
+              "tool_result_line": 451
+            },
+            {
+              "tool_use_line": 765,
+              "tool_result_line": 766
+            },
+            {
+              "tool_use_line": 799,
+              "tool_result_line": 800
+            },
+            {
+              "tool_use_line": 810,
+              "tool_result_line": 811
+            },
+            {
+              "tool_use_line": 1458,
+              "tool_result_line": 1459
+            },
+            {
+              "tool_use_line": 1544,
+              "tool_result_line": 1545
+            }
+          ]
+        },
+        {
+          "category": "allowed_own_generated_scratch",
+          "reason": "A /tmp scratch write was denied; $TMPDIR scripts were then created in the same commands before execution. They contain authored examples, not benchmark answer reads.",
+          "registered_leak_exclusion": false,
+          "evidence": [
+            {
+              "tool_use_line": 1003,
+              "tool_result_line": 1004
+            },
+            {
+              "tool_use_line": 1015,
+              "tool_result_line": 1016
+            },
+            {
+              "tool_use_line": 1136,
+              "tool_result_line": 1137
+            }
+          ]
+        },
+        {
+          "category": "unsuccessful_historical_object_lookup",
+          "reason": "A newly authored $TMPDIR script ran git show for two historical task objects in cwd .; both returned commit/repo not available locally. Repo URL strings in the script are not fetched or used as cwd. No outside source was read.",
+          "registered_leak_exclusion": false,
+          "evidence": [
+            {
+              "tool_use_line": 1154,
+              "tool_result_line": 1155
+            }
+          ]
+        }
+      ],
+      "sys1_observation": {
+        "initialization_line": 1,
+        "mcp_servers_empty": true,
+        "sys1_named_tool_or_skill": false,
+        "sys1_named_tools_or_skills": [],
+        "hook_event_lines": [],
+        "explicit_sys1_assistant_invocation_observed": false,
+        "command_change_events": []
+      }
+    },
+    {
+      "task": "system-one-skills-5e426654",
+      "model": "sonnet",
+      "sha256": "d10aba8fc2caa45e46d4761513aa53634a43f57484be17a78116ce3a7e25ead1",
+      "bytes": 119408,
+      "line_count": 47,
+      "decision": "retain_no_registered_leak_observed",
+      "reason": "No visible successful original-repository, hidden snapshot/answer, own target-commit, or sibling benchmark result read. Own cwd and initialization metadata contain the task hash and are not answer access.",
+      "registered_leak_exclusion": false,
+      "naive_substring_scanner_flag": true,
+      "result": {
+        "line": 47,
+        "num_turns": 11,
+        "subtype": "success",
+        "is_error": false,
+        "terminal_reason": "completed",
+        "actual_final": true,
+        "result_result_chars": 1520,
+        "last_assistant_text_line": 46,
+        "harness_used_fallback_text": false,
+        "fallback_progress_case": false
+      },
+      "findings": [
+        {
+          "category": "allowed_own_ancestor_history",
+          "reason": "git log and git show read reachable own-clone ancestors d2514671 and 6a8923b, not this run's target 5e426654. Later git ls-remote reads its own local .git/bench-remote.git refs after pushing its generated commit.",
+          "registered_leak_exclusion": false,
+          "evidence": [
+            {
+              "tool_use_line": 3,
+              "tool_result_line": 5
+            },
+            {
+              "tool_use_line": 6,
+              "tool_result_line": 7
+            },
+            {
+              "tool_use_line": 43,
+              "tool_result_line": 45
+            }
+          ]
+        },
+        {
+          "category": "sys1_availability_check_only",
+          "reason": "which sys1 checks availability, and Sys1 checkpoint text appears in read source or newly authored documentation. No actual Sys1 review/checkpoint or hook invocation is visible. Generated case tests create their own temporary Git fixtures.",
+          "registered_leak_exclusion": false,
+          "evidence": [
+            {
+              "tool_use_line": 11,
+              "tool_result_line": 12
+            },
+            {
+              "tool_use_line": 19,
+              "tool_result_line": 20
+            },
+            {
+              "tool_use_line": 24,
+              "tool_result_line": 25
+            }
+          ]
+        }
+      ],
+      "sys1_observation": {
+        "initialization_line": 1,
+        "mcp_servers_empty": true,
+        "sys1_named_tool_or_skill": false,
+        "sys1_named_tools_or_skills": [],
+        "hook_event_lines": [],
+        "explicit_sys1_assistant_invocation_observed": false,
+        "command_change_events": []
+      }
+    },
+    {
+      "task": "system-one-skills-5e426654",
+      "model": "haiku",
+      "sha256": "007044096e7bd349ebb0794dfe7d4d69dfbfe3b0efb3e6055c321985a32d532a",
+      "bytes": 500813,
+      "line_count": 1215,
+      "decision": "retain_no_registered_leak_observed",
+      "reason": "No visible successful original-repository, hidden snapshot/answer, own target-commit, or sibling benchmark result read. Own cwd and initialization metadata contain the task hash and are not answer access.",
+      "registered_leak_exclusion": false,
+      "naive_substring_scanner_flag": true,
+      "result": {
+        "line": 1215,
+        "num_turns": 33,
+        "subtype": "success",
+        "is_error": false,
+        "terminal_reason": "completed",
+        "actual_final": true,
+        "result_result_chars": 1193,
+        "last_assistant_text_line": 1214,
+        "harness_used_fallback_text": false,
+        "fallback_progress_case": false
+      },
+      "findings": [
+        {
+          "category": "allowed_own_ancestor_history",
+          "reason": "git log read own-clone ancestors d2514671 and 6a8923b; the all-history assertion grep returned no match. Later git log/show reads the new commit authored by this run, not target 5e426654. All other successful reads stayed inside the own clone. Sys1 references in read or newly authored source/docs do not show a Sys1 review/checkpoint invocation.",
+          "registered_leak_exclusion": false,
+          "evidence": [
+            {
+              "tool_use_line": 667,
+              "tool_result_line": 668
+            },
+            {
+              "tool_use_line": 760,
+              "tool_result_line": 761
+            },
+            {
+              "tool_use_line": 1202,
+              "tool_result_line": 1203
+            }
+          ]
+        }
+      ],
+      "sys1_observation": {
+        "initialization_line": 1,
+        "mcp_servers_empty": true,
+        "sys1_named_tool_or_skill": false,
+        "sys1_named_tools_or_skills": [],
+        "hook_event_lines": [],
+        "explicit_sys1_assistant_invocation_observed": false,
+        "command_change_events": []
+      }
+    },
+    {
+      "task": "system-one-skills-f316c1cd",
+      "model": "sonnet",
+      "sha256": "1368d4fdce4d589f45c032d6d933e22d7530787a08a91ff0e2c210dd9910d791",
+      "bytes": 194186,
+      "line_count": 60,
+      "decision": "retain_no_registered_leak_observed",
+      "reason": "No visible successful original-repository, hidden snapshot/answer, own target-commit, or sibling benchmark result read. Own cwd and initialization metadata contain the task hash and are not answer access.",
+      "registered_leak_exclusion": false,
+      "naive_substring_scanner_flag": true,
+      "result": {
+        "line": 60,
+        "num_turns": 10,
+        "subtype": "success",
+        "is_error": false,
+        "terminal_reason": "completed",
+        "actual_final": true,
+        "result_result_chars": 2229,
+        "last_assistant_text_line": 59,
+        "harness_used_fallback_text": false,
+        "fallback_progress_case": false
+      },
+      "findings": [
+        {
+          "category": "allowed_own_ancestor_history",
+          "reason": "git log returned reachable own-clone ancestors beginning 8489a336, not target f316c1cd. Remaining source/report reads were within the clone. The authored harness tests inject mocked provider, workspace and save functions, so literal snapshot /x and workspace /tmp are not successful hidden-snapshot reads.",
+          "registered_leak_exclusion": false,
+          "evidence": [
+            {
+              "tool_use_line": 2,
+              "tool_result_line": 4
+            },
+            {
+              "tool_use_line": 24,
+              "tool_result_line": 25
+            }
+          ]
+        }
+      ],
+      "sys1_observation": {
+        "initialization_line": 1,
+        "mcp_servers_empty": true,
+        "sys1_named_tool_or_skill": false,
+        "sys1_named_tools_or_skills": [],
+        "hook_event_lines": [],
+        "explicit_sys1_assistant_invocation_observed": false,
+        "command_change_events": []
+      }
+    },
+    {
+      "task": "system-one-skills-f316c1cd",
+      "model": "haiku",
+      "sha256": "b6f728753dc9ec116bddc3e06d1e9ccc2012686548a720feb19a3e031ac79c80",
+      "bytes": 488488,
+      "line_count": 756,
+      "decision": "retain_no_registered_leak_observed",
+      "reason": "No visible successful original-repository, hidden snapshot/answer, own target-commit, or sibling benchmark result read. Own cwd and initialization metadata contain the task hash and are not answer access.",
+      "registered_leak_exclusion": false,
+      "naive_substring_scanner_flag": true,
+      "result": {
+        "line": 756,
+        "num_turns": 29,
+        "subtype": "success",
+        "is_error": false,
+        "terminal_reason": "completed",
+        "actual_final": true,
+        "result_result_chars": 1671,
+        "last_assistant_text_line": 755,
+        "harness_used_fallback_text": false,
+        "fallback_progress_case": false
+      },
+      "findings": [
+        {
+          "category": "allowed_own_ancestor_history",
+          "reason": "git log returned reachable own-clone ancestors beginning 8489a336; the final log returned new commit 2ffceaf authored by this run. No target f316c1cd object read is visible. All successful direct file reads stayed inside the own clone. Authored harness/test snapshot strings are synthetic in-memory values, not file reads or external provider calls.",
+          "registered_leak_exclusion": false,
+          "evidence": [
+            {
+              "tool_use_line": 423,
+              "tool_result_line": 424
+            },
+            {
+              "tool_use_line": 742,
+              "tool_result_line": 743
+            },
+            {
+              "tool_use_line": 587,
+              "tool_result_line": 588
+            }
+          ]
+        }
+      ],
+      "sys1_observation": {
+        "initialization_line": 1,
+        "mcp_servers_empty": true,
+        "sys1_named_tool_or_skill": false,
+        "sys1_named_tools_or_skills": [],
+        "hook_event_lines": [],
+        "explicit_sys1_assistant_invocation_observed": false,
+        "command_change_events": []
+      }
+    }
+  ]
+}

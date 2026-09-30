@@ -1,0 +1,185 @@
+{
+  "schema_version": 1,
+  "experiment": "early-diagnostics-task-log-replay-v1",
+  "recorded_at_utc": "2026-09-20T21:15:49.480867+00:00",
+  "evidence_role": "Fresh paired development/convenience replay of previously observed task-owned validation logs; not recovered historical inputs, held-out confirmation, independent tasks, or provider billing.",
+  "selection": {
+    "frame": "The nine complete task-owned logs explicitly named with exit receipts by the integration owner before replay; this is a bounded declared frame, not all machine logs.",
+    "rule": "Retain every named complete log irrespective of outcome, size, token savings or marker retention; deduplicate only identical raw bytes plus exit and record any duplicates. Never execute archived commands.",
+    "selected_count": 9,
+    "duplicate_count": 0,
+    "known_other_logs_excluded": [
+      {
+        "sha256": "96bf35a6e9ec1e54b6b6d734e68b248b68363c3a5a24ac480b7f4f70ea9b1344",
+        "bytes": 582636,
+        "reason": "explicit completed-command exit not independently supplied to this collection owner"
+      },
+      {
+        "sha256": "9c6888cc5124d68761a66ac9022de489e33f1cb5a6382649ef3e5ed190f317df",
+        "bytes": 12373,
+        "reason": "explicit completed-command exit not independently supplied to this collection owner"
+      },
+      {
+        "sha256": "26e66688d741ec5cde7c8c7337c979e0fc193864c1ef4cc93390159c6b663507",
+        "bytes": 4150,
+        "reason": "explicit completed-command exit not independently supplied to this collection owner"
+      },
+      {
+        "sha256": "cc4f8a5dca2e023ad293dc6943b40610793a427cfe241c9b0b6bb99d22e64204",
+        "bytes": 11539,
+        "reason": "explicit completed-command exit not independently supplied to this collection owner"
+      },
+      {
+        "sha256": "c23f6f50290d36833a471dd0b7e30eb51a55310e27e61060d34aedd3ff242059",
+        "bytes": 12842,
+        "reason": "explicit completed-command exit not independently supplied to this collection owner"
+      }
+    ],
+    "interrupted_run_exclusion": {
+      "count": 1,
+      "reason": "Installer canceled before completion; exit 130 is not a completed validation result; no complete source log admitted."
+    }
+  },
+  "samples": [
+    {
+      "sample_id": "0dee36ab1adcfba4c9a4e13175e022e796d02710fe870b320b69bedc17e90357",
+      "sha256": "1a101dd744aca55e6b0f241248f18c8b11a8380667e228907d3e3350052f784c",
+      "bytes": 26510,
+      "exit_code": 1
+    },
+    {
+      "sample_id": "24ea098b953ebc98b5e958ab2e6d63e75e1fe6646a4f371d7ec58f2edeead726",
+      "sha256": "b1a79d1f541515279dc08051f14b4279caca5941ec9bfe5905d5a3a0fe00bc37",
+      "bytes": 645250,
+      "exit_code": 1
+    },
+    {
+      "sample_id": "4ff00c9147138bfa8dac91b9fb1a609197748251afd3034c7e5f33655333058f",
+      "sha256": "835095e2d9f9fa3708108e5699ae8c2f82ee613f799aec1b8865bf7619ebde6e",
+      "bytes": 26274,
+      "exit_code": 0
+    },
+    {
+      "sample_id": "60c844f7f776e6b815ef934a3b2857aefe89863053dfd38e7af1fd19a5e7ddb7",
+      "sha256": "6e526e911040f913873478ac2038696fde6db0dc8267c892e7a156293dbc2d96",
+      "bytes": 620414,
+      "exit_code": 0
+    },
+    {
+      "sample_id": "8b5855cdd258b6de0e8479ead12a3e6f14f256129f4e2655e80e4b34f58624cf",
+      "sha256": "234e454a16a4234c844f3f8eb96a08e8302c5d403255c95287a48713509f965f",
+      "bytes": 605652,
+      "exit_code": 1
+    },
+    {
+      "sample_id": "bd0c7785b7170e4c8b26f0c67c7ddcbc540b281ae9c32972aadbdfc6874f5842",
+      "sha256": "d368d53bedea8ac042dc1b6c89da8a14495231f3c5f96185421667c617fa9630",
+      "bytes": 605914,
+      "exit_code": 1
+    },
+    {
+      "sample_id": "d290125629219027584313a8e40a8b6b85927c5aa5d712a618affd5e7f34a8af",
+      "sha256": "ac9b156759036d89fdaf3347f334e67327d58853f8311e656e8af79f0a0a5a34",
+      "bytes": 23969,
+      "exit_code": 0
+    },
+    {
+      "sample_id": "ede0bc852626c40f447071e7bc073f582a6eee3ea67de97a544262f6b8405dd2",
+      "sha256": "20db172fba7327c5c5d2548393edc224931834bb3dcf168e4801dfef6de67dbe",
+      "bytes": 26255,
+      "exit_code": 0
+    },
+    {
+      "sample_id": "ef9b81f68708369e85031b3a6e354f684894823955cfa2bede3f0cab467daf3e",
+      "sha256": "9850e27af5f4ece4b134774f931715352351267a15d6bed3fc771aee7dfede23",
+      "bytes": 79076,
+      "exit_code": 0
+    }
+  ],
+  "candidate_source_sha256": {
+    "bin/system-one-skills.js": "067f387f4aff8838f44be4592bf074475eafa30dfc1779776dadc063f1c2fc12",
+    "bun.lock": "b090e990babbef4a0d68a84d3c97b1a9a9292867018a35337c8286ba86460fec",
+    "package.json": "34d5321db5c608519fece5f5f8011ecfe209a9553ec401175c6333c178627e7d",
+    "research/early-diagnostics-replay.mjs": "176e378816a9bb4e46b4b948b710b1d92d4568bda18edd0a64410924b19b8651",
+    "research/history/v0.4.0/manifest.json": "251645655ecf1e88bcf4204974d3af8877b816054db95fb5ce67e044944065d4",
+    "research/replay_validation.mjs": "1c38f8bfdef97e6af999e412427cb4ffe53b27ea61ecf169d30ff0f887474d22",
+    "research/validate-history.mjs": "1f0f5aaa05e68b910bdd4f3173f8efd2f4f2fa0edbaecdc30a0fc90cec22905c",
+    "scripts/check.ts": "13883aa7b9a011ed51f363ab0b7cb3a905a466f52595f9214867e0fabe8ca0c8",
+    "skills/system-one-verify/SKILL.md": "a611cd1de4f0fa8534167d2c96b7f052797340f55db0fbdce5f65c7277220b76",
+    "src/check.js": "216da97a4e19462c82650f5df46efbb1e3b0fe8ca59d6f42a4e9afabaf1d9702",
+    "src/process.js": "1b67ce099d657f6ef8317390fffbc1999bfcd80fae4e7964ff9b57d6156f2464",
+    "src/reduce.js": "3d9ea55e03fe01f85229f50a0312f37984778b59d071b78783da578b28faa382",
+    "tests/early-diagnostics-replay.test.mjs": "054bad68fae8a81754acba218bbd340048ad8ceb00201fcb001898391b4bf752"
+  },
+  "baseline": {
+    "git_commit": "49c9ba49212f465c6a7d6054208bed7f39e9b813",
+    "method": "Validated immutable historical source stage, with the same input bytes, exit and artifact path as the candidate."
+  },
+  "routing": {
+    "minimum_expected_output_bytes": 8192,
+    "minimum_net_token_margin": 128,
+    "rule": "Use archived size only as a simulated prior observation; retain each below-margin case and block expansion of efficacy claims without changing thresholds."
+  },
+  "tokenizer": {
+    "library": "tiktoken",
+    "version": "0.12.0",
+    "encoding": "o200k_base"
+  },
+  "capture": {
+    "tail_bytes": 262144,
+    "maximum_log_bytes": 67108864,
+    "chunk_bytes": 4093,
+    "meaning": "Reconstructed deterministic merged-byte stream; original stdout/stderr chunk boundaries are unavailable. Chunk invariance is tested separately; no original process is re-executed."
+  },
+  "annotation": {
+    "rule": "Exact source lines whose SGR-stripped text starts with (fail), FAIL/FAILED, error:, or AssertionError:, case-insensitively. Enumerate before reducer invocation; preserve every marker outcome.",
+    "meaning": "Syntactic reporter markers only, including possible expected-error output; not actionable diagnosis, semantic completeness, or human review. Retention means the exact raw line appears in the presented text.",
+    "sensitivity": "Charge one full original-log retrieval when any marker is absent; this is a counterfactual lower-bound accounting scenario excluding lookup invocation/reasoning, not an observed read.",
+    "occurrence_limit": "Exact line-presence matching can credit repeated identical source lines through one retained occurrence; counts do not certify per-occurrence locations, relationships, diagnosis or repair."
+  },
+  "synthetic_cases": [
+    "short-failure",
+    "threshold-success",
+    "full-capture-failure",
+    "early-failure",
+    "early-utf8",
+    "diagnostic-budget",
+    "giant-error-line",
+    "cutoff-overlap",
+    "success-with-error-text",
+    "invalid-utf8-tail"
+  ],
+  "public_output": "Only opaque identifiers, hashes, scalar metadata, invariant outcomes and token/marker counts. Raw bytes, original commands, private paths and presented strings remain outside the repository.",
+  "decision_rule": "Every paired invariant must pass; full-capture valid-UTF8 output remains equal; controlled early diagnostics and final tail remain visible as declared. Publish all real marker gains/losses and net-margin failures; synthetic byte savings are not efficacy evidence. No task-success, speedup, billed-cost or broad diagnostic-completeness claim.",
+  "amendments": [
+    {
+      "recorded_at_utc": "2026-09-20T21:26:05.283093+00:00",
+      "stage": "after private input selection; before candidate paired replay or token outcomes",
+      "prior_protocol_sha256": "cbf600b403c35625eb065ce42b6c693c72c4c82124e16c396c398f84c7644333",
+      "change": "Clarify duplicate-line matching limitation only. Input selection, thresholds, exit receipts and annotation matching remain unchanged."
+    },
+    {
+      "recorded_at_utc": "2026-09-20T21:33:44.734283+00:00",
+      "stage": "after first complete paired replay",
+      "prior_protocol_sha256": "730c99a4ff7c12911bc382ca9505a3e71871fe7956d79fac54703020c3a81698",
+      "prior_report_sha256": "e544cfa4c4b307808f769f7f8964a74b025d5cfabb3b5e8e687416528b37c851",
+      "change": "Independent review added a public-report marker-union feasibility check and its adversarial unit test. The original complete run and protocol are retained by content hash. Runtime, corpus, annotation matching, tokenization and thresholds remain unchanged; rerun binds the strengthened evidence validator."
+    },
+    {
+      "recorded_at_utc": "2026-09-20T21:55:05.706Z",
+      "stage": "after two complete paired replays; after integration with current main; before integrated-tree replay",
+      "prior_protocol_sha256": "ec1b5fcba8fe0ff16162342a549e0909b12c04c9c6b55d6f3c47fae15fe26b39",
+      "prior_report_sha256": "3464558b331571a7fdda1d5a0b946a6029c2d358f541c298b376d0ead1c4e5f9",
+      "change": "Integrate upstream main 8489a3361ea192e94784c043eae53444aa908cf5 and preserve its mandatory read-opportunity integrity gate in scripts/check.ts. This is the only changed file in the bound source closure. Prior complete reports and protocols remain retained by content hash. Runtime, corpus, annotation matching, tokenization and thresholds remain unchanged; rerun binds the integrated gate source."
+    },
+    {
+      "recorded_at_utc": "2026-09-20T22:21:59.170Z",
+      "stage": "after three complete paired replays; after second integration with advanced main; before final integrated-tree replay",
+      "prior_protocol_sha256": "98b52ec92512a6d6250f6fdc1f48bf4eb4bba1416fb9330a3891600360a43a56",
+      "prior_report_sha256": "dca9d7344feb04b2a5f0a4d2b208587e40fe8959105f6e030abb1fd631d83f2c",
+      "change": "Integrate actual upstream main c4c9a40155ec952b5ac0640ded722901abf07555, including its mandatory benchmark-harness-tests, benchmark-manifest-tests and benchmark-protocol-integrity gates in scripts/check.ts. This is the only changed file in the bound source closure. Prior complete reports and protocols remain retained by content hash. Runtime, corpus, annotation matching, tokenization and thresholds remain unchanged; rerun binds the final integrated gate source."
+    }
+  ],
+  "selection_protocol_sha256": "cbf600b403c35625eb065ce42b6c693c72c4c82124e16c396c398f84c7644333",
+  "candidate_frozen_at_utc": "2026-09-20T22:21:59.319Z"
+}
