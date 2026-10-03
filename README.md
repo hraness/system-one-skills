@@ -130,3 +130,21 @@ rules. System One Skills works without it, and installing either project does
 not configure the other.
 
 System One Skills is [MIT licensed](LICENSE).
+
+## Host-scheduled validation
+
+On the managed macOS agent, run the required check through the installed host
+scheduler when the agent sandbox blocks host resources:
+
+```sh
+host-run --mode=shared --lane=compute --label=algal-check --max-hold=20m -- bun run check
+```
+
+## Host-scheduled validation
+
+On the managed macOS agent, run the required check through the installed host
+scheduler when the agent sandbox blocks host resources:
+
+```sh
+host-run --mode=shared --lane=compute --label=algal-check --max-hold=20m -- bun run check
+```
