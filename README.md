@@ -32,6 +32,18 @@ The installer leaves matching files alone and refuses to overwrite a skill
 that differs. Preserve your edits and choose an empty target if it reports a
 conflict.
 
+## Check the installation
+
+Run a short check before using the wrapper with your test suite:
+
+```sh
+system-one-skills check -- node -e 'console.log("check ready")'
+```
+
+You see `check ready` and an exit status of zero. This short output passes
+through unchanged. The command needs no agent session or API key. Next, run
+one of your repository’s noisy checks as shown below.
+
 ## When to use it
 
 Use the skill for a pass/fail check that earlier runs show produces at least
@@ -56,8 +68,10 @@ reduced only when the excerpt is at least 50% and 4 KiB smaller. The result
 preserves the command's exit status, shows selected output, and identifies any
 omissions. Timeouts and capture failures return a failure status.
 
-The printed log path contains the complete captured output. Open it when you
-need warnings, coverage details, or more context to diagnose a failure. Logs
+For shortened output, the `log=` line gives the saved log path. Short output
+passes through without that line; use `--log` to choose a known path in either
+case. Open the log when you need warnings, coverage details, or more context
+to diagnose a failure. Logs
 stay on your machine and may contain sensitive output; delete them when you no
 longer need them.
 
@@ -131,20 +145,12 @@ not configure the other.
 
 System One Skills is [MIT licensed](LICENSE).
 
-## Host-scheduled validation
+## Troubleshooting
 
-On the managed macOS agent, run the required check through the installed host
-scheduler when the agent sandbox blocks host resources:
-
-```sh
-host-run --mode=shared --lane=compute --label=algal-check --max-hold=20m -- bun run check
-```
-
-## Host-scheduled validation
-
-On the managed macOS agent, run the required check through the installed host
-scheduler when the agent sandbox blocks host resources:
-
-```sh
-host-run --mode=shared --lane=compute --label=algal-check --max-hold=20m -- bun run check
-```
+| Symptom | What to check |
+| --- | --- |
+| `invalid options or unavailable private log/skill target` | Run `system-one-skills --help`. Put wrapper options before `--`, and the command after it. For `--log`, choose a new file in an existing writable directory. |
+| Skill installation reports a conflict | Preserve the existing skill and choose an empty target. The installer does not merge or overwrite differing files. |
+| No `log=` line appears | Short output passes through unchanged. Choose `--log` when you need a predictable location regardless of output length. |
+| A check reaches the timeout | Choose `--timeout-ms` between 1 and 900000. Use your repository’s normal runner for checks that need more than fifteen minutes or interactive input. |
+| An excerpt does not explain a failure | Read the saved log. If `log_incomplete=true` appears, the capture is incomplete; do not treat it as the full command output. |
