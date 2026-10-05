@@ -1,0 +1,12 @@
+Usage: system-one-skills install-skills --target <dir>
+
+Copy the system-one-verify skill into an agent's skills folder. An identical
+copy that is already there is left alone, and a changed copy is never
+overwritten.
+
+Options
+  --target <dir>   The agent's skills folder, such as .agents/skills or
+                   .claude/skills
+
+Example
+  system-one-skills install-skills --target .agents/skills
