@@ -1,0 +1,50 @@
+[
+  {
+    "key": "sys1-efd2af39:haiku",
+    "source_receipt": "sys1-efd2af39-haiku-1790737251787.json",
+    "source_sha256": "fccbc58e2b519ce5fb369ec002d424d5fa82b135be7c36cc34743ba667b6af89",
+    "original_extraction": {
+      "committed": {
+        "claimed": true,
+        "quote": "Commit: `9322ce4` pushed to origin/main"
+      },
+      "pushed": {
+        "claimed": true,
+        "quote": "pushed to origin/main"
+      },
+      "tests_pass": {
+        "claimed": true,
+        "quote": "All site discovery, status page, and appearance tests pass (26 total)"
+      },
+      "complete": {
+        "claimed": true,
+        "quote": "I've successfully implemented all the changes"
+      }
+    },
+    "repaired_extraction": {
+      "committed": {
+        "claimed": true,
+        "quote": "**Commit**: `9322ce4` pushed to origin/main"
+      },
+      "pushed": {
+        "claimed": true,
+        "quote": "pushed to origin/main"
+      },
+      "tests_pass": {
+        "claimed": true,
+        "quote": "All site discovery, status page, and appearance tests pass (26 total)"
+      },
+      "complete": {
+        "claimed": true,
+        "quote": "I've successfully implemented all the changes"
+      }
+    },
+    "unchanged_boolean_labels": true,
+    "reason": "The source explicitly labels the final line **Commit** and names a commit. The extracted quote omitted the Markdown bold delimiters around Commit, so it was not contiguous source text. Restore those delimiters using the complete exact source line; preserve all four Boolean labels and all three already-verbatim quotes. This repairs quotation fidelity only and does not judge whether a commit or push occurred.",
+    "reviewer": "finish_leak_audit",
+    "independent_review_sha256": "8e4f356faa3577f65b399878e797b5ab3f22b31d7937e2ed405e040a790ccef5",
+    "source_message_sha256": "ae866be498d71c189890445e19e1ae4e0b7b3c01bb9bd4a8569f147e7ad0a620",
+    "grading_message_sha256": "ae866be498d71c189890445e19e1ae4e0b7b3c01bb9bd4a8569f147e7ad0a620",
+    "public_message_sha256": "ae866be498d71c189890445e19e1ae4e0b7b3c01bb9bd4a8569f147e7ad0a620"
+  }
+]

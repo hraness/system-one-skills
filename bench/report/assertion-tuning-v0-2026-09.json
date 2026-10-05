@@ -1,0 +1,2183 @@
+{
+  "sys1": "8868f5c467ac04cc4914b53e56085debf1e83d2f",
+  "route": "typesafe/jev-1.13.0",
+  "results": {
+    "ghostget-6940c851-violation": {
+      "kind": "violation",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/media/manifest.test.ts",
+          "line": 1395,
+          "score": 0.74
+        },
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/media/manifest.test.ts",
+          "line": 453,
+          "score": 0.030000000000000027
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 1682
+    },
+    "ghostget-a2b32108-near-miss": {
+      "kind": "near-miss",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/browser.test.ts",
+          "line": 2528,
+          "score": 0.18000000000000005
+        },
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/browser.test.ts",
+          "line": 1933,
+          "score": 0.050000000000000044
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 1537
+    },
+    "wordcell-e76f807c-clean": {
+      "kind": "clean",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 1,
+      "units": 1,
+      "evaluated_units": 1,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "scripts/readme-durable-session.test.ts",
+          "line": 34,
+          "score": 0.040000000000000036
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 1070
+    },
+    "spongev2-fd3fdfc9-violation": {
+      "kind": "violation",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/research/experimental/evidence.test.ts",
+          "line": 344,
+          "score": 0.79
+        },
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/research/experimental/evidence.test.ts",
+          "line": 238,
+          "score": 0.09999999999999998
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 2085
+    },
+    "wordcell-6d5c578f-near-miss": {
+      "kind": "near-miss",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "scripts/check-workflow-yaml.test.ts",
+          "line": 89,
+          "score": 0.10999999999999999
+        },
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "scripts/check-workflow-yaml.test.ts",
+          "line": 41,
+          "score": 0.040000000000000036
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 1760
+    },
+    "ghostget-e8f855c5-clean": {
+      "kind": "clean",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 3,
+      "units": 3,
+      "evaluated_units": 3,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/providers/imessage-automation.test.ts",
+          "line": 1,
+          "score": 0.06000000000000005
+        },
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/providers/imessage-automation.test.ts",
+          "line": 168,
+          "score": 0.050000000000000044
+        },
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/providers/imessage-automation.test.ts",
+          "line": 87,
+          "score": 0.040000000000000036
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 2304
+    },
+    "ghostget-d8b77d10-violation": {
+      "kind": "violation",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/platform-catalog.test.ts",
+          "line": 402,
+          "score": 0.6699999999999999
+        },
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/platform-catalog.test.ts",
+          "line": 13,
+          "score": 0.030000000000000027
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 1568
+    },
+    "ghostget-a2e4972c-near-miss": {
+      "kind": "near-miss",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 3,
+      "units": 3,
+      "evaluated_units": 3,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/providers/x-web.test.ts",
+          "line": 1663,
+          "score": 0.09999999999999998
+        },
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/providers/x-web.test.ts",
+          "line": 90,
+          "score": 0.07999999999999996
+        },
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/providers/x-web.test.ts",
+          "line": 1,
+          "score": 0.06000000000000005
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 2165
+    },
+    "ghostget-30e4c3d3-clean": {
+      "kind": "clean",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 1,
+      "units": 1,
+      "evaluated_units": 1,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/plugins/youtube-web/plugin.test.ts",
+          "line": 6,
+          "score": 0.040000000000000036
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 1255
+    },
+    "ghostget-555a5e7c-violation": {
+      "kind": "violation",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 4,
+      "units": 4,
+      "evaluated_units": 4,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/derive.test.ts",
+          "line": 96,
+          "score": 0.18000000000000005
+        },
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/derive.test.ts",
+          "line": 40,
+          "score": 0.040000000000000036
+        },
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/derive.test.ts",
+          "line": 612,
+          "score": 0.040000000000000036
+        },
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/derive.test.ts",
+          "line": 7,
+          "score": 0.030000000000000027
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 2682
+    },
+    "ghostget-e8f972ef-near-miss": {
+      "kind": "near-miss",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "scripts/ci-pr-gate.test.ts",
+          "line": 41,
+          "score": 0.06999999999999995
+        },
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "scripts/ci-pr-gate.test.ts",
+          "line": 117,
+          "score": 0.06000000000000005
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 1711
+    },
+    "algal-086013f5-clean": {
+      "kind": "clean",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/foundry.test.ts",
+          "line": 28,
+          "score": 0.040000000000000036
+        },
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/foundry.test.ts",
+          "line": 1,
+          "score": 0.030000000000000027
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 1648
+    },
+    "wordcell-4fca7380-violation": {
+      "kind": "violation",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 1,
+      "units": 1,
+      "evaluated_units": 1,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/clip/extract.test.ts",
+          "line": 25,
+          "score": 0.76
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 1235
+    },
+    "ghostget-db5b2757-near-miss": {
+      "kind": "near-miss",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/platform-catalog.test.ts",
+          "line": 617,
+          "score": 0.07999999999999996
+        },
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/platform-catalog.test.ts",
+          "line": 408,
+          "score": 0.020000000000000018
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 1781
+    },
+    "spongev2-c468ebc9-clean": {
+      "kind": "clean",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 1,
+      "units": 1,
+      "evaluated_units": 1,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/research/experimental/closed-score.test.ts",
+          "line": 79,
+          "score": 0.050000000000000044
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 1622
+    },
+    "ghostget-bc033494-violation": {
+      "kind": "violation",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/media/manifest.test.ts",
+          "line": 1395,
+          "score": 0.69
+        },
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/media/manifest.test.ts",
+          "line": 453,
+          "score": 0.030000000000000027
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 1741
+    },
+    "ghostget-d54cf1fc-near-miss": {
+      "kind": "near-miss",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 5,
+      "units": 5,
+      "evaluated_units": 5,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/providers/meta-web.test.ts",
+          "line": 484,
+          "score": 0.06999999999999995
+        },
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/providers/meta-web.test.ts",
+          "line": 1,
+          "score": 0.040000000000000036
+        },
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/providers/meta-web.test.ts",
+          "line": 1142,
+          "score": 0.040000000000000036
+        },
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/providers/meta-web.test.ts",
+          "line": 401,
+          "score": 0.030000000000000027
+        },
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/providers/meta-web.test.ts",
+          "line": 446,
+          "score": 0.030000000000000027
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 3455
+    },
+    "ghostget-a713215a-clean": {
+      "kind": "clean",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/messaging-confirmation-recovery.test.ts",
+          "line": 158,
+          "score": 0.040000000000000036
+        },
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/messaging-confirmation-recovery.test.ts",
+          "line": 57,
+          "score": 0.030000000000000027
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 1706
+    },
+    "ghostget-423b5e41-violation": {
+      "kind": "violation",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/web-session-contracts.test.ts",
+          "line": 148,
+          "score": 0.65
+        },
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/web-session-contracts.test.ts",
+          "line": 53,
+          "score": 0.030000000000000027
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 1581
+    },
+    "ghostget-3d654af7-near-miss": {
+      "kind": "near-miss",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/model.test.ts",
+          "line": 1763,
+          "score": 0.09999999999999998
+        },
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/model.test.ts",
+          "line": 977,
+          "score": 0.040000000000000036
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 1588
+    },
+    "ghostget-af759ce2-clean": {
+      "kind": "clean",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/providers/linkedin-web-contact.test.ts",
+          "line": 584,
+          "score": 0.050000000000000044
+        },
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/providers/linkedin-web-contact.test.ts",
+          "line": 1,
+          "score": 0.040000000000000036
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 1560
+    },
+    "algal-6e5864f7-violation": {
+      "kind": "violation",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/contract.test.ts",
+          "line": 20,
+          "score": 0.72
+        },
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/contract.test.ts",
+          "line": 519,
+          "score": 0.06000000000000005
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 1581
+    },
+    "ghostget-57e326be-near-miss": {
+      "kind": "near-miss",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 1,
+      "units": 1,
+      "evaluated_units": 1,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/plan-assets.test.ts",
+          "line": 239,
+          "score": 0.18999999999999995
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 1081
+    },
+    "ghostget-bc326853-clean": {
+      "kind": "clean",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "website/site.test.ts",
+          "line": 306,
+          "score": 0.040000000000000036
+        },
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "website/site.test.ts",
+          "line": 6,
+          "score": 0.030000000000000027
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 1629
+    },
+    "ghostget-06b90d4c-violation": {
+      "kind": "violation",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 3,
+      "units": 3,
+      "evaluated_units": 3,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/control/menubar-cli.test.ts",
+          "line": 253,
+          "score": 0.51
+        },
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/control/menubar-cli.test.ts",
+          "line": 71,
+          "score": 0.040000000000000036
+        },
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/control/menubar-cli.test.ts",
+          "line": 130,
+          "score": 0.030000000000000027
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 2147
+    },
+    "ghostget-b9105f88-near-miss": {
+      "kind": "near-miss",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/platform-catalog.test.ts",
+          "line": 636,
+          "score": 0.09999999999999998
+        },
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/platform-catalog.test.ts",
+          "line": 15,
+          "score": 0.030000000000000027
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 1736
+    },
+    "ghostget-b160d6ef-clean": {
+      "kind": "clean",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 1,
+      "units": 1,
+      "evaluated_units": 1,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/provider-plugin-omni.test.ts",
+          "line": 27,
+          "score": 0.050000000000000044
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 1362
+    },
+    "ghostget-42fbc4d0-violation": {
+      "kind": "violation",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 3,
+      "units": 3,
+      "evaluated_units": 3,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/control/menubar-cli.test.ts",
+          "line": 440,
+          "score": 0.53
+        },
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/control/menubar-cli.test.ts",
+          "line": 1,
+          "score": 0.030000000000000027
+        },
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/control/menubar-cli.test.ts",
+          "line": 56,
+          "score": 0.030000000000000027
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 2223
+    },
+    "ghostget-7aa6da5c-near-miss": {
+      "kind": "near-miss",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 4,
+      "units": 4,
+      "evaluated_units": 4,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "website/site.test.ts",
+          "line": 1500,
+          "score": 0.07999999999999996
+        },
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "website/site.test.ts",
+          "line": 83,
+          "score": 0.040000000000000036
+        },
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "website/site.test.ts",
+          "line": 543,
+          "score": 0.040000000000000036
+        },
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "website/site.test.ts",
+          "line": 38,
+          "score": 0.030000000000000027
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 3049
+    },
+    "ghostget-651672fd-clean": {
+      "kind": "clean",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 1,
+      "units": 1,
+      "evaluated_units": 1,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/plugins/meta-web/plugin.test.ts",
+          "line": 17,
+          "score": 0.040000000000000036
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 1446
+    },
+    "spongev2-f07dee67-violation": {
+      "kind": "violation",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/adapters/xcb.test.ts",
+          "line": 23,
+          "score": 0.5900000000000001
+        },
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/adapters/xcb.test.ts",
+          "line": 132,
+          "score": 0.040000000000000036
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 1738
+    },
+    "ghostget-7d23159c-near-miss": {
+      "kind": "near-miss",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/model.test.ts",
+          "line": 2193,
+          "score": 0.09999999999999998
+        },
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/model.test.ts",
+          "line": 1166,
+          "score": 0.030000000000000027
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 1725
+    },
+    "algal-7ecf7a9b-clean": {
+      "kind": "clean",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 1,
+      "units": 1,
+      "evaluated_units": 1,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/run.test.ts",
+          "line": 3085,
+          "score": 0.040000000000000036
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 1251
+    },
+    "spongev2-57b73f14-violation": {
+      "kind": "violation",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 1,
+      "units": 1,
+      "evaluated_units": 1,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/research/experimental/closed-score.test.ts",
+          "line": 380,
+          "score": 0.6799999999999999
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 1207
+    },
+    "ghostget-21279a11-near-miss": {
+      "kind": "near-miss",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 3,
+      "units": 3,
+      "evaluated_units": 3,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/media/cli.test.ts",
+          "line": 157,
+          "score": 0.14
+        },
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/media/cli.test.ts",
+          "line": 21,
+          "score": 0.040000000000000036
+        },
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/media/cli.test.ts",
+          "line": 59,
+          "score": 0.030000000000000027
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 2563
+    },
+    "algal-cad8ebd7-clean": {
+      "kind": "clean",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/vm-primitives.test.ts",
+          "line": 73,
+          "score": 0.050000000000000044
+        },
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/vm-primitives.test.ts",
+          "line": 1,
+          "score": 0.030000000000000027
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 3477
+    },
+    "ghostget-aa925b4d-violation": {
+      "kind": "violation",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/model.test.ts",
+          "line": 2236,
+          "score": 0.8200000000000001
+        },
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/model.test.ts",
+          "line": 1166,
+          "score": 0.030000000000000027
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 2049
+    },
+    "spongev2-20517ca9-near-miss": {
+      "kind": "near-miss",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/projects/index.test.ts",
+          "line": 16,
+          "score": 0.10999999999999999
+        },
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/projects/index.test.ts",
+          "line": 127,
+          "score": 0.040000000000000036
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 1795
+    },
+    "ghostget-8e28f2e4-clean": {
+      "kind": "clean",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/providers/x-web-runtime.internal.test.ts",
+          "line": 1076,
+          "score": 0.050000000000000044
+        },
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/providers/x-web-runtime.internal.test.ts",
+          "line": 232,
+          "score": 0.040000000000000036
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 1591
+    },
+    "ghostget-add454d7-violation": {
+      "kind": "violation",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/model.test.ts",
+          "line": 2700,
+          "score": 0.6699999999999999
+        },
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/model.test.ts",
+          "line": 1166,
+          "score": 0.030000000000000027
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 1843
+    },
+    "spongev2-495f3e89-near-miss": {
+      "kind": "near-miss",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 1,
+      "units": 1,
+      "evaluated_units": 1,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/tui/index.test.ts",
+          "line": 1,
+          "score": 0.35
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 1332
+    },
+    "ghostget-331ec8e2-clean": {
+      "kind": "clean",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "website/site.test.ts",
+          "line": 119,
+          "score": 0.030000000000000027
+        },
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "website/site.test.ts",
+          "line": 390,
+          "score": 0.030000000000000027
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 1823
+    },
+    "algal-edb0809c-violation": {
+      "kind": "violation",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 1,
+      "units": 1,
+      "evaluated_units": 1,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/store.test.ts",
+          "line": 6,
+          "score": 0.41000000000000003
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 1140
+    },
+    "ghostget-1ca41f4a-near-miss": {
+      "kind": "near-miss",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 4,
+      "units": 4,
+      "evaluated_units": 4,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/browser.test.ts",
+          "line": 3123,
+          "score": 0.10999999999999999
+        },
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/browser.test.ts",
+          "line": 893,
+          "score": 0.07999999999999996
+        },
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/browser.test.ts",
+          "line": 1056,
+          "score": 0.07999999999999996
+        },
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/browser.test.ts",
+          "line": 2241,
+          "score": 0.06000000000000005
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 3067
+    },
+    "algal-41c304b3-clean": {
+      "kind": "clean",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/property.test.ts",
+          "line": 69,
+          "score": 0.050000000000000044
+        },
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/property.test.ts",
+          "line": 1,
+          "score": 0.040000000000000036
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 1757
+    },
+    "ghostget-efe8cf62-violation": {
+      "kind": "violation",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/test-harness-policy.test.ts",
+          "line": 531,
+          "score": 0.62
+        },
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/test-harness-policy.test.ts",
+          "line": 651,
+          "score": 0.040000000000000036
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 1663
+    },
+    "ghostget-edbe5672-near-miss": {
+      "kind": "near-miss",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 4,
+      "units": 4,
+      "evaluated_units": 4,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "scripts/github-release-artifact.test.ts",
+          "line": 537,
+          "score": 0.12
+        },
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "scripts/github-release-artifact.test.ts",
+          "line": 256,
+          "score": 0.050000000000000044
+        },
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "scripts/github-release-artifact.test.ts",
+          "line": 160,
+          "score": 0.030000000000000027
+        },
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "scripts/github-release-artifact.test.ts",
+          "line": 195,
+          "score": 0.030000000000000027
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 2827
+    },
+    "ghostget-307fec6f-clean": {
+      "kind": "clean",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "website/site.test.ts",
+          "line": 118,
+          "score": 0.030000000000000027
+        },
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "website/site.test.ts",
+          "line": 365,
+          "score": 0.030000000000000027
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 1864
+    },
+    "wordcell-46c9cccf-violation": {
+      "kind": "violation",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 4,
+      "units": 4,
+      "evaluated_units": 4,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/clip/persist.test.ts",
+          "line": 403,
+          "score": 0.73
+        },
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/clip/persist.test.ts",
+          "line": 258,
+          "score": 0.040000000000000036
+        },
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/clip/persist.test.ts",
+          "line": 309,
+          "score": 0.030000000000000027
+        },
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/clip/persist.test.ts",
+          "line": 357,
+          "score": 0.030000000000000027
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 2634
+    },
+    "wordcell-ffa22cc1-near-miss": {
+      "kind": "near-miss",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/clip/extract.test.ts",
+          "line": 190,
+          "score": 0.25
+        },
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/clip/extract.test.ts",
+          "line": 80,
+          "score": 0.040000000000000036
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 1833
+    },
+    "spongev2-45d1e3d9-clean": {
+      "kind": "clean",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/benchmark-judge.test.ts",
+          "line": 302,
+          "score": 0.050000000000000044
+        },
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/benchmark-judge.test.ts",
+          "line": 6,
+          "score": 0.040000000000000036
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 1736
+    },
+    "wordcell-ff2ebf49-violation": {
+      "kind": "violation",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/clip/persist.test.ts",
+          "line": 357,
+          "score": 0.5900000000000001
+        },
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/clip/persist.test.ts",
+          "line": 228,
+          "score": 0.020000000000000018
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 1889
+    },
+    "ghostget-1018b0be-near-miss": {
+      "kind": "near-miss",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 3,
+      "units": 3,
+      "evaluated_units": 3,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/model.test.ts",
+          "line": 2098,
+          "score": 0.18000000000000005
+        },
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/model.test.ts",
+          "line": 887,
+          "score": 0.06000000000000005
+        },
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/model.test.ts",
+          "line": 1,
+          "score": 0.030000000000000027
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 2659
+    },
+    "ghostget-2eeb888f-clean": {
+      "kind": "clean",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/provider-contract-inventory.test.ts",
+          "line": 1,
+          "score": 0.050000000000000044
+        },
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/provider-contract-inventory.test.ts",
+          "line": 188,
+          "score": 0.030000000000000027
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 1854
+    },
+    "ghostget-79672147-violation": {
+      "kind": "violation",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 1,
+      "units": 1,
+      "evaluated_units": 1,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/canonical-json.test.ts",
+          "line": 1,
+          "score": 0.5700000000000001
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 1140
+    },
+    "ghostget-f8469d96-near-miss": {
+      "kind": "near-miss",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 5,
+      "units": 5,
+      "evaluated_units": 5,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/model.test.ts",
+          "line": 2560,
+          "score": 0.10999999999999999
+        },
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/model.test.ts",
+          "line": 1068,
+          "score": 0.040000000000000036
+        },
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/model.test.ts",
+          "line": 22,
+          "score": 0.030000000000000027
+        },
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/model.test.ts",
+          "line": 982,
+          "score": 0.030000000000000027
+        },
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/model.test.ts",
+          "line": 1656,
+          "score": 0.030000000000000027
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 3377
+    },
+    "ghostget-28421daa-clean": {
+      "kind": "clean",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/provider-contract-inventory.test.ts",
+          "line": 1,
+          "score": 0.050000000000000044
+        },
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/provider-contract-inventory.test.ts",
+          "line": 222,
+          "score": 0.040000000000000036
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 3078
+    },
+    "wordcell-410ed95b-violation": {
+      "kind": "violation",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/clip/persist.test.ts",
+          "line": 562,
+          "score": 0.79
+        },
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/clip/persist.test.ts",
+          "line": 228,
+          "score": 0.020000000000000018
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 2412
+    },
+    "algal-97c989bb-near-miss": {
+      "kind": "near-miss",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/contract.test.ts",
+          "line": 13,
+          "score": 0.07999999999999996
+        },
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/contract.test.ts",
+          "line": 602,
+          "score": 0.030000000000000027
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 1725
+    },
+    "wordcell-926e2b97-clean": {
+      "kind": "clean",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 1,
+      "units": 1,
+      "evaluated_units": 1,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "site/tests/runtime.test.ts",
+          "line": 84,
+          "score": 0.030000000000000027
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 1182
+    },
+    "wordcell-61c38212-violation": {
+      "kind": "violation",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 1,
+      "units": 1,
+      "evaluated_units": 1,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/clip/terminal.test.ts",
+          "line": 13,
+          "score": 0.65
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 1207
+    },
+    "spongev2-cd8ff745-near-miss": {
+      "kind": "near-miss",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/research/experimental/prompts.test.ts",
+          "line": 136,
+          "score": 0.09999999999999998
+        },
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/research/experimental/prompts.test.ts",
+          "line": 41,
+          "score": 0.030000000000000027
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 1658
+    },
+    "spongev2-e6f0dc89-clean": {
+      "kind": "clean",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 1,
+      "units": 1,
+      "evaluated_units": 1,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/research/experimental/result-contracts.test.ts",
+          "line": 46,
+          "score": 0.030000000000000027
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 1208
+    },
+    "algal-9a968eda-violation": {
+      "kind": "violation",
+      "set": "calibration",
+      "status": "incomplete",
+      "requests": 0,
+      "units": 0,
+      "evaluated_units": 0,
+      "findings": [],
+      "flagged": false,
+      "elapsed_ms": 373
+    },
+    "wordcell-08269807-near-miss": {
+      "kind": "near-miss",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/clip/cli.test.ts",
+          "line": 19,
+          "score": 0.06999999999999995
+        },
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/clip/cli.test.ts",
+          "line": 123,
+          "score": 0.040000000000000036
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 1897
+    },
+    "wordcell-3f251978-clean": {
+      "kind": "clean",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 1,
+      "units": 1,
+      "evaluated_units": 1,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/evaluation-kb-v2.test.ts",
+          "line": 334,
+          "score": 0.030000000000000027
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 1463
+    },
+    "wordcell-2d6a17b5-violation": {
+      "kind": "violation",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/graph.test.ts",
+          "line": 243,
+          "score": 0.5900000000000001
+        },
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/graph.test.ts",
+          "line": 1,
+          "score": 0.030000000000000027
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 1920
+    },
+    "spongev2-04bf8201-near-miss": {
+      "kind": "near-miss",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 3,
+      "units": 3,
+      "evaluated_units": 3,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/research/experimental/evidence.test.ts",
+          "line": 104,
+          "score": 0.06000000000000005
+        },
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/research/experimental/evidence.test.ts",
+          "line": 1,
+          "score": 0.040000000000000036
+        },
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/research/experimental/evidence.test.ts",
+          "line": 349,
+          "score": 0.040000000000000036
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 2466
+    },
+    "wordcell-0165b421-clean": {
+      "kind": "clean",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 1,
+      "units": 1,
+      "evaluated_units": 1,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/portfolio-registry.test.ts",
+          "line": 58,
+          "score": 0.030000000000000027
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 1173
+    },
+    "spongev2-c007130f-violation": {
+      "kind": "violation",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 3,
+      "units": 3,
+      "evaluated_units": 3,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/research/experimental/inference-boundary.test.ts",
+          "line": 139,
+          "score": 0.71
+        },
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/research/experimental/inference-boundary.test.ts",
+          "line": 237,
+          "score": 0.06999999999999995
+        },
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/research/experimental/inference-boundary.test.ts",
+          "line": 1,
+          "score": 0.030000000000000027
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 2288
+    },
+    "ghostget-85bc7955-near-miss": {
+      "kind": "near-miss",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 3,
+      "units": 3,
+      "evaluated_units": 3,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/providers/linkedin-web.test.ts",
+          "line": 109,
+          "score": 0.08999999999999997
+        },
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/providers/linkedin-web.test.ts",
+          "line": 449,
+          "score": 0.07999999999999996
+        },
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/providers/linkedin-web.test.ts",
+          "line": 1,
+          "score": 0.040000000000000036
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 2301
+    },
+    "ghostget-663b8cde-clean": {
+      "kind": "clean",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 1,
+      "units": 1,
+      "evaluated_units": 1,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/providers/whatsapp-web-runtime.internal.test.ts",
+          "line": 681,
+          "score": 0.040000000000000036
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 1300
+    },
+    "spongev2-803d81d8-violation": {
+      "kind": "violation",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/research/experimental/closed-score.test.ts",
+          "line": 409,
+          "score": 0.75
+        },
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/research/experimental/closed-score.test.ts",
+          "line": 87,
+          "score": 0.06000000000000005
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 1576
+    },
+    "ghostget-0ab5942f-near-miss": {
+      "kind": "near-miss",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 1,
+      "units": 1,
+      "evaluated_units": 1,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "website/marketing-preset.test.ts",
+          "line": 1,
+          "score": 0.07999999999999996
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 1163
+    },
+    "ghostget-10069647-clean": {
+      "kind": "clean",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 1,
+      "units": 1,
+      "evaluated_units": 1,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/contracts-shape.test.ts",
+          "line": 118,
+          "score": 0.040000000000000036
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 1169
+    },
+    "spongev2-1cc47899-violation": {
+      "kind": "violation",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 1,
+      "units": 1,
+      "evaluated_units": 1,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/menubar/menubar.test.ts",
+          "line": 132,
+          "score": 0.49
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 1190
+    },
+    "spongev2-1be978a1-near-miss": {
+      "kind": "near-miss",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/publication/edition.test.ts",
+          "line": 112,
+          "score": 0.14
+        },
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/publication/edition.test.ts",
+          "line": 1,
+          "score": 0.030000000000000027
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 1740
+    },
+    "ghostget-5349022d-clean": {
+      "kind": "clean",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 1,
+      "units": 1,
+      "evaluated_units": 1,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/args.test.ts",
+          "line": 1551,
+          "score": 0.050000000000000044
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 1477
+    },
+    "spongev2-881a5f97-violation": {
+      "kind": "violation",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/papers/identifiers.test.ts",
+          "line": 41,
+          "score": 0.5800000000000001
+        },
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/papers/identifiers.test.ts",
+          "line": 1,
+          "score": 0.020000000000000018
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 1684
+    },
+    "wordcell-c90798cc-near-miss": {
+      "kind": "near-miss",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "site/tests/source.test.ts",
+          "line": 58,
+          "score": 0.06999999999999995
+        },
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "site/tests/source.test.ts",
+          "line": 112,
+          "score": 0.040000000000000036
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 1637
+    },
+    "wordcell-9fec758d-clean": {
+      "kind": "clean",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "scripts/kb-skill-contract.test.ts",
+          "line": 264,
+          "score": 0.030000000000000027
+        },
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "scripts/kb-skill-contract.test.ts",
+          "line": 313,
+          "score": 0.030000000000000027
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 1702
+    },
+    "wordcell-55b1830d-violation": {
+      "kind": "violation",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/clip/capture.test.ts",
+          "line": 361,
+          "score": 0.6
+        },
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/clip/capture.test.ts",
+          "line": 252,
+          "score": 0.020000000000000018
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 1657
+    },
+    "ghostget-a8975a4d-near-miss": {
+      "kind": "near-miss",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/providers/x-web.test.ts",
+          "line": 743,
+          "score": 0.09999999999999998
+        },
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/providers/x-web.test.ts",
+          "line": 119,
+          "score": 0.030000000000000027
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 1693
+    },
+    "ghostget-4fde85b3-clean": {
+      "kind": "clean",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "edge/negotiation.test.ts",
+          "line": 48,
+          "score": 0.050000000000000044
+        },
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "edge/negotiation.test.ts",
+          "line": 1,
+          "score": 0.030000000000000027
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 1681
+    },
+    "spongev2-63e40d83-violation": {
+      "kind": "violation",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 1,
+      "units": 1,
+      "evaluated_units": 1,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/tui/index.test.ts",
+          "line": 1,
+          "score": 0.26
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 1187
+    },
+    "wordcell-66ee9192-near-miss": {
+      "kind": "near-miss",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 3,
+      "units": 3,
+      "evaluated_units": 3,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "scripts/npm-release-workflow.test.ts",
+          "line": 3,
+          "score": 0.10999999999999999
+        },
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "scripts/npm-release-workflow.test.ts",
+          "line": 163,
+          "score": 0.06000000000000005
+        },
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "scripts/npm-release-workflow.test.ts",
+          "line": 356,
+          "score": 0.06000000000000005
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 2148
+    },
+    "ghostget-dafc8daf-clean": {
+      "kind": "clean",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/providers/linkedin-web-contact.test.ts",
+          "line": 379,
+          "score": 0.040000000000000036
+        },
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/providers/linkedin-web-contact.test.ts",
+          "line": 454,
+          "score": 0.040000000000000036
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 1682
+    },
+    "spongev2-4824395a-violation": {
+      "kind": "violation",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 3,
+      "units": 3,
+      "evaluated_units": 3,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/papers/papers.test.ts",
+          "line": 80,
+          "score": 0.55
+        },
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/papers/papers.test.ts",
+          "line": 1,
+          "score": 0.040000000000000036
+        },
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/papers/papers.test.ts",
+          "line": 306,
+          "score": 0.040000000000000036
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 2253
+    },
+    "ghostget-4e2a56ad-near-miss": {
+      "kind": "near-miss",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 2,
+      "units": 2,
+      "evaluated_units": 2,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/media/transcriber-config.test.ts",
+          "line": 505,
+          "score": 0.15000000000000002
+        },
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/media/transcriber-config.test.ts",
+          "line": 168,
+          "score": 0.040000000000000036
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 1623
+    },
+    "wordcell-3487dfcd-clean": {
+      "kind": "clean",
+      "set": "calibration",
+      "status": "complete",
+      "requests": 3,
+      "units": 3,
+      "evaluated_units": 3,
+      "findings": [
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/sdk.test.ts",
+          "line": 139,
+          "score": 0.050000000000000044
+        },
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/sdk.test.ts",
+          "line": 1,
+          "score": 0.040000000000000036
+        },
+        {
+          "rule": "core-removed-test-assertions",
+          "path": "src/sdk.test.ts",
+          "line": 224,
+          "score": 0.040000000000000036
+        }
+      ],
+      "flagged": true,
+      "elapsed_ms": 2208
+    }
+  }
+}

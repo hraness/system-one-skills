@@ -1,45 +1,11 @@
 # System One Skills
 
 System One Skills gives Devin, Claude Code, and Codex one skill,
-`system-one-verify`, for test and build commands you already know produce long
-logs. It runs the command once, returns a short result with the exit status, and
-saves the full log on your machine for when the agent needs details. It makes no
-model calls and needs no API key or runtime dependency.
+`system-one-verify`, for long test and build logs. It runs the command once,
+returns a short result with the exit status, and saves the full log on your
+machine. It makes no model calls and needs no API key.
 
-[Skills guide](https://sys1.io/skills) · [Source](https://github.com/hraness/system-one-skills) · [Sys1](https://sys1.io)
-
-## When to use it
-
-The agent gets the exit status and a short excerpt instead of pages of passing
-tests. The command runs once, and a timeout or capture failure is reported as a
-failure. The full log stays on disk for warnings, coverage questions, and
-diagnosis.
-
-Choose native tools when output is short, a useful quiet mode exists, or you
-need the full log anyway.[^2] Better task success and faster completion have not
-been shown.
-
-```sh
-system-one-skills check --timeout-ms 900000 -- bun test
-```
-
-## Results
-
-In a replay of **563 real validation outputs** from one developer's local Codex
-and Devin sessions, `system-one-verify` cut the text the agent would see by
-**35.20%**: 32.65% for Codex (356 outputs) and 38.90% for Devin (207 outputs).
-Claude Code had no qualifying validation outputs in this window, so it has
-**No result**. The 28 outputs the skill shortened were 90.61% smaller, and the
-other 535 short outputs passed through unchanged. Every replay preservation
-check passed.
-
-This measures text size, not provider tokens or whole-task usage, and no
-whole-task token reduction has been measured yet. The [numeric
-scorecard](docs/SCORECARD.md) gives the denominators, provider breakdown,
-preservation checks, and the reason each other candidate is still unmeasured.
-Earlier exploratory 82% and 3.9% figures are in the [results
-notes](docs/RESULTS.md) with their narrower scopes.[^1][^3]
-
+[Skills guide](https://sys1.io/skills) · [Measurements](#results) · [Report an issue](https://github.com/hraness/system-one-skills/issues)
 
 ## Install
 
@@ -47,97 +13,69 @@ Requires **Node.js 20+ on macOS or Linux**.
 
 ```sh
 npm install --global https://github.com/hraness/system-one-skills/releases/download/v0.4.1/system-one-skills-0.4.1.tgz
-system-one-skills install-skills --target .agents/skills
+system-one-skills --version
 ```
 
-The [versioned release](https://github.com/hraness/system-one-skills/releases/tag/v0.4.1)
-includes a SHA-256 checksum. Bun can install the same artifact. Use your agent’s
-skill directory, such as `.claude/skills` or `.devin/skills`, where appropriate.
-Existing modified skill files are never silently overwritten.
+The [latest release, v0.4.1](https://github.com/hraness/system-one-skills/releases/tag/v0.4.1),
+includes a SHA-256 checksum. Bun can install the same artifact. The runtime has
+no package dependencies.
+
+From your repository, install the skill for your agent:
+
+| Agent | Command |
+| --- | --- |
+| Codex | `system-one-skills install-skills --target .agents/skills` |
+| Claude Code | `system-one-skills install-skills --target .claude/skills` |
+| Devin | `system-one-skills install-skills --target .devin/skills` |
+
+The installer leaves matching files alone and refuses to overwrite a skill
+that differs. Preserve your edits and choose an empty target if it reports a
+conflict.
+
+## Check the installation
+
+Run a short check before using the wrapper with your test suite:
+
+```sh
+system-one-skills check -- node -e 'console.log("check ready")'
+```
+
+You see `check ready` and an exit status of zero. This short output passes
+through unchanged. The command needs no agent session or API key. Next, run
+one of your repository’s noisy checks as shown below.
+
+## When to use it
+
+Use the skill for a pass/fail check that earlier runs show produces at least
+**8 KiB** of output. For example, ask your agent:
+
+> Run the test suite with system-one-verify and inspect the saved log if it fails.
+
+You can also run the wrapper directly:
+
+```sh
+system-one-skills check --timeout-ms 900000 -- bun test
+```
+
+Choose native tools when output is short, a useful quiet mode exists, or you
+already need the full log. Do not run a check twice to measure its size. Keep
+your repository's required validation commands.
 
 ## How it works
 
-1. **Run once.** Execute the original command and capture its output locally.
-2. **Return a compact result.** Keep the exit status and selected evidence,
-   disclose omissions, and print the full log’s location.
-3. **Inspect only when needed.** Open the log for details the excerpt cannot answer.
+The command runs once. Short output passes through unchanged; long output is
+reduced only when the excerpt is at least 50% and 4 KiB smaller. The result
+preserves the command's exit status, shows selected output, and identifies any
+omissions. Timeouts and capture failures return a failure status.
 
-The skill selects checks known from earlier runs to produce at least **8 KiB**.
-Short output passes through unchanged; long output is reduced only when it is at
-least 50% and 4 KiB smaller. Do not run a check twice just to measure its size.
-Timeouts and capture problems are reported as failures. Required repository gates
-still apply. Tested preservation behavior and local processing cost are documented
-in the [results notes](https://github.com/hraness/system-one-skills/blob/main/docs/RESULTS.md).
+For shortened output, the `log=` line gives the saved log path. Short output
+passes through without that line; use `--log` to choose a known path in either
+case. Open the log when you need warnings, coverage details, or more context
+to diagnose a failure. Logs
+stay on your machine and may contain sensitive output; delete them when you no
+longer need them.
 
-## All skills
-
-Only `system-one-verify` ships. The ten other names are research candidates
-with **No numeric result**; each needs a working adapter and evidence that it
-beats native tools before it joins the package.
-
-| Skill | Verified reduction | Discovery signal | What to use today |
-| --- | --- | --- | --- |
-| `system-one-verify` | **35.20% less validation text** across 563 real outputs; 100% preservation checks | 563 replay outputs; 35.20% is text-boundary evidence only | **Available:** known noisy pass/fail checks when native quiet output is inadequate |
-| `system-one-explore` | **No result** | 213/573 calls cross an illustrative 256-token headroom screen (37.17%); not savings | Focused native search; research must prove it preserves required locations |
-| `system-one-ci` | **No result** | 128 Devin CI-status calls in the pilot; avoidable polling not measured | Native run watching (`gh run watch`) |
-| `system-one-diff` | **No result** | 31/68 calls cross the same headroom screen (45.59%); not savings | Scoped native diffs; research must measure missed findings |
-| `system-one-digest` | **No result** | 28/224 calls cross it (12.50%); not savings | Native Git status; most observed outputs were already too small to justify another layer |
-| `system-one-fetch` | **No result** | 54/95 shared web calls cross it (56.84%); not an independent cohort | The agent's readable-page tool; extraction accuracy and extra savings are unproven |
-| `system-one-research` | **No result** | Same 54/95 shared web calls as fetch; do not add the totals | Native search and targeted reads; no separate benefit demonstrated |
-| `system-one-triage` | **No result** | No dedicated labeled cohort | Deterministic rules or the primary agent; no evaluated decision family yet |
-| `system-one-writing` | **No result** | No dedicated labeled cohort | Existing linters; inactive until there is relevant task evidence |
-| `system-one-evolve` | **No result** | No dedicated labeled cohort | A fixed reviewed policy; inactive until optimization can repay its cost |
-| `system-one` | **No result** | No dedicated labeled cohort | Direct selection; an extra router is unjustified for one available skill |
-
-The [full catalog](https://github.com/hraness/system-one-skills/blob/main/docs/SKILL-CATALOG.md)
-explains the proposed benefit, native alternative, and evidence needed for each.
-The [research log](https://github.com/hraness/system-one-skills/blob/main/docs/RESEARCH-LOG.md)
-publishes positive and negative findings. New skills must save tokens on complete
-tasks while meeting correctness and latency requirements.
-
-The discovery percentages in the table are **not reductions**. They answer one
-narrow question: how many observed outputs were at least 256 `o200k_base` text
-tokens, leaving a hypothetical 128-token skill overhead and 128-token margin.
-They assume perfect deletion, so they cannot justify installing a candidate or
-be compared with the 35.20% validation-text result. Fetch and research share
-one 95-call web proxy and must not be added together. The [catalog scorecard](docs/SCORECARD.md)
-publishes the denominators, provider split, and current decision for every
-entry.
-
-Recent analysis covers [a real failed check](https://github.com/hraness/system-one-skills/blob/main/docs/FAILURE-EVIDENCE.md)
-and [outputs from 960 calls plus native reporter alternatives](https://github.com/hraness/system-one-skills/blob/main/docs/CANDIDATE-EVIDENCE.md).[^4]
-The failure summary saved tokens but needed the full log for some details;
-the candidate analysis gives us reasons to keep the install small.
-A [live Codex diagnosis comparison](https://github.com/hraness/system-one-skills/blob/main/docs/DIAGNOSIS-RESULTS.md)
-also counts follow-up reads and keeps failed setup attempts in the evidence record.
-
-We are prioritizing **more useful failure excerpts** and **focused search with
-needed source lines** over a larger catalog. Both must beat the corresponding
-native workflow on total tokens, correctness and completion time before a new
-skill or expanded workflow earns a place in the package. The [catalog's research priorities](https://github.com/hraness/system-one-skills/blob/main/docs/SKILL-CATALOG.md#next-experiments)
-explain the specific evidence gaps.
-
-The bounded early-error retention update in v0.4.1 stays within the existing
-check wrapper. Its separate source-bound artifact qualification verifies
-preservation and local processing cost; it neither admits another workflow nor
-establishes a whole-task benefit.
-
-The [whole-task benchmark harness](https://github.com/hraness/system-one-skills/blob/main/docs/BENCHMARK-HARNESS.md)
-is now the path to stronger claims: it selects relevant task episodes before
-outcomes, pairs each skill with the best native workflow, and reports Codex,
-Claude Code, and Devin separately. The current 3.9% diagnosis result remains
-one exploratory pair until that process produces held-out matched tasks; the
-harness itself has no efficacy result yet.
-
-A new [screen of 1,200 real file reads](https://github.com/hraness/system-one-skills/blob/main/docs/CANDIDATE-OPPORTUNITIES.md)
-also argues against adding a generic read-reuse skill. Exact repeats accounted
-for only **1.1% of read-output text**, before instructions or freshness checks.
-That is an optimistic opportunity ceiling, not a measured saving.
-
-<a id="commands"></a>
-
-<details>
-<summary><strong>Commands and operating limits</strong></summary>
+## Commands
 
 ```sh
 system-one-skills check -- npm test
@@ -149,85 +87,70 @@ Arguments after `--` go directly to the command. Use an explicit shell for pipes
 or chained commands. Keep any required host scheduler outside this command.
 `--log` reserves a new private file and refuses to overwrite an existing path.
 
-Commands are noninteractive, with a five-minute default timeout, adjustable up
-to fifteen minutes, and a 64 MiB log limit. Exceeding a limit stops the command
-and reports a failure; incomplete capture is disclosed. Cancellation forwards
-the signal for cleanup, then escalates after a bounded grace period. Undrained
-inherited pipes produce `log_incomplete=true` and `cleanup_uncertain=true`.
-The in-memory suffix is limited to 256 KiB. A separate bounded capture keeps up
-to 2 KiB across 12 early diagnostic/context lines for failed commands, including
-when later output displaces them from the suffix. Gaps remain explicit; excerpts
-preserve the existing suffix selection and add at most 2 KiB of early evidence,
-for at most 6 KiB of retained source bytes. They do not promise complete
-diagnostic coverage. The matcher follows the full log’s
-observed stdout/stderr chunk order. Interleaved partial lines or characters can
-hide a diagnostic; it does not reconstruct separate logical streams.
-The [early-error evidence](https://github.com/hraness/system-one-skills/blob/main/docs/EARLY-ERROR-RETENTION.md) separates current
-qualification from the historical v0.4 findings. Default logs use a private
-temporary directory. They may contain sensitive output;
-delete them when no longer needed.
+<details>
+<summary>Operating limits</summary>
+
+Commands are noninteractive. The default timeout is five minutes, adjustable
+up to fifteen minutes, and the log limit is 64 MiB. Exceeding a limit stops the
+command and reports a failure. Cancellation forwards the signal for cleanup,
+then escalates after a grace period. Incomplete capture is disclosed; undrained
+inherited pipes report `log_incomplete=true` and `cleanup_uncertain=true`.
+
+The wrapper keeps a 256 KiB suffix in memory and, for failed commands, up to
+2 KiB across 12 early diagnostic/context lines. Excerpts contain at most 6 KiB
+of source bytes, with explicit gaps. Interleaved partial stdout/stderr lines
+can hide a diagnostic. Use the full log when an excerpt leaves a question
+unanswered. See the [failure-output behavior and measurements](https://github.com/hraness/system-one-skills/blob/main/docs/EARLY-ERROR-RETENTION.md)
+for examples and limits.
 
 </details>
+
+## Results
+
+In a September 2026 replay of **563 validation outputs** from one developer's
+Codex and Devin sessions, `system-one-verify` reduced the UTF-8 text presented to the agent by
+**35.20%**. It shortened 28 outputs and passed the other 535 through unchanged.
+Every replay preservation check passed.
+
+The [study and scorecard](https://github.com/hraness/system-one-skills/blob/main/docs/SCORECARD.md)
+give the replay's provider breakdown, denominators, and preservation checks.
+To measure whole-task token use, task success, and completion time, follow the
+[benchmark protocol](https://github.com/hraness/system-one-skills/blob/main/docs/BENCHMARK-HARNESS.md).
+
+<a id="all-skills"></a>
+
+The [research catalog](https://github.com/hraness/system-one-skills/blob/main/docs/SKILL-CATALOG.md)
+tracks proposed skills separately from this package. The
+[research log](https://github.com/hraness/system-one-skills/blob/main/docs/RESEARCH-LOG.md)
+and [completion-claim study](https://github.com/hraness/system-one-skills/blob/main/docs/COMPLETION-BASELINE-RESULTS-2026-09.md)
+publish the broader findings.
+
+## Compared with RTK
+
+[RTK](https://github.com/rtk-ai/rtk) routes shell commands through an agent hook
+to compress output automatically. Choose it for broad, hands-off compression.
+`system-one-verify` wraps individual checks you already know are noisy and
+saves their full logs locally.
 
 ## Why “System One”?
 
-A System One skill handles a small recurring operation so the coordinating agent
-can use its context for the task. Here, ordinary code processes repetitive logs.
-[TypeSafe’s introduction to System One models and Jev](https://typesafe.ai/blog/introducing-system-one-models-and-jev)
-is related background; this collection needs no model backend or TypeSafe account.
+A System One skill handles a recurring operation so the coordinating agent can
+use its context for the task. Here, ordinary code processes repetitive logs.
+[TypeSafe's introduction to System One models and Jev](https://typesafe.ai/blog/introducing-system-one-models-and-jev)
+explains the related model concept.
 
-[Sys1](https://sys1.io) is a separate project that gives agents yes/no, choice,
-and score decisions from local models, hosted Jev, or compatible servers. System
-One Skills works without it, and installing either project does not configure
-the other. [Sys1 source](https://github.com/hraness/sys1).
+[Sys1](https://sys1.io) helps coding agents review changes against repository
+rules. System One Skills works without it, and installing either project does
+not configure the other.
 
-[^1]: **Early text replay.** Three noisy
-    successful logs qualified from 24 Devin development replays. Their 9,731 tokens
-    became 931 output tokens plus 774 counted skill, discovery, and invocation
-    tokens. `(9,731 − 1,705) / 9,731 = 82.48%`, rounded to 82%. Counts use
-    `o200k_base`; retries, later log reads, and complete agent usage were not
-    measured. These examples helped tune the implementation. Native quiet
-    reporters were not compared on those historical tasks.
-    [Calculation and limits](https://github.com/hraness/system-one-skills/blob/main/docs/RESULTS.md).
+System One Skills is [MIT licensed](LICENSE).
 
-[^2]: **Short checks can cost more.** The 21 short development replays and 14
-    selected replays from an unused Claude/Devin cohort did not qualify. Wrapping
-    them adds instruction overhead without reducing their output. Installing a
-    skill can also add catalog overhead on tasks that never use it. Faster task
-    completion and better task success remain unproven.
-    [Negative results](https://github.com/hraness/system-one-skills/blob/main/docs/HOLDOUT.md).
+## Troubleshooting
 
-[^3]: **One observed diagnosis.** One historical
-    Devin failure was diagnosed by Codex in two fresh sessions, reduced first
-    and native second. The skill arm made four reads versus three and took
-    37.974 seconds versus 28.625 seconds from launcher start to exit. Cache
-    effects were uncontrolled; the model checkpoint and ambient instructions
-    were not fully attested. A blinded rubric scored both answers 6/6. Failed
-    setup attempts add evaluation cost and are not subtracted from these arms.
-    [Complete results and limitations](https://github.com/hraness/system-one-skills/blob/main/docs/DIAGNOSIS-RESULTS.md).
-
-[^4]: **Native control run.** Each reporter returned
-    21 passed tests, 0 failed, 106 assertions and exit 0 in one run per mode.
-    Matching totals do not establish equivalent warning visibility or failure
-    diagnosis. Text counts use `o200k_base`, not provider billing.
-    [Native baseline and candidate screen](https://github.com/hraness/system-one-skills/blob/main/docs/CANDIDATE-EVIDENCE.md).
-
-<details>
-<summary><strong>Development and assessment</strong></summary>
-
-```sh
-bun install --frozen-lockfile
-bun run check
-bun bench/run-bench.ts
-bun bench/assess-trials.ts private-observed-trials.json
-```
-
-The aggregate gate checks runtime behavior, skill footprint, immutable v0.4
-historical evidence, separate source-bound current replay and runtime qualification,
-privacy, and package contents. The [trial protocol](https://github.com/hraness/system-one-skills/blob/main/bench/TRIALS.md)
-requires a strong native baseline, unused tasks, complete token accounting,
-independent correctness evaluation, and measured completion time. Correctness
-or material latency regressions block adoption. Synthetic tests check behavior;
-real transcript replays measure text reduction. MIT licensed.
-
-</details>
+| Symptom | What to check |
+| --- | --- |
+| `invalid options or unavailable private log/skill target` | Run `system-one-skills --help`. Put wrapper options before `--`, and the command after it. For `--log`, choose a new file in an existing writable directory. |
+| Skill installation reports a conflict | Preserve the existing skill and choose an empty target. The installer does not merge or overwrite differing files. |
+| No `log=` line appears | Short output passes through unchanged. Choose `--log` when you need a predictable location regardless of output length. |
+| A check reaches the timeout | Choose `--timeout-ms` between 1 and 900000. Use your repository’s normal runner for checks that need more than fifteen minutes or interactive input. |
+| An excerpt does not explain a failure | Read the saved log. If `log_incomplete=true` appears, the capture is incomplete; do not treat it as the full command output. |

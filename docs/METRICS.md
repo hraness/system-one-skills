@@ -5,7 +5,7 @@ output** and the task needs the command's exit status. Use native tools for
 short output or detailed log analysis. Do not run a command merely to measure
 its verbosity.
 
-The current **development/calibration** sample contains 24 real completed Devin
+The initial **development/calibration** sample contains 24 real completed Devin
 validation outputs. Three satisfy the 8 KiB selection rule. For those three,
 the shipped reducer changes **9,731 output tokens to 931**, with another
 **774 tokens charged for skill instructions, catalog descriptions, and

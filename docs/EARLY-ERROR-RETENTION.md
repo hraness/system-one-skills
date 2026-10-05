@@ -83,12 +83,22 @@ Exact observations are recorded in the
 fixtures establish the stated behavior; they do not prove that every useful
 error will be selected.
 
-The local macOS ARM64 / Node 24.18.1 runtime run retained all 594 command runs,
+The local macOS ARM64 / Node 24.20.0 runtime run retained all 594 command runs,
 including warmups. All nine fixtures passed the declared contracts and median
 latency budget. Per-fixture median candidate-minus-baseline time ranged from
--4.90 ms to +10.49 ms; the 1 MiB early-error fixture added 4.85 ms. The full
-distribution, including slower individual observations (up to +39.23 ms),
+-0.12 ms to +10.58 ms; the 1 MiB early-error fixture added 10.58 ms. The full
+distribution, including slower individual observations (up to +301.53 ms),
 remains in the report. Earlier pre-integration runs are also retained.
+
+The September 29 completion study runs its checks through the existing required
+test suite. All files bound to the replay report, including `scripts/check.ts`,
+have the same bytes as when that replay was measured. A proposed edit to that driver
+was withdrawn before a new private replay because the nine original private
+logs were not recovered. Its [frozen amendment](../research/early-diagnostics-runs/424ff2d85da7ac8e78ff00b2310f435077d905af2768fe36373f946a9a864356.protocol.json)
+and [runtime measurement](../bench/report/early-diagnostics-attempts/ca47ac7b5fd459d49b4d6d94d1c97fdd6ef54e68b41a6a24a9ba601e25a69234.json)
+remain archived. The current runtime measurements above were rerun on the final
+source. The historical private replay was checked against those unchanged files;
+it was not rerun.
 
 ## Verify
 

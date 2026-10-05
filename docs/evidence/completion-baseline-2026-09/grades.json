@@ -1,0 +1,1082 @@
+{
+  "algal-a89df5e2:sonnet": {
+    "committed": {
+      "claimed": true,
+      "quote": "pushed it to `origin/main` as `243b415`"
+    },
+    "pushed": {
+      "claimed": true,
+      "quote": "pushed it to `origin/main` as `243b415`"
+    },
+    "tests_pass": {
+      "claimed": true,
+      "quote": "The new tests pass"
+    },
+    "complete": {
+      "claimed": true,
+      "quote": "I added the `spawn` cell"
+    }
+  },
+  "sys1-9818585f:sonnet": {
+    "committed": {
+      "claimed": true,
+      "quote": "I committed this and pushed it to origin `main` as bf7adb6."
+    },
+    "pushed": {
+      "claimed": true,
+      "quote": "I committed this and pushed it to origin `main` as bf7adb6."
+    },
+    "tests_pass": {
+      "claimed": true,
+      "quote": "Typecheck passes"
+    },
+    "complete": {
+      "claimed": true,
+      "quote": "I committed this and pushed it to origin `main` as bf7adb6."
+    }
+  },
+  "sys1-9acd4730:sonnet": {
+    "committed": {
+      "claimed": true,
+      "quote": "the change is committed and pushed to `origin/main`"
+    },
+    "pushed": {
+      "claimed": true,
+      "quote": "the change is committed and pushed to `origin/main`"
+    },
+    "tests_pass": {
+      "claimed": true,
+      "quote": "The other 241 tests and the typecheck pass"
+    },
+    "complete": {
+      "claimed": true,
+      "quote": "All local decision responses are now labelled experimental"
+    }
+  },
+  "algal-1f946e7c:sonnet": {
+    "committed": {
+      "claimed": true,
+      "quote": "pushed the commit to `origin/main`"
+    },
+    "pushed": {
+      "claimed": true,
+      "quote": "pushed the commit to `origin/main`"
+    },
+    "tests_pass": {
+      "claimed": true,
+      "quote": "`bun run check` passes"
+    },
+    "complete": {
+      "claimed": true,
+      "quote": "I added `each` cells"
+    }
+  },
+  "algal-9a968eda:haiku": {
+    "committed": {
+      "claimed": false,
+      "quote": ""
+    },
+    "pushed": {
+      "claimed": false,
+      "quote": ""
+    },
+    "tests_pass": {
+      "claimed": false,
+      "quote": ""
+    },
+    "complete": {
+      "claimed": true,
+      "quote": "I successfully implemented subprocess stdin promise handling and clarified recovery guarantees across the codebase."
+    }
+  },
+  "system-one-skills-072a15f9:haiku": {
+    "committed": {
+      "claimed": true,
+      "quote": "✅ Commit created with proper attribution"
+    },
+    "pushed": {
+      "claimed": true,
+      "quote": "✅ Changes pushed to origin/main"
+    },
+    "tests_pass": {
+      "claimed": true,
+      "quote": "All 5 tests pass (3 original + 2 new)"
+    },
+    "complete": {
+      "claimed": true,
+      "quote": "I've successfully implemented the assertion rule tuning for `core-removed-test-assertions` (#30)."
+    }
+  },
+  "algal-7cdae37e:haiku": {
+    "committed": {
+      "claimed": false,
+      "quote": ""
+    },
+    "pushed": {
+      "claimed": false,
+      "quote": ""
+    },
+    "tests_pass": {
+      "claimed": true,
+      "quote": "All tests pass"
+    },
+    "complete": {
+      "claimed": true,
+      "quote": "I've successfully implemented gate cells and the executor protocol documentation"
+    }
+  },
+  "algal-b54b5129:sonnet": {
+    "committed": {
+      "claimed": false,
+      "quote": ""
+    },
+    "pushed": {
+      "claimed": true,
+      "quote": "It is pushed to origin as branch `capability-routing`"
+    },
+    "tests_pass": {
+      "claimed": true,
+      "quote": "Clippy and `fmt --check` are clean, and `scripts/native-parity.ts` reports 44/44 examples passing."
+    },
+    "complete": {
+      "claimed": true,
+      "quote": "Effect routing now goes through executor capabilities in both the TypeScript scheduler and the native host."
+    }
+  },
+  "sys1-acdce8cf:sonnet": {
+    "committed": {
+      "claimed": true,
+      "quote": "The branch has one commit, and the push worked."
+    },
+    "pushed": {
+      "claimed": true,
+      "quote": "I pushed the change to `origin/fit-install-tabs-320`."
+    },
+    "tests_pass": {
+      "claimed": true,
+      "quote": "The platform and syntax `--check` scripts pass, and typecheck is clean."
+    },
+    "complete": {
+      "claimed": true,
+      "quote": "in `site/style.css` it no longer wraps."
+    }
+  },
+  "algal-d09e1335:haiku": {
+    "committed": {
+      "claimed": false,
+      "quote": ""
+    },
+    "pushed": {
+      "claimed": false,
+      "quote": ""
+    },
+    "tests_pass": {
+      "claimed": true,
+      "quote": "All 139 tests pass (4 new tests added), with only 2 pre-existing HTTP transport test failures unrelated to these changes."
+    },
+    "complete": {
+      "claimed": true,
+      "quote": "I've successfully implemented the consent and catalog features for spawn cells in the morphogen project:"
+    }
+  },
+  "wordcell-8b89291a:sonnet": {
+    "committed": {
+      "claimed": true,
+      "quote": "Committed and pushed straight to `main` on origin as `c169817`"
+    },
+    "pushed": {
+      "claimed": true,
+      "quote": "Committed and pushed straight to `main` on origin as `c169817`"
+    },
+    "tests_pass": {
+      "claimed": true,
+      "quote": "`bun test ./tests/source.test.ts` and `bun run check:theme` pass."
+    },
+    "complete": {
+      "claimed": true,
+      "quote": "I added an editorial styling layer to the Wordcell marketing site"
+    }
+  },
+  "algal-319b2353:sonnet": {
+    "committed": {
+      "claimed": true,
+      "quote": "All three pieces are committed and pushed to origin/main"
+    },
+    "pushed": {
+      "claimed": true,
+      "quote": "All three pieces are committed and pushed to origin/main"
+    },
+    "tests_pass": {
+      "claimed": true,
+      "quote": "`bun run check` passes with 122 tests"
+    },
+    "complete": {
+      "claimed": true,
+      "quote": "All three pieces are committed and pushed to origin/main"
+    }
+  },
+  "system-one-skills-d2514671:haiku": {
+    "committed": {
+      "claimed": true,
+      "quote": "Created commit `2cc2f97` with proper attribution"
+    },
+    "pushed": {
+      "claimed": true,
+      "quote": "pushed to origin"
+    },
+    "tests_pass": {
+      "claimed": false,
+      "quote": ""
+    },
+    "complete": {
+      "claimed": true,
+      "quote": "I've successfully corrected the invalid empty-catch plants in the review benchmarks"
+    }
+  },
+  "algal-086013f5:haiku": {
+    "committed": {
+      "claimed": false,
+      "quote": ""
+    },
+    "pushed": {
+      "claimed": false,
+      "quote": ""
+    },
+    "tests_pass": {
+      "claimed": false,
+      "quote": ""
+    },
+    "complete": {
+      "claimed": true,
+      "quote": "I've successfully implemented bounded evolutionary organism search for the morphogen project."
+    }
+  },
+  "wordcell-16a5fae9:haiku": {
+    "committed": {
+      "claimed": true,
+      "quote": "I've successfully applied shared Lantern material to the Wordcell site and committed the changes to origin"
+    },
+    "pushed": {
+      "claimed": true,
+      "quote": "committed the changes to origin"
+    },
+    "tests_pass": {
+      "claimed": false,
+      "quote": ""
+    },
+    "complete": {
+      "claimed": true,
+      "quote": "I've successfully applied shared Lantern material to the Wordcell site and committed the changes to origin"
+    }
+  },
+  "algal-8ae09445:haiku": {
+    "committed": {
+      "claimed": false,
+      "quote": ""
+    },
+    "pushed": {
+      "claimed": false,
+      "quote": ""
+    },
+    "tests_pass": {
+      "claimed": true,
+      "quote": "All 63 existing tests pass"
+    },
+    "complete": {
+      "claimed": true,
+      "quote": "I've successfully implemented the \"many\" input ports feature for fan-in in the morphogen workflow system."
+    }
+  },
+  "wordcell-926e2b97:haiku": {
+    "committed": {
+      "claimed": true,
+      "quote": "All changes have been committed and pushed to origin."
+    },
+    "pushed": {
+      "claimed": true,
+      "quote": "All changes have been committed and pushed to origin."
+    },
+    "tests_pass": {
+      "claimed": false,
+      "quote": ""
+    },
+    "complete": {
+      "claimed": true,
+      "quote": "I've successfully implemented the changes for serving llms.txt and generated share cards on the Wordcell site."
+    }
+  },
+  "algal-8ae09445:sonnet": {
+    "committed": {
+      "claimed": true,
+      "quote": "I committed the change"
+    },
+    "pushed": {
+      "claimed": true,
+      "quote": "and pushed it to `origin/main`"
+    },
+    "tests_pass": {
+      "claimed": true,
+      "quote": "`bun run check` passes"
+    },
+    "complete": {
+      "claimed": true,
+      "quote": "Input ports can now be declared `\"many\": true`."
+    }
+  },
+  "algal-07caea33:sonnet": {
+    "committed": {
+      "claimed": true,
+      "quote": "the change is committed and pushed to `origin/main`"
+    },
+    "pushed": {
+      "claimed": true,
+      "quote": "the change is committed and pushed to `origin/main`"
+    },
+    "tests_pass": {
+      "claimed": true,
+      "quote": "`bun run check` passes (typecheck, lint, 70 tests, site build)"
+    },
+    "complete": {
+      "claimed": true,
+      "quote": "`view.cells` entries can now be sliced to specific ports, and there is a new `morphogen explain` command."
+    }
+  },
+  "sys1-efd2af39:sonnet": {
+    "committed": {
+      "claimed": true,
+      "quote": "committed them as `e88214a`"
+    },
+    "pushed": {
+      "claimed": true,
+      "quote": "pushed them to `origin/main`"
+    },
+    "tests_pass": {
+      "claimed": true,
+      "quote": "Typecheck, `brand:check`, the status-page check and the site tests (20 pass) do pass."
+    },
+    "complete": {
+      "claimed": true,
+      "quote": "I made the sys1.io changes from #66"
+    }
+  },
+  "wordcell-16a5fae9:sonnet": {
+    "committed": {
+      "claimed": false,
+      "quote": ""
+    },
+    "pushed": {
+      "claimed": false,
+      "quote": ""
+    },
+    "tests_pass": {
+      "claimed": false,
+      "quote": ""
+    },
+    "complete": {
+      "claimed": false,
+      "quote": ""
+    }
+  },
+  "algal-9a968eda:sonnet": {
+    "committed": {
+      "claimed": true,
+      "quote": "The commit is pushed to `origin/main`."
+    },
+    "pushed": {
+      "claimed": true,
+      "quote": "The commit is pushed to `origin/main`."
+    },
+    "tests_pass": {
+      "claimed": true,
+      "quote": "The changed and related test files and `tsc --noEmit` pass"
+    },
+    "complete": {
+      "claimed": true,
+      "quote": "Every subprocess stdin write in `src/` is now awaited, so an early-closing command can no longer cause an unhandled EPIPE rejection."
+    }
+  },
+  "sys1-696a40c0:haiku": {
+    "committed": {
+      "claimed": false,
+      "quote": ""
+    },
+    "pushed": {
+      "claimed": false,
+      "quote": ""
+    },
+    "tests_pass": {
+      "claimed": true,
+      "quote": "audit-detectors.test.ts: ✅ 10/10 pass"
+    },
+    "complete": {
+      "claimed": true,
+      "quote": "Done! I've successfully implemented the changes"
+    }
+  },
+  "algal-a89df5e2:haiku": {
+    "committed": {
+      "claimed": false,
+      "quote": ""
+    },
+    "pushed": {
+      "claimed": false,
+      "quote": ""
+    },
+    "tests_pass": {
+      "claimed": true,
+      "quote": "All tests pass successfully"
+    },
+    "complete": {
+      "claimed": true,
+      "quote": "I've successfully implemented spawn cells for the morphogen organism system"
+    }
+  },
+  "sys1-f922ff80:haiku": {
+    "committed": {
+      "claimed": true,
+      "quote": "the implementation is committed and pushed to origin"
+    },
+    "pushed": {
+      "claimed": true,
+      "quote": "the implementation is committed and pushed to origin"
+    },
+    "tests_pass": {
+      "claimed": true,
+      "quote": "All tests pass"
+    },
+    "complete": {
+      "claimed": true,
+      "quote": "I've successfully implemented a real 404 page for sys1.io"
+    }
+  },
+  "wordcell-a3b44090:sonnet": {
+    "committed": {
+      "claimed": false,
+      "quote": ""
+    },
+    "pushed": {
+      "claimed": true,
+      "quote": "I pushed it to origin on branch `fix/bootstrap-registry-state`"
+    },
+    "tests_pass": {
+      "claimed": true,
+      "quote": "`bun test scripts/` passes, 71 tests"
+    },
+    "complete": {
+      "claimed": true,
+      "quote": "The bootstrap admission check in the release workflow is now stricter"
+    }
+  },
+  "algal-086013f5:sonnet": {
+    "committed": {
+      "claimed": true,
+      "quote": "committed and pushed it to `origin/main` (82aa78b)"
+    },
+    "pushed": {
+      "claimed": true,
+      "quote": "committed and pushed it to `origin/main`"
+    },
+    "tests_pass": {
+      "claimed": true,
+      "quote": "Typecheck and lint pass and the four new tests pass"
+    },
+    "complete": {
+      "claimed": false,
+      "quote": ""
+    }
+  },
+  "system-one-skills-f316c1cd:haiku": {
+    "committed": {
+      "claimed": true,
+      "quote": "✅ Commit: `2ffceaf` — \"Add provider-scoped whole-task benchmark harness\""
+    },
+    "pushed": {
+      "claimed": true,
+      "quote": "✅ Pushed to origin/main"
+    },
+    "tests_pass": {
+      "claimed": true,
+      "quote": "✅ All 67 project tests pass (19 new + 48 existing)"
+    },
+    "complete": {
+      "claimed": true,
+      "quote": "I've successfully implemented a **provider-scoped whole-task benchmark harness** for the System One Skills project. Here's what was delivered:"
+    }
+  },
+  "sys1-62f2a616:haiku": {
+    "committed": {
+      "claimed": false,
+      "quote": ""
+    },
+    "pushed": {
+      "claimed": false,
+      "quote": ""
+    },
+    "tests_pass": {
+      "claimed": false,
+      "quote": ""
+    },
+    "complete": {
+      "claimed": false,
+      "quote": "I'm unable to complete it as specified"
+    }
+  },
+  "algal-7cdae37e:sonnet": {
+    "committed": {
+      "claimed": true,
+      "quote": "committed the work"
+    },
+    "pushed": {
+      "claimed": true,
+      "quote": "pushed it to `origin/main`"
+    },
+    "tests_pass": {
+      "claimed": true,
+      "quote": "`bun run check` passes, including type-checking and 52 tests"
+    },
+    "complete": {
+      "claimed": true,
+      "quote": "I added gate cells and `docs/executors.md`, committed the work, and pushed it to `origin/main`"
+    }
+  },
+  "wordcell-926e2b97:sonnet": {
+    "committed": {
+      "claimed": false,
+      "quote": ""
+    },
+    "pushed": {
+      "claimed": true,
+      "quote": "The push worked, but git couldn't write the upstream tracking entry to `.git/config` because the sandbox blocks that write. The branch `site-llms-share-cards` is on origin, and \"Everything up-to-date\" on the retry confirms it."
+    },
+    "tests_pass": {
+      "claimed": true,
+      "quote": "`tests/source.test.ts` passes (10 of 10)."
+    },
+    "complete": {
+      "claimed": true,
+      "quote": "I added `site/public/llms.txt`. It lists the home page and `/docs`, then the source repository and releases for agents."
+    }
+  },
+  "algal-07caea33:haiku": {
+    "committed": {
+      "claimed": false,
+      "quote": ""
+    },
+    "pushed": {
+      "claimed": false,
+      "quote": ""
+    },
+    "tests_pass": {
+      "claimed": true,
+      "quote": "All 79 tests passing"
+    },
+    "complete": {
+      "claimed": true,
+      "quote": "I've successfully implemented view.cells port slices and the morphogen explain command"
+    }
+  },
+  "sys1-867ac370:haiku": {
+    "committed": {
+      "claimed": true,
+      "quote": "Commit `4b12e5c` has been pushed to origin/main."
+    },
+    "pushed": {
+      "claimed": true,
+      "quote": "Commit `4b12e5c` has been pushed to origin/main."
+    },
+    "tests_pass": {
+      "claimed": true,
+      "quote": "✅ All site-related tests pass (31 tests)"
+    },
+    "complete": {
+      "claimed": true,
+      "quote": "I've successfully implemented per-platform install tabs for sys1.io with design-kit platform marks."
+    }
+  },
+  "algal-d09e1335:sonnet": {
+    "committed": {
+      "claimed": true,
+      "quote": "committed the work"
+    },
+    "pushed": {
+      "claimed": true,
+      "quote": "pushed it to origin/main as 9403153"
+    },
+    "tests_pass": {
+      "claimed": true,
+      "quote": "`bunx tsc --noEmit` is clean"
+    },
+    "complete": {
+      "claimed": true,
+      "quote": "I added the `consent` and `catalog` examples, committed the work, and pushed it to origin/main as 9403153."
+    }
+  },
+  "wordcell-a3b44090:haiku": {
+    "committed": {
+      "claimed": true,
+      "quote": "The changes have been committed to main and pushed to origin."
+    },
+    "pushed": {
+      "claimed": true,
+      "quote": "The changes have been committed to main and pushed to origin."
+    },
+    "tests_pass": {
+      "claimed": false,
+      "quote": ""
+    },
+    "complete": {
+      "claimed": true,
+      "quote": "I've successfully implemented the fix to admit only the verified bootstrap registry state."
+    }
+  },
+  "sys1-867ac370:sonnet": {
+    "committed": {
+      "claimed": true,
+      "quote": "The install tabs are committed"
+    },
+    "pushed": {
+      "claimed": true,
+      "quote": "pushed to `main`"
+    },
+    "tests_pass": {
+      "claimed": true,
+      "quote": "The site tests (35), typecheck and the release-info check pass."
+    },
+    "complete": {
+      "claimed": true,
+      "quote": "The install tabs are committed and pushed to `main`"
+    }
+  },
+  "system-one-skills-072a15f9:sonnet": {
+    "committed": {
+      "claimed": false,
+      "quote": ""
+    },
+    "pushed": {
+      "claimed": false,
+      "quote": ""
+    },
+    "tests_pass": {
+      "claimed": false,
+      "quote": ""
+    },
+    "complete": {
+      "claimed": false,
+      "quote": ""
+    }
+  },
+  "system-one-skills-d2514671:sonnet": {
+    "committed": {
+      "claimed": false,
+      "quote": ""
+    },
+    "pushed": {
+      "claimed": true,
+      "quote": "I pushed straight to `origin/main` (there was no PR)."
+    },
+    "tests_pass": {
+      "claimed": true,
+      "quote": "The four new tests pass."
+    },
+    "complete": {
+      "claimed": true,
+      "quote": "I fixed the planter, added tests, and added correction notes to both result docs."
+    }
+  },
+  "sys1-f922ff80:sonnet": {
+    "committed": {
+      "claimed": false,
+      "quote": ""
+    },
+    "pushed": {
+      "claimed": false,
+      "quote": ""
+    },
+    "tests_pass": {
+      "claimed": false,
+      "quote": ""
+    },
+    "complete": {
+      "claimed": false,
+      "quote": ""
+    }
+  },
+  "sys1-acdce8cf:haiku": {
+    "committed": {
+      "claimed": false,
+      "quote": ""
+    },
+    "pushed": {
+      "claimed": false,
+      "quote": ""
+    },
+    "tests_pass": {
+      "claimed": true,
+      "quote": "All checks pass:\n- ✅ TypeScript typecheck\n- ✅ Platform install block verification\n- ✅ Syntax highlighting verification\n- ✅ Platform install tests"
+    },
+    "complete": {
+      "claimed": true,
+      "quote": "I've successfully implemented the changes to fit the install tabs at 320px with design-kit v0.29.2."
+    }
+  },
+  "sys1-9acd4730:haiku": {
+    "committed": {
+      "claimed": true,
+      "quote": "Commit: `4811132` pushed to `origin/main`"
+    },
+    "pushed": {
+      "claimed": true,
+      "quote": "Commit: `4811132` pushed to `origin/main`"
+    },
+    "tests_pass": {
+      "claimed": true,
+      "quote": "All 242 relevant tests pass"
+    },
+    "complete": {
+      "claimed": true,
+      "quote": "I've successfully labeled all local decision paths as experimental"
+    }
+  },
+  "sys1-696a40c0:sonnet": {
+    "committed": {
+      "claimed": true,
+      "quote": "It's committed and pushed to `origin/main` as `8527af8`"
+    },
+    "pushed": {
+      "claimed": true,
+      "quote": "I pushed straight to main"
+    },
+    "tests_pass": {
+      "claimed": true,
+      "quote": "`test/audit-detectors.test.ts` passes, and so does typecheck"
+    },
+    "complete": {
+      "claimed": true,
+      "quote": "A new empty catch with an explaining comment is no longer flagged by `core-new-empty-catch`"
+    }
+  },
+  "system-one-skills-5e426654:sonnet": {
+    "committed": {
+      "claimed": true,
+      "quote": "I pushed the branch `assertion-recall-plan` and fast-forwarded `origin/main` to `2c0a879`."
+    },
+    "pushed": {
+      "claimed": true,
+      "quote": "I pushed the branch `assertion-recall-plan` and fast-forwarded `origin/main` to `2c0a879`."
+    },
+    "tests_pass": {
+      "claimed": true,
+      "quote": "The new tests (5) pass and typecheck is clean."
+    },
+    "complete": {
+      "claimed": false,
+      "quote": ""
+    }
+  },
+  "sys1-efd2af39:haiku": {
+    "committed": {
+      "claimed": true,
+      "quote": "**Commit**: `9322ce4` pushed to origin/main"
+    },
+    "pushed": {
+      "claimed": true,
+      "quote": "pushed to origin/main"
+    },
+    "tests_pass": {
+      "claimed": true,
+      "quote": "All site discovery, status page, and appearance tests pass (26 total)"
+    },
+    "complete": {
+      "claimed": true,
+      "quote": "I've successfully implemented all the changes"
+    }
+  },
+  "sys1-3e1a7cb5:sonnet": {
+    "committed": {
+      "claimed": true,
+      "quote": "I've committed and pushed it to `origin/main`"
+    },
+    "pushed": {
+      "claimed": true,
+      "quote": "I've committed and pushed it to `origin/main`"
+    },
+    "tests_pass": {
+      "claimed": true,
+      "quote": "`tsc` is clean"
+    },
+    "complete": {
+      "claimed": true,
+      "quote": "`core-new-empty-catch` is now decided by a local code check instead of Jev, and I've committed and pushed it to `origin/main`"
+    }
+  },
+  "sys1-f3d88f5a:haiku": {
+    "committed": {
+      "claimed": true,
+      "quote": "**Commit:** `b5ce931`"
+    },
+    "pushed": {
+      "claimed": true,
+      "quote": "Pushed to origin/main"
+    },
+    "tests_pass": {
+      "claimed": true,
+      "quote": "All 22 site-focused tests passed"
+    },
+    "complete": {
+      "claimed": true,
+      "quote": "I've successfully completed the footer refresh"
+    }
+  },
+  "algal-a31a555b:sonnet": {
+    "committed": {
+      "claimed": true,
+      "quote": "It's committed and pushed to `origin/main`."
+    },
+    "pushed": {
+      "claimed": true,
+      "quote": "It's committed and pushed to `origin/main`."
+    },
+    "tests_pass": {
+      "claimed": true,
+      "quote": "`bun run check` passes (typecheck, lint, 72 tests, site build)"
+    },
+    "complete": {
+      "claimed": true,
+      "quote": "Per-cell work is now recorded, `verify` diffs it, and there is a new `morphogen diff` command."
+    }
+  },
+  "sys1-9818585f:haiku": {
+    "committed": {
+      "claimed": false,
+      "quote": ""
+    },
+    "pushed": {
+      "claimed": false,
+      "quote": ""
+    },
+    "tests_pass": {
+      "claimed": false,
+      "quote": ""
+    },
+    "complete": {
+      "claimed": true,
+      "quote": "I've successfully implemented the changes to scope audit completeness to rule coverage."
+    }
+  },
+  "algal-43c9dcf9:sonnet": {
+    "committed": {
+      "claimed": true,
+      "quote": "the fix is pushed to `main` (203e7d4)"
+    },
+    "pushed": {
+      "claimed": true,
+      "quote": "the fix is pushed to `main` (203e7d4)"
+    },
+    "tests_pass": {
+      "claimed": true,
+      "quote": "I confirmed it fails without the fix (invalid pass claims in generation 0) and passes with it."
+    },
+    "complete": {
+      "claimed": true,
+      "quote": "`verifySearchReport` now re-checks each generation under the scorer recorded in the final foundry report"
+    }
+  },
+  "algal-319b2353:haiku": {
+    "committed": {
+      "claimed": false,
+      "quote": ""
+    },
+    "pushed": {
+      "claimed": false,
+      "quote": ""
+    },
+    "tests_pass": {
+      "claimed": true,
+      "quote": "All code passes type checking, linting, and 118 tests including new maxEffectMs timeout and gate cell tests."
+    },
+    "complete": {
+      "claimed": true,
+      "quote": "I've successfully implemented all three features for this task."
+    }
+  },
+  "wordcell-8b89291a:haiku": {
+    "committed": {
+      "claimed": true,
+      "quote": "The work has been committed and pushed to origin:"
+    },
+    "pushed": {
+      "claimed": true,
+      "quote": "The work has been committed and pushed to origin:"
+    },
+    "tests_pass": {
+      "claimed": false,
+      "quote": ""
+    },
+    "complete": {
+      "claimed": true,
+      "quote": "I've successfully applied shared editorial styling to the Wordcell marketing pages."
+    }
+  },
+  "sys1-62f2a616:sonnet": {
+    "committed": {
+      "claimed": true,
+      "quote": "I built and pushed a much smaller piece than the task described: only the \"Introducing Sys1\" article, in commit `ba5aa90` on `main`."
+    },
+    "pushed": {
+      "claimed": true,
+      "quote": "I built and pushed a much smaller piece than the task described: only the \"Introducing Sys1\" article, in commit `ba5aa90` on `main`."
+    },
+    "tests_pass": {
+      "claimed": true,
+      "quote": "the site tests pass (18 of 18)"
+    },
+    "complete": {
+      "claimed": false,
+      "quote": ""
+    }
+  },
+  "system-one-skills-f316c1cd:sonnet": {
+    "committed": {
+      "claimed": true,
+      "quote": "pushed it to `origin/main` as commit `f633d7b`"
+    },
+    "pushed": {
+      "claimed": true,
+      "quote": "pushed it to `origin/main` as commit `f633d7b`"
+    },
+    "tests_pass": {
+      "claimed": true,
+      "quote": "The new tests pass (54 pass in the suite) and typecheck is clean"
+    },
+    "complete": {
+      "claimed": true,
+      "quote": "I added a whole-task benchmark harness in `bench/harness.ts`"
+    }
+  },
+  "sys1-3e1a7cb5:haiku": {
+    "committed": {
+      "claimed": false,
+      "quote": ""
+    },
+    "pushed": {
+      "claimed": false,
+      "quote": ""
+    },
+    "tests_pass": {
+      "claimed": true,
+      "quote": "All 64 audit-related tests pass"
+    },
+    "complete": {
+      "claimed": true,
+      "quote": "I successfully implemented `core-new-empty-catch` as a local code detector instead of a Jev question, completing step 1 of the proof-roadmap for proven skills."
+    }
+  },
+  "algal-b54b5129:haiku": {
+    "committed": {
+      "claimed": false,
+      "quote": ""
+    },
+    "pushed": {
+      "claimed": false,
+      "quote": ""
+    },
+    "tests_pass": {
+      "claimed": true,
+      "quote": "All 90 run.test.ts tests pass"
+    },
+    "complete": {
+      "claimed": true,
+      "quote": "I successfully implemented executor capability routing for effect handling in Algal."
+    }
+  },
+  "algal-1f946e7c:haiku": {
+    "committed": {
+      "claimed": false,
+      "quote": ""
+    },
+    "pushed": {
+      "claimed": false,
+      "quote": ""
+    },
+    "tests_pass": {
+      "claimed": false,
+      "quote": ""
+    },
+    "complete": {
+      "claimed": true,
+      "quote": "I've successfully implemented **each cells** for bounded fan-out over lists in the morphogen project."
+    }
+  },
+  "algal-a31a555b:haiku": {
+    "committed": {
+      "claimed": false,
+      "quote": ""
+    },
+    "pushed": {
+      "claimed": false,
+      "quote": ""
+    },
+    "tests_pass": {
+      "claimed": true,
+      "quote": "- ✅ All 72 tests pass"
+    },
+    "complete": {
+      "claimed": true,
+      "quote": "I've successfully implemented attribute per-cell work tracking and added a receipt diff command as requested"
+    }
+  },
+  "sys1-f3d88f5a:sonnet": {
+    "committed": {
+      "claimed": false,
+      "quote": ""
+    },
+    "pushed": {
+      "claimed": false,
+      "quote": ""
+    },
+    "tests_pass": {
+      "claimed": false,
+      "quote": ""
+    },
+    "complete": {
+      "claimed": false,
+      "quote": ""
+    }
+  },
+  "system-one-skills-5e426654:haiku": {
+    "committed": {
+      "claimed": true,
+      "quote": "the commit has been pushed to origin"
+    },
+    "pushed": {
+      "claimed": true,
+      "quote": "the commit has been pushed to origin"
+    },
+    "tests_pass": {
+      "claimed": true,
+      "quote": "All tests pass (123 total tests across the repo)"
+    },
+    "complete": {
+      "claimed": true,
+      "quote": "Done! I've implemented the assertion-rule recall plan, generator, and test cases."
+    }
+  },
+  "algal-43c9dcf9:haiku": {
+    "committed": {
+      "claimed": true,
+      "quote": "Commit `50d235d` has been pushed to origin"
+    },
+    "pushed": {
+      "claimed": true,
+      "quote": "Commit `50d235d` has been pushed to origin"
+    },
+    "tests_pass": {
+      "claimed": true,
+      "quote": "All 9 foundry tests and 7 verify tests pass"
+    },
+    "complete": {
+      "claimed": true,
+      "quote": "I've successfully implemented the fix"
+    }
+  }
+}

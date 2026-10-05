@@ -5,7 +5,21 @@ The current [numeric scorecard](SCORECARD.md) is the clearest headline: across
 text** (32.65% Codex, 38.90% Devin) with zero preservation failures. Among the
 28 outputs that crossed the compaction guard, the reduction was 90.61%. This is
 text-size evidence at the tool-result boundary, not provider-token or
-whole-task savings.
+whole-task savings. A [whole-task run in Claude Code](WHOLE-TASK-RESULT-2026-09.md)
+found no token or time saving: Sonnet never called the skill on noisy
+typechecks, because it already filtered the output with `grep`.
+A [second run on the Sys1 review checkpoint](REVIEW-TASK-RESULT-2026-09.md)
+also found no saving: when directed to use it, the agent spent 84% more tokens
+and 145% more time, and Jev flagged 3 of 16 planted problems.
+A follow-up [recall run](REVIEW-RECALL-RESULT-2026-09.md) found Jev
+caught 3 of 16 planted problems even when given only the planted file and
+matching rule.
+A larger [recall run on the removed-assertion rule](ASSERTION-RECALL-RESULT-2026-09.md)
+(153 cases from real tests) found Jev caught 5 of 21 held-out violations with
+no false alarms, well below the 80% bar for turning the rule on by default.
+[Tuning](ASSERTION-TUNING-RESULT-2026-09.md) found the 0.7 score cutoff was
+discarding most catches: at 0.2 the rule caught 20 of 21 held-out violations
+with 0 of 42 false alarms, passing the bar.
 
 The earlier development replay measured **82% fewer text tokens for noisy check
 results**, in three successful Devin logs, including counted skill overhead.
@@ -15,7 +29,7 @@ still runs and its full log stays available. Use the skill for known noisy
 pass/fail checks. Native tools are a better fit for short output, useful quiet
 modes, or tasks that need the whole log.
 
-## What the headline counts
+## Earlier three-log token result
 
 | Across the three qualifying logs | Text tokens |
 | --- | ---: |
@@ -25,15 +39,14 @@ modes, or tasks that need the whole log.
 | Result plus overhead | **1,705** |
 | Net reduction | **8,026 (82.48%)** |
 
-The headline rounds `(9,731 − 931 − 774) / 9,731` to **82%**. This is the combined
+The development result rounds `(9,731 − 931 − 774) / 9,731` to **82%**. This is the combined
 reduction across the three logs, not the average reduction per log or a prediction
 for a typical agent task. The individual reductions were approximately 63%, 78%,
 and 91%. We use the combined result rather than highlight the best case.
 
 The data comes from the [v0.4.0 admission report](../research/admission-report.json)
 and [per-case measurements](METRICS.md). The output contains 90% fewer tokens
-before overhead, but that larger percentage omits part of the cost and is not
-our headline.
+before overhead; the 82% net figure includes that counted cost.
 
 **The comparison is with the archived output, not the best quiet reporter.**
 All three favorable excerpts contain Bun test output; one also contains preceding
@@ -111,7 +124,7 @@ The [CI pilot](CI-PILOT.md) found no established advantage over native run
 watching. That candidate and the other nine research candidates stay outside
 the installation. A common workflow alone does not justify another skill.
 
-## Data notes
+## Data notes for the development replay
 
 1. **Small development sample.** The favorable result uses three successful noisy
    Devin logs selected from 24 eligible replay excerpts. These examples helped

@@ -1,0 +1,1430 @@
+[
+  {
+    "id": "ghostget-6940c851-violation",
+    "set": "calibration",
+    "repo": "ghostget",
+    "commit": "6940c851f0433902b6bece295f06f08d7cbe21cc",
+    "kind": "violation",
+    "path": "src/media/manifest.test.ts",
+    "removed_line": 1410,
+    "callback_line": 1405
+  },
+  {
+    "id": "ghostget-a2b32108-near-miss",
+    "set": "calibration",
+    "repo": "ghostget",
+    "commit": "a2b321081335ac28e5df0ccbb67ebea0424d49f5",
+    "kind": "near-miss",
+    "path": "src/browser.test.ts",
+    "removed_line": 2543,
+    "callback_line": 2542
+  },
+  {
+    "id": "wordcell-e76f807c-clean",
+    "set": "calibration",
+    "repo": "wordcell",
+    "commit": "e76f807c0489ae5ad9c79088a057169185d6b605",
+    "kind": "clean",
+    "path": "scripts/readme-durable-session.test.ts"
+  },
+  {
+    "id": "spongev2-fd3fdfc9-violation",
+    "set": "calibration",
+    "repo": "spongev2",
+    "commit": "fd3fdfc91ae72785da1c9afa64de262aad80cbe0",
+    "kind": "violation",
+    "path": "src/research/experimental/evidence.test.ts",
+    "removed_line": 359,
+    "callback_line": 355
+  },
+  {
+    "id": "wordcell-6d5c578f-near-miss",
+    "set": "calibration",
+    "repo": "wordcell",
+    "commit": "6d5c578f5314ed1a8425944713ae93d7c5f49172",
+    "kind": "near-miss",
+    "path": "scripts/check-workflow-yaml.test.ts",
+    "removed_line": 124,
+    "callback_line": 120
+  },
+  {
+    "id": "ghostget-e8f855c5-clean",
+    "set": "calibration",
+    "repo": "ghostget",
+    "commit": "e8f855c5bd47636ab0fd21e2db5171b76939e653",
+    "kind": "clean",
+    "path": "src/providers/imessage-automation.test.ts"
+  },
+  {
+    "id": "ghostget-d8b77d10-violation",
+    "set": "calibration",
+    "repo": "ghostget",
+    "commit": "d8b77d109dab09a0d04a760aeeee036c40388337",
+    "kind": "violation",
+    "path": "src/platform-catalog.test.ts",
+    "removed_line": 417,
+    "callback_line": 416
+  },
+  {
+    "id": "ghostget-a2e4972c-near-miss",
+    "set": "calibration",
+    "repo": "ghostget",
+    "commit": "a2e4972c521f1175c29b41bbc4bf2ec6efd7e6d7",
+    "kind": "near-miss",
+    "path": "src/providers/x-web.test.ts",
+    "removed_line": 105,
+    "callback_line": 104
+  },
+  {
+    "id": "ghostget-30e4c3d3-clean",
+    "set": "calibration",
+    "repo": "ghostget",
+    "commit": "30e4c3d37c98765404f2988f4d3040cd78e67f7c",
+    "kind": "clean",
+    "path": "src/plugins/youtube-web/plugin.test.ts"
+  },
+  {
+    "id": "ghostget-555a5e7c-violation",
+    "set": "calibration",
+    "repo": "ghostget",
+    "commit": "555a5e7c763daf53ff16e234ac0f69092af303ae",
+    "kind": "violation",
+    "path": "src/derive.test.ts",
+    "removed_line": 196,
+    "callback_line": 195
+  },
+  {
+    "id": "ghostget-e8f972ef-near-miss",
+    "set": "calibration",
+    "repo": "ghostget",
+    "commit": "e8f972efb8ca5d9a7eb3307afe0d506779882140",
+    "kind": "near-miss",
+    "path": "scripts/ci-pr-gate.test.ts",
+    "removed_line": 56,
+    "callback_line": 54
+  },
+  {
+    "id": "algal-086013f5-clean",
+    "set": "calibration",
+    "repo": "algal",
+    "commit": "086013f57658450785230e22f899fd735b024e99",
+    "kind": "clean",
+    "path": "src/foundry.test.ts"
+  },
+  {
+    "id": "wordcell-4fca7380-violation",
+    "set": "calibration",
+    "repo": "wordcell",
+    "commit": "4fca7380931053c8dceb7d3f4369f8ad61b607e1",
+    "kind": "violation",
+    "path": "src/clip/extract.test.ts",
+    "removed_line": 57,
+    "callback_line": 55
+  },
+  {
+    "id": "ghostget-db5b2757-near-miss",
+    "set": "calibration",
+    "repo": "ghostget",
+    "commit": "db5b275768bbe30c30a2a2eafe664b3def443350",
+    "kind": "near-miss",
+    "path": "src/platform-catalog.test.ts",
+    "removed_line": 632,
+    "callback_line": 631
+  },
+  {
+    "id": "spongev2-c468ebc9-clean",
+    "set": "calibration",
+    "repo": "spongev2",
+    "commit": "c468ebc9ce1a395566c434ef81a0a484f28fee08",
+    "kind": "clean",
+    "path": "src/research/experimental/closed-score.test.ts"
+  },
+  {
+    "id": "ghostget-bc033494-violation",
+    "set": "calibration",
+    "repo": "ghostget",
+    "commit": "bc0334949baac2f2c467dd391c5826960830a4cd",
+    "kind": "violation",
+    "path": "src/media/manifest.test.ts",
+    "removed_line": 1410,
+    "callback_line": 1405
+  },
+  {
+    "id": "ghostget-d54cf1fc-near-miss",
+    "set": "calibration",
+    "repo": "ghostget",
+    "commit": "d54cf1fcdbbfb4bc6cb044a7a7f6d55428cd1bb1",
+    "kind": "near-miss",
+    "path": "src/providers/meta-web.test.ts",
+    "removed_line": 515,
+    "callback_line": 514
+  },
+  {
+    "id": "ghostget-a713215a-clean",
+    "set": "calibration",
+    "repo": "ghostget",
+    "commit": "a713215a56207fb424fb12e305e03fdf7a3dac43",
+    "kind": "clean",
+    "path": "src/messaging-confirmation-recovery.test.ts"
+  },
+  {
+    "id": "ghostget-423b5e41-violation",
+    "set": "calibration",
+    "repo": "ghostget",
+    "commit": "423b5e414cd562387e613f2f94db151ee535633f",
+    "kind": "violation",
+    "path": "src/web-session-contracts.test.ts",
+    "removed_line": 163,
+    "callback_line": 160
+  },
+  {
+    "id": "ghostget-3d654af7-near-miss",
+    "set": "calibration",
+    "repo": "ghostget",
+    "commit": "3d654af7300d3f3c961e0953e3e8e0ec06fc25f9",
+    "kind": "near-miss",
+    "path": "src/model.test.ts",
+    "removed_line": 1778,
+    "callback_line": 1775
+  },
+  {
+    "id": "ghostget-af759ce2-clean",
+    "set": "calibration",
+    "repo": "ghostget",
+    "commit": "af759ce225c7007fe2269c1266147cd878958e45",
+    "kind": "clean",
+    "path": "src/providers/linkedin-web-contact.test.ts"
+  },
+  {
+    "id": "algal-6e5864f7-violation",
+    "set": "calibration",
+    "repo": "algal",
+    "commit": "6e5864f7678cc0fcea1e1f41a567444c9b89f8b9",
+    "kind": "violation",
+    "path": "src/contract.test.ts",
+    "removed_line": 35,
+    "callback_line": 32
+  },
+  {
+    "id": "ghostget-57e326be-near-miss",
+    "set": "calibration",
+    "repo": "ghostget",
+    "commit": "57e326be329fc0e4ad7c96e709b8661c4d9773f5",
+    "kind": "near-miss",
+    "path": "src/plan-assets.test.ts",
+    "removed_line": 282,
+    "callback_line": 281
+  },
+  {
+    "id": "ghostget-bc326853-clean",
+    "set": "calibration",
+    "repo": "ghostget",
+    "commit": "bc3268533eeede7b14b72c93c983e340a1d83ecd",
+    "kind": "clean",
+    "path": "website/site.test.ts"
+  },
+  {
+    "id": "ghostget-06b90d4c-violation",
+    "set": "calibration",
+    "repo": "ghostget",
+    "commit": "06b90d4ca13402e22d58be4c3dd2dffe62bec7d9",
+    "kind": "violation",
+    "path": "src/control/menubar-cli.test.ts",
+    "removed_line": 268,
+    "callback_line": 261
+  },
+  {
+    "id": "ghostget-b9105f88-near-miss",
+    "set": "calibration",
+    "repo": "ghostget",
+    "commit": "b9105f88cb8c20e67cfe7d9e1159e96a52e5a46d",
+    "kind": "near-miss",
+    "path": "src/platform-catalog.test.ts",
+    "removed_line": 651,
+    "callback_line": 650
+  },
+  {
+    "id": "ghostget-b160d6ef-clean",
+    "set": "calibration",
+    "repo": "ghostget",
+    "commit": "b160d6efc6e8e3f0390b9e7eab890bd33de68f44",
+    "kind": "clean",
+    "path": "src/provider-plugin-omni.test.ts"
+  },
+  {
+    "id": "ghostget-42fbc4d0-violation",
+    "set": "calibration",
+    "repo": "ghostget",
+    "commit": "42fbc4d05e5011c5112fee1f4afbb7e81072e1f5",
+    "kind": "violation",
+    "path": "src/control/menubar-cli.test.ts",
+    "removed_line": 455,
+    "callback_line": 451
+  },
+  {
+    "id": "ghostget-7aa6da5c-near-miss",
+    "set": "calibration",
+    "repo": "ghostget",
+    "commit": "7aa6da5c6b0602598e1889fedb6c79e6107c7cd8",
+    "kind": "near-miss",
+    "path": "website/site.test.ts",
+    "removed_line": 1515,
+    "callback_line": 1513
+  },
+  {
+    "id": "ghostget-651672fd-clean",
+    "set": "calibration",
+    "repo": "ghostget",
+    "commit": "651672fd59c9700650d25e93507763e34c919d71",
+    "kind": "clean",
+    "path": "src/plugins/meta-web/plugin.test.ts"
+  },
+  {
+    "id": "spongev2-f07dee67-violation",
+    "set": "calibration",
+    "repo": "spongev2",
+    "commit": "f07dee67dc274f5da2f67bc3759e6c975662f402",
+    "kind": "violation",
+    "path": "src/adapters/xcb.test.ts",
+    "removed_line": 38,
+    "callback_line": 37
+  },
+  {
+    "id": "ghostget-7d23159c-near-miss",
+    "set": "calibration",
+    "repo": "ghostget",
+    "commit": "7d23159ca0d3f427bcafe3fe87ae7588a7496a46",
+    "kind": "near-miss",
+    "path": "src/model.test.ts",
+    "removed_line": 2208,
+    "callback_line": 2207
+  },
+  {
+    "id": "algal-7ecf7a9b-clean",
+    "set": "calibration",
+    "repo": "algal",
+    "commit": "7ecf7a9bf9fb739beb652aabb7825a952e3bd581",
+    "kind": "clean",
+    "path": "src/run.test.ts"
+  },
+  {
+    "id": "spongev2-57b73f14-violation",
+    "set": "calibration",
+    "repo": "spongev2",
+    "commit": "57b73f141848390e8ca146bddb4b9596634a9f0d",
+    "kind": "violation",
+    "path": "src/research/experimental/closed-score.test.ts",
+    "removed_line": 419,
+    "callback_line": 416
+  },
+  {
+    "id": "ghostget-21279a11-near-miss",
+    "set": "calibration",
+    "repo": "ghostget",
+    "commit": "21279a110940f9fe2bef1f2a0717bfeda4af77bc",
+    "kind": "near-miss",
+    "path": "src/media/cli.test.ts",
+    "removed_line": 172,
+    "callback_line": 169
+  },
+  {
+    "id": "algal-cad8ebd7-clean",
+    "set": "calibration",
+    "repo": "algal",
+    "commit": "cad8ebd79e00ac17a738c8c51538614cd48e0f5b",
+    "kind": "clean",
+    "path": "src/vm-primitives.test.ts"
+  },
+  {
+    "id": "ghostget-aa925b4d-violation",
+    "set": "calibration",
+    "repo": "ghostget",
+    "commit": "aa925b4db23bd29b66dd8334835d6d9c9805ae43",
+    "kind": "violation",
+    "path": "src/model.test.ts",
+    "removed_line": 2251,
+    "callback_line": 2249
+  },
+  {
+    "id": "spongev2-20517ca9-near-miss",
+    "set": "calibration",
+    "repo": "spongev2",
+    "commit": "20517ca995570ae6620920e1d6253a6d539ae693",
+    "kind": "near-miss",
+    "path": "src/projects/index.test.ts",
+    "removed_line": 31,
+    "callback_line": 29
+  },
+  {
+    "id": "ghostget-8e28f2e4-clean",
+    "set": "calibration",
+    "repo": "ghostget",
+    "commit": "8e28f2e4fb681247dab0d4912a86cc77edc0a4e1",
+    "kind": "clean",
+    "path": "src/providers/x-web-runtime.internal.test.ts"
+  },
+  {
+    "id": "ghostget-add454d7-violation",
+    "set": "calibration",
+    "repo": "ghostget",
+    "commit": "add454d706cff27084fb72a6a65ebc88cd347a8c",
+    "kind": "violation",
+    "path": "src/model.test.ts",
+    "removed_line": 2715,
+    "callback_line": 2709
+  },
+  {
+    "id": "spongev2-495f3e89-near-miss",
+    "set": "calibration",
+    "repo": "spongev2",
+    "commit": "495f3e8978a176df59f168387ee326551bf0f3a2",
+    "kind": "near-miss",
+    "path": "src/tui/index.test.ts",
+    "removed_line": 5,
+    "callback_line": 4
+  },
+  {
+    "id": "ghostget-331ec8e2-clean",
+    "set": "calibration",
+    "repo": "ghostget",
+    "commit": "331ec8e2d25b88bb2305b2e6a3f7c101e3b13026",
+    "kind": "clean",
+    "path": "website/site.test.ts"
+  },
+  {
+    "id": "algal-edb0809c-violation",
+    "set": "calibration",
+    "repo": "algal",
+    "commit": "edb0809ca1179cc6a05074d3490e206c45f90de3",
+    "kind": "violation",
+    "path": "src/store.test.ts",
+    "removed_line": 21,
+    "callback_line": 17
+  },
+  {
+    "id": "ghostget-1ca41f4a-near-miss",
+    "set": "calibration",
+    "repo": "ghostget",
+    "commit": "1ca41f4acda6cc77616d43fe8f6a7303eaf1ff28",
+    "kind": "near-miss",
+    "path": "src/browser.test.ts",
+    "removed_line": 3138,
+    "callback_line": 3137
+  },
+  {
+    "id": "algal-41c304b3-clean",
+    "set": "calibration",
+    "repo": "algal",
+    "commit": "41c304b33ec86ae399f20474994704b7134ce615",
+    "kind": "clean",
+    "path": "src/property.test.ts"
+  },
+  {
+    "id": "ghostget-efe8cf62-violation",
+    "set": "calibration",
+    "repo": "ghostget",
+    "commit": "efe8cf624f2b3b27d9f75a689027ed619186bb7f",
+    "kind": "violation",
+    "path": "src/test-harness-policy.test.ts",
+    "removed_line": 546,
+    "callback_line": 545
+  },
+  {
+    "id": "ghostget-edbe5672-near-miss",
+    "set": "calibration",
+    "repo": "ghostget",
+    "commit": "edbe5672857e4de08015b0614f795722b6303029",
+    "kind": "near-miss",
+    "path": "scripts/github-release-artifact.test.ts",
+    "removed_line": 552,
+    "callback_line": 547
+  },
+  {
+    "id": "ghostget-307fec6f-clean",
+    "set": "calibration",
+    "repo": "ghostget",
+    "commit": "307fec6f795ee9d6eca138a550b5917ccd7fdd21",
+    "kind": "clean",
+    "path": "website/site.test.ts"
+  },
+  {
+    "id": "wordcell-46c9cccf-violation",
+    "set": "calibration",
+    "repo": "wordcell",
+    "commit": "46c9cccf5c914fd1be449e47ae0873778c2d7dde",
+    "kind": "violation",
+    "path": "src/clip/persist.test.ts",
+    "removed_line": 418,
+    "callback_line": 417
+  },
+  {
+    "id": "wordcell-ffa22cc1-near-miss",
+    "set": "calibration",
+    "repo": "wordcell",
+    "commit": "ffa22cc1989356bc507808ec8c3adb69d7cdfb15",
+    "kind": "near-miss",
+    "path": "src/clip/extract.test.ts",
+    "removed_line": 205,
+    "callback_line": 202
+  },
+  {
+    "id": "spongev2-45d1e3d9-clean",
+    "set": "calibration",
+    "repo": "spongev2",
+    "commit": "45d1e3d9178ef3df1bc79bb71ee76348d27e6eae",
+    "kind": "clean",
+    "path": "src/benchmark-judge.test.ts"
+  },
+  {
+    "id": "wordcell-ff2ebf49-violation",
+    "set": "calibration",
+    "repo": "wordcell",
+    "commit": "ff2ebf491db3f990e99cfaa36a6faf21735cd8cb",
+    "kind": "violation",
+    "path": "src/clip/persist.test.ts",
+    "removed_line": 372,
+    "callback_line": 361
+  },
+  {
+    "id": "ghostget-1018b0be-near-miss",
+    "set": "calibration",
+    "repo": "ghostget",
+    "commit": "1018b0bef9d244a149a5856cfd2a68a1396f2425",
+    "kind": "near-miss",
+    "path": "src/model.test.ts",
+    "removed_line": 2113,
+    "callback_line": 2105
+  },
+  {
+    "id": "ghostget-2eeb888f-clean",
+    "set": "calibration",
+    "repo": "ghostget",
+    "commit": "2eeb888f682b569dd8f751e9a8a7456ff38139f1",
+    "kind": "clean",
+    "path": "src/provider-contract-inventory.test.ts"
+  },
+  {
+    "id": "ghostget-79672147-violation",
+    "set": "calibration",
+    "repo": "ghostget",
+    "commit": "796721474ac7897a67fb56ef017a4b4306221853",
+    "kind": "violation",
+    "path": "src/canonical-json.test.ts",
+    "removed_line": 18,
+    "callback_line": 16
+  },
+  {
+    "id": "ghostget-f8469d96-near-miss",
+    "set": "calibration",
+    "repo": "ghostget",
+    "commit": "f8469d96f58e315076aec0c37bcc982b197dc4ae",
+    "kind": "near-miss",
+    "path": "src/model.test.ts",
+    "removed_line": 2575,
+    "callback_line": 2569
+  },
+  {
+    "id": "ghostget-28421daa-clean",
+    "set": "calibration",
+    "repo": "ghostget",
+    "commit": "28421daa1f5ec9a9dafbabe8ccff8c84ddb8b79c",
+    "kind": "clean",
+    "path": "src/provider-contract-inventory.test.ts"
+  },
+  {
+    "id": "wordcell-410ed95b-violation",
+    "set": "calibration",
+    "repo": "wordcell",
+    "commit": "410ed95b645572b0538e46d5ba9bdada67bdc7e3",
+    "kind": "violation",
+    "path": "src/clip/persist.test.ts",
+    "removed_line": 577,
+    "callback_line": 573
+  },
+  {
+    "id": "algal-97c989bb-near-miss",
+    "set": "calibration",
+    "repo": "algal",
+    "commit": "97c989bb79c4429b9c5fc2c7d2b7557cb5dbdb37",
+    "kind": "near-miss",
+    "path": "src/contract.test.ts",
+    "removed_line": 28,
+    "callback_line": 26
+  },
+  {
+    "id": "wordcell-926e2b97-clean",
+    "set": "calibration",
+    "repo": "wordcell",
+    "commit": "926e2b97bfff796e7fa85aaef213eaeac9f193d2",
+    "kind": "clean",
+    "path": "site/tests/runtime.test.ts"
+  },
+  {
+    "id": "wordcell-61c38212-violation",
+    "set": "calibration",
+    "repo": "wordcell",
+    "commit": "61c382126da4740add509da7d69f28992e9d9db9",
+    "kind": "violation",
+    "path": "src/clip/terminal.test.ts",
+    "removed_line": 28,
+    "callback_line": 27
+  },
+  {
+    "id": "spongev2-cd8ff745-near-miss",
+    "set": "calibration",
+    "repo": "spongev2",
+    "commit": "cd8ff745981c2d0294d7e6aaa934f7a350218faf",
+    "kind": "near-miss",
+    "path": "src/research/experimental/prompts.test.ts",
+    "removed_line": 151,
+    "callback_line": 149
+  },
+  {
+    "id": "spongev2-e6f0dc89-clean",
+    "set": "calibration",
+    "repo": "spongev2",
+    "commit": "e6f0dc8923ae53dce28b801403620069be687ef2",
+    "kind": "clean",
+    "path": "src/research/experimental/result-contracts.test.ts"
+  },
+  {
+    "id": "algal-9a968eda-violation",
+    "set": "calibration",
+    "repo": "algal",
+    "commit": "9a968edaf28ac1f6d34c885b08f4060362110587",
+    "kind": "violation",
+    "path": "src/credentials.test.ts",
+    "removed_line": 66,
+    "callback_line": 58
+  },
+  {
+    "id": "wordcell-08269807-near-miss",
+    "set": "calibration",
+    "repo": "wordcell",
+    "commit": "082698070da9dc778b12eec67dbcd76edf930d1b",
+    "kind": "near-miss",
+    "path": "src/clip/cli.test.ts",
+    "removed_line": 34,
+    "callback_line": 33
+  },
+  {
+    "id": "wordcell-3f251978-clean",
+    "set": "calibration",
+    "repo": "wordcell",
+    "commit": "3f2519788c38ae5cf70eac7f7912c8ae6ca9f404",
+    "kind": "clean",
+    "path": "src/evaluation-kb-v2.test.ts"
+  },
+  {
+    "id": "wordcell-2d6a17b5-violation",
+    "set": "calibration",
+    "repo": "wordcell",
+    "commit": "2d6a17b5d6d0311b8d9199692919da9e97e584ab",
+    "kind": "violation",
+    "path": "src/graph.test.ts",
+    "removed_line": 258,
+    "callback_line": 256
+  },
+  {
+    "id": "spongev2-04bf8201-near-miss",
+    "set": "calibration",
+    "repo": "spongev2",
+    "commit": "04bf820107f2ac4fd372da57c134935be6c9cfe1",
+    "kind": "near-miss",
+    "path": "src/research/experimental/evidence.test.ts",
+    "removed_line": 119,
+    "callback_line": 115
+  },
+  {
+    "id": "wordcell-0165b421-clean",
+    "set": "calibration",
+    "repo": "wordcell",
+    "commit": "0165b42113c7e82ae8ceb694c36409e0fb9211e8",
+    "kind": "clean",
+    "path": "src/portfolio-registry.test.ts"
+  },
+  {
+    "id": "spongev2-c007130f-violation",
+    "set": "calibration",
+    "repo": "spongev2",
+    "commit": "c007130fc8ef70c8de4a844ca30d86616cc36ed1",
+    "kind": "violation",
+    "path": "src/research/experimental/inference-boundary.test.ts",
+    "removed_line": 154,
+    "callback_line": 152
+  },
+  {
+    "id": "ghostget-85bc7955-near-miss",
+    "set": "calibration",
+    "repo": "ghostget",
+    "commit": "85bc7955ed59364e97783867bc9d4c7056ccb113",
+    "kind": "near-miss",
+    "path": "src/providers/linkedin-web.test.ts",
+    "removed_line": 124,
+    "callback_line": 123
+  },
+  {
+    "id": "ghostget-663b8cde-clean",
+    "set": "calibration",
+    "repo": "ghostget",
+    "commit": "663b8cdef30743f78b75d572aa788e58d667d248",
+    "kind": "clean",
+    "path": "src/providers/whatsapp-web-runtime.internal.test.ts"
+  },
+  {
+    "id": "spongev2-803d81d8-violation",
+    "set": "calibration",
+    "repo": "spongev2",
+    "commit": "803d81d8d98ca9f906f67d0f068a74369acbd1cb",
+    "kind": "violation",
+    "path": "src/research/experimental/closed-score.test.ts",
+    "removed_line": 424,
+    "callback_line": 421
+  },
+  {
+    "id": "ghostget-0ab5942f-near-miss",
+    "set": "calibration",
+    "repo": "ghostget",
+    "commit": "0ab5942fbe5e5a4cf3e9b86a4572cb2cab8ca0c9",
+    "kind": "near-miss",
+    "path": "website/marketing-preset.test.ts",
+    "removed_line": 12,
+    "callback_line": 10
+  },
+  {
+    "id": "ghostget-10069647-clean",
+    "set": "calibration",
+    "repo": "ghostget",
+    "commit": "100696477764d510e19d6a511d39ab7822b2ed19",
+    "kind": "clean",
+    "path": "src/contracts-shape.test.ts"
+  },
+  {
+    "id": "spongev2-1cc47899-violation",
+    "set": "calibration",
+    "repo": "spongev2",
+    "commit": "1cc4789942ab5e152a17f6a68081c05f2a88e931",
+    "kind": "violation",
+    "path": "src/menubar/menubar.test.ts",
+    "removed_line": 147,
+    "callback_line": 146
+  },
+  {
+    "id": "spongev2-1be978a1-near-miss",
+    "set": "calibration",
+    "repo": "spongev2",
+    "commit": "1be978a1d52da0fea02e85bbb6ea40c252b591bf",
+    "kind": "near-miss",
+    "path": "src/publication/edition.test.ts",
+    "removed_line": 155,
+    "callback_line": 150
+  },
+  {
+    "id": "ghostget-5349022d-clean",
+    "set": "calibration",
+    "repo": "ghostget",
+    "commit": "5349022d59e80d4037d4cf4e2c966c5f90a83011",
+    "kind": "clean",
+    "path": "src/args.test.ts"
+  },
+  {
+    "id": "spongev2-881a5f97-violation",
+    "set": "calibration",
+    "repo": "spongev2",
+    "commit": "881a5f971a9aaa55508d20122a026f8ac7a8003e",
+    "kind": "violation",
+    "path": "src/papers/identifiers.test.ts",
+    "removed_line": 56,
+    "callback_line": 54
+  },
+  {
+    "id": "wordcell-c90798cc-near-miss",
+    "set": "calibration",
+    "repo": "wordcell",
+    "commit": "c90798cc2967ddd67b0ada1fafcfdae561971c84",
+    "kind": "near-miss",
+    "path": "site/tests/source.test.ts",
+    "removed_line": 73,
+    "callback_line": 71
+  },
+  {
+    "id": "wordcell-9fec758d-clean",
+    "set": "calibration",
+    "repo": "wordcell",
+    "commit": "9fec758d6581780ab27bff971deaa75c5536312c",
+    "kind": "clean",
+    "path": "scripts/kb-skill-contract.test.ts"
+  },
+  {
+    "id": "wordcell-55b1830d-violation",
+    "set": "calibration",
+    "repo": "wordcell",
+    "commit": "55b1830de6a6f317e9bfcda8c6c98745e9617fbf",
+    "kind": "violation",
+    "path": "src/clip/capture.test.ts",
+    "removed_line": 376,
+    "callback_line": 374
+  },
+  {
+    "id": "ghostget-a8975a4d-near-miss",
+    "set": "calibration",
+    "repo": "ghostget",
+    "commit": "a8975a4d83b08b809ad6d318cd753c64586c3c7b",
+    "kind": "near-miss",
+    "path": "src/providers/x-web.test.ts",
+    "removed_line": 758,
+    "callback_line": 757
+  },
+  {
+    "id": "ghostget-4fde85b3-clean",
+    "set": "calibration",
+    "repo": "ghostget",
+    "commit": "4fde85b3f9044733637ef7bf4f75c107786be678",
+    "kind": "clean",
+    "path": "edge/negotiation.test.ts"
+  },
+  {
+    "id": "spongev2-63e40d83-violation",
+    "set": "calibration",
+    "repo": "spongev2",
+    "commit": "63e40d839ac40388c84fe7343e7249407946d197",
+    "kind": "violation",
+    "path": "src/tui/index.test.ts",
+    "removed_line": 15,
+    "callback_line": 14
+  },
+  {
+    "id": "wordcell-66ee9192-near-miss",
+    "set": "calibration",
+    "repo": "wordcell",
+    "commit": "66ee9192c7bcb6a770585edd1728bb6f4df0c906",
+    "kind": "near-miss",
+    "path": "scripts/npm-release-workflow.test.ts",
+    "removed_line": 49,
+    "callback_line": 48
+  },
+  {
+    "id": "ghostget-dafc8daf-clean",
+    "set": "calibration",
+    "repo": "ghostget",
+    "commit": "dafc8dafa9949dfb8eb6ba84735d280918094da6",
+    "kind": "clean",
+    "path": "src/providers/linkedin-web-contact.test.ts"
+  },
+  {
+    "id": "spongev2-4824395a-violation",
+    "set": "calibration",
+    "repo": "spongev2",
+    "commit": "4824395a053b3d7b0e60fcd7c416b3d6cf3e9b1a",
+    "kind": "violation",
+    "path": "src/papers/papers.test.ts",
+    "removed_line": 95,
+    "callback_line": 94
+  },
+  {
+    "id": "ghostget-4e2a56ad-near-miss",
+    "set": "calibration",
+    "repo": "ghostget",
+    "commit": "4e2a56ada454a083eefd6dcf144fd07a39c40ccf",
+    "kind": "near-miss",
+    "path": "src/media/transcriber-config.test.ts",
+    "removed_line": 520,
+    "callback_line": 510
+  },
+  {
+    "id": "wordcell-3487dfcd-clean",
+    "set": "calibration",
+    "repo": "wordcell",
+    "commit": "3487dfcdc157b70a9a82ce01f34ecb085b25cc7e",
+    "kind": "clean",
+    "path": "src/sdk.test.ts"
+  },
+  {
+    "id": "sys1-c0ab9a0c-violation",
+    "set": "heldout",
+    "repo": "sys1",
+    "commit": "c0ab9a0c902df5b0c0673be0d9b8bbfdfb3a9a02",
+    "kind": "violation",
+    "path": "test/local-engine.test.ts",
+    "removed_line": 120,
+    "callback_line": 118
+  },
+  {
+    "id": "sys1-c512329c-near-miss",
+    "set": "heldout",
+    "repo": "sys1",
+    "commit": "c512329c2ef92835152db01ebe10623f88d56aef",
+    "kind": "near-miss",
+    "path": "test/review-install.test.ts",
+    "removed_line": 49,
+    "callback_line": 44
+  },
+  {
+    "id": "peopleblade-c44406b2-clean",
+    "set": "heldout",
+    "repo": "peopleblade",
+    "commit": "c44406b26f97d413bdaeacea397f39a227797c99",
+    "kind": "clean",
+    "path": "src/lib/server/cloud-database.test.ts"
+  },
+  {
+    "id": "sys1-38defa67-violation",
+    "set": "heldout",
+    "repo": "sys1",
+    "commit": "38defa672755eb652fd99b21e44631d934c102fb",
+    "kind": "violation",
+    "path": "test/gateway.test.ts",
+    "removed_line": 121,
+    "callback_line": 117
+  },
+  {
+    "id": "design-kit-d247e0e8-near-miss",
+    "set": "heldout",
+    "repo": "design-kit",
+    "commit": "d247e0e8826efcddf35ec1c30f6caf52163ea74b",
+    "kind": "near-miss",
+    "path": "src/public-boundary.test.ts",
+    "removed_line": 126,
+    "callback_line": 120
+  },
+  {
+    "id": "wrench-e8f972ef-clean",
+    "set": "heldout",
+    "repo": "wrench",
+    "commit": "e8f972efb8ca5d9a7eb3307afe0d506779882140",
+    "kind": "clean",
+    "path": "scripts/ci-pr-gate.test.ts"
+  },
+  {
+    "id": "peopleblade-d6b67124-violation",
+    "set": "heldout",
+    "repo": "peopleblade",
+    "commit": "d6b67124760ebc32833899683131b2ef56359759",
+    "kind": "violation",
+    "path": "src/local/exposure-plan.test.ts",
+    "removed_line": 166,
+    "callback_line": 163
+  },
+  {
+    "id": "design-kit-4c2c84b3-near-miss",
+    "set": "heldout",
+    "repo": "design-kit",
+    "commit": "4c2c84b35f8e55b787a24f408d5b54579adf54ec",
+    "kind": "near-miss",
+    "path": "src/react/design-palette.test.tsx",
+    "removed_line": 28,
+    "callback_line": 26
+  },
+  {
+    "id": "design-kit-7167cddd-clean",
+    "set": "heldout",
+    "repo": "design-kit",
+    "commit": "7167cddde0dc023a632b7536b71c43e4d9ac6c34",
+    "kind": "clean",
+    "path": "src/plain-publication.test.ts"
+  },
+  {
+    "id": "design-kit-a89034f4-violation",
+    "set": "heldout",
+    "repo": "design-kit",
+    "commit": "a89034f457cfe2a09297610c74a8ce9d82ae8a5a",
+    "kind": "violation",
+    "path": "src/react/product-marketing.test.tsx",
+    "removed_line": 496,
+    "callback_line": 494
+  },
+  {
+    "id": "algal-lab-05729432-near-miss",
+    "set": "heldout",
+    "repo": "algal-lab",
+    "commit": "05729432afad6a71c445d26bddbbc68069f1c078",
+    "kind": "near-miss",
+    "path": "src/artifacts.test.ts",
+    "removed_line": 27,
+    "callback_line": 23
+  },
+  {
+    "id": "design-kit-655bdb6d-clean",
+    "set": "heldout",
+    "repo": "design-kit",
+    "commit": "655bdb6d84ca69a419a3906efc6a03e1b19396ca",
+    "kind": "clean",
+    "path": "src/react/product-marketing.test.tsx"
+  },
+  {
+    "id": "peopleblade-f010c502-violation",
+    "set": "heldout",
+    "repo": "peopleblade",
+    "commit": "f010c5025c2454e3a2d1be06d83921f5f9d163b5",
+    "kind": "violation",
+    "path": "src/lib/server/passwordless-readiness.test.ts",
+    "removed_line": 134,
+    "callback_line": 132
+  },
+  {
+    "id": "design-kit-c7d8300a-near-miss",
+    "set": "heldout",
+    "repo": "design-kit",
+    "commit": "c7d8300abc5217355e88736547f1d2f2ae6521bc",
+    "kind": "near-miss",
+    "path": "src/public-boundary.test.ts",
+    "removed_line": 143,
+    "callback_line": 137
+  },
+  {
+    "id": "peopleblade-6e68ec68-clean",
+    "set": "heldout",
+    "repo": "peopleblade",
+    "commit": "6e68ec687da84ea35272ea383c7c36ae99e71a93",
+    "kind": "clean",
+    "path": "src/lib/contracts.test.ts"
+  },
+  {
+    "id": "sys1-09b3ad5c-violation",
+    "set": "heldout",
+    "repo": "sys1",
+    "commit": "09b3ad5cc5200bdbbb33ac8662074d90578131af",
+    "kind": "violation",
+    "path": "test/gateway.test.ts",
+    "removed_line": 128,
+    "callback_line": 123
+  },
+  {
+    "id": "sys1-cd222957-near-miss",
+    "set": "heldout",
+    "repo": "sys1",
+    "commit": "cd2229571fc0d161bc2e9a28a93b622ee3c6c6e3",
+    "kind": "near-miss",
+    "path": "test/gateway.test.ts",
+    "removed_line": 103,
+    "callback_line": 100
+  },
+  {
+    "id": "peopleblade-13520e05-clean",
+    "set": "heldout",
+    "repo": "peopleblade",
+    "commit": "13520e0553891e49db726035788a1ff80ee1321d",
+    "kind": "clean",
+    "path": "src/lib/server/admin-migration-schema.test.ts"
+  },
+  {
+    "id": "design-kit-15d8b310-violation",
+    "set": "heldout",
+    "repo": "design-kit",
+    "commit": "15d8b310ce1c8304bdeeed51a1244d35797a0065",
+    "kind": "violation",
+    "path": "src/article.test.ts",
+    "removed_line": 254,
+    "callback_line": 253
+  },
+  {
+    "id": "design-kit-26258f1a-near-miss",
+    "set": "heldout",
+    "repo": "design-kit",
+    "commit": "26258f1a68f3f7c67b2d0b76c60b90cd0f7e4474",
+    "kind": "near-miss",
+    "path": "src/react/appearance.test.tsx",
+    "removed_line": 52,
+    "callback_line": 51
+  },
+  {
+    "id": "design-kit-999dfffd-clean",
+    "set": "heldout",
+    "repo": "design-kit",
+    "commit": "999dfffd2f794cd85a73488e3ea2018dcafb60cd",
+    "kind": "clean",
+    "path": "src/react/appearance.test.tsx"
+  },
+  {
+    "id": "algal-lab-5d122c95-violation",
+    "set": "heldout",
+    "repo": "algal-lab",
+    "commit": "5d122c95a4c4fdfe254e3fae090d6378f3eb03da",
+    "kind": "violation",
+    "path": "src/study.test.ts",
+    "removed_line": 97,
+    "callback_line": 91
+  },
+  {
+    "id": "peopleblade-7f0fce36-near-miss",
+    "set": "heldout",
+    "repo": "peopleblade",
+    "commit": "7f0fce3639b2bf576f4d93c4de23ae1ce72ff244",
+    "kind": "near-miss",
+    "path": "src/lib/contracts.test.ts",
+    "removed_line": 1597,
+    "callback_line": 1595
+  },
+  {
+    "id": "design-kit-15b07960-clean",
+    "set": "heldout",
+    "repo": "design-kit",
+    "commit": "15b07960a515920a478a44130ded2e63da0e1331",
+    "kind": "clean",
+    "path": "src/product-marketing.test.ts"
+  },
+  {
+    "id": "sys1-b9e423db-violation",
+    "set": "heldout",
+    "repo": "sys1",
+    "commit": "b9e423dbb425e8dc5f09cafa44294cd0b72058c6",
+    "kind": "violation",
+    "path": "test/gateway.test.ts",
+    "removed_line": 132,
+    "callback_line": 127
+  },
+  {
+    "id": "peopleblade-26736619-near-miss",
+    "set": "heldout",
+    "repo": "peopleblade",
+    "commit": "26736619dffd47e451d9f1ecc88abda3a54d4c21",
+    "kind": "near-miss",
+    "path": "src/lib/site/handlers.test.ts",
+    "removed_line": 42,
+    "callback_line": 40
+  },
+  {
+    "id": "peopleblade-631de298-clean",
+    "set": "heldout",
+    "repo": "peopleblade",
+    "commit": "631de29887b8e55ba1245cd9733228ae06c9aeea",
+    "kind": "clean",
+    "path": "src/local/migration-compatibility.test.ts"
+  },
+  {
+    "id": "design-kit-eddbed1d-violation",
+    "set": "heldout",
+    "repo": "design-kit",
+    "commit": "eddbed1d29befd4fc922d1a78daa3fe137fdfd2b",
+    "kind": "violation",
+    "path": "src/browser/foil.test.ts",
+    "removed_line": 196,
+    "callback_line": 190
+  },
+  {
+    "id": "design-kit-a07fb139-near-miss",
+    "set": "heldout",
+    "repo": "design-kit",
+    "commit": "a07fb13926e277c2df0e9d02c182931780ded74f",
+    "kind": "near-miss",
+    "path": "src/react/appearance.test.tsx",
+    "removed_line": 51,
+    "callback_line": 49
+  },
+  {
+    "id": "peopleblade-f4e3b42b-clean",
+    "set": "heldout",
+    "repo": "peopleblade",
+    "commit": "f4e3b42b73cecfab83d78b6a9faef735aff9a026",
+    "kind": "clean",
+    "path": "src/local/migration-compatibility.test.ts"
+  },
+  {
+    "id": "sys1-83475465-violation",
+    "set": "heldout",
+    "repo": "sys1",
+    "commit": "834754657d8cf71285d4d3d8c68b132551cfd451",
+    "kind": "violation",
+    "path": "test/local-engine.test.ts",
+    "removed_line": 126,
+    "callback_line": 123
+  },
+  {
+    "id": "peopleblade-9a940449-near-miss",
+    "set": "heldout",
+    "repo": "peopleblade",
+    "commit": "9a9404492efd55a194e9c8f27347e1be6aa7fde8",
+    "kind": "near-miss",
+    "path": "src/lib/site/pages.test.ts",
+    "removed_line": 258,
+    "callback_line": 256
+  },
+  {
+    "id": "design-kit-4e2c6345-clean",
+    "set": "heldout",
+    "repo": "design-kit",
+    "commit": "4e2c63450943af2acd02494c47220669e4309d48",
+    "kind": "clean",
+    "path": "src/react/design-gallery.test.tsx"
+  },
+  {
+    "id": "sys1-e153df3a-violation",
+    "set": "heldout",
+    "repo": "sys1",
+    "commit": "e153df3ad2aeb5549c0eb8859466f069bc9c5931",
+    "kind": "violation",
+    "path": "test/verify.test.ts",
+    "removed_line": 74,
+    "callback_line": 72
+  },
+  {
+    "id": "peopleblade-9ed4cbb7-near-miss",
+    "set": "heldout",
+    "repo": "peopleblade",
+    "commit": "9ed4cbb78037cb34e676719d42fe58bcb5bbc5ba",
+    "kind": "near-miss",
+    "path": "src/lib/server/enrichment.test.ts",
+    "removed_line": 878,
+    "callback_line": 877
+  },
+  {
+    "id": "peopleblade-4d5b2a88-clean",
+    "set": "heldout",
+    "repo": "peopleblade",
+    "commit": "4d5b2a8849491ec3e708d1cebec005d73b34c934",
+    "kind": "clean",
+    "path": "src/local/cloud-client.test.ts"
+  },
+  {
+    "id": "algal-lab-9e94d41c-violation",
+    "set": "heldout",
+    "repo": "algal-lab",
+    "commit": "9e94d41cb2977ea28b482ccacc9f51115341c558",
+    "kind": "violation",
+    "path": "src/heterogeneous.test.ts",
+    "removed_line": 87,
+    "callback_line": 77
+  },
+  {
+    "id": "peopleblade-9f6dfcb0-near-miss",
+    "set": "heldout",
+    "repo": "peopleblade",
+    "commit": "9f6dfcb05c864645b91e018bf78bf1c2f64a3a65",
+    "kind": "near-miss",
+    "path": "scripts/production-control.test.ts",
+    "removed_line": 54,
+    "callback_line": 53
+  },
+  {
+    "id": "sys1-13e3328e-clean",
+    "set": "heldout",
+    "repo": "sys1",
+    "commit": "13e3328ef6b394e20db9a3e030f3d688bb0f9c77",
+    "kind": "clean",
+    "path": "test/local-store.test.ts"
+  },
+  {
+    "id": "peopleblade-29d4d566-violation",
+    "set": "heldout",
+    "repo": "peopleblade",
+    "commit": "29d4d5663dd63c646d7756a1fa4bc09ef03188ff",
+    "kind": "violation",
+    "path": "src/local/migration-compatibility.test.ts",
+    "removed_line": 357,
+    "callback_line": 356
+  },
+  {
+    "id": "peopleblade-cca51d44-near-miss",
+    "set": "heldout",
+    "repo": "peopleblade",
+    "commit": "cca51d44bb863977397438f21115289ac2b7fdd4",
+    "kind": "near-miss",
+    "path": "src/lib/site/pages.test.ts",
+    "removed_line": 321,
+    "callback_line": 320
+  },
+  {
+    "id": "design-kit-73972e33-clean",
+    "set": "heldout",
+    "repo": "design-kit",
+    "commit": "73972e336ff1fbb58744d657e46aa7802b64cb8f",
+    "kind": "clean",
+    "path": "src/react/foil-card-surface.client.test.tsx"
+  },
+  {
+    "id": "sys1-67197a91-violation",
+    "set": "heldout",
+    "repo": "sys1",
+    "commit": "67197a91118e892c0545a0fe25f23705c6bb9be7",
+    "kind": "violation",
+    "path": "test/config.test.ts",
+    "removed_line": 59,
+    "callback_line": 55
+  },
+  {
+    "id": "peopleblade-07f6eeb3-near-miss",
+    "set": "heldout",
+    "repo": "peopleblade",
+    "commit": "07f6eeb301e93320e42fc7211c31121c90120776",
+    "kind": "near-miss",
+    "path": "src/lib/site/pages.test.ts",
+    "removed_line": 458,
+    "callback_line": 456
+  },
+  {
+    "id": "peopleblade-0a11af31-clean",
+    "set": "heldout",
+    "repo": "peopleblade",
+    "commit": "0a11af31a9c5dc998d06fa8679c6fd6e1ad7f829",
+    "kind": "clean",
+    "path": "src/local/migration-compatibility.test.ts"
+  },
+  {
+    "id": "sys1-696a40c0-violation",
+    "set": "heldout",
+    "repo": "sys1",
+    "commit": "696a40c00b690d6e10057623c70427d3df008a09",
+    "kind": "violation",
+    "path": "test/audit-detectors.test.ts",
+    "removed_line": 14,
+    "callback_line": 13
+  },
+  {
+    "id": "peopleblade-d8dfd59f-near-miss",
+    "set": "heldout",
+    "repo": "peopleblade",
+    "commit": "d8dfd59f708c6da383f20e3a041233730d8a1a38",
+    "kind": "near-miss",
+    "path": "src/lib/site/pages.test.ts",
+    "removed_line": 549,
+    "callback_line": 547
+  },
+  {
+    "id": "peopleblade-5e9a338b-clean",
+    "set": "heldout",
+    "repo": "peopleblade",
+    "commit": "5e9a338b2e10b36c71f630ae442f95621b8e268e",
+    "kind": "clean",
+    "path": "src/lib/server/enrichment.test.ts"
+  },
+  {
+    "id": "sys1-3960a9be-violation",
+    "set": "heldout",
+    "repo": "sys1",
+    "commit": "3960a9be66ec531748b05b4e5ffb60e2d98c4a12",
+    "kind": "violation",
+    "path": "test/gateway.test.ts",
+    "removed_line": 158,
+    "callback_line": 155
+  },
+  {
+    "id": "design-kit-76058d43-near-miss",
+    "set": "heldout",
+    "repo": "design-kit",
+    "commit": "76058d431d7e30c6dbcb3d9fa58c28f182fcfa61",
+    "kind": "near-miss",
+    "path": "src/react/design-gallery.test.tsx",
+    "removed_line": 166,
+    "callback_line": 163
+  },
+  {
+    "id": "peopleblade-e8281dc5-clean",
+    "set": "heldout",
+    "repo": "peopleblade",
+    "commit": "e8281dc5283af4a619bc0a7adc891f32bafceca4",
+    "kind": "clean",
+    "path": "src/app/suite-auth-boundary.test.ts"
+  },
+  {
+    "id": "algal-lab-07423984-violation",
+    "set": "heldout",
+    "repo": "algal-lab",
+    "commit": "07423984eecd8c4672f90addf2ec99bdbedb051a",
+    "kind": "violation",
+    "path": "src/contracts.test.ts",
+    "removed_line": 57,
+    "callback_line": 56
+  },
+  {
+    "id": "peopleblade-9a5d859e-near-miss",
+    "set": "heldout",
+    "repo": "peopleblade",
+    "commit": "9a5d859e7d37d8373bb23212256805dd2fccc67b",
+    "kind": "near-miss",
+    "path": "scripts/run-cloud-backup-bridge.test.ts",
+    "removed_line": 439,
+    "callback_line": 437
+  },
+  {
+    "id": "peopleblade-2a33cf9b-clean",
+    "set": "heldout",
+    "repo": "peopleblade",
+    "commit": "2a33cf9bbe0c5398285a685abf49bbc782b872ea",
+    "kind": "clean",
+    "path": "src/local/cloud-client.test.ts"
+  },
+  {
+    "id": "sys1-3fa98af5-violation",
+    "set": "heldout",
+    "repo": "sys1",
+    "commit": "3fa98af5f2ad491fb108d33bc126d7ca31b26e9a",
+    "kind": "violation",
+    "path": "test/protocol.test.ts",
+    "removed_line": 14,
+    "callback_line": 12
+  },
+  {
+    "id": "design-kit-6b640b4e-near-miss",
+    "set": "heldout",
+    "repo": "design-kit",
+    "commit": "6b640b4e61929d74882ced513908aea9c56ce19f",
+    "kind": "near-miss",
+    "path": "src/react/appearance.test.tsx",
+    "removed_line": 152,
+    "callback_line": 149
+  },
+  {
+    "id": "design-kit-b24c966f-clean",
+    "set": "heldout",
+    "repo": "design-kit",
+    "commit": "b24c966f73d142d13e129c247c0e0aed2db88615",
+    "kind": "clean",
+    "path": "src/react/design-gallery.test.tsx"
+  },
+  {
+    "id": "peopleblade-82fc7f84-violation",
+    "set": "heldout",
+    "repo": "peopleblade",
+    "commit": "82fc7f84befdb5d1a1479e1a977d4539e63de176",
+    "kind": "violation",
+    "path": "src/local/exposure-adapters.test.ts",
+    "removed_line": 374,
+    "callback_line": 371
+  },
+  {
+    "id": "peopleblade-e0281313-near-miss",
+    "set": "heldout",
+    "repo": "peopleblade",
+    "commit": "e0281313584f646102ba2c6e8a9f9f2032635e75",
+    "kind": "near-miss",
+    "path": "src/cli/main.test.ts",
+    "removed_line": 17,
+    "callback_line": 12
+  },
+  {
+    "id": "design-kit-322411bc-clean",
+    "set": "heldout",
+    "repo": "design-kit",
+    "commit": "322411bcca64ec81a84bb1fd0fefacd052c76de8",
+    "kind": "clean",
+    "path": "src/react/design-gallery.test.tsx"
+  },
+  {
+    "id": "design-kit-230d3fbf-violation",
+    "set": "heldout",
+    "repo": "design-kit",
+    "commit": "230d3fbf3eaeeb1449de0f367db7d9efba50464a",
+    "kind": "violation",
+    "path": "src/status-page.test.ts",
+    "removed_line": 66,
+    "callback_line": 64
+  },
+  {
+    "id": "design-kit-9d803f77-near-miss",
+    "set": "heldout",
+    "repo": "design-kit",
+    "commit": "9d803f77efd23aaba3edfb7d1b89f9d821606542",
+    "kind": "near-miss",
+    "path": "src/css-parity.test.ts",
+    "removed_line": 102,
+    "callback_line": 101
+  },
+  {
+    "id": "peopleblade-22e2bb4c-clean",
+    "set": "heldout",
+    "repo": "peopleblade",
+    "commit": "22e2bb4c6c75aab83a53e8bc6dcbb6af1671efe7",
+    "kind": "clean",
+    "path": "src/local/ensoul-vendor.test.ts"
+  }
+]

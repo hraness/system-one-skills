@@ -37,11 +37,11 @@ must be measured. A missing measurement is an evidence gap, not zero cost or an
 implied benefit. No research candidate currently has demonstrated task-level
 token, reliability, or speed improvements.
 
-The three-log development result uses `o200k_base`, not provider billing. Those three logs are successful Devin checks; 21 short examples would cost more if the skill were invoked. The newer [failure audit](FAILURE-EVIDENCE.md) adds one separate Devin example. There are no qualifying noisy Codex or Claude replay samples in the current windows. Read the [per-case results and limitations](METRICS.md) before applying the result to another task.
+The earlier three-log development result uses `o200k_base`, not provider billing. Those three logs are successful Devin checks; 21 short examples would cost more if the skill were invoked. The separate [failure audit](FAILURE-EVIDENCE.md) adds one Devin example. Those earlier development windows yielded no qualifying noisy Codex or Claude replay samples; the broader replay summarized above includes Codex. The [per-case results and limitations](METRICS.md) retain the original development measurements.
 
 The separate [runtime measurement](RUNTIME-EVIDENCE.md) used seven synthetic fixtures shaped by public transcript sizes, not the historical project commands: **140 measured pairs and 14 excluded warmup pairs** on macOS arm64 with Node 24.20.0. Median wrapper overhead was **41.82 ms**, with **48.37 ms p95**. Every measured/warmup pair preserved exit, full log and single execution; the runtime suite passed 25 tests and 125 assertions. These checks establish their specific contracts, not better agent reliability. The added local cost is not a measured task speedup, and the shared-host timing is not a performance guarantee.
 
-## What the real transcripts show
+## What the earlier discovery cohorts show
 
 The two disjoint cohorts cover September 12–19, 2026, ending at 14:00 UTC on September 19. They contain **7,807 observed model-visible calls** from one consenting developer: **229 Codex, 32 Claude Code, and 7,546 Devin CLI**. These are observed retained records, not a representative agent benchmark. Empty categories mean no records matched the analyzer in this corpus, not that the agent never does that work.
 

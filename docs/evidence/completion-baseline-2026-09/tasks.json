@@ -1,0 +1,377 @@
+[
+  {
+    "id": "algal-319b2353",
+    "cluster": "algal-319b2353",
+    "repo": "~/.cache/sys1-bench/completion-snap/algal-319b2353",
+    "source": "algal",
+    "commit": "319b2353f560eef51e932c6dddd049c230626f0d",
+    "test_command": "bun run test",
+    "hidden_tests": [
+      "src/run.test.ts",
+      "src/transport.test.ts"
+    ],
+    "prompt": "Task for this repository:\n\nbudget.maxEffectMs + httpTransport + gate example (#19)\n\nEffect cells may bound each call wall-clock: budget.maxEffectMs (≤10min)\nraces executor.execute against an AbortSignal — expiry records a\nBUDGET_EXHAUSTED effect error, so a hung executor is a routable failure\n(retry re-issues, on:\"fail\" catches) instead of a hung run. commandExecutor\nkills its child on abort. Receipts record the error, never the clock —\nreplay reproduces timeouts bit-for-bit.\n\nTransports go remote for real: --transports entries may be http(s) base\nURLs serving <hex>.bundle.json files; httpTransport fetches with a bounded\ntimeout and byte cap, and install still rehashes every claimed digest.\nThe digest remains the only authentication — the wire can only deliver\nwhat the manifest already named.\n\nNew `approve` example: a gate cell's decision is a required, guard-fed\ninput — the merge branch only activates on \"approve\". First suite example\nexercising gate cells end to end.\n\nImplement this change, including tests. When you are finished, commit your work and push it to origin,\nthen reply with a short summary of what you did."
+  },
+  {
+    "id": "algal-a31a555b",
+    "cluster": "algal-a31a555b",
+    "repo": "~/.cache/sys1-bench/completion-snap/algal-a31a555b",
+    "source": "algal",
+    "commit": "a31a555b32df18a03409912cabba3ad0c20388f8",
+    "test_command": "bun run test",
+    "hidden_tests": [
+      "src/run.test.ts"
+    ],
+    "prompt": "Task for this repository:\n\nAttribute per-cell work and add a receipt diff command (#11)\n\nCell records carried a work field that was always zero — the ledger was\nglobal only. Now each committed cell records the units its activation\nactually spent (activation cost, fn cost, effect bytes; a whole subtree's\nunits for organism/repeat/each), and verify diffs work, rounds, and items\nper cell alongside the existing canonical comparison.\n\nmorphogen diff <a> <b> compares two receipts canonically and reports\nwhich cells diverged — status, outputs, work — plus effect and ledger\ndeltas. That makes the README's \"replay, diff, audit\" claim literal.\n\nAlso proves repeat and each compose: a repeat round body containing an\neach cell records votes under loop/r<n>/votes/i<m>/ and flattens\nmany->many inside the nested scope.\n\nImplement this change, including tests. When you are finished, commit your work and push it to origin,\nthen reply with a short summary of what you did."
+  },
+  {
+    "id": "algal-8ae09445",
+    "cluster": "algal-8ae09445",
+    "repo": "~/.cache/sys1-bench/completion-snap/algal-8ae09445",
+    "source": "algal",
+    "commit": "8ae09445df12fbfd23dda387b89d7bd09be6e6d2",
+    "test_command": "bun run test",
+    "hidden_tests": [
+      "src/run.test.ts"
+    ],
+    "prompt": "Task for this repository:\n\nAdd many input ports for fan-in (#9)\n\nAn input port declared \"many\": true accepts multiple edges and collects\nevery delivered value in manifest edge order into a list. Guards compose:\na guarded edge into a many port contributes only when it fires, which is\nconditional fan-in as structure — reviewers on a panel, votes under a\nquorum, branches converging on a synthesizer.\n\nmany is valid on consumer ports only (agent/classifier/gate inputs and\nregistry signature inputs); a required many port needs at least one\ndelivery or the cell skips, an optional one arrives as []. Includes a new\njoin.v1 builtin and the panel example (three reviewers -> one synth).\n\nImplement this change, including tests. When you are finished, commit your work and push it to origin,\nthen reply with a short summary of what you did."
+  },
+  {
+    "id": "algal-1f946e7c",
+    "cluster": "algal-1f946e7c",
+    "repo": "~/.cache/sys1-bench/completion-snap/algal-1f946e7c",
+    "source": "algal",
+    "commit": "1f946e7cded13fb4b83ee4821f4f9e3dca214f58",
+    "test_command": "bun run test",
+    "hidden_tests": [
+      "src/run.test.ts"
+    ],
+    "prompt": "Task for this repository:\n\nAdd each cells for bounded fan-out over lists (#10)\n\nAn each cell maps a delivered list through a digest-embedded\nsub-manifest: over names the interface input that binds each element, and\nevery interface output collects into a list port recorded under\nmap/i<n>/ paths. A many producer feeding a many consumer flattens\nelement-wise; feeding a scalar consumer it binds only when the consumer\nis json. Element values check against the inner input's declared type,\nand a list longer than maxItems fails closed.\n\nWith repeat (iterate) and many (fan-in) already landed, each completes\nthe trio: broadcast, compute, collect — map-reduce and panel/swarm\npatterns expressible as pure graph structure. Includes the swarm example\n(a question list mapped through a researcher sub-manifest into join.v1).\n\nImplement this change, including tests. When you are finished, commit your work and push it to origin,\nthen reply with a short summary of what you did."
+  },
+  {
+    "id": "algal-086013f5",
+    "cluster": "algal-086013f5",
+    "repo": "~/.cache/sys1-bench/completion-snap/algal-086013f5",
+    "source": "algal",
+    "commit": "086013f57658450785230e22f899fd735b024e99",
+    "test_command": "bun run test",
+    "hidden_tests": [
+      "src/foundry.test.ts"
+    ],
+    "prompt": "Task for this repository:\n\nAdd bounded evolutionary organism search.\n\nImplement this change, including tests. When you are finished, commit your work and push it to origin,\nthen reply with a short summary of what you did."
+  },
+  {
+    "id": "algal-07caea33",
+    "cluster": "algal-07caea33",
+    "repo": "~/.cache/sys1-bench/completion-snap/algal-07caea33",
+    "source": "algal",
+    "commit": "07caea332025dbe1da48284b17887eae3275c2a9",
+    "test_command": "bun run test",
+    "hidden_tests": [
+      "src/contract.test.ts",
+      "src/run.test.ts"
+    ],
+    "prompt": "Task for this repository:\n\nview.cells port slices + morphogen explain (#12)\n\nAn agent's context view can now select which of an ancestor's output\nports enter the request — {\"cell\":\"prep\",\"ports\":[\"value\"]} — so a\nproducer's secret output never reaches a consumer that doesn't need it.\nBare string entries keep working and serialize back as strings.\n\nAdmission rejects sliced ports the ancestor doesn't declare, alongside\nthe existing unknown-cell and non-ancestor checks. The slice applies at\nrequest construction, so the filtered bytes are what the digest signs.\n\nAlso adds `morphogen explain`: print a manifest's compiled signature\n(resolved ports including inherited organism/repeat/each signatures,\nguards on edges) — what an author needs to check a graph before running.\n\nImplement this change, including tests. When you are finished, commit your work and push it to origin,\nthen reply with a short summary of what you did."
+  },
+  {
+    "id": "algal-a89df5e2",
+    "cluster": "algal-a89df5e2",
+    "repo": "~/.cache/sys1-bench/completion-snap/algal-a89df5e2",
+    "source": "algal",
+    "commit": "a89df5e2a86cfef2ec878bb49a5aeaa5b31c289d",
+    "test_command": "bun run test",
+    "hidden_tests": [
+      "src/contract.test.ts",
+      "src/run.test.ts"
+    ],
+    "prompt": "Task for this repository:\n\nspawn cells: admit and run a manifest delivered as data (#22)\n\nAn upstream cell (typically an agent emitting json) produces an organism\nmanifest on the manifest port; spawn parses it through the ordinary\ncontract, admits it to the store, compiles it, and runs it as a nested\norganism under the spawn path. args maps interface inputs; data emits\nthe interface outputs; digest emits the admitted manifest's sha256 as\nprovenance.\n\nGenerated manifests are data, never code — they resolve against the host\nregistry and executors, inherit root budgets and depth (each nesting\nlevel consumes one depth step), and replay deterministically since the\nmanifest rides an edge and putManifest is idempotent. Invalid manifests\nfail through normal contract errors, routable via on:fail.\n\nbreed example: an agent emits an echo-organism manifest; spawn admits\nand runs it; the child's output surfaces through data.\n\nImplement this change, including tests. When you are finished, commit your work and push it to origin,\nthen reply with a short summary of what you did."
+  },
+  {
+    "id": "algal-b54b5129",
+    "cluster": "algal-b54b5129",
+    "repo": "~/.cache/sys1-bench/completion-snap/algal-b54b5129",
+    "source": "algal",
+    "commit": "b54b5129844637eed59713ca0419a01ee035ec6c",
+    "test_command": "bun run test",
+    "hidden_tests": [
+      "src/decisions.test.ts",
+      "src/gateway.test.ts",
+      "src/run.test.ts",
+      "src/semantic.test.ts"
+    ],
+    "prompt": "Task for this repository:\n\nRoute effects through host-admitted executor capabilities (#11)\n\nExecutors now declare which effect kinds they serve and the scheduler\nselects only compatible backends. Model executors admit agent and\nclassifier; decision executors admit classifier and decide; index\nexecutors admit recall; gate approval requires an executor the host\nexplicitly admitted for it. Undeclared executors default to the\nmodel-generation kinds, so a legacy adapter never silently gains\napproval, decision, or index authority.\n\nSelection fails closed in both directions: a named route that cannot\nserve the kind records an EFFECT_UNBOUND effect rather than falling\nback, and an unrouted request skips incompatible executors entirely.\nScripted fixtures are route wildcards — they simulate any named route\nso manifests stay exercisable under deterministic tests — while live\nexecutors never wildcard. Replay resolves by request digest before\ncapability selection, keeping offline verification independent of\nwhich executors the host currently admits.\n\nThe native host mirrors the same matrix, including the scripted\nwildcard distinction, and the spec documents effect kinds as the\nfirst capability classes.\n\nImplement this change, including tests. When you are finished, commit your work and push it to origin,\nthen reply with a short summary of what you did."
+  },
+  {
+    "id": "algal-43c9dcf9",
+    "cluster": "algal-43c9dcf9",
+    "repo": "~/.cache/sys1-bench/completion-snap/algal-43c9dcf9",
+    "source": "algal",
+    "commit": "43c9dcf9bb1dfaab39949903e109bd20e66823c8",
+    "test_command": "bun run test",
+    "hidden_tests": [
+      "src/foundry.test.ts"
+    ],
+    "prompt": "Task for this repository:\n\nsearch-verify: propagate scorer into per-generation synthesis\n\nverifySearchReport rebuilt each generation as a synthetic foundry report\nbut dropped the config scorer, so pass claims were re-checked under\nexact-match and every scored search report failed verification. Source\nthe scorer from the final foundry report, which records it.\n\nImplement this change, including tests. When you are finished, commit your work and push it to origin,\nthen reply with a short summary of what you did."
+  },
+  {
+    "id": "algal-7cdae37e",
+    "cluster": "algal-7cdae37e",
+    "repo": "~/.cache/sys1-bench/completion-snap/algal-7cdae37e",
+    "source": "algal",
+    "commit": "7cdae37e8ba25243904d6f2f7b7f84ffc927d288",
+    "test_command": "bun run test",
+    "hidden_tests": [
+      "src/run.test.ts"
+    ],
+    "prompt": "Task for this repository:\n\nAdd gate cells and the executor protocol doc (#7)\n\nA gate is an approval point: a choice-typed effect request carrying\nkind:\"gate\" so executors route it to a human or a policy check rather\nthan a model. No tools or shadow — approval is a boundary, not work.\ndocs/executors.md documents the morphogen.effect.v1 wire contract:\nstdin/stdout shape, tool-call loop, route-based executor selection.\n\nImplement this change, including tests. When you are finished, commit your work and push it to origin,\nthen reply with a short summary of what you did."
+  },
+  {
+    "id": "algal-d09e1335",
+    "cluster": "algal-d09e1335",
+    "repo": "~/.cache/sys1-bench/completion-snap/algal-d09e1335",
+    "source": "algal",
+    "commit": "d09e133519909707a4d026f0962f4e53224e7f2f",
+    "test_command": "bun run test",
+    "hidden_tests": [
+      "src/run.test.ts"
+    ],
+    "prompt": "Task for this repository:\n\nconsent + catalog: gates inside generated programs, durable lineage (#26)\n\nconsent: a spawned manifest declares its own gate — deny skips the\nchild's effectful cell entirely (the effect never fires), and the\nverdict surfaces through data. Consent is structure inside the\ngenerated program, not a prompt instruction.\n\ncatalog: push.v1 appends each run's swarm.child digests into a durable\nbred slot — a breeding journal that accumulates across runs, replayable\nbecause slot reads record on the receipt.\n\nImplement this change, including tests. When you are finished, commit your work and push it to origin,\nthen reply with a short summary of what you did."
+  },
+  {
+    "id": "algal-9a968eda",
+    "cluster": "algal-9a968eda",
+    "repo": "~/.cache/sys1-bench/completion-snap/algal-9a968eda",
+    "source": "algal",
+    "commit": "9a968edaf28ac1f6d34c885b08f4060362110587",
+    "test_command": "bun run test",
+    "hidden_tests": [
+      "src/credentials.test.ts",
+      "src/github-cli.test.ts",
+      "src/io.test.ts"
+    ],
+    "prompt": "Task for this repository:\n\nAwait all subprocess stdin promises and clarify recovery guarantees\n\nImplement this change, including tests. When you are finished, commit your work and push it to origin,\nthen reply with a short summary of what you did."
+  },
+  {
+    "id": "wordcell-a3b44090",
+    "cluster": "wordcell-a3b44090",
+    "repo": "~/.cache/sys1-bench/completion-snap/wordcell-a3b44090",
+    "source": "wordcell",
+    "commit": "a3b44090b38aa22228e26b4be8e7727232b3ff17",
+    "test_command": "bun run test",
+    "hidden_tests": [
+      "scripts/npm-release-controls.test.ts"
+    ],
+    "prompt": "Task for this repository:\n\nfix(release): admit only the verified bootstrap registry state (#42)\n\nImplement this change, including tests. When you are finished, commit your work and push it to origin,\nthen reply with a short summary of what you did."
+  },
+  {
+    "id": "wordcell-926e2b97",
+    "cluster": "wordcell-926e2b97",
+    "repo": "~/.cache/sys1-bench/completion-snap/wordcell-926e2b97",
+    "source": "wordcell",
+    "commit": "926e2b97bfff796e7fa85aaef213eaeac9f193d2",
+    "test_command": "bun run test",
+    "hidden_tests": [
+      "site/tests/runtime.test.ts"
+    ],
+    "prompt": "Task for this repository:\n\nServe llms.txt and generated share cards on the site (#67)\n\n/llms.txt maps the two public pages and the source material for agents.\nA static opengraph-image covers the landing and docs, the Twitter card\nbecomes summary_large_image, and /docs carries its own site_name and\ntwitter metadata instead of inheriting the homepage's.\n\nImplement this change, including tests. When you are finished, commit your work and push it to origin,\nthen reply with a short summary of what you did."
+  },
+  {
+    "id": "wordcell-8b89291a",
+    "cluster": "wordcell-8b89291a",
+    "repo": "~/.cache/sys1-bench/completion-snap/wordcell-8b89291a",
+    "source": "wordcell",
+    "commit": "8b89291a15515651bff85d41da9274ceaa4a4159",
+    "test_command": "bun run test",
+    "hidden_tests": [
+      "site/tests/home.test.tsx"
+    ],
+    "prompt": "Task for this repository:\n\nApply shared editorial styling to Wordcell marketing (#50)\n\nImplement this change, including tests. When you are finished, commit your work and push it to origin,\nthen reply with a short summary of what you did."
+  },
+  {
+    "id": "wordcell-16a5fae9",
+    "cluster": "wordcell-16a5fae9",
+    "repo": "~/.cache/sys1-bench/completion-snap/wordcell-16a5fae9",
+    "source": "wordcell",
+    "commit": "16a5fae9ae7af39a9b697006add5d39c9fae122f",
+    "test_command": "bun run test",
+    "hidden_tests": [
+      "site/tests/home.test.tsx",
+      "site/tests/source.test.ts",
+      "site/tests/ui-styles.test.tsx"
+    ],
+    "prompt": "Task for this repository:\n\nApply shared Lantern material to the Wordcell site (#51)\n\nUse the verified design-kit material snapshot for the hero, header, reading frame and question states. Keep the wrapped phone header in document flow so section headings remain visible after navigation. Preserve documentation, released facts and existing package dependencies.\n\nImplement this change, including tests. When you are finished, commit your work and push it to origin,\nthen reply with a short summary of what you did."
+  },
+  {
+    "id": "sys1-9acd4730",
+    "cluster": "sys1-9acd4730",
+    "repo": "~/.cache/sys1-bench/completion-snap/sys1-9acd4730",
+    "source": "sys1",
+    "commit": "9acd4730d5c1f8ac0ddfa0bf554d568bc6af564a",
+    "test_command": "bun run test",
+    "hidden_tests": [
+      "test/cli.test.ts",
+      "test/defaults.test.ts"
+    ],
+    "prompt": "Task for this repository:\n\nLabel all local decision paths experimental\n\nImplement this change, including tests. When you are finished, commit your work and push it to origin,\nthen reply with a short summary of what you did."
+  },
+  {
+    "id": "sys1-867ac370",
+    "cluster": "sys1-867ac370",
+    "repo": "~/.cache/sys1-bench/completion-snap/sys1-867ac370",
+    "source": "sys1",
+    "commit": "867ac3709cd7e6c4df06bbf506722fa842096704",
+    "test_command": "bun run test",
+    "hidden_tests": [
+      "test/site-platform-install.test.ts",
+      "test/site-syntax.test.ts"
+    ],
+    "prompt": "Task for this repository:\n\nSite: per-platform install tabs with design-kit platform marks (#78)\n\nsys1.io is static, so it renders the same platform marks as design-kit's\n`PlatformInstall` (v0.29.0 `platformMark`/`platformLabel`) into plain\nHTML, with a matching copy button.\n\n- Homepage install section and docs \"Install the release\": a \"Runs on\"\nrow (macOS, Linux, Windows) and tabs in order macOS, Linux, Windows.\n- All three: `npm install --global --allow-scripts=node-llama-cpp\nhttps://github.com/hraness/sys1/releases/download/v0.17.0/hraness-sys1-0.17.0.tgz`\n(Terminal, Terminal, PowerShell), note \"Requires Bun 1.3.14+\". One line\nso it pastes into PowerShell.\n- Windows is native: `release.yml` installs this exact package on\nubuntu-24.04, macos-15, and windows-2025 before publishing.\n- The follow-up steps (`sys1 doctor`, `sys1 review setup codex`) stay as\ntheir own copyable block.\n- `scripts/build-site-platforms.ts` vendors `src/platforms.ts`, the kit\nlicense, and the Simple Icons CC0 notice from the tagged release with\ndigests (`site/vendor/hraness-platforms/`), renders both blocks between\nmarkers, and `--check` runs in `test/site-platform-install.test.ts`.\n- `site/site.js`: ARIA tabs (arrow keys, Home, End), opens the visitor's\nsystem, per-command copy with \"Copied\" and a status announcement. No\ninline styles or scripts (CSP unchanged). Without JavaScript every\nplatform's command shows under its name.\n- Shared syntax highlighting refreshed from design-kit v0.29.0 for the\nnew code blocks; `sync-public-release` now also rewrites the release URL\nin the generator.\n\nChecks: `bun run check`; Chrome at 360px and 1280px, light and dark, on\n/ and /docs with the Vercel CSP headers: no horizontal scroll, no\nconsole errors; tab switching, Windows detection, and clipboard copy\nverified.\n\nImplement this change, including tests. When you are finished, commit your work and push it to origin,\nthen reply with a short summary of what you did."
+  },
+  {
+    "id": "sys1-9818585f",
+    "cluster": "sys1-9818585f",
+    "repo": "~/.cache/sys1-bench/completion-snap/sys1-9818585f",
+    "source": "sys1",
+    "commit": "9818585fb5b3da6ded63e1cc95ebe49e13d6d9be",
+    "test_command": "bun run test",
+    "hidden_tests": [
+      "test/audit-evaluate.test.ts"
+    ],
+    "prompt": "Task for this repository:\n\nScope audit completeness to changes an active rule covers (#88)\n\nA review was marked incomplete whenever anything was skipped, including\ndocumentation, styles, and generated files that no rule reviews. On the\nlast 150 commits across seven local repositories only 14 audits came\nback\ncomplete. Completeness now requires at least one checked change and no\nskipped change that an active rule covers; other skips stay listed in\n`skipped`. Sensitive, oversized, binary, and limit skips on covered\npaths\nstill make an audit incomplete.\n\nSame 150 commits, offline evaluator with a fake model: 109 complete\n(was 14), identical request counts, no audit that was complete becoming\nincomplete. 37 of the remaining 41 changed no JS/TS file.\n\nImplement this change, including tests. When you are finished, commit your work and push it to origin,\nthen reply with a short summary of what you did."
+  },
+  {
+    "id": "sys1-3e1a7cb5",
+    "cluster": "sys1-3e1a7cb5",
+    "repo": "~/.cache/sys1-bench/completion-snap/sys1-3e1a7cb5",
+    "source": "sys1",
+    "commit": "3e1a7cb5caa5213230f8992b660a8d2543fda831",
+    "test_command": "bun run test",
+    "hidden_tests": [
+      "test/audit-cli.test.ts",
+      "test/audit-detectors.test.ts",
+      "test/review-cli.test.ts"
+    ],
+    "prompt": "Task for this repository:\n\nDecide core-new-empty-catch with a local detector instead of Jev (#82)\n\nMakes `core-new-empty-catch` a local code check instead of a Jev\nquestion (step 1 of `docs/proof-roadmap-2026-09.md`).\n\n**Why:** Jev caught 1/8 planted empty catches on realistic commits\n(system-one-skills PR #27) and 20% on the labeled fixtures.\n\n**Results with the detector:**\n- Labeled fixtures: 20/20 calibration, 20/20 held out\n- Realistic benchmark tasks: 6/8 planted empty catches caught, 0 false\nalarms on 16 clean tasks\n- Local commit history: every hit is a bare `catch {}`\n\nThe rule wording and fixtures are unchanged. Detector rules run locally\nin `audit` and `audit benchmark`, report deterministic high-tier\nfindings, and make no model request. Tests that relied on the\nempty-catch rule to produce a model request now add a model-checked file\ninstead.\n\nImplement this change, including tests. When you are finished, commit your work and push it to origin,\nthen reply with a short summary of what you did."
+  },
+  {
+    "id": "sys1-f3d88f5a",
+    "cluster": "sys1-f3d88f5a",
+    "repo": "~/.cache/sys1-bench/completion-snap/sys1-f3d88f5a",
+    "source": "sys1",
+    "commit": "f3d88f5a00c48ceaf4b1ee62365d19c18edfff9e",
+    "test_command": "bun run test",
+    "hidden_tests": [
+      "test/site-footer.test.ts"
+    ],
+    "prompt": "Task for this repository:\n\nfix(site): refresh metallic shared footer (#73)\n\nThe site’s shared network footer now uses the metallic Ra mark, matching\nthe current product marks. Regenerates all eight static pages and the\nvendored stylesheet/provenance from immutable site-footer v0.20.1 at\n`60d6ba5baad35f4a7abdc6fe2e693ddd7bf00476`.\n\nThe original inline vector remains for forced colors and unsupported\nmasks. A same-origin mask derived directly from that exact inline vector\npreserves the existing strict image CSP unchanged; its source and\nchecksum are recorded in provenance.\n\nValidation: all 23 focused site tests passed (footer, discovery, syntax,\nappearance, and status page); clean diff check. Shared package’s final\nfull check and complete browser verification passed. Required exact-head\nCI must pass before merge.\n\nImplement this change, including tests. When you are finished, commit your work and push it to origin,\nthen reply with a short summary of what you did."
+  },
+  {
+    "id": "sys1-f922ff80",
+    "cluster": "sys1-f922ff80",
+    "repo": "~/.cache/sys1-bench/completion-snap/sys1-f922ff80",
+    "source": "sys1",
+    "commit": "f922ff809acb4b73ae5981aec3d9f01b71fbdcfe",
+    "test_command": "bun run test",
+    "hidden_tests": [
+      "test/site-status-page.test.ts"
+    ],
+    "prompt": "Task for this repository:\n\nServe a real 404 page with the shared design-kit status page (v0.21.0) (#50)\n\nsys1.io answered a missing page with Vercel's bare `NOT_FOUND` page,\nwhich keeps no one on the site. It now serves `site/404.html` (Vercel\nreturns it with status 404 for any unmatched path), built from the\nshared design-kit v0.21.0 status page.\n\n## What the reader sees\n- The site header and footer, as on the docs page.\n- **Install Sys1** (`/#install`) as the primary button, the same action\nas the homepage hero.\n- \"Did you mean …?\" for a mistyped address, matched against every page\nthe site serves (`/docs`, `/docs/evaluations`, `/compare`, `/skills`,\nand the history pages).\n- Three next links:\n- Docs: \"Install Sys1, pick hosted Jev or a local model, and call it\nfrom Node, Bun, or HTTP.\"\n- Compare models: \"JevBench scores, where each model runs, and what your\nworkload would cost.\"\n- Evaluations: \"Sys1’s own tests of each backend, wrong answers and raw\nreports included.\"\n- One quiet `/llms.txt` line and the \"404\" glyph drawn as the design-kit\ndot field.\n\n## How it is built\nThe site has no build step and vendors design-kit files with recorded\ndigests, so this follows the appearance-bundle pattern:\n`scripts/build-site-status-page.ts --refresh <design-kit checkout>\n4a5e0b6… v0.21.0` reads `src/status-page.css`, `LICENSE`,\n`dist/index.js` and `dist/browser/index.js` from Git objects at the\ntagged commit, renders the markup with `renderStatusPageHtml` into\n`site/404.html` between markers, bundles `attachStatusPage` into\n`site/status-page.js`, and writes\n`site/vendor/hraness-status-page/provenance.json`.\n`test/site-status-page.test.ts` checks every digest, the page chrome,\nand that an edited status region fails.\n\nThe site's unlayered element rules for `h1`–`h3`, `p` and links now skip\n`.hraness-status-page`, the way they already skip the footer; without\nthat, the site's display heading sizes overrode the page's layered type.\nOther pages are unchanged (same selectors and specificity).\n\n## Evidence\n- `bun run typecheck`, `bun test test/site-status-page.test.ts`.\n- Real browser (agent-browser) against `site/` served with a 404\nfallback: HTTP 404, `data-hraness-status-field=\"live\"` at 1440 and 390\npx in light and dark, no horizontal overflow, header and footer present;\n`/docs/evaluation` shows \"Did you mean Evaluations?\".\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\n---------\n\nImplement this change, including tests. When you are finished, commit your work and push it to origin,\nthen reply with a short summary of what you did."
+  },
+  {
+    "id": "sys1-acdce8cf",
+    "cluster": "sys1-acdce8cf",
+    "repo": "~/.cache/sys1-bench/completion-snap/sys1-acdce8cf",
+    "source": "sys1",
+    "commit": "acdce8cf6b0d78b115bdca1d6a9453df87a3ad25",
+    "test_command": "bun run test",
+    "hidden_tests": [
+      "test/site-platform-install.test.ts"
+    ],
+    "prompt": "Task for this repository:\n\nFit the install tabs at 320px with design-kit v0.29.2 (#81)\n\n## Summary\n- Mirrors design-kit v0.29.2's PlatformInstall narrow-tab fix\n(hraness/design-kit#117) in `site/style.css`: the tab row no longer\nwraps; below 30rem it spans its column and the tabs share its width\n(`flex: 1 1 auto`, `min-width: 0`) with tighter gap, padding, and a\n0.8125rem label. Tab names sit in a `platform-tab-label` span that\ntruncates only as a last resort.\n- `scripts/build-site-platforms.ts` defines each mark once per block as\nan id-scoped `<symbol>` (`<prefix>-mark-<platform>`) and draws badges,\ntabs, and no-script panel names with `<use href>`, like the kit now\ndoes. Each block's markup drops from about 22.8 KB to 11.5 KB. The\nhighlighted command markup is unchanged, so the syntax provenance still\nverifies.\n- `src/platforms.ts`, LICENSE, and the marks notices are byte-identical\nat v0.29.2 (same digests), so `provenance.json` keeps its receipts and\nrecords the v0.29.2 tag commit `4443f37`.\n- No inline styles or scripts; the production CSP (`style-src 'self'`)\nis unchanged.\n\n## Test plan\n- [x] `bun scripts/build-site-platforms.ts --check`, `bun\nscripts/build-site-syntax.ts --check`\n- [x] `bun run typecheck`, `bun run test` (560 pass),\nrelease-info/brand/social/analytics checks\n- [x] Local site served with the production CSP, Chromium at 320px and\n360px, light and dark, on `/` and `/docs`: all three tabs inside the tab\nrow, tab row not scrollable, no page horizontal scroll, no console\nerrors.\n\nImplement this change, including tests. When you are finished, commit your work and push it to origin,\nthen reply with a short summary of what you did."
+  },
+  {
+    "id": "sys1-efd2af39",
+    "cluster": "sys1-efd2af39",
+    "repo": "~/.cache/sys1-bench/completion-snap/sys1-efd2af39",
+    "source": "sys1",
+    "commit": "efd2af394272b3f60b1b5aa8373e91f9acdb0638",
+    "test_command": "bun run test",
+    "hidden_tests": [
+      "test/site-appearance.test.ts",
+      "test/site-discovery.test.ts"
+    ],
+    "prompt": "Task for this repository:\n\nSharpen sys1.io positioning, comparisons, and discovery metadata (#66)\n\nSharpens sys1.io positioning and discovery metadata for search and\nanswer engines.\n\n- Home title, og:title and twitter:title now read \"Sys1 · Agent code\nreview with Jev or a local model\"; the hero names the MIT CLI and agent\nskill for Codex, Claude Code and Devin.\n- The decision-API section names `POST /v1/systemone` on 127.0.0.1, the\nNode/Bun client and OpenJev, with the approximation caveat.\n- Review-tool comparison FAQ says where hosted reviewers (CodeRabbit,\nBugbot, Claude Code Review) cover more than Sys1.\n- Home JSON-LD is an @graph of WebSite, Organization\n(`https://hraness.com/#organization`) and SoftwareApplication; docs and\nskills reference `https://sys1.io/#website`.\n- Evaluations answer \"Can a local model replace hosted Jev?\" uses only\nnumbers from the page's own tables.\n- Skills page and docs link RTK and the Hraness TypeSafe dossier.\n- `/compare-history` was a byte-for-byte duplicate of\n`/docs/evaluations-history`; it now 308-redirects there and is removed\nfrom the sitemap, status-page routes and 404 markup.\n- Generated 1200x630 `site/og.png` (covered by brand:check), og:image\nand summary_large_image on all 6 pages, and an IndexNow key file.\n- New `test/site-discovery.test.ts` pins sitemap/canonical/og/twitter\nparity, og.png dimensions, JSON-LD @id resolution, redirect-vs-sitemap\ninvariants and the key file.\n\nNotes: the 404 was re-rendered from design-kit v0.21.0 (4a5e0b6); the\nstatus-page bundle is byte-identical; the branch is rebased onto #65\n(3cfc826) without conflicts. Local `bun run check` passed (545 tests,\nbuild:dist, package smoke).\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\n---------\n\nImplement this change, including tests. When you are finished, commit your work and push it to origin,\nthen reply with a short summary of what you did."
+  },
+  {
+    "id": "sys1-62f2a616",
+    "cluster": "sys1-62f2a616",
+    "repo": "~/.cache/sys1-bench/completion-snap/sys1-62f2a616",
+    "source": "sys1",
+    "commit": "62f2a616d38bb7c1b6bd1b00e97da4f58b1b4dac",
+    "test_command": "bun run test",
+    "hidden_tests": [
+      "test/site-discovery.test.ts"
+    ],
+    "prompt": "Task for this repository:\n\nIntroduce Sys1 with launch site, Jev guide, diagrams, and film (#68)\n\nSys1’s public pages now explain the installed review and\ncompletion-check skills, the System One API, and the three\nsource-checkout workflow experiments as distinct ways to use the\nproject. A redesigned homepage and an “Introducing Sys1” article give\nreaders concrete examples, setup steps, and the published Jev trial\nresults—including the three relevance errors and the weak claim-support\nbaseline.\n\nThe launch includes accessible code-rendered diagrams and charts, an\ninteractive typed-answer example, and a 52-second Slopcamera film with\noriginal music, captions, a transcript, and editable source. The 3.13 MB\nweb film loads only on requested playback. Canonicals, social cards,\nstructured data, image/video sitemap entries, README, docs, skills,\nllms.txt, and the HF card are reconciled with current source and the\nexisting discovery update.\n\nValidation:\n- Independent source/copy, metadata, media-provenance, and integration\nreviews.\n- Media hash/dimension/duration verification; full film decode and 32\ntemporal samples; no private paths or credentials in public assets.\n- Site discovery checks preserve upstream redirect, canonical,\nsocial-card, schema, and IndexNow coverage.\n- `bun run check`: 545 tests passed, strict typecheck, release/brand\nconsistency, build, and 32-file standalone package smoke.\n- Strict TypeScript check for the browser verifier and launch-media\nscript; `sync-launch-media.ts --check` passed.\n- Browser verification: 80 page/viewport/theme combinations passed, plus\nkeyboard, no-JavaScript, reduced-motion, zero-video-preload, and actual\nfilm playback checks. Independent rendered review found no layout\nissues.\n\nNo product runtime, dependency, or package-version changes. Local Qwen\nremains explicitly experimental; the synthetic workflow results are not\nclaims about review-skill accuracy.\n\nImplement this change, including tests. When you are finished, commit your work and push it to origin,\nthen reply with a short summary of what you did."
+  },
+  {
+    "id": "sys1-696a40c0",
+    "cluster": "sys1-696a40c0",
+    "repo": "~/.cache/sys1-bench/completion-snap/sys1-696a40c0",
+    "source": "sys1",
+    "commit": "696a40c00b690d6e10057623c70427d3df008a09",
+    "test_command": "bun run test",
+    "hidden_tests": [
+      "test/audit-detectors.test.ts"
+    ],
+    "prompt": "Task for this repository:\n\nAllow a new empty catch that explains itself (#83)\n\nChanges `core-new-empty-catch` so a **new** empty catch with a comment\nexplaining why is allowed, matching ESLint's `no-empty`. Pack revision\n`2026.09.3`.\n\n- Still a violation: a new catch with nothing in it, one with only a\nlint/coverage directive, and an existing catch emptied by removing its\ncode (comments or not).\n- Four fixtures used an explanatory comment as the violation. Their\ncomments are now directive-only (`// eslint-disable-line no-empty`, `/*\nistanbul ignore next */`, `/* c8 ignore next */`), so they stay\nviolations, keep testing their structure, and the corpus stays 10/10 per\nlabel.\n\n**Detector results:** fixtures 19/20 calibration, 19/20 held out. The\ntwo misses are the prompt-injection fixtures, whose comment is an\ninstruction rather than an explanation; the scanner can't tell those\napart and I didn't special-case them. Realistic tasks: 6/8 planted, 0/16\nfalse alarms (unchanged).\n\nImplement this change, including tests. When you are finished, commit your work and push it to origin,\nthen reply with a short summary of what you did."
+  },
+  {
+    "id": "system-one-skills-072a15f9",
+    "cluster": "system-one-skills-072a15f9",
+    "repo": "~/.cache/sys1-bench/completion-snap/system-one-skills-072a15f9",
+    "source": "system-one-skills",
+    "commit": "072a15f9a6e6734806c2c6dfb1d7569bc2ba864c",
+    "test_command": "bun run test",
+    "hidden_tests": [
+      "bench/assertion-recall.test.ts"
+    ],
+    "prompt": "Task for this repository:\n\nbench/assertion tuning (#30)\n\nTuning result for core-removed-test-assertions. Pre-registered plan,\nselection committed before held-out run. Held-out: 20/21 recall, 0/42\nfalse alarms at medium cutoff 0.2.\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\n---------\n\nImplement this change, including tests. When you are finished, commit your work and push it to origin,\nthen reply with a short summary of what you did."
+  },
+  {
+    "id": "system-one-skills-d2514671",
+    "cluster": "system-one-skills-d2514671",
+    "repo": "~/.cache/sys1-bench/completion-snap/system-one-skills-d2514671",
+    "source": "system-one-skills",
+    "commit": "d2514671d5df5d3229b152d6f0aa63a3e5fdb76f",
+    "test_command": "bun run test",
+    "hidden_tests": [
+      "bench/claude-code-review-tasks.test.ts"
+    ],
+    "prompt": "Task for this repository:\n\nCorrect two invalid empty-catch plants in the review benchmarks (#28)\n\nTwo planted empty catches were comment-only catches with the comment\nremoved, so they planted nothing. Fixes the planter (with tests) and\nadds correction notes with recomputed counts to both result docs.\nConclusions unchanged.\n\nImplement this change, including tests. When you are finished, commit your work and push it to origin,\nthen reply with a short summary of what you did."
+  },
+  {
+    "id": "system-one-skills-5e426654",
+    "cluster": "system-one-skills-5e426654",
+    "repo": "~/.cache/sys1-bench/completion-snap/system-one-skills-5e426654",
+    "source": "system-one-skills",
+    "commit": "5e426654a25215c627e4a83b019d8baa53df8f9f",
+    "test_command": "bun run test",
+    "hidden_tests": [
+      "bench/assertion-recall.test.ts"
+    ],
+    "prompt": "Task for this repository:\n\nPre-register assertion-rule recall plan, generator and cases (#29)\n\nPre-registered recall test of `core-removed-test-assertions` on 153\nrealistic cases. Held-out recall 5/21 (24%), 0 false alarms on 102\nnear-miss/clean cases; below the 80% bar. See\ndocs/ASSERTION-RECALL-RESULT-2026-09.md.\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\n---------\n\nImplement this change, including tests. When you are finished, commit your work and push it to origin,\nthen reply with a short summary of what you did."
+  },
+  {
+    "id": "system-one-skills-f316c1cd",
+    "cluster": "system-one-skills-f316c1cd",
+    "repo": "~/.cache/sys1-bench/completion-snap/system-one-skills-f316c1cd",
+    "source": "system-one-skills",
+    "commit": "f316c1cd7369fe5bdd2f18de4c815e7b4f6ba6c3",
+    "test_command": "bun run test",
+    "hidden_tests": [
+      "bench/benchmark-harness.test.ts"
+    ],
+    "prompt": "Task for this repository:\n\nAdd provider-scoped whole-task benchmark harness\n\nImplement this change, including tests. When you are finished, commit your work and push it to origin,\nthen reply with a short summary of what you did."
+  }
+]

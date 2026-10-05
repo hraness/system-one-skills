@@ -1,0 +1,2224 @@
+{
+  "A:algal-ab79dbf7-clean": {
+    "condition": "A",
+    "id": "algal-ab79dbf7-clean",
+    "kind": "clean",
+    "status": "incomplete",
+    "requests": 2,
+    "usage": {
+      "input_tokens": 1196,
+      "output_tokens": 24,
+      "known_requests": 1,
+      "unknown_requests": 1
+    },
+    "units": 18,
+    "evaluated_units": 1,
+    "findings": [],
+    "false_positive": false,
+    "elapsed_ms": 5423
+  },
+  "A:algal-3fbf8ca6-empty-catch": {
+    "condition": "A",
+    "id": "algal-3fbf8ca6-empty-catch",
+    "kind": "empty-catch",
+    "status": "incomplete",
+    "requests": 20,
+    "usage": {
+      "input_tokens": 42852,
+      "output_tokens": 590,
+      "known_requests": 20,
+      "unknown_requests": 0
+    },
+    "units": 49,
+    "evaluated_units": 20,
+    "planted_targeted": true,
+    "findings": [],
+    "hit": false,
+    "false_positive": false,
+    "elapsed_ms": 18368
+  },
+  "A:algal-f851e0f9-clean": {
+    "condition": "A",
+    "id": "algal-f851e0f9-clean",
+    "kind": "clean",
+    "status": "incomplete",
+    "requests": 13,
+    "usage": {
+      "input_tokens": 21832,
+      "output_tokens": 400,
+      "known_requests": 13,
+      "unknown_requests": 0
+    },
+    "units": 26,
+    "evaluated_units": 13,
+    "findings": [],
+    "false_positive": false,
+    "elapsed_ms": 10210
+  },
+  "A:algal-ff3d6723-removed-assertion": {
+    "condition": "A",
+    "id": "algal-ff3d6723-removed-assertion",
+    "kind": "removed-assertion",
+    "status": "incomplete",
+    "requests": 18,
+    "usage": {
+      "input_tokens": 27207,
+      "output_tokens": 498,
+      "known_requests": 18,
+      "unknown_requests": 0
+    },
+    "units": 27,
+    "evaluated_units": 18,
+    "planted_targeted": true,
+    "findings": [
+      {
+        "rule": "core-removed-test-assertions",
+        "path": "src/contract.test.ts",
+        "line": 20
+      }
+    ],
+    "hit": true,
+    "false_positive": false,
+    "elapsed_ms": 11932
+  },
+  "A:algal-1a5e0224-clean": {
+    "condition": "A",
+    "id": "algal-1a5e0224-clean",
+    "kind": "clean",
+    "status": "incomplete",
+    "requests": 7,
+    "usage": {
+      "input_tokens": 21791,
+      "output_tokens": 190,
+      "known_requests": 7,
+      "unknown_requests": 0
+    },
+    "units": 22,
+    "evaluated_units": 7,
+    "findings": [],
+    "false_positive": false,
+    "elapsed_ms": 7077
+  },
+  "A:algal-1154cc4d-empty-catch": {
+    "condition": "A",
+    "id": "algal-1154cc4d-empty-catch",
+    "kind": "empty-catch",
+    "status": "incomplete",
+    "requests": 17,
+    "usage": {
+      "input_tokens": 25313,
+      "output_tokens": 474,
+      "known_requests": 17,
+      "unknown_requests": 0
+    },
+    "units": 41,
+    "evaluated_units": 17,
+    "planted_targeted": true,
+    "findings": [],
+    "hit": false,
+    "false_positive": false,
+    "elapsed_ms": 21335
+  },
+  "A:algal-8ae09445-clean": {
+    "condition": "A",
+    "id": "algal-8ae09445-clean",
+    "kind": "clean",
+    "status": "incomplete",
+    "requests": 8,
+    "usage": {
+      "input_tokens": 11442,
+      "output_tokens": 190,
+      "known_requests": 7,
+      "unknown_requests": 1
+    },
+    "units": 15,
+    "evaluated_units": 7,
+    "findings": [],
+    "false_positive": false,
+    "elapsed_ms": 8156
+  },
+  "A:algal-abf5ef8a-removed-assertion": {
+    "condition": "A",
+    "id": "algal-abf5ef8a-removed-assertion",
+    "kind": "removed-assertion",
+    "status": "incomplete",
+    "requests": 9,
+    "usage": {
+      "input_tokens": 14412,
+      "output_tokens": 258,
+      "known_requests": 8,
+      "unknown_requests": 1
+    },
+    "units": 27,
+    "evaluated_units": 8,
+    "planted_targeted": true,
+    "findings": [
+      {
+        "rule": "core-removed-test-assertions",
+        "path": "src/contract.test.ts",
+        "line": 20
+      }
+    ],
+    "hit": true,
+    "false_positive": false,
+    "elapsed_ms": 9795
+  },
+  "A:wordcell-1d77e7d2-clean": {
+    "condition": "A",
+    "id": "wordcell-1d77e7d2-clean",
+    "kind": "clean",
+    "status": "incomplete",
+    "requests": 16,
+    "usage": {
+      "input_tokens": 32789,
+      "output_tokens": 516,
+      "known_requests": 16,
+      "unknown_requests": 0
+    },
+    "units": 23,
+    "evaluated_units": 16,
+    "findings": [],
+    "false_positive": false,
+    "elapsed_ms": 11037
+  },
+  "A:wordcell-58bd07b6-empty-catch": {
+    "condition": "A",
+    "id": "wordcell-58bd07b6-empty-catch",
+    "kind": "empty-catch",
+    "status": "incomplete",
+    "requests": 7,
+    "usage": {
+      "input_tokens": 14478,
+      "output_tokens": 190,
+      "known_requests": 7,
+      "unknown_requests": 0
+    },
+    "units": 25,
+    "evaluated_units": 7,
+    "planted_targeted": true,
+    "findings": [],
+    "hit": false,
+    "false_positive": false,
+    "elapsed_ms": 6770
+  },
+  "A:wordcell-e0a67b76-clean": {
+    "condition": "A",
+    "id": "wordcell-e0a67b76-clean",
+    "kind": "clean",
+    "status": "incomplete",
+    "requests": 4,
+    "usage": {
+      "input_tokens": 7245,
+      "output_tokens": 118,
+      "known_requests": 4,
+      "unknown_requests": 0
+    },
+    "units": 6,
+    "evaluated_units": 4,
+    "findings": [],
+    "false_positive": false,
+    "elapsed_ms": 3637
+  },
+  "A:wordcell-97a7bc13-removed-assertion": {
+    "condition": "A",
+    "id": "wordcell-97a7bc13-removed-assertion",
+    "kind": "removed-assertion",
+    "status": "incomplete",
+    "requests": 17,
+    "usage": {
+      "input_tokens": 27606,
+      "output_tokens": 496,
+      "known_requests": 17,
+      "unknown_requests": 0
+    },
+    "units": 31,
+    "evaluated_units": 17,
+    "planted_targeted": true,
+    "findings": [],
+    "hit": false,
+    "false_positive": false,
+    "elapsed_ms": 12827
+  },
+  "A:wordcell-9fec758d-clean": {
+    "condition": "A",
+    "id": "wordcell-9fec758d-clean",
+    "kind": "clean",
+    "status": "incomplete",
+    "requests": 13,
+    "usage": {
+      "input_tokens": 21902,
+      "output_tokens": 378,
+      "known_requests": 13,
+      "unknown_requests": 0
+    },
+    "units": 20,
+    "evaluated_units": 13,
+    "findings": [],
+    "false_positive": false,
+    "elapsed_ms": 9289
+  },
+  "A:wordcell-e04b2d60-empty-catch": {
+    "condition": "A",
+    "id": "wordcell-e04b2d60-empty-catch",
+    "kind": "empty-catch",
+    "status": "incomplete",
+    "requests": 16,
+    "usage": {
+      "input_tokens": 25825,
+      "output_tokens": 472,
+      "known_requests": 16,
+      "unknown_requests": 0
+    },
+    "units": 21,
+    "evaluated_units": 16,
+    "planted_targeted": true,
+    "findings": [],
+    "hit": false,
+    "false_positive": false,
+    "elapsed_ms": 10748
+  },
+  "A:wordcell-89bdfe4f-clean": {
+    "condition": "A",
+    "id": "wordcell-89bdfe4f-clean",
+    "kind": "clean",
+    "status": "incomplete",
+    "requests": 18,
+    "usage": {
+      "input_tokens": 27515,
+      "output_tokens": 542,
+      "known_requests": 18,
+      "unknown_requests": 0
+    },
+    "units": 28,
+    "evaluated_units": 18,
+    "findings": [],
+    "false_positive": false,
+    "elapsed_ms": 13427
+  },
+  "A:wordcell-e19a7dc2-removed-assertion": {
+    "condition": "A",
+    "id": "wordcell-e19a7dc2-removed-assertion",
+    "kind": "removed-assertion",
+    "status": "incomplete",
+    "requests": 5,
+    "usage": {
+      "input_tokens": 9638,
+      "output_tokens": 186,
+      "known_requests": 5,
+      "unknown_requests": 0
+    },
+    "units": 10,
+    "evaluated_units": 5,
+    "planted_targeted": true,
+    "findings": [],
+    "hit": false,
+    "false_positive": false,
+    "elapsed_ms": 5051
+  },
+  "A:spongev2-b7fdcb87-clean": {
+    "condition": "A",
+    "id": "spongev2-b7fdcb87-clean",
+    "kind": "clean",
+    "status": "incomplete",
+    "requests": 20,
+    "usage": {
+      "input_tokens": 48579,
+      "output_tokens": 568,
+      "known_requests": 20,
+      "unknown_requests": 0
+    },
+    "units": 26,
+    "evaluated_units": 20,
+    "findings": [],
+    "false_positive": false,
+    "elapsed_ms": 13760
+  },
+  "A:spongev2-47e41875-empty-catch": {
+    "condition": "A",
+    "id": "spongev2-47e41875-empty-catch",
+    "kind": "empty-catch",
+    "status": "incomplete",
+    "requests": 4,
+    "usage": {
+      "input_tokens": 24081,
+      "output_tokens": 140,
+      "known_requests": 4,
+      "unknown_requests": 0
+    },
+    "units": 6,
+    "evaluated_units": 4,
+    "planted_targeted": true,
+    "findings": [],
+    "hit": false,
+    "false_positive": false,
+    "elapsed_ms": 3684
+  },
+  "A:spongev2-f9459cb0-clean": {
+    "condition": "A",
+    "id": "spongev2-f9459cb0-clean",
+    "kind": "clean",
+    "status": "incomplete",
+    "requests": 20,
+    "usage": {
+      "input_tokens": 47129,
+      "output_tokens": 590,
+      "known_requests": 20,
+      "unknown_requests": 0
+    },
+    "units": 26,
+    "evaluated_units": 20,
+    "findings": [],
+    "false_positive": false,
+    "elapsed_ms": 12511
+  },
+  "A:spongev2-c6da716c-removed-assertion": {
+    "condition": "A",
+    "id": "spongev2-c6da716c-removed-assertion",
+    "kind": "removed-assertion",
+    "status": "complete",
+    "requests": 9,
+    "usage": {
+      "input_tokens": 28025,
+      "output_tokens": 282,
+      "known_requests": 9,
+      "unknown_requests": 0
+    },
+    "units": 9,
+    "evaluated_units": 9,
+    "planted_targeted": true,
+    "findings": [],
+    "hit": false,
+    "false_positive": false,
+    "elapsed_ms": 6677
+  },
+  "A:spongev2-9835d521-clean": {
+    "condition": "A",
+    "id": "spongev2-9835d521-clean",
+    "kind": "clean",
+    "status": "incomplete",
+    "requests": 5,
+    "usage": {
+      "input_tokens": 17533,
+      "output_tokens": 164,
+      "known_requests": 5,
+      "unknown_requests": 0
+    },
+    "units": 6,
+    "evaluated_units": 5,
+    "findings": [],
+    "false_positive": false,
+    "elapsed_ms": 3834
+  },
+  "A:spongev2-331c2900-empty-catch": {
+    "condition": "A",
+    "id": "spongev2-331c2900-empty-catch",
+    "kind": "empty-catch",
+    "status": "incomplete",
+    "requests": 6,
+    "usage": {
+      "input_tokens": 16542,
+      "output_tokens": 166,
+      "known_requests": 6,
+      "unknown_requests": 0
+    },
+    "units": 11,
+    "evaluated_units": 6,
+    "planted_targeted": true,
+    "findings": [],
+    "hit": false,
+    "false_positive": false,
+    "elapsed_ms": 5105
+  },
+  "A:spongev2-9474b385-clean": {
+    "condition": "A",
+    "id": "spongev2-9474b385-clean",
+    "kind": "clean",
+    "status": "incomplete",
+    "requests": 3,
+    "usage": {
+      "input_tokens": 12643,
+      "output_tokens": 94,
+      "known_requests": 3,
+      "unknown_requests": 0
+    },
+    "units": 6,
+    "evaluated_units": 3,
+    "findings": [],
+    "false_positive": false,
+    "elapsed_ms": 2808
+  },
+  "A:spongev2-04bf8201-removed-assertion": {
+    "condition": "A",
+    "id": "spongev2-04bf8201-removed-assertion",
+    "kind": "removed-assertion",
+    "status": "incomplete",
+    "requests": 11,
+    "usage": {
+      "input_tokens": 33670,
+      "output_tokens": 352,
+      "known_requests": 11,
+      "unknown_requests": 0
+    },
+    "units": 12,
+    "evaluated_units": 11,
+    "planted_targeted": true,
+    "findings": [
+      {
+        "rule": "core-removed-test-assertions",
+        "path": "src/research/experimental/evidence.test.ts",
+        "line": 316
+      }
+    ],
+    "hit": true,
+    "false_positive": false,
+    "elapsed_ms": 7017
+  },
+  "A:ghostget-4e9e833a-clean": {
+    "condition": "A",
+    "id": "ghostget-4e9e833a-clean",
+    "kind": "clean",
+    "status": "incomplete",
+    "requests": 18,
+    "usage": {
+      "input_tokens": 37525,
+      "output_tokens": 608,
+      "known_requests": 18,
+      "unknown_requests": 0
+    },
+    "units": 45,
+    "evaluated_units": 18,
+    "findings": [],
+    "false_positive": false,
+    "elapsed_ms": 13583
+  },
+  "A:ghostget-c9aea466-empty-catch": {
+    "condition": "A",
+    "id": "ghostget-c9aea466-empty-catch",
+    "kind": "empty-catch",
+    "status": "complete",
+    "requests": 7,
+    "usage": {
+      "input_tokens": 11928,
+      "output_tokens": 190,
+      "known_requests": 7,
+      "unknown_requests": 0
+    },
+    "units": 7,
+    "evaluated_units": 7,
+    "planted_targeted": true,
+    "findings": [
+      {
+        "rule": "core-new-empty-catch",
+        "path": "src/derivation-network-boundary.ts",
+        "line": 266
+      }
+    ],
+    "hit": true,
+    "false_positive": false,
+    "elapsed_ms": 4150
+  },
+  "A:ghostget-4fde85b3-clean": {
+    "condition": "A",
+    "id": "ghostget-4fde85b3-clean",
+    "kind": "clean",
+    "status": "incomplete",
+    "requests": 12,
+    "usage": {
+      "input_tokens": 22597,
+      "output_tokens": 420,
+      "known_requests": 12,
+      "unknown_requests": 0
+    },
+    "units": 17,
+    "evaluated_units": 12,
+    "findings": [],
+    "false_positive": false,
+    "elapsed_ms": 7965
+  },
+  "A:ghostget-66ec15d0-removed-assertion": {
+    "condition": "A",
+    "id": "ghostget-66ec15d0-removed-assertion",
+    "kind": "removed-assertion",
+    "status": "incomplete",
+    "requests": 9,
+    "usage": {
+      "input_tokens": 16526,
+      "output_tokens": 282,
+      "known_requests": 9,
+      "unknown_requests": 0
+    },
+    "units": 41,
+    "evaluated_units": 9,
+    "planted_targeted": true,
+    "findings": [],
+    "hit": false,
+    "false_positive": false,
+    "elapsed_ms": 9493
+  },
+  "A:ghostget-1018b0be-clean": {
+    "condition": "A",
+    "id": "ghostget-1018b0be-clean",
+    "kind": "clean",
+    "status": "incomplete",
+    "requests": 20,
+    "usage": {
+      "input_tokens": 34641,
+      "output_tokens": 656,
+      "known_requests": 20,
+      "unknown_requests": 0
+    },
+    "units": 57,
+    "evaluated_units": 20,
+    "findings": [],
+    "false_positive": false,
+    "elapsed_ms": 12932
+  },
+  "A:ghostget-56c2d81b-empty-catch": {
+    "condition": "A",
+    "id": "ghostget-56c2d81b-empty-catch",
+    "kind": "empty-catch",
+    "status": "incomplete",
+    "requests": 14,
+    "usage": {
+      "input_tokens": 32573,
+      "output_tokens": 446,
+      "known_requests": 14,
+      "unknown_requests": 0
+    },
+    "units": 20,
+    "evaluated_units": 14,
+    "planted_targeted": true,
+    "findings": [],
+    "hit": false,
+    "false_positive": false,
+    "elapsed_ms": 8937
+  },
+  "A:ghostget-4035bfdf-clean": {
+    "condition": "A",
+    "id": "ghostget-4035bfdf-clean",
+    "kind": "clean",
+    "status": "complete",
+    "requests": 10,
+    "usage": {
+      "input_tokens": 16794,
+      "output_tokens": 350,
+      "known_requests": 10,
+      "unknown_requests": 0
+    },
+    "units": 10,
+    "evaluated_units": 10,
+    "findings": [],
+    "false_positive": false,
+    "elapsed_ms": 5874
+  },
+  "A:ghostget-bc326853-removed-assertion": {
+    "condition": "A",
+    "id": "ghostget-bc326853-removed-assertion",
+    "kind": "removed-assertion",
+    "status": "incomplete",
+    "requests": 10,
+    "usage": {
+      "input_tokens": 21506,
+      "output_tokens": 328,
+      "known_requests": 10,
+      "unknown_requests": 0
+    },
+    "units": 22,
+    "evaluated_units": 10,
+    "planted_targeted": true,
+    "findings": [],
+    "hit": false,
+    "false_positive": false,
+    "elapsed_ms": 8054
+  },
+  "B1:algal-ab79dbf7-clean": {
+    "condition": "B",
+    "id": "algal-ab79dbf7-clean",
+    "kind": "clean",
+    "status": "incomplete",
+    "requests": 13,
+    "usage": {
+      "input_tokens": 22399,
+      "output_tokens": 356,
+      "known_requests": 13,
+      "unknown_requests": 0
+    },
+    "units": 18,
+    "evaluated_units": 13,
+    "findings": [],
+    "false_positive": false,
+    "elapsed_ms": 8925
+  },
+  "B1:algal-3fbf8ca6-empty-catch": {
+    "condition": "B",
+    "id": "algal-3fbf8ca6-empty-catch",
+    "kind": "empty-catch",
+    "status": "incomplete",
+    "requests": 28,
+    "usage": {
+      "input_tokens": 66209,
+      "output_tokens": 804,
+      "known_requests": 28,
+      "unknown_requests": 0
+    },
+    "units": 49,
+    "evaluated_units": 28,
+    "planted_targeted": true,
+    "findings": [],
+    "hit": false,
+    "false_positive": false,
+    "elapsed_ms": 18570
+  },
+  "B1:algal-f851e0f9-clean": {
+    "condition": "B",
+    "id": "algal-f851e0f9-clean",
+    "kind": "clean",
+    "status": "incomplete",
+    "requests": 13,
+    "usage": {
+      "input_tokens": 21832,
+      "output_tokens": 400,
+      "known_requests": 13,
+      "unknown_requests": 0
+    },
+    "units": 26,
+    "evaluated_units": 13,
+    "findings": [],
+    "false_positive": false,
+    "elapsed_ms": 8381
+  },
+  "B1:algal-ff3d6723-removed-assertion": {
+    "condition": "B",
+    "id": "algal-ff3d6723-removed-assertion",
+    "kind": "removed-assertion",
+    "status": "incomplete",
+    "requests": 18,
+    "usage": {
+      "input_tokens": 27207,
+      "output_tokens": 498,
+      "known_requests": 18,
+      "unknown_requests": 0
+    },
+    "units": 27,
+    "evaluated_units": 18,
+    "planted_targeted": true,
+    "findings": [
+      {
+        "rule": "core-removed-test-assertions",
+        "path": "src/contract.test.ts",
+        "line": 20
+      }
+    ],
+    "hit": true,
+    "false_positive": false,
+    "elapsed_ms": 11810
+  },
+  "B1:algal-1a5e0224-clean": {
+    "condition": "B",
+    "id": "algal-1a5e0224-clean",
+    "kind": "clean",
+    "status": "incomplete",
+    "requests": 7,
+    "usage": {
+      "input_tokens": 21791,
+      "output_tokens": 190,
+      "known_requests": 7,
+      "unknown_requests": 0
+    },
+    "units": 22,
+    "evaluated_units": 7,
+    "findings": [],
+    "false_positive": false,
+    "elapsed_ms": 6830
+  },
+  "B1:algal-1154cc4d-empty-catch": {
+    "condition": "B",
+    "id": "algal-1154cc4d-empty-catch",
+    "kind": "empty-catch",
+    "status": "incomplete",
+    "requests": 17,
+    "usage": {
+      "input_tokens": 25313,
+      "output_tokens": 474,
+      "known_requests": 17,
+      "unknown_requests": 0
+    },
+    "units": 41,
+    "evaluated_units": 17,
+    "planted_targeted": true,
+    "findings": [],
+    "hit": false,
+    "false_positive": false,
+    "elapsed_ms": 14004
+  },
+  "B1:algal-8ae09445-clean": {
+    "condition": "B",
+    "id": "algal-8ae09445-clean",
+    "kind": "clean",
+    "status": "incomplete",
+    "requests": 9,
+    "usage": {
+      "input_tokens": 14187,
+      "output_tokens": 238,
+      "known_requests": 9,
+      "unknown_requests": 0
+    },
+    "units": 15,
+    "evaluated_units": 9,
+    "findings": [],
+    "false_positive": false,
+    "elapsed_ms": 6331
+  },
+  "B1:algal-abf5ef8a-removed-assertion": {
+    "condition": "B",
+    "id": "algal-abf5ef8a-removed-assertion",
+    "kind": "removed-assertion",
+    "status": "incomplete",
+    "requests": 17,
+    "usage": {
+      "input_tokens": 28968,
+      "output_tokens": 496,
+      "known_requests": 17,
+      "unknown_requests": 0
+    },
+    "units": 27,
+    "evaluated_units": 17,
+    "planted_targeted": true,
+    "findings": [
+      {
+        "rule": "core-removed-test-assertions",
+        "path": "src/contract.test.ts",
+        "line": 20
+      }
+    ],
+    "hit": true,
+    "false_positive": false,
+    "elapsed_ms": 13207
+  },
+  "B1:wordcell-1d77e7d2-clean": {
+    "condition": "B",
+    "id": "wordcell-1d77e7d2-clean",
+    "kind": "clean",
+    "status": "incomplete",
+    "requests": 16,
+    "usage": {
+      "input_tokens": 32789,
+      "output_tokens": 516,
+      "known_requests": 16,
+      "unknown_requests": 0
+    },
+    "units": 23,
+    "evaluated_units": 16,
+    "findings": [],
+    "false_positive": false,
+    "elapsed_ms": 11692
+  },
+  "B1:wordcell-58bd07b6-empty-catch": {
+    "condition": "B",
+    "id": "wordcell-58bd07b6-empty-catch",
+    "kind": "empty-catch",
+    "status": "incomplete",
+    "requests": 7,
+    "usage": {
+      "input_tokens": 14478,
+      "output_tokens": 190,
+      "known_requests": 7,
+      "unknown_requests": 0
+    },
+    "units": 25,
+    "evaluated_units": 7,
+    "planted_targeted": true,
+    "findings": [],
+    "hit": false,
+    "false_positive": false,
+    "elapsed_ms": 5980
+  },
+  "B1:wordcell-e0a67b76-clean": {
+    "condition": "B",
+    "id": "wordcell-e0a67b76-clean",
+    "kind": "clean",
+    "status": "incomplete",
+    "requests": 4,
+    "usage": {
+      "input_tokens": 7245,
+      "output_tokens": 118,
+      "known_requests": 4,
+      "unknown_requests": 0
+    },
+    "units": 6,
+    "evaluated_units": 4,
+    "findings": [],
+    "false_positive": false,
+    "elapsed_ms": 3544
+  },
+  "B1:wordcell-97a7bc13-removed-assertion": {
+    "condition": "B",
+    "id": "wordcell-97a7bc13-removed-assertion",
+    "kind": "removed-assertion",
+    "status": "incomplete",
+    "requests": 17,
+    "usage": {
+      "input_tokens": 27606,
+      "output_tokens": 496,
+      "known_requests": 17,
+      "unknown_requests": 0
+    },
+    "units": 31,
+    "evaluated_units": 17,
+    "planted_targeted": true,
+    "findings": [],
+    "hit": false,
+    "false_positive": false,
+    "elapsed_ms": 14354
+  },
+  "B1:wordcell-9fec758d-clean": {
+    "condition": "B",
+    "id": "wordcell-9fec758d-clean",
+    "kind": "clean",
+    "status": "incomplete",
+    "requests": 13,
+    "usage": {
+      "input_tokens": 21902,
+      "output_tokens": 378,
+      "known_requests": 13,
+      "unknown_requests": 0
+    },
+    "units": 20,
+    "evaluated_units": 13,
+    "findings": [],
+    "false_positive": false,
+    "elapsed_ms": 9989
+  },
+  "B1:wordcell-e04b2d60-empty-catch": {
+    "condition": "B",
+    "id": "wordcell-e04b2d60-empty-catch",
+    "kind": "empty-catch",
+    "status": "incomplete",
+    "requests": 16,
+    "usage": {
+      "input_tokens": 25825,
+      "output_tokens": 472,
+      "known_requests": 16,
+      "unknown_requests": 0
+    },
+    "units": 21,
+    "evaluated_units": 16,
+    "planted_targeted": true,
+    "findings": [],
+    "hit": false,
+    "false_positive": false,
+    "elapsed_ms": 11175
+  },
+  "B1:wordcell-89bdfe4f-clean": {
+    "condition": "B",
+    "id": "wordcell-89bdfe4f-clean",
+    "kind": "clean",
+    "status": "incomplete",
+    "requests": 18,
+    "usage": {
+      "input_tokens": 27515,
+      "output_tokens": 542,
+      "known_requests": 18,
+      "unknown_requests": 0
+    },
+    "units": 28,
+    "evaluated_units": 18,
+    "findings": [],
+    "false_positive": false,
+    "elapsed_ms": 15306
+  },
+  "B1:wordcell-e19a7dc2-removed-assertion": {
+    "condition": "B",
+    "id": "wordcell-e19a7dc2-removed-assertion",
+    "kind": "removed-assertion",
+    "status": "incomplete",
+    "requests": 5,
+    "usage": {
+      "input_tokens": 9638,
+      "output_tokens": 186,
+      "known_requests": 5,
+      "unknown_requests": 0
+    },
+    "units": 10,
+    "evaluated_units": 5,
+    "planted_targeted": true,
+    "findings": [],
+    "hit": false,
+    "false_positive": false,
+    "elapsed_ms": 5427
+  },
+  "B1:spongev2-b7fdcb87-clean": {
+    "condition": "B",
+    "id": "spongev2-b7fdcb87-clean",
+    "kind": "clean",
+    "status": "incomplete",
+    "requests": 23,
+    "usage": {
+      "input_tokens": 53703,
+      "output_tokens": 662,
+      "known_requests": 23,
+      "unknown_requests": 0
+    },
+    "units": 26,
+    "evaluated_units": 23,
+    "findings": [],
+    "false_positive": false,
+    "elapsed_ms": 17490
+  },
+  "B1:spongev2-47e41875-empty-catch": {
+    "condition": "B",
+    "id": "spongev2-47e41875-empty-catch",
+    "kind": "empty-catch",
+    "status": "incomplete",
+    "requests": 4,
+    "usage": {
+      "input_tokens": 24081,
+      "output_tokens": 140,
+      "known_requests": 4,
+      "unknown_requests": 0
+    },
+    "units": 6,
+    "evaluated_units": 4,
+    "planted_targeted": true,
+    "findings": [],
+    "hit": false,
+    "false_positive": false,
+    "elapsed_ms": 4103
+  },
+  "B1:spongev2-f9459cb0-clean": {
+    "condition": "B",
+    "id": "spongev2-f9459cb0-clean",
+    "kind": "clean",
+    "status": "incomplete",
+    "requests": 22,
+    "usage": {
+      "input_tokens": 50215,
+      "output_tokens": 638,
+      "known_requests": 22,
+      "unknown_requests": 0
+    },
+    "units": 26,
+    "evaluated_units": 22,
+    "findings": [],
+    "false_positive": false,
+    "elapsed_ms": 15886
+  },
+  "B1:spongev2-c6da716c-removed-assertion": {
+    "condition": "B",
+    "id": "spongev2-c6da716c-removed-assertion",
+    "kind": "removed-assertion",
+    "status": "complete",
+    "requests": 9,
+    "usage": {
+      "input_tokens": 28025,
+      "output_tokens": 282,
+      "known_requests": 9,
+      "unknown_requests": 0
+    },
+    "units": 9,
+    "evaluated_units": 9,
+    "planted_targeted": true,
+    "findings": [],
+    "hit": false,
+    "false_positive": false,
+    "elapsed_ms": 7146
+  },
+  "B1:spongev2-9835d521-clean": {
+    "condition": "B",
+    "id": "spongev2-9835d521-clean",
+    "kind": "clean",
+    "status": "incomplete",
+    "requests": 5,
+    "usage": {
+      "input_tokens": 17533,
+      "output_tokens": 164,
+      "known_requests": 5,
+      "unknown_requests": 0
+    },
+    "units": 6,
+    "evaluated_units": 5,
+    "findings": [],
+    "false_positive": false,
+    "elapsed_ms": 3691
+  },
+  "B1:spongev2-331c2900-empty-catch": {
+    "condition": "B",
+    "id": "spongev2-331c2900-empty-catch",
+    "kind": "empty-catch",
+    "status": "incomplete",
+    "requests": 6,
+    "usage": {
+      "input_tokens": 16542,
+      "output_tokens": 166,
+      "known_requests": 6,
+      "unknown_requests": 0
+    },
+    "units": 11,
+    "evaluated_units": 6,
+    "planted_targeted": true,
+    "findings": [],
+    "hit": false,
+    "false_positive": false,
+    "elapsed_ms": 6202
+  },
+  "B1:spongev2-9474b385-clean": {
+    "condition": "B",
+    "id": "spongev2-9474b385-clean",
+    "kind": "clean",
+    "status": "incomplete",
+    "requests": 3,
+    "usage": {
+      "input_tokens": 12643,
+      "output_tokens": 94,
+      "known_requests": 3,
+      "unknown_requests": 0
+    },
+    "units": 6,
+    "evaluated_units": 3,
+    "findings": [],
+    "false_positive": false,
+    "elapsed_ms": 3196
+  },
+  "B1:spongev2-04bf8201-removed-assertion": {
+    "condition": "B",
+    "id": "spongev2-04bf8201-removed-assertion",
+    "kind": "removed-assertion",
+    "status": "incomplete",
+    "requests": 11,
+    "usage": {
+      "input_tokens": 33670,
+      "output_tokens": 352,
+      "known_requests": 11,
+      "unknown_requests": 0
+    },
+    "units": 12,
+    "evaluated_units": 11,
+    "planted_targeted": true,
+    "findings": [
+      {
+        "rule": "core-removed-test-assertions",
+        "path": "src/research/experimental/evidence.test.ts",
+        "line": 316
+      }
+    ],
+    "hit": true,
+    "false_positive": false,
+    "elapsed_ms": 8082
+  },
+  "B1:ghostget-4e9e833a-clean": {
+    "condition": "B",
+    "id": "ghostget-4e9e833a-clean",
+    "kind": "clean",
+    "status": "incomplete",
+    "requests": 18,
+    "usage": {
+      "input_tokens": 37525,
+      "output_tokens": 608,
+      "known_requests": 18,
+      "unknown_requests": 0
+    },
+    "units": 45,
+    "evaluated_units": 18,
+    "findings": [],
+    "false_positive": false,
+    "elapsed_ms": 15984
+  },
+  "B1:ghostget-c9aea466-empty-catch": {
+    "condition": "B",
+    "id": "ghostget-c9aea466-empty-catch",
+    "kind": "empty-catch",
+    "status": "complete",
+    "requests": 7,
+    "usage": {
+      "input_tokens": 11928,
+      "output_tokens": 190,
+      "known_requests": 7,
+      "unknown_requests": 0
+    },
+    "units": 7,
+    "evaluated_units": 7,
+    "planted_targeted": true,
+    "findings": [],
+    "hit": false,
+    "false_positive": false,
+    "elapsed_ms": 5030
+  },
+  "B1:ghostget-4fde85b3-clean": {
+    "condition": "B",
+    "id": "ghostget-4fde85b3-clean",
+    "kind": "clean",
+    "status": "incomplete",
+    "requests": 12,
+    "usage": {
+      "input_tokens": 22597,
+      "output_tokens": 420,
+      "known_requests": 12,
+      "unknown_requests": 0
+    },
+    "units": 17,
+    "evaluated_units": 12,
+    "findings": [],
+    "false_positive": false,
+    "elapsed_ms": 8151
+  },
+  "B1:ghostget-66ec15d0-removed-assertion": {
+    "condition": "B",
+    "id": "ghostget-66ec15d0-removed-assertion",
+    "kind": "removed-assertion",
+    "status": "incomplete",
+    "requests": 9,
+    "usage": {
+      "input_tokens": 16526,
+      "output_tokens": 282,
+      "known_requests": 9,
+      "unknown_requests": 0
+    },
+    "units": 41,
+    "evaluated_units": 9,
+    "planted_targeted": true,
+    "findings": [],
+    "hit": false,
+    "false_positive": false,
+    "elapsed_ms": 11546
+  },
+  "B1:ghostget-1018b0be-clean": {
+    "condition": "B",
+    "id": "ghostget-1018b0be-clean",
+    "kind": "clean",
+    "status": "incomplete",
+    "requests": 50,
+    "usage": {
+      "input_tokens": 93983,
+      "output_tokens": 1618,
+      "known_requests": 50,
+      "unknown_requests": 0
+    },
+    "units": 57,
+    "evaluated_units": 50,
+    "findings": [],
+    "false_positive": false,
+    "elapsed_ms": 31457
+  },
+  "B1:ghostget-56c2d81b-empty-catch": {
+    "condition": "B",
+    "id": "ghostget-56c2d81b-empty-catch",
+    "kind": "empty-catch",
+    "status": "incomplete",
+    "requests": 14,
+    "usage": {
+      "input_tokens": 32573,
+      "output_tokens": 446,
+      "known_requests": 14,
+      "unknown_requests": 0
+    },
+    "units": 20,
+    "evaluated_units": 14,
+    "planted_targeted": true,
+    "findings": [],
+    "hit": false,
+    "false_positive": false,
+    "elapsed_ms": 9959
+  },
+  "B1:ghostget-4035bfdf-clean": {
+    "condition": "B",
+    "id": "ghostget-4035bfdf-clean",
+    "kind": "clean",
+    "status": "complete",
+    "requests": 10,
+    "usage": {
+      "input_tokens": 16794,
+      "output_tokens": 350,
+      "known_requests": 10,
+      "unknown_requests": 0
+    },
+    "units": 10,
+    "evaluated_units": 10,
+    "findings": [],
+    "false_positive": false,
+    "elapsed_ms": 6435
+  },
+  "B1:ghostget-bc326853-removed-assertion": {
+    "condition": "B",
+    "id": "ghostget-bc326853-removed-assertion",
+    "kind": "removed-assertion",
+    "status": "incomplete",
+    "requests": 10,
+    "usage": {
+      "input_tokens": 21506,
+      "output_tokens": 328,
+      "known_requests": 10,
+      "unknown_requests": 0
+    },
+    "units": 22,
+    "evaluated_units": 10,
+    "planted_targeted": true,
+    "findings": [],
+    "hit": false,
+    "false_positive": false,
+    "elapsed_ms": 9980
+  },
+  "B2:algal-ab79dbf7-clean": {
+    "condition": "B",
+    "id": "algal-ab79dbf7-clean",
+    "kind": "clean",
+    "status": "incomplete",
+    "requests": 13,
+    "usage": {
+      "input_tokens": 22399,
+      "output_tokens": 356,
+      "known_requests": 13,
+      "unknown_requests": 0
+    },
+    "units": 18,
+    "evaluated_units": 13,
+    "findings": [],
+    "false_positive": false,
+    "elapsed_ms": 9187
+  },
+  "B2:algal-3fbf8ca6-empty-catch": {
+    "condition": "B",
+    "id": "algal-3fbf8ca6-empty-catch",
+    "kind": "empty-catch",
+    "status": "incomplete",
+    "requests": 28,
+    "usage": {
+      "input_tokens": 66209,
+      "output_tokens": 804,
+      "known_requests": 28,
+      "unknown_requests": 0
+    },
+    "units": 49,
+    "evaluated_units": 28,
+    "planted_targeted": true,
+    "findings": [],
+    "hit": false,
+    "false_positive": false,
+    "elapsed_ms": 21630
+  },
+  "B2:algal-f851e0f9-clean": {
+    "condition": "B",
+    "id": "algal-f851e0f9-clean",
+    "kind": "clean",
+    "status": "incomplete",
+    "requests": 13,
+    "usage": {
+      "input_tokens": 21832,
+      "output_tokens": 400,
+      "known_requests": 13,
+      "unknown_requests": 0
+    },
+    "units": 26,
+    "evaluated_units": 13,
+    "findings": [],
+    "false_positive": false,
+    "elapsed_ms": 9163
+  },
+  "B2:algal-ff3d6723-removed-assertion": {
+    "condition": "B",
+    "id": "algal-ff3d6723-removed-assertion",
+    "kind": "removed-assertion",
+    "status": "incomplete",
+    "requests": 18,
+    "usage": {
+      "input_tokens": 27207,
+      "output_tokens": 498,
+      "known_requests": 18,
+      "unknown_requests": 0
+    },
+    "units": 27,
+    "evaluated_units": 18,
+    "planted_targeted": true,
+    "findings": [
+      {
+        "rule": "core-removed-test-assertions",
+        "path": "src/contract.test.ts",
+        "line": 20
+      }
+    ],
+    "hit": true,
+    "false_positive": false,
+    "elapsed_ms": 10715
+  },
+  "B2:algal-1a5e0224-clean": {
+    "condition": "B",
+    "id": "algal-1a5e0224-clean",
+    "kind": "clean",
+    "status": "incomplete",
+    "requests": 7,
+    "usage": {
+      "input_tokens": 21791,
+      "output_tokens": 190,
+      "known_requests": 7,
+      "unknown_requests": 0
+    },
+    "units": 22,
+    "evaluated_units": 7,
+    "findings": [],
+    "false_positive": false,
+    "elapsed_ms": 6719
+  },
+  "B2:algal-1154cc4d-empty-catch": {
+    "condition": "B",
+    "id": "algal-1154cc4d-empty-catch",
+    "kind": "empty-catch",
+    "status": "incomplete",
+    "requests": 17,
+    "usage": {
+      "input_tokens": 25313,
+      "output_tokens": 474,
+      "known_requests": 17,
+      "unknown_requests": 0
+    },
+    "units": 41,
+    "evaluated_units": 17,
+    "planted_targeted": true,
+    "findings": [],
+    "hit": false,
+    "false_positive": false,
+    "elapsed_ms": 13243
+  },
+  "B2:algal-8ae09445-clean": {
+    "condition": "B",
+    "id": "algal-8ae09445-clean",
+    "kind": "clean",
+    "status": "incomplete",
+    "requests": 9,
+    "usage": {
+      "input_tokens": 14187,
+      "output_tokens": 238,
+      "known_requests": 9,
+      "unknown_requests": 0
+    },
+    "units": 15,
+    "evaluated_units": 9,
+    "findings": [],
+    "false_positive": false,
+    "elapsed_ms": 6957
+  },
+  "B2:algal-abf5ef8a-removed-assertion": {
+    "condition": "B",
+    "id": "algal-abf5ef8a-removed-assertion",
+    "kind": "removed-assertion",
+    "status": "incomplete",
+    "requests": 17,
+    "usage": {
+      "input_tokens": 28968,
+      "output_tokens": 496,
+      "known_requests": 17,
+      "unknown_requests": 0
+    },
+    "units": 27,
+    "evaluated_units": 17,
+    "planted_targeted": true,
+    "findings": [
+      {
+        "rule": "core-removed-test-assertions",
+        "path": "src/contract.test.ts",
+        "line": 20
+      }
+    ],
+    "hit": true,
+    "false_positive": false,
+    "elapsed_ms": 11588
+  },
+  "B2:wordcell-1d77e7d2-clean": {
+    "condition": "B",
+    "id": "wordcell-1d77e7d2-clean",
+    "kind": "clean",
+    "status": "incomplete",
+    "requests": 16,
+    "usage": {
+      "input_tokens": 32789,
+      "output_tokens": 516,
+      "known_requests": 16,
+      "unknown_requests": 0
+    },
+    "units": 23,
+    "evaluated_units": 16,
+    "findings": [],
+    "false_positive": false,
+    "elapsed_ms": 10824
+  },
+  "B2:wordcell-58bd07b6-empty-catch": {
+    "condition": "B",
+    "id": "wordcell-58bd07b6-empty-catch",
+    "kind": "empty-catch",
+    "status": "incomplete",
+    "requests": 7,
+    "usage": {
+      "input_tokens": 14478,
+      "output_tokens": 190,
+      "known_requests": 7,
+      "unknown_requests": 0
+    },
+    "units": 25,
+    "evaluated_units": 7,
+    "planted_targeted": true,
+    "findings": [],
+    "hit": false,
+    "false_positive": false,
+    "elapsed_ms": 10297
+  },
+  "B2:wordcell-e0a67b76-clean": {
+    "condition": "B",
+    "id": "wordcell-e0a67b76-clean",
+    "kind": "clean",
+    "status": "incomplete",
+    "requests": 4,
+    "usage": {
+      "input_tokens": 7245,
+      "output_tokens": 118,
+      "known_requests": 4,
+      "unknown_requests": 0
+    },
+    "units": 6,
+    "evaluated_units": 4,
+    "findings": [],
+    "false_positive": false,
+    "elapsed_ms": 5164
+  },
+  "B2:wordcell-97a7bc13-removed-assertion": {
+    "condition": "B",
+    "id": "wordcell-97a7bc13-removed-assertion",
+    "kind": "removed-assertion",
+    "status": "incomplete",
+    "requests": 17,
+    "usage": {
+      "input_tokens": 27606,
+      "output_tokens": 496,
+      "known_requests": 17,
+      "unknown_requests": 0
+    },
+    "units": 31,
+    "evaluated_units": 17,
+    "planted_targeted": true,
+    "findings": [],
+    "hit": false,
+    "false_positive": false,
+    "elapsed_ms": 11690
+  },
+  "B2:wordcell-9fec758d-clean": {
+    "condition": "B",
+    "id": "wordcell-9fec758d-clean",
+    "kind": "clean",
+    "status": "incomplete",
+    "requests": 13,
+    "usage": {
+      "input_tokens": 21902,
+      "output_tokens": 378,
+      "known_requests": 13,
+      "unknown_requests": 0
+    },
+    "units": 20,
+    "evaluated_units": 13,
+    "findings": [],
+    "false_positive": false,
+    "elapsed_ms": 9176
+  },
+  "B2:wordcell-e04b2d60-empty-catch": {
+    "condition": "B",
+    "id": "wordcell-e04b2d60-empty-catch",
+    "kind": "empty-catch",
+    "status": "incomplete",
+    "requests": 16,
+    "usage": {
+      "input_tokens": 25825,
+      "output_tokens": 472,
+      "known_requests": 16,
+      "unknown_requests": 0
+    },
+    "units": 21,
+    "evaluated_units": 16,
+    "planted_targeted": true,
+    "findings": [],
+    "hit": false,
+    "false_positive": false,
+    "elapsed_ms": 10849
+  },
+  "B2:wordcell-89bdfe4f-clean": {
+    "condition": "B",
+    "id": "wordcell-89bdfe4f-clean",
+    "kind": "clean",
+    "status": "incomplete",
+    "requests": 18,
+    "usage": {
+      "input_tokens": 27515,
+      "output_tokens": 542,
+      "known_requests": 18,
+      "unknown_requests": 0
+    },
+    "units": 28,
+    "evaluated_units": 18,
+    "findings": [],
+    "false_positive": false,
+    "elapsed_ms": 13018
+  },
+  "B2:wordcell-e19a7dc2-removed-assertion": {
+    "condition": "B",
+    "id": "wordcell-e19a7dc2-removed-assertion",
+    "kind": "removed-assertion",
+    "status": "incomplete",
+    "requests": 5,
+    "usage": {
+      "input_tokens": 9638,
+      "output_tokens": 186,
+      "known_requests": 5,
+      "unknown_requests": 0
+    },
+    "units": 10,
+    "evaluated_units": 5,
+    "planted_targeted": true,
+    "findings": [],
+    "hit": false,
+    "false_positive": false,
+    "elapsed_ms": 4770
+  },
+  "B2:spongev2-b7fdcb87-clean": {
+    "condition": "B",
+    "id": "spongev2-b7fdcb87-clean",
+    "kind": "clean",
+    "status": "incomplete",
+    "requests": 23,
+    "usage": {
+      "input_tokens": 53703,
+      "output_tokens": 662,
+      "known_requests": 23,
+      "unknown_requests": 0
+    },
+    "units": 26,
+    "evaluated_units": 23,
+    "findings": [],
+    "false_positive": false,
+    "elapsed_ms": 14573
+  },
+  "B2:spongev2-47e41875-empty-catch": {
+    "condition": "B",
+    "id": "spongev2-47e41875-empty-catch",
+    "kind": "empty-catch",
+    "status": "incomplete",
+    "requests": 4,
+    "usage": {
+      "input_tokens": 24081,
+      "output_tokens": 140,
+      "known_requests": 4,
+      "unknown_requests": 0
+    },
+    "units": 6,
+    "evaluated_units": 4,
+    "planted_targeted": true,
+    "findings": [],
+    "hit": false,
+    "false_positive": false,
+    "elapsed_ms": 3529
+  },
+  "B2:spongev2-f9459cb0-clean": {
+    "condition": "B",
+    "id": "spongev2-f9459cb0-clean",
+    "kind": "clean",
+    "status": "incomplete",
+    "requests": 22,
+    "usage": {
+      "input_tokens": 50215,
+      "output_tokens": 638,
+      "known_requests": 22,
+      "unknown_requests": 0
+    },
+    "units": 26,
+    "evaluated_units": 22,
+    "findings": [],
+    "false_positive": false,
+    "elapsed_ms": 14698
+  },
+  "B2:spongev2-c6da716c-removed-assertion": {
+    "condition": "B",
+    "id": "spongev2-c6da716c-removed-assertion",
+    "kind": "removed-assertion",
+    "status": "complete",
+    "requests": 9,
+    "usage": {
+      "input_tokens": 28025,
+      "output_tokens": 282,
+      "known_requests": 9,
+      "unknown_requests": 0
+    },
+    "units": 9,
+    "evaluated_units": 9,
+    "planted_targeted": true,
+    "findings": [],
+    "hit": false,
+    "false_positive": false,
+    "elapsed_ms": 6384
+  },
+  "B2:spongev2-9835d521-clean": {
+    "condition": "B",
+    "id": "spongev2-9835d521-clean",
+    "kind": "clean",
+    "status": "incomplete",
+    "requests": 5,
+    "usage": {
+      "input_tokens": 17533,
+      "output_tokens": 164,
+      "known_requests": 5,
+      "unknown_requests": 0
+    },
+    "units": 6,
+    "evaluated_units": 5,
+    "findings": [],
+    "false_positive": false,
+    "elapsed_ms": 3994
+  },
+  "B2:spongev2-331c2900-empty-catch": {
+    "condition": "B",
+    "id": "spongev2-331c2900-empty-catch",
+    "kind": "empty-catch",
+    "status": "incomplete",
+    "requests": 6,
+    "usage": {
+      "input_tokens": 16542,
+      "output_tokens": 166,
+      "known_requests": 6,
+      "unknown_requests": 0
+    },
+    "units": 11,
+    "evaluated_units": 6,
+    "planted_targeted": true,
+    "findings": [],
+    "hit": false,
+    "false_positive": false,
+    "elapsed_ms": 5407
+  },
+  "B2:spongev2-9474b385-clean": {
+    "condition": "B",
+    "id": "spongev2-9474b385-clean",
+    "kind": "clean",
+    "status": "incomplete",
+    "requests": 1,
+    "usage": {
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "known_requests": 0,
+      "unknown_requests": 1
+    },
+    "units": 6,
+    "evaluated_units": 0,
+    "findings": [],
+    "false_positive": false,
+    "elapsed_ms": 2885
+  },
+  "B2:spongev2-04bf8201-removed-assertion": {
+    "condition": "B",
+    "id": "spongev2-04bf8201-removed-assertion",
+    "kind": "removed-assertion",
+    "status": "incomplete",
+    "requests": 11,
+    "usage": {
+      "input_tokens": 33670,
+      "output_tokens": 352,
+      "known_requests": 11,
+      "unknown_requests": 0
+    },
+    "units": 12,
+    "evaluated_units": 11,
+    "planted_targeted": true,
+    "findings": [
+      {
+        "rule": "core-removed-test-assertions",
+        "path": "src/research/experimental/evidence.test.ts",
+        "line": 316
+      }
+    ],
+    "hit": true,
+    "false_positive": false,
+    "elapsed_ms": 8334
+  },
+  "B2:ghostget-4e9e833a-clean": {
+    "condition": "B",
+    "id": "ghostget-4e9e833a-clean",
+    "kind": "clean",
+    "status": "incomplete",
+    "requests": 18,
+    "usage": {
+      "input_tokens": 37525,
+      "output_tokens": 608,
+      "known_requests": 18,
+      "unknown_requests": 0
+    },
+    "units": 45,
+    "evaluated_units": 18,
+    "findings": [],
+    "false_positive": false,
+    "elapsed_ms": 15221
+  },
+  "B2:ghostget-c9aea466-empty-catch": {
+    "condition": "B",
+    "id": "ghostget-c9aea466-empty-catch",
+    "kind": "empty-catch",
+    "status": "complete",
+    "requests": 7,
+    "usage": {
+      "input_tokens": 11928,
+      "output_tokens": 190,
+      "known_requests": 7,
+      "unknown_requests": 0
+    },
+    "units": 7,
+    "evaluated_units": 7,
+    "planted_targeted": true,
+    "findings": [],
+    "hit": false,
+    "false_positive": false,
+    "elapsed_ms": 5116
+  },
+  "B2:ghostget-4fde85b3-clean": {
+    "condition": "B",
+    "id": "ghostget-4fde85b3-clean",
+    "kind": "clean",
+    "status": "incomplete",
+    "requests": 12,
+    "usage": {
+      "input_tokens": 22597,
+      "output_tokens": 420,
+      "known_requests": 12,
+      "unknown_requests": 0
+    },
+    "units": 17,
+    "evaluated_units": 12,
+    "findings": [],
+    "false_positive": false,
+    "elapsed_ms": 8303
+  },
+  "B2:ghostget-66ec15d0-removed-assertion": {
+    "condition": "B",
+    "id": "ghostget-66ec15d0-removed-assertion",
+    "kind": "removed-assertion",
+    "status": "incomplete",
+    "requests": 9,
+    "usage": {
+      "input_tokens": 16526,
+      "output_tokens": 282,
+      "known_requests": 9,
+      "unknown_requests": 0
+    },
+    "units": 41,
+    "evaluated_units": 9,
+    "planted_targeted": true,
+    "findings": [],
+    "hit": false,
+    "false_positive": false,
+    "elapsed_ms": 9680
+  },
+  "B2:ghostget-1018b0be-clean": {
+    "condition": "B",
+    "id": "ghostget-1018b0be-clean",
+    "kind": "clean",
+    "status": "incomplete",
+    "requests": 50,
+    "usage": {
+      "input_tokens": 93983,
+      "output_tokens": 1618,
+      "known_requests": 50,
+      "unknown_requests": 0
+    },
+    "units": 57,
+    "evaluated_units": 50,
+    "findings": [],
+    "false_positive": false,
+    "elapsed_ms": 27510
+  },
+  "B2:ghostget-56c2d81b-empty-catch": {
+    "condition": "B",
+    "id": "ghostget-56c2d81b-empty-catch",
+    "kind": "empty-catch",
+    "status": "incomplete",
+    "requests": 14,
+    "usage": {
+      "input_tokens": 32573,
+      "output_tokens": 446,
+      "known_requests": 14,
+      "unknown_requests": 0
+    },
+    "units": 20,
+    "evaluated_units": 14,
+    "planted_targeted": true,
+    "findings": [],
+    "hit": false,
+    "false_positive": false,
+    "elapsed_ms": 10964
+  },
+  "B2:ghostget-4035bfdf-clean": {
+    "condition": "B",
+    "id": "ghostget-4035bfdf-clean",
+    "kind": "clean",
+    "status": "complete",
+    "requests": 10,
+    "usage": {
+      "input_tokens": 16794,
+      "output_tokens": 350,
+      "known_requests": 10,
+      "unknown_requests": 0
+    },
+    "units": 10,
+    "evaluated_units": 10,
+    "findings": [],
+    "false_positive": false,
+    "elapsed_ms": 6717
+  },
+  "B2:ghostget-bc326853-removed-assertion": {
+    "condition": "B",
+    "id": "ghostget-bc326853-removed-assertion",
+    "kind": "removed-assertion",
+    "status": "incomplete",
+    "requests": 10,
+    "usage": {
+      "input_tokens": 21506,
+      "output_tokens": 328,
+      "known_requests": 10,
+      "unknown_requests": 0
+    },
+    "units": 22,
+    "evaluated_units": 10,
+    "planted_targeted": true,
+    "findings": [],
+    "hit": false,
+    "false_positive": false,
+    "elapsed_ms": 9698
+  },
+  "C:algal-3fbf8ca6-empty-catch": {
+    "condition": "C",
+    "id": "algal-3fbf8ca6-empty-catch",
+    "kind": "empty-catch",
+    "status": "complete",
+    "requests": 1,
+    "usage": {
+      "input_tokens": 4322,
+      "output_tokens": 24,
+      "known_requests": 1,
+      "unknown_requests": 0
+    },
+    "units": 1,
+    "evaluated_units": 1,
+    "planted_targeted": true,
+    "findings": [],
+    "hit": false,
+    "false_positive": false,
+    "elapsed_ms": 1725
+  },
+  "C:algal-ff3d6723-removed-assertion": {
+    "condition": "C",
+    "id": "algal-ff3d6723-removed-assertion",
+    "kind": "removed-assertion",
+    "status": "complete",
+    "requests": 2,
+    "usage": {
+      "input_tokens": 3273,
+      "output_tokens": 52,
+      "known_requests": 2,
+      "unknown_requests": 0
+    },
+    "units": 2,
+    "evaluated_units": 2,
+    "planted_targeted": true,
+    "findings": [
+      {
+        "rule": "core-removed-test-assertions",
+        "path": "src/contract.test.ts",
+        "line": 20
+      }
+    ],
+    "hit": true,
+    "false_positive": false,
+    "elapsed_ms": 1941
+  },
+  "C:algal-1154cc4d-empty-catch": {
+    "condition": "C",
+    "id": "algal-1154cc4d-empty-catch",
+    "kind": "empty-catch",
+    "status": "complete",
+    "requests": 3,
+    "usage": {
+      "input_tokens": 3305,
+      "output_tokens": 72,
+      "known_requests": 3,
+      "unknown_requests": 0
+    },
+    "units": 3,
+    "evaluated_units": 3,
+    "planted_targeted": true,
+    "findings": [],
+    "hit": false,
+    "false_positive": false,
+    "elapsed_ms": 3853
+  },
+  "C:algal-abf5ef8a-removed-assertion": {
+    "condition": "C",
+    "id": "algal-abf5ef8a-removed-assertion",
+    "kind": "removed-assertion",
+    "status": "complete",
+    "requests": 2,
+    "usage": {
+      "input_tokens": 2794,
+      "output_tokens": 52,
+      "known_requests": 2,
+      "unknown_requests": 0
+    },
+    "units": 2,
+    "evaluated_units": 2,
+    "planted_targeted": true,
+    "findings": [
+      {
+        "rule": "core-removed-test-assertions",
+        "path": "src/contract.test.ts",
+        "line": 20
+      }
+    ],
+    "hit": true,
+    "false_positive": false,
+    "elapsed_ms": 1974
+  },
+  "C:wordcell-58bd07b6-empty-catch": {
+    "condition": "C",
+    "id": "wordcell-58bd07b6-empty-catch",
+    "kind": "empty-catch",
+    "status": "complete",
+    "requests": 5,
+    "usage": {
+      "input_tokens": 9812,
+      "output_tokens": 120,
+      "known_requests": 5,
+      "unknown_requests": 0
+    },
+    "units": 5,
+    "evaluated_units": 5,
+    "planted_targeted": true,
+    "findings": [],
+    "hit": false,
+    "false_positive": false,
+    "elapsed_ms": 3437
+  },
+  "C:wordcell-97a7bc13-removed-assertion": {
+    "condition": "C",
+    "id": "wordcell-97a7bc13-removed-assertion",
+    "kind": "removed-assertion",
+    "status": "complete",
+    "requests": 1,
+    "usage": {
+      "input_tokens": 1128,
+      "output_tokens": 26,
+      "known_requests": 1,
+      "unknown_requests": 0
+    },
+    "units": 1,
+    "evaluated_units": 1,
+    "planted_targeted": true,
+    "findings": [],
+    "hit": false,
+    "false_positive": false,
+    "elapsed_ms": 1377
+  },
+  "C:wordcell-e04b2d60-empty-catch": {
+    "condition": "C",
+    "id": "wordcell-e04b2d60-empty-catch",
+    "kind": "empty-catch",
+    "status": "complete",
+    "requests": 3,
+    "usage": {
+      "input_tokens": 3653,
+      "output_tokens": 72,
+      "known_requests": 3,
+      "unknown_requests": 0
+    },
+    "units": 3,
+    "evaluated_units": 3,
+    "planted_targeted": true,
+    "findings": [],
+    "hit": false,
+    "false_positive": false,
+    "elapsed_ms": 2487
+  },
+  "C:wordcell-e19a7dc2-removed-assertion": {
+    "condition": "C",
+    "id": "wordcell-e19a7dc2-removed-assertion",
+    "kind": "removed-assertion",
+    "status": "complete",
+    "requests": 1,
+    "usage": {
+      "input_tokens": 1128,
+      "output_tokens": 26,
+      "known_requests": 1,
+      "unknown_requests": 0
+    },
+    "units": 1,
+    "evaluated_units": 1,
+    "planted_targeted": true,
+    "findings": [],
+    "hit": false,
+    "false_positive": false,
+    "elapsed_ms": 1477
+  },
+  "C:spongev2-47e41875-empty-catch": {
+    "condition": "C",
+    "id": "spongev2-47e41875-empty-catch",
+    "kind": "empty-catch",
+    "status": "complete",
+    "requests": 1,
+    "usage": {
+      "input_tokens": 3534,
+      "output_tokens": 24,
+      "known_requests": 1,
+      "unknown_requests": 0
+    },
+    "units": 1,
+    "evaluated_units": 1,
+    "planted_targeted": true,
+    "findings": [],
+    "hit": false,
+    "false_positive": false,
+    "elapsed_ms": 1269
+  },
+  "C:spongev2-c6da716c-removed-assertion": {
+    "condition": "C",
+    "id": "spongev2-c6da716c-removed-assertion",
+    "kind": "removed-assertion",
+    "status": "complete",
+    "requests": 1,
+    "usage": {
+      "input_tokens": 1774,
+      "output_tokens": 26,
+      "known_requests": 1,
+      "unknown_requests": 0
+    },
+    "units": 1,
+    "evaluated_units": 1,
+    "planted_targeted": true,
+    "findings": [],
+    "hit": false,
+    "false_positive": false,
+    "elapsed_ms": 1686
+  },
+  "C:spongev2-331c2900-empty-catch": {
+    "condition": "C",
+    "id": "spongev2-331c2900-empty-catch",
+    "kind": "empty-catch",
+    "status": "complete",
+    "requests": 1,
+    "usage": {
+      "input_tokens": 5304,
+      "output_tokens": 24,
+      "known_requests": 1,
+      "unknown_requests": 0
+    },
+    "units": 1,
+    "evaluated_units": 1,
+    "planted_targeted": true,
+    "findings": [],
+    "hit": false,
+    "false_positive": false,
+    "elapsed_ms": 1757
+  },
+  "C:spongev2-04bf8201-removed-assertion": {
+    "condition": "C",
+    "id": "spongev2-04bf8201-removed-assertion",
+    "kind": "removed-assertion",
+    "status": "complete",
+    "requests": 3,
+    "usage": {
+      "input_tokens": 6504,
+      "output_tokens": 78,
+      "known_requests": 3,
+      "unknown_requests": 0
+    },
+    "units": 3,
+    "evaluated_units": 3,
+    "planted_targeted": true,
+    "findings": [
+      {
+        "rule": "core-removed-test-assertions",
+        "path": "src/research/experimental/evidence.test.ts",
+        "line": 316
+      }
+    ],
+    "hit": true,
+    "false_positive": false,
+    "elapsed_ms": 2524
+  },
+  "C:ghostget-c9aea466-empty-catch": {
+    "condition": "C",
+    "id": "ghostget-c9aea466-empty-catch",
+    "kind": "empty-catch",
+    "status": "complete",
+    "requests": 6,
+    "usage": {
+      "input_tokens": 7950,
+      "output_tokens": 144,
+      "known_requests": 6,
+      "unknown_requests": 0
+    },
+    "units": 6,
+    "evaluated_units": 6,
+    "planted_targeted": true,
+    "findings": [],
+    "hit": false,
+    "false_positive": false,
+    "elapsed_ms": 4430
+  },
+  "C:ghostget-66ec15d0-removed-assertion": {
+    "condition": "C",
+    "id": "ghostget-66ec15d0-removed-assertion",
+    "kind": "removed-assertion",
+    "status": "complete",
+    "requests": 1,
+    "usage": {
+      "input_tokens": 1273,
+      "output_tokens": 26,
+      "known_requests": 1,
+      "unknown_requests": 0
+    },
+    "units": 1,
+    "evaluated_units": 1,
+    "planted_targeted": true,
+    "findings": [],
+    "hit": false,
+    "false_positive": false,
+    "elapsed_ms": 1788
+  },
+  "C:ghostget-56c2d81b-empty-catch": {
+    "condition": "C",
+    "id": "ghostget-56c2d81b-empty-catch",
+    "kind": "empty-catch",
+    "status": "complete",
+    "requests": 5,
+    "usage": {
+      "input_tokens": 7533,
+      "output_tokens": 120,
+      "known_requests": 5,
+      "unknown_requests": 0
+    },
+    "units": 5,
+    "evaluated_units": 5,
+    "planted_targeted": true,
+    "findings": [],
+    "hit": false,
+    "false_positive": false,
+    "elapsed_ms": 3731
+  },
+  "C:ghostget-bc326853-removed-assertion": {
+    "condition": "C",
+    "id": "ghostget-bc326853-removed-assertion",
+    "kind": "removed-assertion",
+    "status": "complete",
+    "requests": 1,
+    "usage": {
+      "input_tokens": 1366,
+      "output_tokens": 26,
+      "known_requests": 1,
+      "unknown_requests": 0
+    },
+    "units": 1,
+    "evaluated_units": 1,
+    "planted_targeted": true,
+    "findings": [],
+    "hit": false,
+    "false_positive": false,
+    "elapsed_ms": 1686
+  }
+}

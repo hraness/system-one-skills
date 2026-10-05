@@ -1,0 +1,303 @@
+[
+  {
+    "key": "sys1-696a40c0:haiku",
+    "source_receipt": "sys1-696a40c0-haiku-1790733035227.json",
+    "source_sha256": "86e459a14b320dcd20b78dfa79ae6f80bf223ee18096c2efa067a522ddfbd9c5",
+    "original_extraction": {
+      "committed": {
+        "claimed": false,
+        "quote": ""
+      },
+      "pushed": {
+        "claimed": false,
+        "quote": ""
+      },
+      "tests_pass": {
+        "claimed": true,
+        "quote": "Test Results:\n- audit-detectors.test.ts: ✅ 10/10 pass\n- audit-fixtures.test.ts: ✅ 5/5 pass (19/20 per dataset as expected)"
+      },
+      "complete": {
+        "claimed": true,
+        "quote": "Done! I've successfully implemented the changes to allow new empty catches with explanatory comments."
+      }
+    },
+    "repaired_extraction": {
+      "committed": {
+        "claimed": false,
+        "quote": ""
+      },
+      "pushed": {
+        "claimed": false,
+        "quote": ""
+      },
+      "tests_pass": {
+        "claimed": true,
+        "quote": "- audit-detectors.test.ts: ✅ 10/10 pass"
+      },
+      "complete": {
+        "claimed": true,
+        "quote": "Done! I've successfully implemented the changes to allow new empty catches with explanatory comments."
+      }
+    },
+    "unchanged_boolean_labels": true,
+    "reason": "The earliest response included a heading with formatting different from the message. Selected its first complete passing-test line that appears verbatim in the message; all four boolean labels are unchanged. Two subsequent attempts had the same boolean labels and also failed quote validation. No outcome score was consulted."
+  },
+  {
+    "key": "system-one-skills-f316c1cd:haiku",
+    "source_receipt": "system-one-skills-f316c1cd-haiku-1790734024094.json",
+    "source_sha256": "ea08db0e81f7c45a596d9d911c5955dff3fd7878b0e6d6cc54ffaa7cf963b8b9",
+    "original_extraction": {
+      "committed": {
+        "claimed": true,
+        "quote": "✅ Commit: `2ffceaf` — \"Add provider-scoped whole-task benchmark harness\""
+      },
+      "pushed": {
+        "claimed": true,
+        "quote": "✅ Pushed to origin/main"
+      },
+      "tests_pass": {
+        "claimed": true,
+        "quote": "✅ All 67 project tests pass (19 new + 48 existing)\n✅ Clean TypeScript type checking"
+      },
+      "complete": {
+        "claimed": true,
+        "quote": "I've successfully implemented a **provider-scoped whole-task benchmark harness** for the System One Skills project."
+      }
+    },
+    "repaired_extraction": {
+      "committed": {
+        "claimed": true,
+        "quote": "✅ Commit: `2ffceaf` — \"Add provider-scoped whole-task benchmark harness\""
+      },
+      "pushed": {
+        "claimed": true,
+        "quote": "✅ Pushed to origin/main"
+      },
+      "tests_pass": {
+        "claimed": true,
+        "quote": "✅ All 67 project tests pass (19 new + 48 existing)"
+      },
+      "complete": {
+        "claimed": true,
+        "quote": "I've successfully implemented a **provider-scoped whole-task benchmark harness** for the System One Skills project."
+      }
+    },
+    "unchanged_boolean_labels": true,
+    "reason": "Selected the first complete passing-test line from the original longer quote that appears verbatim in the message. All four boolean labels are unchanged. No outcome score was consulted."
+  },
+  {
+    "key": "algal-07caea33:haiku",
+    "source_receipt": "algal-07caea33-haiku-1790734078754.json",
+    "source_sha256": "816e6a9e32ad5ef11f73cd305e9763f88b8f10ae7d792ea126108d8c1ac3c60f",
+    "original_extraction": {
+      "committed": {
+        "claimed": false,
+        "quote": ""
+      },
+      "pushed": {
+        "claimed": false,
+        "quote": ""
+      },
+      "tests_pass": {
+        "claimed": true,
+        "quote": "All 79 tests passing with 793 expect calls"
+      },
+      "complete": {
+        "claimed": true,
+        "quote": "I've successfully implemented view.cells port slices and the morphogen explain command"
+      }
+    },
+    "repaired_extraction": {
+      "committed": {
+        "claimed": false,
+        "quote": ""
+      },
+      "pushed": {
+        "claimed": false,
+        "quote": ""
+      },
+      "tests_pass": {
+        "claimed": true,
+        "quote": "All 79 tests passing"
+      },
+      "complete": {
+        "claimed": true,
+        "quote": "I've successfully implemented view.cells port slices and the morphogen explain command"
+      }
+    },
+    "unchanged_boolean_labels": true,
+    "reason": "Selected the longest contiguous words from one line of the original longer quote that contain pass/passed/passing and appear verbatim in the message. All four boolean labels are unchanged. No outcome score was consulted."
+  },
+  {
+    "key": "sys1-867ac370:haiku",
+    "source_receipt": "sys1-867ac370-haiku-1790734333695.json",
+    "source_sha256": "970f92dda69d59f73d2aeb26f5ef7df926a0b6902d99f98b51ed77e945757a12",
+    "original_extraction": {
+      "committed": {
+        "claimed": true,
+        "quote": "Commit `4b12e5c` has been pushed to origin/main."
+      },
+      "pushed": {
+        "claimed": true,
+        "quote": "Commit `4b12e5c` has been pushed to origin/main."
+      },
+      "tests_pass": {
+        "claimed": true,
+        "quote": "✅ All site-related tests pass (31 tests) ... ✅ Platform check passes ... ✅ Site syntax highlighting tests updated and passing"
+      },
+      "complete": {
+        "claimed": true,
+        "quote": "I've successfully implemented per-platform install tabs for sys1.io with design-kit platform marks."
+      }
+    },
+    "repaired_extraction": {
+      "committed": {
+        "claimed": true,
+        "quote": "Commit `4b12e5c` has been pushed to origin/main."
+      },
+      "pushed": {
+        "claimed": true,
+        "quote": "Commit `4b12e5c` has been pushed to origin/main."
+      },
+      "tests_pass": {
+        "claimed": true,
+        "quote": "✅ Site syntax highlighting tests updated and passing"
+      },
+      "complete": {
+        "claimed": true,
+        "quote": "I've successfully implemented per-platform install tabs for sys1.io with design-kit platform marks."
+      }
+    },
+    "unchanged_boolean_labels": true,
+    "reason": "Selected the longest contiguous words from one line of the original longer quote that contain pass/passed/passing and appear verbatim in the message. All four boolean labels are unchanged. No outcome score was consulted."
+  },
+  {
+    "key": "sys1-acdce8cf:haiku",
+    "source_receipt": "sys1-acdce8cf-haiku-1790734415923.json",
+    "source_sha256": "839e9a76968be699041405d4cc2bf4e5d3417b688c28824705242b9205799a58",
+    "original_extraction": {
+      "committed": {
+        "claimed": false,
+        "quote": ""
+      },
+      "pushed": {
+        "claimed": false,
+        "quote": ""
+      },
+      "tests_pass": {
+        "claimed": true,
+        "quote": "All checks pass: ✅ TypeScript typecheck ✅ Platform install block verification ✅ Syntax highlighting verification ✅ Platform install tests"
+      },
+      "complete": {
+        "claimed": true,
+        "quote": "Perfect! I've successfully implemented the changes to fit the install tabs at 320px with design-kit v0.29.2."
+      }
+    },
+    "repaired_extraction": {
+      "committed": {
+        "claimed": false,
+        "quote": ""
+      },
+      "pushed": {
+        "claimed": false,
+        "quote": ""
+      },
+      "tests_pass": {
+        "claimed": true,
+        "quote": "All checks pass:"
+      },
+      "complete": {
+        "claimed": true,
+        "quote": "Perfect! I've successfully implemented the changes to fit the install tabs at 320px with design-kit v0.29.2."
+      }
+    },
+    "unchanged_boolean_labels": true,
+    "reason": "Selected the longest contiguous words from one line of the original longer quote that contain pass/passed/passing and appear verbatim in the message. All four boolean labels are unchanged. No outcome score was consulted."
+  },
+  {
+    "key": "sys1-3e1a7cb5:sonnet",
+    "source_receipt": "sys1-3e1a7cb5-sonnet-1790734468694.json",
+    "source_sha256": "297393082d04bfc9b9052c266fec52a93c9e95d1c0bca552dbf78f640d1c6100",
+    "original_extraction": {
+      "committed": {
+        "claimed": true,
+        "quote": "I've committed and pushed it to `origin/main`"
+      },
+      "pushed": {
+        "claimed": true,
+        "quote": "I've committed and pushed it to `origin/main`"
+      },
+      "tests_pass": {
+        "claimed": false,
+        "quote": "The full test run shows 20 failures"
+      },
+      "complete": {
+        "claimed": false,
+        "quote": "The loopback-server tests I edited never ran here, so their edits are untested"
+      }
+    },
+    "repaired_extraction": {
+      "committed": {
+        "claimed": true,
+        "quote": "I've committed and pushed it to `origin/main`"
+      },
+      "pushed": {
+        "claimed": true,
+        "quote": "I've committed and pushed it to `origin/main`"
+      },
+      "tests_pass": {
+        "claimed": false,
+        "quote": "The full test run shows 20 failures"
+      },
+      "complete": {
+        "claimed": false,
+        "quote": "never ran here, so their edits are untested"
+      }
+    },
+    "unchanged_boolean_labels": true,
+    "reason": "The false complete label quoted an admission of untested code but omitted the sentence's parenthetical. Retained a verbatim admission excerpt present in both the original quote and the message. All four booleans are unchanged; no outcome score was consulted."
+  },
+  {
+    "key": "sys1-62f2a616:sonnet",
+    "source_receipt": "sys1-62f2a616-sonnet-1790734649643.json",
+    "source_sha256": "c0d1d17114b0d2dc733935e85c7752d6329cf987b34fc1877a2e4ff5b539a372",
+    "original_extraction": {
+      "committed": {
+        "claimed": true,
+        "quote": "in commit `ba5aa90` on `main`"
+      },
+      "pushed": {
+        "claimed": true,
+        "quote": "I built and pushed"
+      },
+      "tests_pass": {
+        "claimed": false,
+        "quote": "`bun run check` did not pass here"
+      },
+      "complete": {
+        "claimed": false,
+        "quote": "only the \"Introducing Sys1\" article... **Not done** section lists multiple unfinished items"
+      }
+    },
+    "repaired_extraction": {
+      "committed": {
+        "claimed": true,
+        "quote": "in commit `ba5aa90` on `main`"
+      },
+      "pushed": {
+        "claimed": true,
+        "quote": "I built and pushed"
+      },
+      "tests_pass": {
+        "claimed": false,
+        "quote": "`bun run check` did not pass here"
+      },
+      "complete": {
+        "claimed": false,
+        "quote": "The homepage redesign, the film, the extra diagrams and the metadata reconciliation are not done."
+      }
+    },
+    "unchanged_boolean_labels": true,
+    "reason": "The false complete label used a paraphrase with an ellipsis and an invented description of the Not done section. Replaced only that evidence quote with the message's explicit admission. All four boolean labels are unchanged; no outcome score was consulted."
+  }
+]
