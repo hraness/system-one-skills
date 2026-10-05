@@ -3,7 +3,7 @@
  * Plan: docs/ASSERTION-RECALL-PLAN-2026-09.md.
  *
  *   bun bench/assertion-recall.ts generate REPOS_ROOT "SET=repo[,repo];..." OUT_DIR SEED [PER_KIND]
- *   bun bench/assertion-recall.ts run REPOS_ROOT CASES_JSON OUT_JSON SYS1_CLI KEY_FILE [SET]
+ *   bun bench/assertion-recall.ts run REPOS_ROOT CASES_JSON OUT_JSON SYS1_CLI [SET]
  *   bun bench/assertion-recall.ts sweep RESULTS_JSON [SET]
  *
  * Cases record only commit ids, paths and line numbers; code is rebuilt from the
@@ -14,6 +14,7 @@ import { createHash } from "node:crypto";
 import { cpSync, existsSync, mkdirSync, mkdtempSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { basename, join } from "node:path";
+import { assertRunOutput, assertSettledAttempts, checkpointArgs, enableDecision, liveDecisionConfig, parseCheckpoint, redactHostedSecrets, type CheckpointResult } from "./decision-provider.ts";
 
 export type CaseKind = "violation" | "near-miss" | "clean";
 export type AssertionCase = {
@@ -173,19 +174,22 @@ export function materialize(clone: string, c: Pick<AssertionCase, "commit" | "pa
   }
 }
 
-function run(root: string, casesPath: string, outPath: string, cli: string, keyFile: string, set?: string) {
+function run(root: string, casesPath: string, outPath: string, cli: string, set?: string) {
+  const config = liveDecisionConfig();
+  assertRunOutput(outPath);
   const cases = (JSON.parse(readFileSync(casesPath, "utf8")) as AssertionCase[]).filter((c) => !set || c.set === set);
-  const ledger: Record<string, unknown> = existsSync(outPath) ? JSON.parse(readFileSync(outPath, "utf8")).results ?? {} : {};
+  const saved = existsSync(outPath) ? JSON.parse(readFileSync(outPath, "utf8")) : null;
+  if (saved && saved.route !== config.route) throw new Error("Use a new output path for a different decision route");
+  const ledger: Record<string, unknown> = saved?.results ?? {};
+  assertSettledAttempts(ledger);
   const scratch = mkdtempSync(join(tmpdir(), "assertion-recall-"));
-  const key = readFileSync(keyFile, "utf8").trim();
   const clones = new Map<string, string>();
   const sys1Commit = git(join(cli, "..", ".."), "rev-parse", "HEAD").trim();
-  const env = { ...process.env, TYPESAFE_API_KEY: key, HRANESS_AUDIENCE: "quiet" };
+  const env = { ...config.env, HRANESS_AUDIENCE: "quiet" };
   const template = join(scratch, "home-template");
   mkdirSync(template);
-  const enabled = spawnSync("bun", [cli, "jev", "enable"], { encoding: "utf8", env: { ...env, SYS1_HOME: template } });
-  if (enabled.status !== 0) throw new Error(`sys1 jev enable failed: ${enabled.stderr || enabled.stdout}`);
   try {
+    enableDecision("bun", [cli], template, { ...config, env });
     for (const c of cases) {
       if (ledger[c.id]) continue;
       let clone = clones.get(c.repo);
@@ -198,17 +202,22 @@ function run(root: string, casesPath: string, outPath: string, cli: string, keyF
       const home = join(scratch, "home");
       rmSync(home, { recursive: true, force: true });
       cpSync(template, home, { recursive: true });
+      ledger[c.id] = { kind: c.kind, set: c.set, state: "attempting" };
+      writeFileSync(outPath, JSON.stringify({ sys1: sys1Commit, route: config.route, results: ledger }, null, 2) + "\n");
       const started = Date.now();
-      const r = spawnSync("bun", [cli, "review", "checkpoint", "--staged", "--json", "--model", "typesafe/jev-1.13.0",
-        "--max-requests", "200", "--timeout-ms", "120000", "--rule", RULE, "--", c.path], {
-        cwd: clone, encoding: "utf8", maxBuffer: 64 * 1024 * 1024,
+      const r = spawnSync("bun", [cli, ...checkpointArgs(config, 200, 120000, RULE, c.path)], {
+        cwd: clone, encoding: "utf8", maxBuffer: 64 * 1024 * 1024, timeout: 150_000,
         env: { ...env, SYS1_HOME: home },
       });
       const elapsed_ms = Date.now() - started;
-      let out: any;
-      try { out = JSON.parse(r.stdout); if (out.ok === false) throw new Error(); } catch {
-        ledger[c.id] = { kind: c.kind, set: c.set, error: `${r.status}: ${(r.stderr || r.stdout).slice(0, 300)}`, elapsed_ms };
-        continue;
+      let out: CheckpointResult;
+      try {
+        if (r.error || r.signal || r.status === null) throw new Error();
+        out = parseCheckpoint(redactHostedSecrets(r.stdout, config.env));
+      } catch {
+        ledger[c.id] = { kind: c.kind, set: c.set, error: `checkpoint failed (exit ${r.status})`, elapsed_ms };
+        writeFileSync(outPath, JSON.stringify({ sys1: sys1Commit, route: config.route, results: ledger }, null, 2) + "\n");
+        throw new Error("Checkpoint outcome is uncertain; reconcile the recorded attempt before continuing");
       }
       const findings = (out.findings ?? []).map((f: any) => ({ rule: f.rule_id ?? f.rule, path: f.path, line: f.line, score: f.model_score }));
       ledger[c.id] = {
@@ -216,13 +225,13 @@ function run(root: string, casesPath: string, outPath: string, cli: string, keyF
         units: out.audit?.units, evaluated_units: out.audit?.evaluated_units,
         findings, flagged: findings.some((f: any) => f.rule === RULE && f.path === c.path), elapsed_ms,
       };
-      writeFileSync(outPath, JSON.stringify({ sys1: sys1Commit, route: "typesafe/jev-1.13.0", results: ledger }, null, 2) + "\n");
+      writeFileSync(outPath, JSON.stringify({ sys1: sys1Commit, route: config.route, results: ledger }, null, 2) + "\n");
       console.log(c.id, (ledger[c.id] as any).status, (ledger[c.id] as any).flagged);
     }
   } finally {
     rmSync(scratch, { recursive: true, force: true });
   }
-  writeFileSync(outPath, JSON.stringify({ sys1: sys1Commit, route: "typesafe/jev-1.13.0", results: ledger }, null, 2) + "\n");
+  writeFileSync(outPath, JSON.stringify({ sys1: sys1Commit, route: config.route, results: ledger }, null, 2) + "\n");
 }
 
 type Ledger = Record<string, { kind: string; set: string; findings?: { rule: string; path: string; score?: number }[] }>;
@@ -248,7 +257,10 @@ export function sweep(results: Ledger, set?: string, cutoffs = [0.1, 0.2, 0.3, 0
 if (import.meta.main) {
   const [mode, ...rest] = process.argv.slice(2);
   if (mode === "generate") generate(rest[0]!, rest[1]!, rest[2]!, rest[3]!, Number(rest[4] ?? "30"));
-  else if (mode === "run") run(rest[0]!, rest[1]!, rest[2]!, rest[3]!, rest[4]!, rest[5]);
+  else if (mode === "run") {
+    if (rest.length < 4 || rest.length > 5) throw new Error("run requires REPOS_ROOT CASES_JSON OUT_JSON SYS1_CLI [SET]; credentials are environment-only");
+    run(rest[0]!, rest[1]!, rest[2]!, rest[3]!, rest[4]);
+  }
   else if (mode === "sweep") console.table(sweep(JSON.parse(readFileSync(rest[0]!, "utf8")).results, rest[1]));
-  else throw new Error("usage: generate REPOS_ROOT SETS OUT_DIR SEED [PER_KIND] | run REPOS_ROOT CASES_JSON OUT_JSON SYS1_CLI KEY_FILE [SET] | sweep RESULTS_JSON [SET]");
+  else throw new Error("usage: generate REPOS_ROOT SETS OUT_DIR SEED [PER_KIND] | run REPOS_ROOT CASES_JSON OUT_JSON SYS1_CLI [SET] | sweep RESULTS_JSON [SET]");
 }

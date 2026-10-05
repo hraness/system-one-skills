@@ -124,6 +124,10 @@ A System One skill handles a recurring operation so the coordinating agent can
 use its context for the task. Here, ordinary code processes repetitive logs.
 [TypeSafe's introduction to System One models and Jev](https://typesafe.ai/blog/introducing-system-one-models-and-jev)
 explains the related model concept.
+[Cloudflare's Clef documentation](https://developers.cloudflare.com/workers-ai/models/clef/)
+describes the decision model used by new hosted benchmark runs. See the
+[rerun instructions](docs/BENCHMARK-HARNESS.md#hosted-review-reruns) before
+starting a paid run.
 
 [Sys1](https://sys1.io) helps coding agents review changes against repository
 rules. System One Skills works without it, and installing either project does

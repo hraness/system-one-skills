@@ -10,7 +10,7 @@ import { cpSync, existsSync, mkdirSync, readFileSync, rmSync, writeFileSync } fr
 import { join } from "node:path";
 import { plant, qualifies, snapshot, type ReviewTask } from "./claude-code-review-tasks.ts";
 
-const ROUTE = "typesafe/jev-1.13.0";
+import { assertRunOutput, assertSettledAttempts, checkpointArgs, enableDecision, liveDecisionConfig, parseCheckpoint, redactHostedSecrets, type CheckpointResult, type DecisionConfig } from "./decision-provider.ts";
 const RULE: Record<string, string> = { "empty-catch": "core-new-empty-catch", "removed-assertion": "core-removed-test-assertions" };
 type Condition = "A" | "B" | "C";
 
@@ -38,17 +38,20 @@ export function rebuild(recorded: ReviewTask[], families: Record<string, string[
   console.log(`${kept.length} of ${recorded.length} tasks rebuilt`);
 }
 
-function checkpoint(task: ReviewTask, cond: Condition, home: string, homeTemplate: string) {
+export function checkpoint(task: ReviewTask, cond: Condition, home: string, homeTemplate: string, config: DecisionConfig) {
   rmSync(home, { recursive: true, force: true });
   cpSync(homeTemplate, home, { recursive: true });
+  enableDecision("sys1", [], home, config);
   const [max, timeout] = cond === "A" ? ["20", "30000"] : ["200", "120000"];
-  const args = ["review", "checkpoint", "--staged", "--model", ROUTE, "--max-requests", max, "--timeout-ms", timeout, "--json"];
-  if (cond === "C") args.push("--rule", RULE[task.kind]!, "--", task.expected.path!);
+  const args = checkpointArgs(config, Number(max), Number(timeout), cond === "C" ? RULE[task.kind]! : undefined, cond === "C" ? task.expected.path! : undefined);
   const started = Date.now();
-  const r = spawnSync("sys1", args, { cwd: task.repo, encoding: "utf8", env: { ...process.env, SYS1_HOME: home }, maxBuffer: 64 * 1024 * 1024 });
+  const r = spawnSync("sys1", args, { cwd: task.repo, encoding: "utf8", env: { ...config.env, SYS1_HOME: home }, maxBuffer: 64 * 1024 * 1024, timeout: Number(timeout) + 30_000 });
   const elapsed_ms = Date.now() - started;
-  let out: any;
-  try { out = JSON.parse(r.stdout); } catch { return { error: `${r.status}: ${(r.stderr || r.stdout).slice(0, 300)}`, elapsed_ms }; }
+  let out: CheckpointResult;
+  try {
+    if (r.error || r.signal || r.status === null) throw new Error();
+    out = parseCheckpoint(redactHostedSecrets(r.stdout, config.env));
+  } catch { return { error: `checkpoint failed (exit ${r.status})`, elapsed_ms }; }
   const findings = (out.findings ?? []).map((f: any) => ({ rule: f.rule_id ?? f.rule, path: f.path, line: f.line, confidence: f.confidence ?? f.probability }));
   const targets = (out.audit?.targets ?? []).map((x: any) => x.path);
   const want = task.expected.path;
@@ -76,17 +79,24 @@ if (import.meta.main) {
     rebuild(recorded, families, outDir!, seed!);
   } else if (mode === "run") {
     const [tasksPath, cond, label, outPath, homeTemplate] = rest as [string, Condition, string, string, string];
-    if (!process.env.TYPESAFE_API_KEY) throw new Error("TYPESAFE_API_KEY is required");
+    const config = liveDecisionConfig();
+    assertRunOutput(outPath);
+    if (!["A", "B", "C"].includes(cond)) throw new Error("Condition must be A, B, or C");
     const tasks: ReviewTask[] = JSON.parse(readFileSync(tasksPath, "utf8"));
     const ledger: Record<string, unknown> = existsSync(outPath) ? JSON.parse(readFileSync(outPath, "utf8")) : {};
+    assertSettledAttempts(ledger);
+    if (Object.values(ledger).some((record: any) => record.route !== config.route)) throw new Error("Use a new output path for a different decision route");
     for (const t of tasks) {
       if (cond === "C" && t.kind === "clean") continue;
       const key = `${label}:${t.id}`;
       if (ledger[key]) continue;
-      const rec = checkpoint(t, cond, join(tasksPath, "..", "home-run"), homeTemplate);
-      ledger[key] = { condition: cond, id: t.id, kind: t.kind, ...rec };
+      ledger[key] = { condition: cond, id: t.id, kind: t.kind, route: config.route, state: "attempting" };
       writeFileSync(outPath, JSON.stringify(ledger, null, 2));
-      console.log(`${key} ${"error" in rec ? `ERROR ${rec.error}` : `${rec.status} hit=${rec.hit} fp=${rec.false_positive} findings=${rec.findings.length} ${Math.round(rec.elapsed_ms / 1000)}s`}`);
+      const rec = checkpoint(t, cond, join(tasksPath, "..", "home-run"), homeTemplate, config);
+      ledger[key] = { condition: cond, id: t.id, kind: t.kind, route: config.route, ...rec };
+      writeFileSync(outPath, JSON.stringify(ledger, null, 2));
+      if ("error" in rec) throw new Error("Checkpoint outcome is uncertain; reconcile the recorded attempt before continuing");
+      console.log(`${key} ${rec.status} hit=${rec.hit} fp=${rec.false_positive} findings=${rec.findings.length} ${Math.round(rec.elapsed_ms / 1000)}s`);
     }
   } else {
     throw new Error("usage: bun bench/review-recall.ts rebuild REPORT.json FAMILIES OUT_DIR SEED | run TASKS.json A|B|C LABEL OUT.json SYS1_HOME_TEMPLATE");
