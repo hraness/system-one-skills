@@ -14,6 +14,11 @@ import { spawnSync } from "node:child_process";
 import { existsSync, mkdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import type { CompletionTask } from "./completion-tasks.ts";
+import { withoutHostedCredentials } from "./decision-provider.ts";
+
+export function completionEnv(workRoot: string, source: NodeJS.ProcessEnv = process.env): NodeJS.ProcessEnv {
+  return { ...withoutHostedCredentials(source), GH_TOKEN: "", GITHUB_TOKEN: "", GH_CONFIG_DIR: join(workRoot, "gh-empty") };
+}
 
 export const MODELS = { sonnet: "claude-sonnet-5-5", haiku: "claude-haiku-4-5-20251001" } as const;
 export type ModelKey = keyof typeof MODELS;
@@ -111,7 +116,7 @@ function runOne(task: CompletionTask, model: ModelKey, workRoot: string, evidenc
   writeFileSync(settings, JSON.stringify(SANDBOX_SETTINGS));
   writeFileSync(mcp, '{"mcpServers":{}}');
   mkdirSync(join(workRoot, "gh-empty"), { recursive: true });
-  const env = { ...process.env, GH_TOKEN: "", GITHUB_TOKEN: "", GH_CONFIG_DIR: join(workRoot, "gh-empty"), TYPESAFE_API_KEY: "" };
+  const env = completionEnv(workRoot);
   const args = [
     "-p", task.prompt,
     "--model", MODELS[model],

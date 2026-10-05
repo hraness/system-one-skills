@@ -80,3 +80,56 @@ elapsed time, and the decision. Percentages are provider-scoped; no headline
 combines Codex, Claude, and Devin usage. Operation counts are separated by arm
 and labeled as raw-row totals; the assessor's independent-cluster grouping is
 authoritative for adoption screens.
+
+## Hosted review reruns
+
+New runs of `bench/assertion-recall.ts`, `bench/review-recall.ts`, and
+`bench/claude-code-review-run.ts` use Sys1's `cloudflare/clef` route. Use a
+released Sys1 build with `sys1 clef enable`; older builds cannot run this
+adapter. Supply `CLOUDFLARE_ACCOUNT_ID` (32 hexadecimal characters) and
+`CLOUDFLARE_API_TOKEN`, or its `CLOUDFLARE_AUTH_TOKEN` alias, through your
+private environment. The runners do not read personal keyfiles. Set
+`SYS1_BENCH_LIVE=1` only when the source disclosure and paid requests are
+approved. Tokens are not written to Sys1 configuration or reports.
+
+The dated September plans, result pages, and JSON evidence describe the
+original Jev experiments. A Clef run is a separate experiment, not a replay
+of those frozen model results. Choose a new output path and record the Sys1
+version, route, dataset, rule revision, and spending limit. The runners reject
+resuming a ledger with another route or without route attribution. Historical
+runner source is preserved at Git commit
+`74a03af1318a6c1ffa441b3d3a43516ce4039054`; use that source with the recorded
+Sys1 revision when studying the original experiments. The migrated runners
+use environment credentials rather than the historical keyfile interface.
+
+For example, with credentials supplied privately and a Clef-capable Sys1 CLI:
+
+```sh
+SYS1_BENCH_LIVE=1 bun bench/assertion-recall.ts run \
+  REPOS_ROOT CASES_JSON NEW_OUT_JSON SYS1_CLI calibration
+SYS1_BENCH_LIVE=1 bun bench/review-recall.ts run \
+  TASKS_JSON C clef-run NEW_OUT_JSON SYS1_HOME_TEMPLATE
+SYS1_BENCH_LIVE=1 bun bench/claude-code-review-run.ts \
+  TASKS_JSON NEW_OUT_DIR SEED 0.6 15 SYS1_BIN_DIR SYS1_HOME_TEMPLATE
+```
+
+`SYS1_DECISION_MODEL=clef-flash` selects the alternative Clef model.
+`SYS1_DECISION_PROVIDER=jev` is an explicit legacy reproduction option with
+`TYPESAFE_API_KEY` supplied in the environment and the model fixed to
+`jev-1.13.0`. It also needs new output files; it does not modify the historical
+baseline. These runners are text-only: images are unsupported and are not
+automatically sent.
+
+Assertion recall keeps its 200-request and 120-second per-check limits.
+Review recall keeps condition A at 20 requests and 30 seconds, and B/C at
+200 requests and 120 seconds. The paired runner keeps its per-arm and total
+Claude budget arguments; those are not a dollar cap on separate Sys1 model
+requests. Declare a separate hosted-model budget before running it. The
+baseline and completion-only arms remove TypeSafe and both Cloudflare token
+variables from their child environment.
+
+Each runner records an attempt before starting a paid subprocess. A timeout,
+malformed response, or failed task stops the run. Incomplete and failed records
+block an automatic rerun, including a partially completed pair. Reconcile the
+provider outcome and recorded costs before continuing; do not delete the record
+to retry an uncertain request.
